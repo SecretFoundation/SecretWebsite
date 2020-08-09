@@ -1,0 +1,14 @@
+{
+  "name": "maad-lab-ssr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "@lkmx/flare": "0.23.0"
+  }
+}

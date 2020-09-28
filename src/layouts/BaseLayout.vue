@@ -2,9 +2,9 @@
   <simple-layout>
     <template #logo><g-link to="/"><g-image class="logo" src="../assets/flare-starter-logo--white.svg"></g-image></g-link></template>
     <template #navigation>
-      <a href="#">Epics</a>
-      <a href="#">Stories</a>
-      <a href="#">Maps</a>
+      <a href="#">Features</a>
+      <a href="#">User roles</a>
+      <a href="#">System</a>
     </template>
     <template #actions>
       <a href="#">Sign in</a>
@@ -12,6 +12,7 @@
     <base-page>
       <slot></slot>
     </base-page>
+    <template #footer></template>
   </simple-layout>
 </template>
 

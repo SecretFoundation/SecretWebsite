@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.1",
-    "@lkmx/flare": "0.24.0",
+    "@gridsome/vue-remark": "^0.2.5",
+    "@lkmx/flare": "0.27.0",
     "gridsome": "^0.7.0"
   },
   "devDependencies": {

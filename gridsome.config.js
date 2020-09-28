@@ -26,10 +26,12 @@ module.exports = {
   siteName: 'MAAD lab',
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
-        path: 'content/**/*.md',
         typeName: 'Content',
+        baseDir: './content',
+        path: '/',
+        template: './src/templates/Content.vue',
         remark: {
           // remark options
         },

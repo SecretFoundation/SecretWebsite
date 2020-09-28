@@ -23,7 +23,7 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-  siteName: 'MAAD lab',
+  siteName: 'Secret Netwrok',
   plugins: [
     {
       use: '@gridsome/vue-remark',

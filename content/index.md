@@ -13,10 +13,14 @@ Secret Network helps improve the adoption and usability of privacy-first technol
 </simple-hero>
 
 
-<single-column>
+<slim-column>
 
-# Título
+<text-banner> 
 
-Tsolasj dlkajs dlkjsAL KJslkd js
+## Run a secret
 
-</single-column>
+Secret Network is a proof-of-stake network with a native coin, Secret (SCRT), that is used for staking, governance, and network fees. Community members stake SCRT in order to run Secret Nodes and receive a share of fees and network rewards. 
+
+</text-banner> 
+
+</slim-column>

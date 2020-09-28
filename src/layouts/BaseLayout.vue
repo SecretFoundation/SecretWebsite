@@ -1,13 +1,16 @@
 <template>
   <simple-layout>
-    <template #logo><g-link to="/"><g-image class="logo" src="../assets/flare-starter-logo--white.svg"></g-image></g-link></template>
+    <template #logo><g-link to="/"><g-image class="logo" src="../assets/secret-logo--white.svg"></g-image></g-link></template>
     <template #navigation>
-      <a href="#">Features</a>
-      <a href="#">User roles</a>
-      <a href="#">System</a>
+      <g-link to="/">Home</g-link>
+      <g-link to="/about">About</g-link>
+      <g-link to="/blog">Blog</g-link>
+      <g-link to="/wiki">Wiki</g-link>
+      <g-link to="/">Chat</g-link>
+      <g-link to="/">Forum</g-link>
+      <g-link to="/">Twitter</g-link>
     </template>
     <template #actions>
-      <a href="#">Sign in</a>
     </template>
     <base-page>
       <slot></slot>

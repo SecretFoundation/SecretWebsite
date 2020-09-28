@@ -5,6 +5,8 @@ import './sass/index.scss';
 
 import Flare from '@lkmx/flare/src/main';
 
+require('hind');
+
 export default function (Vue, { router, head, isClient }) {
   Vue.config.productionTip = false;
   Vue.use(Flare);

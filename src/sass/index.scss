@@ -1,6 +1,10 @@
 @import "tokens";
 @import "~@lkmx/flare/src/flare";
 
+html {
+  background: $primary-black-color;
+}
+
 h1 {
   letter-spacing: -2px;
 }

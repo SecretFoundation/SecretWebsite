@@ -2,15 +2,13 @@
 
 <template v-slot:cover>
 
-![dots](../src/assets/dots.jpg)
+![Secret Network](./img/hero_bg.png)
 
 </template>
 
-# Flare
+# Want to build a better internet? Solve for  privacy.
 
-## Sistema de diseño
-
-Flare es una filosofía de diseño digital, una librería que la implementa y una plantilla de inicio con buenas prácticas incluídas para permitir la creación instantanea de aplicaciones web de cualquier tipo.
+Secret Network helps improve the adoption and usability of privacy-first technologies.
 
 </simple-hero>
 

@@ -1,4 +1,4 @@
-# LKMX SSR Codebase
+# SCRT Website
 
 ## Pre-requisites
 

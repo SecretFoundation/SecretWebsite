@@ -6,6 +6,6 @@
 
 </template>
 
-# Blog
+# Ecosystem
 
 </simple-hero>

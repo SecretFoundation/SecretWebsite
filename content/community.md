@@ -6,6 +6,6 @@
 
 </template>
 
-# About
+# Community
 
 </simple-hero>

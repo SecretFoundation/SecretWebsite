@@ -6,6 +6,6 @@
 
 </template>
 
-# Wiki
+# Developers
 
 </simple-hero>

@@ -6,7 +6,7 @@
       <g-link to="/about">About</g-link>
       <g-link to="/committees/introduction">Committees</g-link>
       <g-link to="/community">Community</g-link>
-      <g-link to="/developers/introduction">Developers</g-link>
+      <g-link to="/developers/overview">Developers</g-link>
       <g-link to="/ecosystem">Ecosystem</g-link>
       <g-link to="/faq">FAQ</g-link>
     </template>

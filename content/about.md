@@ -1,5 +1,5 @@
 <slim-column>
 
-# Community
+# About
 
 </slim-column>

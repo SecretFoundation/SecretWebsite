@@ -81,6 +81,5 @@ Secret Network has its own consensus and provides privacy for smart contracts de
 
 _Interested in helping expand this guide? You can [contribute to this page!](https://github.com/SecretFoundation/SecretWiki)_
 
-[Network](/network.html) →
 
 </slim-column>

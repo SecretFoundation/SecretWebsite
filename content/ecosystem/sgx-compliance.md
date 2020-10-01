@@ -1,19 +1,4 @@
-<slim-column>
-
-
-
-*   Introduction
-    
-*   Ecosystem
-    
-    *   Validators
-        
-    *   [Secret Apps](/apps.html)
-    *   [Community Projects](/projects.html)
-    *   [SGX Compliance](/sgx.html)
-        *   [Psychz](/sgx.html#psychz)
-*   Foundation
-    
+<slim-column>    
 
 # SGX Compliance
 

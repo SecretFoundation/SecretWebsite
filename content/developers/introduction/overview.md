@@ -1,6 +1,6 @@
 <slim-column>
 
-# General Overview
+#  General Overview
 
 Secret Network is a blockchain protocol that enables decentralized applications to perform encrypted computations. The Rust code that enables applications to use private data is referred to as a “Secret Contract” on Secret Network. Secret Contracts are similar to smart contracts, such as those used with Ethereum. The key difference is that Secret Contracts can take encrypted inputs and produce encrypted outputs, without exposing any data while it is in-use. In addition, a contract state (its internal, persisted database), remains encrypted throughout executions.
 

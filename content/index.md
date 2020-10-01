@@ -2,13 +2,13 @@
 
 <template v-slot:cover>
 
-![Secret Network](./img/hero_bg.png)
+![Secret Network](./img/hero-color.svg)
 
 </template>
 
-# Want to build a better internet? Solve for  privacy.
+![secret-seal](./img/logo-seal.svg)
 
-Secret Network helps improve the adoption and usability of privacy-first technologies.
+## Welcome to Secret Network
 
 </simple-hero>
 
@@ -50,6 +50,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio viverra integer id
 
 Today, many of the world's biggest threats arise from overly centralized systems. We believe that building more sustainable decentralized systems can help us solve them.
 
+<<<<<<< HEAD
 <iframe width"100%" height"315" src"https://www.youtube.com/embed/c70BBVUCxxk" frameborder"0" allow"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </slim-column>
+=======
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/c70BBVUCxxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</text-banner>
+
+<style lang="scss">
+.simple-hero__content {
+   border: 4px solid #FFFFFF;
+   border-radius: 16px;
+   background: #1b1b1b;
+   padding: 68px;
+   position: relative;
+ }
+ img[alt="secret-seal"] {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+</style>
+>>>>>>> 83b04eb71015c9d5cc66eec6102be2bb702643ef

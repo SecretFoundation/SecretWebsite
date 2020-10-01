@@ -2,7 +2,6 @@
   <simple-layout>
     <template #logo><g-link to="/"><g-image class="logo" src="../assets/secret-logo--white.svg"></g-image></g-link></template>
     <template #navigation>
-      <g-link to="/">Home</g-link>
       <g-link to="/about">About</g-link>
       <g-link to="/committees/introduction">Committees</g-link>
       <g-link to="/community">Community</g-link>

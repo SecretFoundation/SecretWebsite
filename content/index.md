@@ -30,6 +30,8 @@ Read more about our blockchain-based, open-source protocol that lets anyone perf
 
 Read our documentation and learn how you can write Secret Contracts and start building.
 
+
+
 </template>
   
 <template v-slot:right>
@@ -42,7 +44,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio viverra integer id
 
 </triplet-columns>
 
-<text-banner>
+<slim-column>
 
 ## What’s the secret of Secret Network?
 
@@ -50,4 +52,4 @@ Today, many of the world's biggest threats arise from overly centralized systems
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/c70BBVUCxxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-</text-banner>
+</slim-column>

@@ -1,4 +1,12 @@
+<single-column>
+
+- [About the network] (/about/about-the-network)
+- [About the protocol] (/about/about-the-protocol)
+
+</single-column>
+
 <twin-columns>
+
 
 <template v-slot:left>
 
@@ -17,7 +25,7 @@ By supporting encrypted inputs, encrypted outputs, and encrypted state for smart
 
 <template v-slot:right>
 
-![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590530568883-BW7ICH451UPHH46V04EB/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIedjZT6_OBzi2ofH1EqNdNeCRxNMlbxs9807lIebBlcA/Secret+S+Coin+Black+BG+Full+3.png?format=750w)
+![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590530568883-BW7ICH451UPHH46V04EB/ke17ZwdGBToddI8pDm48kFQQgP34qnCpeHaeAOzTt7pZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIedjZT6_OBzi2ofH1EqNdNeCRxNMlbxs9807lIebBlcA/Secret+S+Coin+Black+BG+Full+3.png?format750w)
 
 </template>
 
@@ -35,7 +43,7 @@ The Secret Network blockchain is based on, [Cosmos SDK / Tendermint](https://cos
 
 **Secret Apps** - powered by “secret”, privacy-preserving smart contracts - are built with  [CosmWasm](https://www.cosmwasm.com/)  smart contracts that are written in the  [Rust programming language](https://www.rust-lang.org/)  and deployed on the Secret Network.
 
-![](https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590507982534-KIG6YCFYC8FVMSQ1S7TL/ke17ZwdGBToddI8pDm48kD6g6d_8IznzvwGE9lO5DQoUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dsuveDKvmgs7kHaxIlPEXDzKI0shwSTDU2gSZXHhUgOICjLISwBs8eEdxAxTptZAUg/Secret+S+Line+Art.png?format=750w)
+![](https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590507982534-KIG6YCFYC8FVMSQ1S7TL/ke17ZwdGBToddI8pDm48kD6g6d_8IznzvwGE9lO5DQoUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dsuveDKvmgs7kHaxIlPEXDzKI0shwSTDU2gSZXHhUgOICjLISwBs8eEdxAxTptZAUg/Secret+S+Line+Art.png?format750w)
 
 </template>
 
@@ -65,11 +73,11 @@ The work is **verified as correct**, and payment is released to the secret node 
 
 Secret Network is currently supported by over 30 active validators as well as a number of key contributors to the ecosystem developing network tooling, core protocol functionality, and more. A few key network contributors are featured below.
 
-<grid columns="4">
+<grid columns:4>
 
 <div>
 
-![Secret Foundation] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1597690136171-R6WAZXAIM1QXJICWWHD8/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmrMDYraMJMCQwFxTSOIP7LpSBEQpA-g5k6VTjWbSuadHJq0dp98hg5AZvIaPb3DoM/SF+Wordmark+Vert+Dark.png?format=500w)
+![Secret Foundation] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1597690136171-R6WAZXAIM1QXJICWWHD8/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmrMDYraMJMCQwFxTSOIP7LpSBEQpA-g5k6VTjWbSuadHJq0dp98hg5AZvIaPb3DoM/SF+Wordmark+Vert+Dark.png?format500w)
 
 [Secret Foundation](https://blog.scrt.network/introducing-secret-foundation/) 
 
@@ -77,7 +85,7 @@ Secret Network is currently supported by over 30 active validators as well as a 
 
 <div>
 
-![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1594304382888-CRT1OIMTDPSEW7VTWV9B/ke17ZwdGBToddI8pDm48kOyctPanBqSdf7WQMpY1FsRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyD4IQ_uEhoqbBUjTJFcqKvko9JlUzuVmtjr1UPhOA5qkTLSJODyitRxw8OQt1oetw/Enigma+Web+Logo.png?format=500w)
+![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1594304382888-CRT1OIMTDPSEW7VTWV9B/ke17ZwdGBToddI8pDm48kOyctPanBqSdf7WQMpY1FsRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyD4IQ_uEhoqbBUjTJFcqKvko9JlUzuVmtjr1UPhOA5qkTLSJODyitRxw8OQt1oetw/Enigma+Web+Logo.png?format500w)
 
  [Enigma](https://www.enigma.co/) 
 
@@ -85,7 +93,7 @@ Secret Network is currently supported by over 30 active validators as well as a 
 
 <div>
 
-![secretnodes.org] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590509410311-BZUYNYQRISGOB8MSQYP5/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/Secretnodes+Web+Logo.png?format=500w)
+![secretnodes.org] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590509410311-BZUYNYQRISGOB8MSQYP5/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/Secretnodes+Web+Logo.png?format500w)
 
 [Secretnodes.org](https://secretnodes.org/) 
 
@@ -93,7 +101,7 @@ Secret Network is currently supported by over 30 active validators as well as a 
 
 <div>
 
-![Chain of Secrets] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590583777640-YNP6YCPKAQHPB5JHFLTW/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/chain+of+secrets.png?format=500w)
+![Chain of Secrets] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590583777640-YNP6YCPKAQHPB5JHFLTW/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/chain+of+secrets.png?format500w)
 
 [Chain of Secrets](https://chainofsecrets.org/) 
 
@@ -143,7 +151,7 @@ You can find information on staking rewards calculations at:
 
 <template v-slot:left>
 
-![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590531633155-UU879O3V2CT21VI7NWAO/ke17ZwdGBToddI8pDm48kEVDKL8Ci0zHF7HaIkkhJG97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmWp-RWlGnWD_Yv5axNBE_gs8ikDU-tMxPW-fpeEWXlveWYwgiTSPXclqZveDUDi1I/security%2Bvalues.jpg?format=750w)
+![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590531633155-UU879O3V2CT21VI7NWAO/ke17ZwdGBToddI8pDm48kEVDKL8Ci0zHF7HaIkkhJG97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmWp-RWlGnWD_Yv5axNBE_gs8ikDU-tMxPW-fpeEWXlveWYwgiTSPXclqZveDUDi1I/security%2Bvalues.jpg?format750w)
 
 </template>
 
@@ -182,7 +190,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:right>
 
-![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590508092353-6SWWOAIWYWDK6GU1SPR6/ke17ZwdGBToddI8pDm48kLnfZvQ9iwxKU6eubAUQjId7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZu4EA4VkQXskbAiP4Lo2GV8HD7TW41NQmswmX4LjmCLoRwB-dUGsSquCnVTFQcaRg/Secret+Color+Hall.png?format=750w)
+![] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590508092353-6SWWOAIWYWDK6GU1SPR6/ke17ZwdGBToddI8pDm48kLnfZvQ9iwxKU6eubAUQjId7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UZu4EA4VkQXskbAiP4Lo2GV8HD7TW41NQmswmX4LjmCLoRwB-dUGsSquCnVTFQcaRg/Secret+Color+Hall.png?format750w)
 
 </template>
 

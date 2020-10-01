@@ -50,6 +50,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio viverra integer id
 
 Today, many of the world's biggest threats arise from overly centralized systems. We believe that building more sustainable decentralized systems can help us solve them.
 
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/c70BBVUCxxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width"100%" height"315" src"https://www.youtube.com/embed/c70BBVUCxxk" frameborder"0" allow"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </slim-column>

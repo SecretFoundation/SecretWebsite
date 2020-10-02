@@ -32,9 +32,7 @@ These are some ways you can join the Secret Network:
 
 <div class="card">
 
-### Community
-
-Read more about our blockchain-based, open-source protocol that lets anyone perform computations on encrypted data.
+### **Join the**<br>Community
 
 ![Community](./img/illustration_community.png)
 
@@ -46,9 +44,7 @@ Read more about our blockchain-based, open-source protocol that lets anyone perf
 
 <div class="card">
 
-### Developers
-
-Read our documentation and learn how you can write Secret Contracts and start building.
+### **Build a**<br> Secret App
 
 ![Secret App](./img/illustration_secret-app.png)
 
@@ -60,9 +56,7 @@ Read our documentation and learn how you can write Secret Contracts and start bu
 
 <div class="card">
 
-### Operators
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio viverra integer id nec mauris dui. Pellentesque turpis morbi vulputate.
+### **Become a**<br>Node Operator
 
 ![Node Operator](./img/illustration_node-operator.png)
 
@@ -76,9 +70,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio viverra integer id
 
 <style lang="scss">
 .simple-hero__content {
-  border: 4px solid #FFFFFF;
+  border: 4px solid;
   border-radius: 16px;
-  background: #1b1b1b;
   padding: 68px;
   position: relative;
   @media only screen and (max-width: 600px) {
@@ -132,11 +125,17 @@ body {
   position: relative;
   border-radius: 17px;
   padding: 25px 19px;
-  min-height: 550px;
+  min-height: 500px;
   @include respond-to("small and down") {
-     min-height: 520px;
+     min-height: 600px;
   }
-  & > p:nth-of-type(2) {
+  & > h3 {
+    font-size: rem(32px);
+    & > strong {
+      font-size: rem(22px);
+    }
+  }
+  & > p:nth-of-type(1) {
      position: absolute;
      width: 100%;
      right: 0;
@@ -150,6 +149,10 @@ body {
 }
 body {
   &[theme*=dark] {
+    .simple-hero__content {
+      border-color: white;
+      background: $primary-black-color;
+    }
     img {
       &[src*=color] {
         display: none;
@@ -163,6 +166,10 @@ body {
     }
   }
   &[theme*=light] {
+    .simple-hero__content {
+      border-color: $primary-black-color;
+      background: white;
+    }
     img {
       &[src*=color] {
         display: none;

@@ -92,6 +92,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
+    border: 1px solid white;
     &:not(:last-child) {
       margin-right: 5px;
     }
@@ -103,11 +104,11 @@
       background-color: $primary-black-color;
     }
     &--no-colored {
-      background-color: #F5BBB9;
-      opacity: 0.4;
+      background-color: gray;
+      border: 1px solid white;
     }
     &--colored {
-      background-color: #F5BBB9;
+      background-color: #1B46FF;
     }
   }
   .footer {

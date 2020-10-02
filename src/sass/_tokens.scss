@@ -1,16 +1,41 @@
-
-$text-color: white;
+$text-color: var(--theme-fg);
+$links-text-color: var(--theme-fg);
 
 $primary-black-color: #1B1B1B;
 
 $text-font: 'Hind', sans-serif;
 
-$links-text-color: $text-color;
+$header-background-color: transparent;
+$footer-background-color: transparent;
 
-$header-background-color: $primary-black-color;
-$footer-background-color: $primary-black-color;
+$header-height: 90px;
 
-$header-height: 90px !default;
-$header-nav-active-color: white;
-$header-nav-hover-color: #cccccc;
-$header-nav-visited-color: #cccccc;
+$header-text-color: var(--theme-fg);
+$header-nav-active-color: var(--theme-fg);
+$header-nav-hover-color: var(--theme-fg);
+$header-nav-visited-color: var(--theme-fg);
+
+$hero-headings-text-color: white;
+
+$footer-text-color: var(--theme-fg);
+
+$default-theme: dark;
+
+$themes: (
+  "dark": (
+    "fg": white,
+    "bg": $primary-black-color
+  ),
+  "light": (
+    "fg": $primary-black-color,
+    "bg": white
+  ),
+  "dark-colored": (
+    "fg": white,
+    "bg": $primary-black-color
+  ),
+  "light-colored": (
+    "fg": $primary-black-color,
+    "bg": white
+  )
+);

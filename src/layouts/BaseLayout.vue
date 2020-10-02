@@ -26,7 +26,7 @@
 
 <style>
   .logo {
-    height: 30px;
+    height: 58px;
     width: auto;
   }
 </style>

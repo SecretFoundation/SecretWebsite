@@ -2,7 +2,7 @@
 
 <template v-slot:cover>
 
-![Secret Network](./img/hero-color.svg)
+![hero-cover](./img/hero-color.svg)
 
 </template>
 
@@ -21,7 +21,6 @@
 
 Read more about our blockchain-based, open-source protocol that lets anyone perform computations on encrypted data.
 
-
 </template>
 
 <template v-slot:middle>
@@ -29,8 +28,6 @@ Read more about our blockchain-based, open-source protocol that lets anyone perf
 ### Developers
 
 Read our documentation and learn how you can write Secret Contracts and start building.
-
-
 
 </template>
   
@@ -46,17 +43,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio viverra integer id
 
 <slim-column>
 
+### About
 ## What’s the secret of Secret Network?
 
-Today, many of the world's biggest threats arise from overly centralized systems. We believe that building more sustainable decentralized systems can help us solve them.
+Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
 
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/c70BBVUCxxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+These are some ways you can join the Secret Network:
+
+
 
 </slim-column>
 
 </text-banner>
 
-<style lang="scss">
+<style>
 .simple-hero__content {
    border: 4px solid #FFFFFF;
    border-radius: 16px;
@@ -64,6 +64,23 @@ Today, many of the world's biggest threats arise from overly centralized systems
    padding: 68px;
    position: relative;
  }
+@media only screen and (max-width: 600px) {
+  .simple-hero__content {
+    padding: 45px 30px 20px 30px;
+    text-align: center;
+  }
+   img[alt="hero-cover"] {
+    object-position: left;
+  }  
+} 
+ img[alt="hero-cover"] {
+    object-position: bottom;
+ }
+@media only screen and (max-width: 600px) {
+   img[alt="hero-cover"] {
+    object-position: left;
+  }  
+} 
  img[alt="secret-seal"] {
     position: absolute;
     top: 0%;

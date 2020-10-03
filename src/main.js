@@ -10,4 +10,7 @@ require('hind');
 export default function (Vue, { router, head, isClient }) {
   Vue.config.productionTip = false;
   Vue.use(Flare);
+  if (process.isClient) {
+    Vue.$setDefaultTheme()
+  }
 }

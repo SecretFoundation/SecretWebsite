@@ -5,11 +5,14 @@ import './sass/index.scss';
 
 import Flare from '@lkmx/flare/src/main';
 
+import Faq from './components/Faq'
+
 require('hind');
 
 export default function (Vue, { router, head, isClient }) {
   Vue.config.productionTip = false;
   Vue.use(Flare);
+  Vue.component('Faq', Faq)
   if (process.isClient) {
     Vue.$setDefaultTheme()
   }

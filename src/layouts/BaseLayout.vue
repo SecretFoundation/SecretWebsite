@@ -28,10 +28,10 @@
             <p>This website has a secret, contact us at</p>
             <p><g-link to="mailto:info@secret.foundation">info@secret.foundation</g-link></p>
             <div class="custom-footer__social">
-              <g-link><g-image src="../assets/discord.svg"></g-image></g-link>
-              <g-link><g-image src="../assets/telegram.svg"></g-image></g-link>
-              <g-link><g-image src="../assets/twitter.svg"></g-image></g-link>
-              <g-link><g-image src="../assets/youtube.svg"></g-image></g-link>
+              <g-link to="https://discord.com/invite/SJK32GY"><g-image src="../assets/discord.svg"></g-image></g-link>
+              <g-link to="https://t.me/SCRTcommunity"><g-image src="../assets/telegram.svg"></g-image></g-link>
+              <g-link to="https://twitter.com/SecretNetwork"><g-image src="../assets/twitter.svg"></g-image></g-link>
+              <g-link to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw"><g-image src="../assets/youtube.svg"></g-image></g-link>
             </div>
           </div>
           <div class="custom-footer__links">

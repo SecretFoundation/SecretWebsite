@@ -1,4 +1,6 @@
+<ClientOnly>
 <hero></hero>
+</ClientOnly>
 
 <slim-column>
 

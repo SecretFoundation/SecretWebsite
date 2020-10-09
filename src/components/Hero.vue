@@ -6,7 +6,7 @@
     </div>
     <div class="hero__content">
       <div class="hero__title">
-        <g-image class="hero__logo" src="../../content/img/logo-seal.svg"></g-image>
+        <g-image class="hero__logo" src="../assets/logo-seal.svg"></g-image>
         <h2>Welcome to Secret Network</h2>
       </div>
     </div>
@@ -42,9 +42,11 @@ export default {
     }
   },
   created() {
-    const currentTheme = themes[this.getTheme()]
-    this.bg = currentTheme.bg
-    this.fg = currentTheme.fg
+    if (process.isClient) {
+      const currentTheme = themes[this.getTheme()]
+      this.bg = currentTheme.bg
+      this.fg = currentTheme.fg
+    }
   },
   methods: {
     applyMask(event) {
@@ -59,7 +61,9 @@ export default {
       const newTheme = themes[theme]
       this.bg = newTheme.bg
       this.fg = newTheme.fg
-      this.setTheme(theme)
+      if (process.isClient) {
+        this.setTheme(theme)
+      }
     },
     setTheme(theme) {
       const [body] = document.getElementsByTagName('body')

@@ -66,6 +66,8 @@ These are some ways you can join the Secret Network:
 
 </triplet-columns>
 
+<newsletter></newsletter>
+
 </text-banner>
 
 <style lang="scss">
@@ -74,19 +76,17 @@ These are some ways you can join the Secret Network:
   border-radius: 16px;
   padding: 68px;
   position: relative;
-  @media only screen and (max-width: 600px) {
-    .simple-hero__content {
-      padding: 45px 30px 20px 30px;
-      text-align: center;
-    }
-     img[alt="hero-cover"] {
-      object-position: left;
-    }
+  @include theme(dark dark-colored) {
+    border-color: white;
+    background: $primary-black-color;
   }
-  @media only screen and (max-width: 600px) {
-     img[alt="hero-cover"] {
-      object-position: left;
-    }
+  @include theme(light light-colored) {
+    border-color: $primary-black-color;
+    background: white;
+  }
+  @include respond-to("small and down") {
+    padding: 45px 30px 20px 30px;
+    text-align: center;
   }
   img[alt="secret-seal"] {
      position: absolute;
@@ -96,8 +96,27 @@ These are some ways you can join the Secret Network:
   }
 }
 .simple-hero__cover {
-  img[alt="hero-cover"] {
-     object-position: bottom;
+  img {
+    object-position: bottom;
+    display: none;
+    @include respond-to("small and down") {
+      object-position: left;
+    }
+    &[data-src*=black] {
+      @include theme(light) {
+        display: block;
+      }
+    }
+    &[data-src*=white] {
+      @include theme(dark) {
+        display: block;
+      }
+    }
+    &[data-src*=color] {
+      @include theme(light-colored dark-colored) {
+        display: block;
+      }
+    }
   }
 }
 img[alt="secret-seal"] {
@@ -107,105 +126,36 @@ img[alt="secret-seal"] {
   transform: translate(-50%, -50%);
 }
 .triplets-columns {
-  grid-row-gap: $gutter;
-}
-body {
-  &[theme*=dark] {
-     .card {
-        border: 3px solid white;
-     }
-  }
-  &[theme*=light] {
-     .card {
-        border: 3px solid black;
-     }
-  }
+  grid-row-gap: rem(34px);
+  padding-bottom: rem(100px);
 }
 .card {
   position: relative;
   border-radius: 17px;
   padding: 25px 19px;
-  min-height: 500px;
-  @include respond-to("small and down") {
-     min-height: 600px;
+  height: 100%;
+  @include theme(dark dark-colored) {
+    border: 3px solid white;
+  }
+  @include theme(light light-colored) {
+    border: 3px solid black;
   }
   & > h3 {
     font-size: rem(32px);
+    margin: 0;
     & > strong {
       font-size: rem(22px);
     }
   }
   & > p:nth-of-type(1) {
-     position: absolute;
-     width: 100%;
-     right: 0;
-     bottom: 0;
-     margin: 0;
-     & > img {
-        object-fit: cover;
-        width: 100%;
-     }
-  }
-}
-body {
-  &[theme*=dark] {
-    .simple-hero__content {
-      border-color: white;
-      background: $primary-black-color;
-    }
-    img {
-      &[src*=color] {
-        display: none;
-      }
-      &[src*=black] {
-        display: none;
-      }
-      &[src*=white] {
-        display: block;
-      }
-    }
-  }
-  &[theme*=light] {
-    .simple-hero__content {
-      border-color: $primary-black-color;
-      background: white;
-    }
-    img {
-      &[src*=color] {
-        display: none;
-      }
-      &[src*=black] {
-        display: block;
-      }
-      &[src*=white] {
-        display: none;
-      }
-    }
-  }
-  &[theme*=dark-colored] {
-    img {
-      &[src*=color] {
-        display: block;
-      }
-      &[src*=black] {
-        display: none;
-      }
-      &[src*=white] {
-        display: none;
-      }
-    }
-  }
-  &[theme*=light-colored] {
-    img {
-      &[src*=color] {
-        display: block;
-      }
-      &[src*=black] {
-        display: none;
-      }
-      &[src*=white] {
-        display: none;
-      }
+    width: calc(100% + 40px);
+    margin: 0;
+    position: relative;
+    left: -20px;
+    bottom: -34px;
+    & > img {
+       width: 100%;
+       object-position: bottom;
     }
   }
 }

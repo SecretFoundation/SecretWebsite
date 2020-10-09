@@ -1,24 +1,31 @@
-$text-color: var(--theme-fg);
-$links-text-color: var(--theme-fg);
-
 $primary-black-color: #1B1B1B;
+$primary-blue-color: #1F50FA;
 
 $text-font: 'Hind', sans-serif;
+$text-color: var(--theme-fg);
 
-$header-background-color: transparent;
-$footer-background-color: transparent;
+// Links
+$links-text-color: var(--theme-fg);
 
+// Header
 $header-height: 90px;
-
 $header-text-color: var(--theme-fg);
+$header-background-color: transparent;
 $header-nav-active-color: var(--theme-fg);
 $header-nav-hover-color: var(--theme-fg);
 $header-nav-visited-color: var(--theme-fg);
 
+// Hero
 $hero-headings-text-color: var(--theme-fg);
 
-$footer-text-color: var(--theme-fg);
+// Footer
+$footer-text-color: white;
+$footer-background-color: $primary-black-color;
+$footer-link-active-color: white;
+$footer-link-hover-color: white;
+$footer-link-visited-color: white;
 
+// Themes
 $default-theme: dark;
 
 $themes: (

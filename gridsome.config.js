@@ -23,7 +23,7 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-  siteName: 'Secret Netwrok',
+  siteName: 'Secret Network',
   plugins: [
     {
       use: '@gridsome/vue-remark',
@@ -49,5 +49,6 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type));
     });
+    config.resolve.alias.set('@images', '@/assets')
   },
 };

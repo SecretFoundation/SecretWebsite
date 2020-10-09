@@ -1,18 +1,4 @@
-<simple-hero>
-
-<template v-slot:cover>
-
-![hero-cover](./img/hero-color.svg)
-![hero-cover](./img/hero-black.svg)
-![hero-cover](./img/hero-white.svg)
-
-</template>
-
-![secret-seal](./img/logo-seal.svg)
-
-## Welcome to Secret Network
-
-</simple-hero>
+<hero></hero>
 
 <slim-column>
 
@@ -22,7 +8,6 @@
 Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
 
 These are some ways you can join the Secret Network:
-
 
 </slim-column>
 
@@ -71,60 +56,6 @@ These are some ways you can join the Secret Network:
 </text-banner>
 
 <style lang="scss">
-.simple-hero__content {
-  border: 4px solid;
-  border-radius: 16px;
-  padding: 68px;
-  position: relative;
-  @include theme(dark dark-colored) {
-    border-color: white;
-    background: $primary-black-color;
-  }
-  @include theme(light light-colored) {
-    border-color: $primary-black-color;
-    background: white;
-  }
-  @include respond-to("small and down") {
-    padding: 45px 30px 20px 30px;
-    text-align: center;
-  }
-  img[alt="secret-seal"] {
-     position: absolute;
-     top: 0%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-  }
-}
-.simple-hero__cover {
-  img {
-    object-position: bottom;
-    display: none;
-    @include respond-to("small and down") {
-      object-position: left;
-    }
-    &[data-src*=black] {
-      @include theme(light) {
-        display: block;
-      }
-    }
-    &[data-src*=white] {
-      @include theme(dark) {
-        display: block;
-      }
-    }
-    &[data-src*=color] {
-      @include theme(light-colored dark-colored) {
-        display: block;
-      }
-    }
-  }
-}
-img[alt="secret-seal"] {
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .triplets-columns {
   grid-row-gap: rem(34px);
   padding-bottom: rem(100px);

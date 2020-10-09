@@ -8,6 +8,7 @@ import Flare from '@lkmx/flare/src/main'
 import Faq from './components/Faq'
 import Newsletter from './components/Newsletter'
 import HomePageHero from './components/HomePageHero'
+import SimpleCard from './components/SimpleCard'
 
 require('hind');
 
@@ -18,6 +19,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Faq', Faq)
   Vue.component('Newsletter', Newsletter)
   Vue.component('HomePageHero', HomePageHero)
+  Vue.component('SimpleCard', SimpleCard)
 
   if (isClient) {
     Vue.$setDefaultTheme()

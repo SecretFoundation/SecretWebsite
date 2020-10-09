@@ -17,37 +17,37 @@ These are some ways you can join the Secret Network:
 
 <template v-slot:left>
 
-<div class="card">
+<simple-card to="/community">
 
 ### **Join the**<br>Community
 
 ![Community](./img/illustration_community.png)
 
-</div>
+</simple-card>
 
 </template>
 
 <template v-slot:middle>
 
-<div class="card">
+<simple-card to="/developers/introduction/overview">
 
 ### **Build a**<br> Secret App
 
 ![Secret App](./img/illustration_secret-app.png)
 
-</div>
+</simple-card>
 
 </template>
   
 <template v-slot:right>
 
-<div class="card">
+<simple-card to="/developers/node-operators/validators/validators">
 
 ### **Become a**<br>Node Operator
 
 ![Node Operator](./img/illustration_node-operator.png)
 
-</div>
+</simple-card>
 
 </template>
 
@@ -59,35 +59,5 @@ These are some ways you can join the Secret Network:
 .triplets-columns {
   grid-row-gap: rem(34px);
   padding-bottom: rem(100px);
-}
-.card {
-  position: relative;
-  border-radius: 17px;
-  padding: 25px 19px;
-  height: 100%;
-  @include theme(dark dark-colored) {
-    border: 3px solid white;
-  }
-  @include theme(light light-colored) {
-    border: 3px solid black;
-  }
-  & > h3 {
-    font-size: rem(32px);
-    margin: 0;
-    & > strong {
-      font-size: rem(22px);
-    }
-  }
-  & > p:nth-of-type(1) {
-    width: calc(100% + 40px);
-    margin: 0;
-    position: relative;
-    left: -20px;
-    bottom: -34px;
-    & > img {
-       width: 100%;
-       object-position: bottom;
-    }
-  }
 }
 </style>

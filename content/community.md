@@ -1,3 +1,13 @@
+---
+layout: ~/layouts/MainPageLayout
+---
+
+<template v-slot:title>
+
+## Community
+
+</template>
+
 <slim-column>
 
 # Join the Secret Network community.

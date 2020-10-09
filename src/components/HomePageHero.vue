@@ -42,11 +42,13 @@ export default {
     }
   },
   created() {
-    if (process.isClient) {
-      const currentTheme = themes[this.getTheme()]
-      this.bg = currentTheme.bg
-      this.fg = currentTheme.fg
-    }
+    this.$root.$on('theme', (theme) => {
+      this.setTheme(theme)
+      this.applyTheme(theme)
+    });
+    const currentTheme = themes[this.getTheme()]
+    this.bg = currentTheme.bg
+    this.fg = currentTheme.fg
   },
   methods: {
     applyMask(event) {
@@ -58,12 +60,13 @@ export default {
       const themeNames = Object.keys(themes)
       this.themeIndex = this.themeIndex + 1 === 4 ? 0 : this.themeIndex + 1
       const theme = themeNames[this.themeIndex]
+      this.applyTheme(theme)
+    },
+    applyTheme(theme) {
       const newTheme = themes[theme]
       this.bg = newTheme.bg
       this.fg = newTheme.fg
-      if (process.isClient) {
-        this.setTheme(theme)
-      }
+      this.setTheme(theme)
     },
     setTheme(theme) {
       const [body] = document.getElementsByTagName('body')

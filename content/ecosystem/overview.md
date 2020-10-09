@@ -1,3 +1,13 @@
+---
+layout: ~/layouts/MainPageLayout
+---
+
+<template v-slot:title>
+
+## Ecosystem
+
+</template>
+
 <slim-column>
 
 - [Comunity proyects] (/ecosystem/community-projects)

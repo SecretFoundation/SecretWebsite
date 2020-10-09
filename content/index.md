@@ -1,5 +1,5 @@
 <ClientOnly>
-<hero></hero>
+<home-page-hero></home-page-hero>
 </ClientOnly>
 
 <slim-column>

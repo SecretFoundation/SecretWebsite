@@ -1,12 +1,14 @@
-<single-column>
+---
+layout: ~/layouts/MainPageLayout
+---
 
-- [About the network] (/about/about-the-network)
-- [About the protocol] (/about/about-the-protocol)
+<template v-slot:title>
 
-</single-column>
+## About Secret Network
+
+</template>
 
 <twin-columns>
-
 
 <template v-slot:left>
 

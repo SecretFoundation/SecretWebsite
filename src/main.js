@@ -7,7 +7,7 @@ import Flare from '@lkmx/flare/src/main'
 
 import Faq from './components/Faq'
 import Newsletter from './components/Newsletter'
-import Hero from './components/Hero'
+import HomePageHero from './components/HomePageHero'
 
 require('hind');
 
@@ -17,7 +17,7 @@ export default function (Vue, { router, head, isClient }) {
 
   Vue.component('Faq', Faq)
   Vue.component('Newsletter', Newsletter)
-  Vue.component('Hero', Hero)
+  Vue.component('HomePageHero', HomePageHero)
 
   if (isClient) {
     Vue.$setDefaultTheme()

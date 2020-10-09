@@ -53,8 +53,6 @@ These are some ways you can join the Secret Network:
 
 </triplet-columns>
 
-<newsletter></newsletter>
-
 </text-banner>
 
 <style lang="scss">

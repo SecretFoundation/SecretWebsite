@@ -18,6 +18,7 @@
     </template>
     <base-page>
       <slot></slot>
+      <newsletter></newsletter>
     </base-page>
     <template #footer>
       <single-column class="custom-footer">

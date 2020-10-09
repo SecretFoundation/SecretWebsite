@@ -13,9 +13,6 @@
 
 <style lang="scss" scoped>
 .newsletter {
-  background-image: url('../assets/newsletter-black.svg');
-  background-repeat: no-repeat;
-  background-position: left top;
   background-color: $primary-black-color;
 
   // Override default text color for this component only

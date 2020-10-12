@@ -20,8 +20,21 @@
   border: 3px solid;
   border-radius: 22px;
 
-  & > :not(img):not(&__header):not(&__footer) {
+  & > :not(p):not(&__header):not(&__footer) {
     padding: 0 $gutter;
+  }
+
+  p {
+    img {
+      width: 100%;
+      object-fit: cover;
+      padding-bottom: $gutter;
+
+      @at-root p {
+        height: 100%;
+        margin: 0;
+      }
+    }
   }
 
   @include theme(dark dark-colored) {

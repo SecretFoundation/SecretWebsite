@@ -1,21 +1,19 @@
 <template>
-  <ClientOnly>
-    <div class="card">
-      <div class="card__header">
-        <slot name="header"></slot>
-        <separator small space-small/>
-      </div>
-      <slot name="default"></slot>
-      <div class="card__footer">
-        <slot name="footer"></slot>
-      </div>
+  <div class="card">
+    <div class="card__header">
+      <slot name="header"></slot>
+      <separator small space-small/>
     </div>
-  </ClientOnly>
+    <slot name="default"></slot>
+    <div class="card__footer">
+      <slot name="footer"></slot>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 .card {
-  position: relative;
+  display: grid;
   width: 100%;
   max-width: rem(378px);
   height: 100%;
@@ -50,10 +48,8 @@
   }
 
   &__footer {
-    position: absolute;
-    bottom: $gutter;
-    left: $gutter;
-    width: calc(100% - #{$gutter * 2});
+    align-self: end;
+    padding: 0 $gutter $gutter;
 
     p {
       margin: 0;

@@ -25,6 +25,6 @@ query ($id: ID!) {
 
 <style lang="scss">
   .column {
-    padding: rem($gutter-large);
+    padding: rem($gutter-xlarge);
   }
 </style>

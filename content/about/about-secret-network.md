@@ -26,7 +26,7 @@ By supporting encrypted inputs, encrypted outputs, and encrypted state for smart
 
 <template v-slot:header>
 
-#### Decentralized Finance
+#### Decentralized<br>Finance
 
 </template>
 
@@ -38,7 +38,7 @@ Support for privacy-preserving asset transfers, lending, and more.
 
 <template v-slot:header>
 
-#### Data Sharing
+#### Data<br>Sharing
 
 </template>
 
@@ -50,7 +50,7 @@ Sharing and monetizing data while keeping it secure.
 
 <template v-slot:header>
 
-#### Machine Learning
+#### Machine<br>Learning
 
 </template>
 
@@ -62,7 +62,7 @@ Discovering powerful insights while protecting underlying data.
 
 <template v-slot:header>
 
-#### Healthcare Industry
+#### Healthcare<br>Industry
 
 </template>
 
@@ -74,7 +74,7 @@ Allowing research over encrypted data, driving innovation.
 
 <template v-slot:header>
 
-#### Gaming Industry
+#### Gaming<br>Industry
 
 </template>
 

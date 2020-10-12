@@ -4,7 +4,7 @@ layout: ~/layouts/MainPageLayout
 
 <template v-slot:title>
 
-## Ecosystem
+## Secret Network Ecosystem
 
 </template>
 
@@ -56,20 +56,209 @@ A few key network contributors are featured below.
 
 ### Exchange and Wallet Support
 
-<separator small/>
+<separator small space-large/>
 
 Secret Network is secured by the SCRT coin (Secret), which is used for fees, staking, and governance. You can trade Secret (SCRT) on Binance. See also: CoinMarketCap and CoinGecko. Multiple wallets already provide support for SCRT transactions and staking:
 
+</slim-column>
+
+<card-holder>
+
+<card>
+
+<template v-slot:header>
+
+#### Ledger Nano S and Ledger Nano X
+
+</template>
+
+<template v-slot:footer>
+
+[See documentation]()
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Keplr<br>&nbsp;
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website]()
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Math<br>Wallet
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website]()
+
+</template>
+
+</card>
+
+</card-holder>
+
+<slim-column>
+
 ### Block Explorers and Staking
 
-<separator small/>
+<separator small space-large/>
 
 Use the following Secret Network block explorers for staking, governance proposals, viewing transactions and active validators, and much more:
 
+
+</slim-column>
+
+<card-holder columns="2">
+
+<card>
+
+<template v-slot:header>
+
+#### Puzzle by<br>Secretnodes.org
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website]()
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Cashmaney Secret<br>Network Explorer
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website]()
+
+</template>
+
+</card>
+
+</card-holder>
+
+<slim-column>
+
 You can find information on staking rewards calculations at:
+
+</slim-column>
+
+<card-holder columns="2">
+
+<card>
+
+<template v-slot:header>
+
+#### Stake or Die!
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website]()
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Staking Rewards
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website]()
+
+</template>
+
+</card>
+
+</card-holder>
+
+<slim-column>
 
 ### Related Content
 
-<separator small/>
+<separator small space-large/>
 
 </slim-column>
+
+<card-holder>
+
+<card>
+
+<template v-slot:header>
+
+#### Community Projects
+
+</template>
+
+<template v-slot:footer>
+
+[See projects]()
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### SGX Compliance
+
+</template>
+
+<template v-slot:footer>
+
+[See documentation]()
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Secret Apps
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website]()
+
+</template>
+
+</card>
+
+</card-holder>

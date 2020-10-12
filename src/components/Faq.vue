@@ -20,8 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$chevron-width: 10px;
-$chevron-height: 6px;
+$-chevron-width: 10px;
+$-chevron-height: 6px;
 
 .faq {
   cursor: pointer;
@@ -33,15 +33,21 @@ $chevron-height: 6px;
     position: relative;
 
     &:after {
-      background-image: url('../assets/chevron-down.svg');
-      background-size: $chevron-width $chevron-height;
-      background-repeat: no-repeat;
-      content: "";
       position: absolute;
-      top: calc(100% / 2 - (#{$chevron-height} / 2));
+      content: "";
+      background-size: $-chevron-width $-chevron-height;
+      background-repeat: no-repeat;
+      top: calc(100% / 2 - (#{$-chevron-height} / 2));
       right: 0;
-      width: $chevron-width;
-      height: $chevron-height;
+      width: $-chevron-width;
+      height: $-chevron-height;
+
+      @include theme(dark dark-colored) {
+        background-image: url('../assets/chevron-down-dark.svg');
+      }
+      @include theme(light light-colored) {
+        background-image: url('../assets/chevron-down-light.svg');
+      }
     }
   }
   p {
@@ -50,28 +56,16 @@ $chevron-height: 6px;
   &__expanded {
     h3 {
       &:after {
-        background-image: url('../assets/chevron-up.svg');
+        @include theme(dark dark-colored) {
+          background-image: url('../assets/chevron-down-light.svg');
+        }
+        @include theme(light light-colored) {
+          background-image: url('../assets/chevron-down-dark.svg');
+        }
       }
     }
     p {
       display: block;
-    }
-  }
-}
-
-body {
-  &[theme*=dark] {
-    h3 {
-      &:after {
-        background-image: url('../assets/chevron-down-white.svg');
-      }
-    }
-    .faq__expanded {
-      h3 {
-        &:after {
-          background-image: url('../assets/chevron-up-white.svg');
-        }
-      }
     }
   }
 }

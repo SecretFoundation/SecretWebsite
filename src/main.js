@@ -9,6 +9,7 @@ import Faq from './components/Faq'
 import Newsletter from './components/Newsletter'
 import HomePageHero from './components/HomePageHero'
 import SimpleCard from './components/SimpleCard'
+import Separator from './components/Separator'
 
 require('hind');
 
@@ -20,6 +21,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Newsletter', Newsletter)
   Vue.component('HomePageHero', HomePageHero)
   Vue.component('SimpleCard', SimpleCard)
+  Vue.component('Separator', Separator)
 
   if (isClient) {
     Vue.$setDefaultTheme()

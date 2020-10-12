@@ -7,11 +7,17 @@
 
 <style lang="scss">
 .separator {
-
   &[small] {
     img {
       max-width: rem(200px);
     }
+  }
+
+  &[space-small] {
+    margin-bottom: $gutter;
+  }
+  &[space-large] {
+    margin-bottom: $gutter-large;
   }
 
   img {

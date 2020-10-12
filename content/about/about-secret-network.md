@@ -12,7 +12,7 @@ layout: ~/layouts/MainPageLayout
 
 ### What is Secret Network?
 
-<separator small/>
+<separator space-large small/>
 
 Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains
 
@@ -20,11 +20,91 @@ By supporting encrypted inputs, encrypted outputs, and encrypted state for smart
 
 </slim-column>
 
+<card-holder>
+
+<card>
+
+<template v-slot:header>
+
+#### Decentralized Finance
+
+</template>
+
+Support for privacy-preserving asset transfers, lending, and more.
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Data Sharing
+
+</template>
+
+Sharing and monetizing data while keeping it secure.
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Machine Learning
+
+</template>
+
+Discovering powerful insights while protecting underlying data.
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Healthcare Industry
+
+</template>
+
+Allowing research over encrypted data, driving innovation.
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Gaming Industry
+
+</template>
+
+Enabling more open and more usable gaming experiences.
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Want to know some other secret keys?
+
+</template>
+
+<template v-slot:footer>
+
+[Go ahead and read de FAQ](#commonly-asked-questions)
+
+</template>
+
+</card>
+
+</card-holder>
+
 <slim-column>
 
 ### How Secret Network Operates
 
-<separator small/>
+<separator space-large small/>
 
 The Secret Network is a decentralized network of computers (secret nodes) that utilize trusted execution environments (TEEs) to enable secure, private computation over encrypted data. TEEs function like a “black box” for data processing, and they are utilized in all types of everyday platforms such as smartphones and video game consoles.
 
@@ -38,7 +118,7 @@ Secret Apps - powered by “secret”, privacy-preserving smart contracts - are 
 
 ### Network Flow
 
-<separator small/>
+<separator space-large small/>
 
 <grid columns="2">
 
@@ -83,7 +163,7 @@ The work is verified as correct, and payment is released to the secret node that
 
 ### About Our Values
 
-<separator small/>
+<separator space-large small/>
 
 The Secret Network community is dedicated to building privacy-first solutions and applications for the benefit of all, because we believe that privacy is a public good. Here are our primary values.
 
@@ -99,13 +179,13 @@ We prioritize adoption - applications that will make the greatest difference for
 
 Individuals have a right to their own privacy, their own self-expression, and their own data.
 
-<separator />
+<separator space-large />
 
 </slim-column>
 
 <slim-column>
 
-# Commonly Asked Questions
+## Commonly Asked Questions
 
 <faq>
 
@@ -117,7 +197,7 @@ The Secret Network is a decentralized network of computers (which we call "secre
 
 <faq>
 
-###  What's so special about Secret Network?
+###  What's so special about Secret<br>Network?
 
 Secret Network combines the best features of decentralized, open-source networks and blockchains with the benefits of data privacy and improved usability. These improvements are critical for achieving mass adoption.
 
@@ -135,7 +215,7 @@ A secret is something that you don’t want to share with _everyone_, but still 
 
 <faq>
 
-###  What are secret contracts and Secret Apps?
+###  What are secret contracts and<br>Secret Apps?
 
 "Secret contracts" are _privacy-preserving_ smart contracts built on Secret Network. Smart contracts (in this context) are essentially self-executing pieces of code that are managed on a blockchain. Secret contracts improve on regular smart contracts in that they not only solve for _correctness_, but also for _data privacy_. Secret contracts are written in the [Rust programming language](https://www.rust-lang.org) . Secret Apps utilize the capabilities of secret contracts to enable unique use cases that empower users and increase opportunities for growth and impact.
 
@@ -192,7 +272,7 @@ Another utility for SCRT is governance of the network. Secret nodes can create a
 
 <faq>
 
-###  What are Trusted Execution Environments, and why do we use them?
+###  What are Trusted Execution<br>Environments, and why do we use<br>them?
 
 [Trusted Execution Environments](https://en.wikipedia.org/wiki/Trusted_execution_environment) (TEEs) are special enclaves inside a computer that function like a "black box", allowing computations to occur _confidentially_ inside of them. They are utilized in a broad range of everyday hardware, including the fingerprint readers in smartphones. Secret nodes in the network use these secure enclaves to protect the data used by secret contracts.
 
@@ -202,7 +282,7 @@ While our community is constantly exploring other innovative privacy solutions (
 
 <faq>
 
-###  What is the relationship between Enigma and Secret Network?
+###  What is the relationship between<br>Enigma and Secret Network?
 
 [Enigma MPC](https://www.enigma.co) is a development company that is one of the core contributors to [Secret Network](https://scrt.network) . Their work is critical to the Secret ecosystem as they contribute to both protocol-level functionality (such as [secret contracts](https://blog.scrt.network/secret-contracts-update-milestone-3-of-3-is-complete/) ) and key applications for the network. There are currently dozens of companies and individual contributors currently supporting Secret Network and its ecosystem, whether it is through development work, node operation, education, or many other means!
 
@@ -210,7 +290,7 @@ While our community is constantly exploring other innovative privacy solutions (
 
 <faq>
 
-###  What is the relationship between ENG and Secret Network?
+###  What is the relationship between<br>ENG and Secret Network?
 
 Enigma is also the name of an ERC20 token (known as ENG) that was issued in 2017. At this moment, there are no entities developing technologies or networks based on the utilization of ENG. There is an ongoing community-organized swap between ENG and SCRT (the native coin of Secret Network) that is expected to last until at least the end of 2020. The swap is 1:1 between ENG and SCRT. More information can be found on these other sites:
 
@@ -226,7 +306,7 @@ Enigma is also the name of an ERC20 token (known as ENG) that was issued in 2017
 
 <faq>
 
-###  What is Cosmos, and why are you using their technologies?
+###  What is Cosmos, and why are you<br>using their technologies?
 
 [Cosmos](https://cosmos.network/) represents a standard approach to developing scalable and interoperable blockchain applications. We believe the Cosmos SDK, Tendermint and Inter-Blockchain Communication Protocol (IBC) are groundbreaking since they are looking ahead to a future of many interconnected, app-specific blockchains. We're excited to see how Secret Network can bring more privacy solutions to the Cosmos ecosystem. [Learn more about this on our blog.](https://blog.scrt.network/secret-hub/)
 
@@ -234,7 +314,7 @@ Enigma is also the name of an ERC20 token (known as ENG) that was issued in 2017
 
 <faq>
 
-###  Is Secret Network a "Layer One" or "Layer Two" solution?
+###  Is Secret Network a "Layer One" or<br>"Layer Two" solution?
 
 Secret Network has its own consensus and provides privacy for smart contracts deployed on the network, without Secret Network needing to interoperate with any other blockchain. We have often referred to this as "blockchain independence", but based on this description, others would call Secret Network a "Layer One" blockchain. However, part of our vision has always been bringing privacy to _every_ blockchain. This means our community is continuing to explore key "Layer Two" functionality for Secret Network, such as by utilizing [IBC](https://cosmos.network/ibc) / Cosmos interoperability, building an Ethereum bridge, or other means.
 

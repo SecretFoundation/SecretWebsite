@@ -43,10 +43,10 @@ $-chevron-height: 6px;
       height: $-chevron-height;
 
       @include theme(dark dark-colored) {
-        background-image: url('../assets/chevron-down-dark.svg');
+        background-image: url('../assets/chevron-down-light.svg');
       }
       @include theme(light light-colored) {
-        background-image: url('../assets/chevron-down-light.svg');
+        background-image: url('../assets/chevron-down-dark.svg');
       }
     }
   }
@@ -57,10 +57,10 @@ $-chevron-height: 6px;
     h3 {
       &:after {
         @include theme(dark dark-colored) {
-          background-image: url('../assets/chevron-down-light.svg');
+          background-image: url('../assets/chevron-up-light.svg');
         }
         @include theme(light light-colored) {
-          background-image: url('../assets/chevron-down-dark.svg');
+          background-image: url('../assets/chevron-up-dark.svg');
         }
       }
     }

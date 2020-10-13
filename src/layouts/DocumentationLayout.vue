@@ -1,6 +1,6 @@
 <template>
   <single-column class="documentation">
-    <div class="documentation__index">
+    <slim-column class="documentation__sidebar">
       <ul>
         <li>
           <a href="/developers/introduction/what-is-secret-network">What is secret network</a>
@@ -108,16 +108,17 @@
           <a href="/developers/protocol/intel-sgx">Intel</a>
         </li>
       </ul>
-    </div>
-    <div class="documentation__body">
+    </slim-column>
+    <slim-column class="documentation__body">
       <slot name="default"></slot>
-    </div>
+    </slim-column>
   </single-column>
 </template>
 
 <style lang="scss" scoped>
 .documentation {
   display: grid;
+  justify-content: space-between;
 
   @include respond-to("large and up") {
     grid-template-columns: rem(250px) 1fr;
@@ -127,8 +128,13 @@
     grid-auto-flow: row;
   }
 
-  &__index {
-    margin-top: $gutter-xlarge;
+  &__sidebar {
+    @include respond-to("large and up") {
+      position: sticky;
+      top: 0;
+      overflow: auto;
+      height: min-content;
+    }
   }
 }
 </style>

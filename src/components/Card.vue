@@ -4,12 +4,29 @@
       <slot name="header"></slot>
       <separator small space-small/>
     </div>
-    <slot name="default"></slot>
+    <div class="card__body" ref="body" :class="{ 'card__body--unwrapped': unwrapped }">
+      <slot name="default"></slot>
+    </div>
     <div class="card__footer">
       <slot name="footer"></slot>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      unwrapped: false
+    }
+  },
+  mounted() {
+    const body = this.$refs.body
+    const img = body.querySelector('img')
+    this.unwrapped = img != null
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .card {
@@ -19,23 +36,6 @@
   height: 100%;
   border: 3px solid;
   border-radius: 22px;
-
-  & > :not(p):not(&__header):not(&__footer) {
-    padding: 0 $gutter;
-  }
-
-  p {
-    img {
-      width: 100%;
-      object-fit: cover;
-      padding-bottom: $gutter;
-
-      @at-root p {
-        height: 100%;
-        margin: 0;
-      }
-    }
-  }
 
   @include theme(dark dark-colored) {
     border-color: white;
@@ -58,6 +58,29 @@
 
   &__header {
     padding: $gutter $gutter 0;
+  }
+
+  &__body {
+    height: 100%;
+    padding-bottom: $gutter;
+
+    & > * {
+      padding: 0 $gutter;
+    }
+    &--unwrapped {
+      & > * {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    p {
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__footer {

@@ -4,7 +4,7 @@ layout: ~/layouts/MainPageLayout
 
 <template v-slot:title>
 
-## Community
+## Secret Network Community
 
 </template>
 
@@ -26,7 +26,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:footer>
 
-[Join the conversation]()
+[Join the conversation](/committees/about-secret-foundation)
 
 </template>
 
@@ -44,7 +44,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:footer>
 
-[Join a Committee]()
+[Join a Committee](/committees)
 
 </template>
 

@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Network Upgrade Instructions from `secret-1` to `secret-2`
 
@@ -179,7 +181,3 @@ If after a few hours the Enigma team announces on the chat that the upgrade fail
     
 2.  Wait for 67% of voting power to come back online.
     
-
-
-
-</slim-column>

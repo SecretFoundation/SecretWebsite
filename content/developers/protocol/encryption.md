@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Encryption
 
@@ -757,7 +758,3 @@ Our current schema can verify that when reading from a field in storage, the val
 -------------------------------------------------------
 
 E.g. a dev writes a contract with 2 functions, the first one always outputs 3 events and the second one always outputs 4 events. By counting the number of output events an attacker can know which function was invoked. Also applies with deposits, callbacks and transfers.
-
-
-
-</slim-column>

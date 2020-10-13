@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Backup a Validator
 
@@ -26,7 +28,3 @@ If you are using the software sign (which is the default signing method of tende
 The easiest way is to backup the whole config folder.
 
 Or you can use hardware to manage your Tendermint Key much more safely, such as [YubiHSM2](https://developers.yubico.com/YubiHSM2/) .
-
-
-
-</slim-column>

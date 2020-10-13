@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Components
 
@@ -54,7 +55,3 @@ The Secret Network client library is an API included in decentralized applicatio
 -----------------------------------
 
 The bootstrap node is the first node to join the network. It is identical to other nodes, but is responsible for certain initialization processes.
-
-
-
-</slim-column>

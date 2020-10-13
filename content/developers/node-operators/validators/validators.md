@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Validators
 
@@ -13,5 +15,3 @@ It is possible for anyone who holds SCRT to become a Secret Network validator or
 1.  [Install SGX](/validators-and-full-nodes/setup-sgx.html)
 2.  [Run a full node](/validators-and-full-nodes/run-full-node-mainnet.html)
 3.  [Be a validator](/validators-and-full-nodes/join-validator-mainnet.html)
-
-</slim-column>

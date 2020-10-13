@@ -1,6 +1,9 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 #  Network Architecture
+
 Note: This section is a work-in-progress, and refers to the architecture of the network where Secret Contracts have been implemented (not the current, mainnet network, which supports transactions, staking, and governance only).
 
 The Secret Network facilitates the execution of code (Secret Contracts) with strong correctness and privacy guarantees. In Secret Contracts, data itself is concealed from the nodes that execute computations (also known as “private computation”). This allows developers to include sensitive data in their smart contracts without moving off-chain to centralized (and less secure) systems, thus allowing for truly private and scalable decentralized applications. 
@@ -39,6 +42,3 @@ The Secret Network’s compute module currently requires that validators run nod
 Diagram: Trusted and Untrusted aspects of Secret Network code. compute enables cosmwasm with encryption to be executed within the trusted component of the enclave.
 
 Nodes join the network through a remote attestation process that is outlined in the section about  [new node registration](https://build.scrt.network/protocol/encryption-specs.html# new-node-registration) . In short, the network shares a true random seed accessed through this registration process. This seed is generated inside the Trusted Execution Environment of the bootstrap node, which is identical to other nodes, but is the first node that joins the network. All other keys are derived from this seed in a CSPRNG way. The nodes use asymmetric encryption for agreeing non-interactively on shared symmetric keys with the users, then, symmetric encryption is used for encrypting and decrypting input and output data from users, as well as the internal contract state. For more information on the cryptography used within Secret Network, review our  [encryption specs](https://build.scrt.network/protocol/encryption-specs.html).
-
-
-</slim-column>

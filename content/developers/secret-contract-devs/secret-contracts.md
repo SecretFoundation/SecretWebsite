@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Secret Contracts
 
@@ -134,7 +136,3 @@ Auto-generate msg schemas (when changed):
 cargo schema
 
 ```
-
-
-
-</slim-column>

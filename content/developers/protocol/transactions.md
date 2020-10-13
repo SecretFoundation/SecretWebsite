@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Transactions
 
@@ -17,7 +18,3 @@
 7.  The output of the computation is encrypted (via pseudo-randomness determined by the seed - to ensure deterministic consensus across all nodes) and returned to the untrusted part of the Validator node. An AES-256-GCM encryption key is never used twice, but new keys are derived in a deterministic way from a seed.
 8.  The validator who is the block proposer broadcasts the encrypted output.
 9.  Other validators compare their result to that of the block proposer. If more than two-thirds of the current voting power agree on the result, the proposed block (and all transactions within it) is included in the Secret Network.
-
-
-
-</slim-column>

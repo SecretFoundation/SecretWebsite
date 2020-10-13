@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Using SCRT with Ledger
 
@@ -112,7 +114,3 @@ secretcli tx distribution withdraw-all-rewards --from <account name> --gas auto 
 secretcli tx gov vote <proposal-id> <vote> --from <account name> --ledger
 
 ```
-
-
-
-</slim-column>

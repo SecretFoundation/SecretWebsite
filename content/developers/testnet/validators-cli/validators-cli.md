@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Installing the CLI & Creating a new address
 
@@ -36,5 +38,3 @@ https://github.com/enigmampc/SecretNetwork/releases/download/v0.8.1/secretcli.ex
 ```
 
 See more details on how to use the CLI [here](https://github.com/enigmampc/SecretNetwork/blob/master/docs/secretcli.md)
-
-</slim-column>

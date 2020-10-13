@@ -1,8 +1,8 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Intel SGX
-
 
 # Overview
 -----------------------
@@ -42,7 +42,3 @@ The attestation process consists of seven stages, encompassing several actors, n
 In short, the seven stages of remote attestation comprise of making a remote attestation request (stage 1), performing a local attestation (stages 2-3), converting the local attestation to a remote attestation (stages 4-5), returning the remote attestation to the challenger (stage 6) and verifying the remote attestation (stage 7) \[[1](https://courses.cs.ut.ee/MTAT.07.022/2017_spring/uploads/Main/hiie-report-s16-17.pdf) \]\[[3](https://software.intel.com/content/www/us/en/develop/download/intel-sgx-intel-epid-provisioning-and-attestation-services.html) \].
 
 Intel Remote Attestation also includes the establishment of a secure communication session between the service provider and the application. This is analogous to how the familiar TLS handshake includes both authentication and session establishment.
-
-
-
-</slim-column>

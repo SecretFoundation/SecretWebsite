@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Migrate a Validator
 
@@ -96,7 +98,3 @@ On the new machine:
 sudo systemctl start secret-node
 
 ```
-
-
-
-</slim-column>

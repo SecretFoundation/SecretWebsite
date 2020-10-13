@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # SGX-enabled Secret Node in Docker
 
@@ -202,7 +203,3 @@ You can see the logs of the node by checking the docker logs of the node contain
 If you want to debug/do other stuff with your node you can exec into the actual node using
 
 `docker exec -it secret-node_node_1 /bin/bash`
-
-
-
-</slim-column>

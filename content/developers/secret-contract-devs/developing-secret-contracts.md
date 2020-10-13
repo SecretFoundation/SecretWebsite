@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Developing Secret Contracts
 
@@ -216,7 +217,3 @@ Secret Contacts are based on CosmWasm v0.10, but in order to preserve privacy, t
 *   SGX memory limits (30 MiB total, 12 MiB per contract vs 32 MiB per contract)
 *   We charge gas for memory allocations, vanilla CosmWasm don't
 *   `SecretJS` has a new function - `GenerateNewSeed` to help apps to get a secure 32 byte random number
-
-
-
-</slim-column>

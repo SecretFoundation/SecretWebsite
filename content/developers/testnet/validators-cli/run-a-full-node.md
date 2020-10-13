@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # How To Join Secret Network as a Full Node on Testnet
 
@@ -323,7 +324,3 @@ secretcli q staking validators | grep moniker
 ```
 
 Congratulations! You are now running a validator on the Secret Network testnet.
-
-
-
-</slim-column>

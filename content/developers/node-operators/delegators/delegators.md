@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Delegating (CLI)
 
@@ -244,7 +246,3 @@ $ secretcli q staking delegations-to secretvaloper1gghjut3ccd8ay0zduzj64hwre2fxs
 
 
 ```
-
-
-
-</slim-column>

@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Verify your SGX setup
 
@@ -163,7 +164,3 @@ This could mean a number of different things related to the configuration of the
 ####  I'm seeing `SGX_ERROR_DEVICE_BUSY`
 
 Most likely you tried reinstalling the driver and rerunning the enclave - restarting should solve the problem
-
-
-
-</slim-column>

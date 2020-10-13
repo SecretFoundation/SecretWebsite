@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Secret Network Light Client
 
@@ -671,7 +673,3 @@ echo '. secretcli_completion' >> ~/.bashrc
 ```
 
 Refer to the user's manual of your interpreter provided by your operating system for information on how to enable shell autocompletion.
-
-
-
-</slim-column>

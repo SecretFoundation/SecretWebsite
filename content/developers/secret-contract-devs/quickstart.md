@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Secret Network Contracts Introduction
 
@@ -361,7 +363,3 @@ Smart Contracts in the Secret Network use cosmwasm. Therefore, for troubleshooti
 
 *   [CosmWasm JS](/dev/cosmwasm-js.html)
 *   [Frontend development](/dev/building-a-frontend.html)
-
-
-
-</slim-column>

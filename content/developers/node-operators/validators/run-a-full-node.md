@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Run a Full Node
 
@@ -111,7 +113,3 @@ secretcli config trust-node true
 secretcli config node tcp://<your-public-ip>:26657
 
 ```
-
-
-
-</slim-column>

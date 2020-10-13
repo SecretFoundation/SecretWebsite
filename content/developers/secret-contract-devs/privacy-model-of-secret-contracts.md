@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Privacy Model of Secret Contracts
 
@@ -912,7 +914,3 @@ Otherwise the output looks like this:
 ```
 
 Therefore similar to previous examples, an attacker might guess what happned in an execution. E.g. if a contract have only a `send` function, if an error was returned an attacker can know that the `msg.sender` tried to send funds to someone unknown and the `send` didn't went through.
-
-
-
-</slim-column>

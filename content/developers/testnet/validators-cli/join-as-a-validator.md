@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Join as a Validator
 
@@ -207,7 +208,3 @@ You can get the current slashing parameters via:
 secretcli q slashing params
 
 ```
-
-
-
-</slim-column>

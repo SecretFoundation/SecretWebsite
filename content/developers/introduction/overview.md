@@ -1,51 +1,8 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 #  General Overview
-
-- [What is secret network] (/developers/introduction/what-is-secret-network)
-- [Overview] (/developers/introduction/overview)
-- [Network architecture] (/developers/introduction/network-architecture)
-- [Development roadmap] (/developers/introduction/development-roadmap)
-- [Using scrt with ledger cli] (/developers/introduction/using-scrt-with-ledger-cli)
- 
-
-- [Developing secret contracts] (/developers/secret-contract-devs/developing-secret-contracts)
-- [Secret contracts] (/developers/secret-contract-devs/secret-contracts)
-- [Privacy model of secret contracts] (/developers/secret-contract-devs/privacy-model-of-secret-contracts)
-- [Quickstart] (/developers/secret-contract-devs/quickstart)
-- [Secret contract devs] (/developers/secret-contract-devs/secret-contract-devs)
-- [Secretjs] (/developers/secret-contract-devs/secretjs)
-
-
- 
-- [Validators] (/developers/node-operators/validators/validators)
-- [Secret light client] (/developers/node-operators/secret-light-client)
-- [Setup sgx] (/developers/node-operators/validators/setup-sgx)
-- [Run a full node] (/developers/node-operators/validators/run-a-full-node)
-- [Join as a validator] (/developers/node-operators/validators/join-as-a-validator)
-- [Backup a validator] (/developers/node-operators/validators/backup-a-validator)
-- [Migrate a validator] (/developers/node-operators/validators/migrate-a-validator)
-- [Sentry nodes] (/developers/node-operators/validators/sentry-nodes)
-- [Vulcan netwrok upgrade] (/developers/node-operators/validators/vulcan-netwrok-upgrade)
-- [Delegators] (/developers/node-operators/delegators/delegators)
-
- 
-- [Validators cli] (/developers/testnet/validators-cli/validators-cli)
-- [Setup sgx] (/developers/testnet/validators-cli/setup-sgx)
-- [Verify sgx] (/developers/testnet/validators-cli/verify-sgx)
-- [Run a full node] (/developers/testnet/validators-cli/run-a-full-node)
-- [Run a full node docker] (/developers/testnet/validators-cli/run-a-full-node-docker)
-- [Join as a validator] (/developers/testnet/validators-cli/join-as-a-validator)
-- [Backup a validator] (/developers/testnet/validators-cli/backup-a-validator)
-- [Migrate a validator] (/developers/testnet/validators-cli/migrate-a-validator)
-
-
-- [Protocol] (/developers/protocol/protocol)
-- [Components] (/developers/protocol/components)
-- [Encryption] (/developers/protocol/encryption)
-- [Transactions] (/developers/protocol/transactions)
-- [Governance] (/developers/protocol/governance)
-- [Intel] (/developers/protocol/intel-sgx)
 
 Secret Network is a blockchain protocol that enables decentralized applications to perform encrypted computations. The Rust code that enables applications to use private data is referred to as a “Secret Contract” on Secret Network. Secret Contracts are similar to smart contracts, such as those used with Ethereum. The key difference is that Secret Contracts can take encrypted inputs and produce encrypted outputs, without exposing any data while it is in-use. In addition, a contract state (its internal, persisted database), remains encrypted throughout executions.
 
@@ -58,5 +15,3 @@ The Secret Network is decentralized, so governance decisions are made collective
 The Secret Network was built with the Cosmos SDK using Tendermint for consensus. Enigma is a company introducing a privacy-preserving applications and ecrypted computation services. As part of this work, Enigma is a core contributor to the Secret Network.
 
 To achieve data privacy, the Secret Network relies on a combination of key management and encryption protocols, along with Trusted Execution Environment (TEE) technology.
-
-</slim-column>

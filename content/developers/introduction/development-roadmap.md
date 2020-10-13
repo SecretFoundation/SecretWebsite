@@ -1,7 +1,8 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Development Roadmap
-
 
 Currently, the live Secret Network supports [staking](/validators-and-full-nodes/secret-nodes.html), [transactions](/protocol/transactions.html), and [governance](/protocol/governance.html) activities.
 
@@ -16,7 +17,3 @@ Read more about the completion of [milestone 3 of 3](https://blog.scrt.network/s
 The above milestones constitute the R&D work required to enable Secret Contracts. After these steps are completed, Enigma will submit a proposal to the Secret Network blockchain that proposes to upgrade the network to enable Secret Contracts. Validators will have to vote on this submission and approve it prior to implementation.
 
 *   \[ \] Proposal submitted to Secret Network
-
-
-
-</slim-column>

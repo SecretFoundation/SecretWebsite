@@ -1,5 +1,6 @@
-<slim-column>
-
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Governance
 
@@ -305,7 +306,3 @@ secretcli query gov param tallying
 secretcli query gov param deposit
 
 ```
-
-
-
-</slim-column>

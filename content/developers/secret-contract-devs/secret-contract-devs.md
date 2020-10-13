@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Secret Contract Devs
 
@@ -55,5 +57,3 @@ docker run -p 26657:26657 enigmampc/secret-network-bootstrap-sw:latest
 ####  5.4 Check how the deployment transaction looks on the explorer
 
 ####  5.5 Test your function on the testnet
-
-</slim-column>

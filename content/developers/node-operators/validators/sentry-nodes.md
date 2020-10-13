@@ -1,4 +1,6 @@
-<slim-column>
+---
+layout: ~/layouts/DocumentationLayout
+---
 
 # Sentry Nodes
 
@@ -54,7 +56,3 @@ private_peer_ids  "node_ids_of_private_peers"
 ###  Resources:
 
 [https://github.com/cosmos/gaia/blob/master/docs/validators/security.md](https://github.com/cosmos/gaia/blob/master/docs/validators/security.md)
-
-
-
-</slim-column>

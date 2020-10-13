@@ -12,6 +12,7 @@ import SimpleCard from './components/SimpleCard'
 import Separator from './components/Separator'
 import Card from './components/Card'
 import CardHolder from './components/CardHolder'
+import CommitteeCard from './components/CommitteeCard'
 
 require('hind');
 
@@ -26,6 +27,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Separator', Separator)
   Vue.component('Card', Card)
   Vue.component('CardHolder', CardHolder)
+  Vue.component('CommitteeCard', CommitteeCard)
 
   if (isClient) {
     Vue.$setDefaultTheme()

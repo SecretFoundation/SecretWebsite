@@ -1,13 +1,3 @@
----
-layout: ~/layouts/MainPageLayout
----
-
-<template v-slot:title>
-
-## Developers
-
-</template>
-
 <slim-column>
 
 #  General Overview

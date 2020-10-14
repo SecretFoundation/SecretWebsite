@@ -6,19 +6,19 @@
       </template>
       <single-column>
         <grid columns="3">
-        <blog-card v-for="{ node } in $page.posts.edges" :key="node.id" :color="getColor()">
-          <template #tag v-if="node.primary_tag">{{ node.primary_tag.name }}</template>
-          <h4><g-link :to="`/blog/${node.slug}`">{{ node.title }}</g-link></h4>
-          <separator small space-small></separator>
-          <p>{{ node.description }}</p>
-          <template #footer>
-            <g-image :src="node.primary_author.profile_image"></g-image>
-            <div info>
-              <div>{{ node.primary_author.name }}</div>
-              <div>{{ node.date }} &#8226; {{ node.reading_time }} min read</div>
-            </div>
-          </template>
-        </blog-card>
+          <blog-card v-for="{ node } in $page.posts.edges" :key="node.id" :color="getColor()">
+            <template #tag v-if="node.primary_tag">{{ node.primary_tag.name }}</template>
+            <h4><g-link :to="`/blog/${node.slug}`">{{ node.title }}</g-link></h4>
+            <separator small space-small></separator>
+            <p>{{ node.description }}</p>
+            <template #footer>
+              <g-image picture :src="node.primary_author.profile_image"></g-image>
+              <div info>
+                <div>{{ node.primary_author.name }}</div>
+                <div>{{ node.date }} &#8226; {{ node.reading_time }} min read</div>
+              </div>
+            </template>
+          </blog-card>
         </grid>
       </single-column>
     </main-page-layout>
@@ -28,7 +28,7 @@
 <script>
 import BaseLayout from '../layouts/BaseLayout'
 import MainPageLayout from '../layouts/MainPageLayout'
-import BlogCard from '../components/BlogCard'
+import BlogCard from '../components/blog/BlogCard'
 
 const colors = ['blue', 'orange', 'pink', 'purple']
 

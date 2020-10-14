@@ -14,3 +14,26 @@ html {
     padding: rem($gutter-xlarge);
   }
 }
+
+a {
+  text-decoration: none;
+}
+
+main {
+  h1 {
+    @include respond-to("medium and down") {
+      font-size: $h2-text-size;
+    }
+  }
+  blockquote {
+    font-size: $base-size;
+    margin: 0 0 $gutter-xlarge;
+    padding: 0 $gutter;
+    border-left: 3px solid #3eb0ef;
+  }
+}
+
+hr {
+  width: 100%;
+  margin: $gutter-large 0;
+}

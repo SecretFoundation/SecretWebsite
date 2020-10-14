@@ -7,6 +7,8 @@
 
 <style lang="scss">
 .separator {
+  display: grid;
+
   &[small] {
     img {
       max-width: rem(200px);
@@ -18,6 +20,10 @@
   }
   &[space-large] {
     margin-bottom: $gutter-large;
+  }
+
+  &[center] {
+    justify-content: center;
   }
 
   img {

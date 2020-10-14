@@ -13,6 +13,7 @@ import Separator from './components/Separator'
 import Card from './components/Card'
 import CardHolder from './components/CardHolder'
 import CommitteeCard from './components/CommitteeCard'
+import ThemedImage from '@/components/ThemedImage'
 
 require('hind');
 
@@ -28,6 +29,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Card', Card)
   Vue.component('CardHolder', CardHolder)
   Vue.component('CommitteeCard', CommitteeCard)
+  Vue.component('ThemedImage', ThemedImage)
 
   if (isClient) {
     Vue.$setDefaultTheme()

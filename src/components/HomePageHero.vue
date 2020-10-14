@@ -1,5 +1,5 @@
 <template>
-  <section class="hero" @mousemove="applyMask" @click="changeTheme">
+  <section class="hero" @mousemove="applyMask">
     <div class="hero__cover">
       <g-image ref="bg" class="hero__bg" :src="require(`!!assets-loader!@images/${bg}`)"></g-image>
       <g-image ref="fg" class="hero__fg" :src="require(`!!assets-loader!@images/${fg}`)"></g-image>

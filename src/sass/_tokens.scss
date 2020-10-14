@@ -38,11 +38,12 @@ $header-nav-visited-color: var(--theme-fg);
 $hero-headings-text-color: var(--theme-fg);
 
 // Footer
-$footer-text-color: white;
-$footer-background-color: $primary-black-color;
-$footer-link-active-color: white;
-$footer-link-hover-color: white;
-$footer-link-visited-color: white;
+$footer-text-color: var(--theme-fg);
+$footer-background-color: var(--theme-bg);
+$footer-link-default-color: var(--theme-fg);
+$footer-link-hover-color: var(--theme-fg);
+$footer-link-active-color: var(--theme-fg);
+$footer-link-visited-color: var(--theme-fg);
 
 // Themes
 $default-theme: dark;

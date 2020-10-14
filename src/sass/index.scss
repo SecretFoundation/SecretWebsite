@@ -29,7 +29,8 @@ main {
     font-size: $base-size;
     margin: 0 0 $gutter-xlarge;
     padding: 0 $gutter;
-    border-left: 3px solid #3eb0ef;
+    border-left: 3px solid $primary-teal-color;
+    line-height: $paragraph-line-height;
   }
 }
 

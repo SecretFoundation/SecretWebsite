@@ -37,7 +37,18 @@ module.exports = {
         },
       },
     },
+    {
+      use: '@gridsome/source-ghost',
+      options: {
+        typeName: 'Ghost',
+        baseUrl: 'https://blog.scrt.network',
+        contentKey: '74d989aa8008b1d8e3c9464b65',
+      }
+    }
   ],
+  templates: {
+    GhostPost: '/blog/:slug'
+  },
   transformers: {
     remark: {
       // global remark options

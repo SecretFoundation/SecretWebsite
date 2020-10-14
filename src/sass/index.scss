@@ -1,2 +1,16 @@
 @import "tokens";
 @import "~@lkmx/flare/src/flare";
+
+html {
+  --black-color: #{$primary-black-color};
+  --blue-color: #{$primary-blue-color};
+  --orange-color: #{$primary-orange-color};
+  --pink-color: #{$primary-pink-color};
+  --purple-color: #{$primary-purple-color};
+}
+
+.column {
+  @include respond-to("large and up") {
+    padding: rem($gutter-xlarge);
+  }
+}

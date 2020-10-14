@@ -22,9 +22,5 @@ query ($id: ID!) {
 }
 </page-query>
 
-
 <style lang="scss">
-  .column {
-    padding: rem($gutter-xlarge);
-  }
 </style>

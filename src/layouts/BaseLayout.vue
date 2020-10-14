@@ -11,6 +11,7 @@
       <g-link to="/community">Community</g-link>
       <g-link to="/developers/introduction/overview">Developers</g-link>
       <g-link to="/ecosystem/overview">Ecosystem</g-link>
+      <g-link to="/blog">Blog</g-link>
     </template>
     <template #actions>
       <button class="theme-selector" :class="{ 'theme-selector--dark': !darkLightModeState, 'theme-selector--light': darkLightModeState }" @click="toggleDarkLightMode"></button>

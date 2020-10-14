@@ -9,12 +9,15 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/source-ghost": "^0.4.0",
     "@gridsome/vue-remark": "^0.2.5",
     "@lkmx/flare": "0.28.10",
     "gridsome": "^0.7.0",
     "hind": "^1.0.0"
   },
   "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-plugin-vue": "^7.0.0-beta.4",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.3",
     "style-resources-loader": "^1.3.3"

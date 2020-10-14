@@ -54,6 +54,7 @@ $-card-min-height: 487px;
   }
 
   &__heading {
+    width: 100%;
     height: rem($-heading-height);
   }
 

@@ -6,12 +6,12 @@
           <div class="docs-index__menu" @click="expand(index)">
             <span>{{ item.text }}</span>
             <themed-image class="docs-index__chevron" :class="{ 'docs-index__chevron--show': !expanded[index] }">
-              <g-image dark light-colored src="@/assets/chevron-right-dark.svg"></g-image>
-              <g-image light dark-colored src="@/assets/chevron-right-light.svg"></g-image>
+              <g-image light light-colored src="@/assets/chevron-right-dark.svg"></g-image>
+              <g-image dark dark-colored src="@/assets/chevron-right-light.svg"></g-image>
             </themed-image>
             <themed-image class="docs-index__chevron" :class="{ 'docs-index__chevron--show': expanded[index] }">
-              <g-image dark light-colored src="@/assets/chevron-down-dark.svg"></g-image>
-              <g-image light dark-colored src="@/assets/chevron-down-light.svg"></g-image>
+              <g-image light light-colored src="@/assets/chevron-down-dark.svg"></g-image>
+              <g-image dark dark-colored src="@/assets/chevron-down-light.svg"></g-image>
             </themed-image>
           </div>
           <ul class="docs-index__submenu" :class="{ 'docs-index__submenu--expanded': expanded[index] }">

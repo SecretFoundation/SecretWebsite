@@ -7,15 +7,62 @@
       </g-link>
     </template>
     <template #navigation>
-      <g-link to="/about/about-secret-network">About</g-link>
-      <g-link to="/community">Community</g-link>
-      <g-link to="/developers/introduction/overview">Developers</g-link>
-      <g-link to="/ecosystem/overview">Ecosystem</g-link>
-      <g-link to="/blog">Blog</g-link>
+      <g-link blue to="/about/about-secret-network">About</g-link>
+      <g-link orange to="/blog">Blog</g-link>
+      <g-link pink to="/community">Community</g-link>
+      <g-link teal to="/developers/introduction/overview">Developers</g-link>
+      <g-link purple to="/ecosystem/overview">Ecosystem</g-link>
+      <g-link red to="https://forum.scrt.network/">Forum</g-link>
     </template>
     <template #actions>
-      <button class="theme-selector" :class="{ 'theme-selector--dark': !darkLightModeState, 'theme-selector--light': darkLightModeState }" @click="toggleDarkLightMode"></button>
-      <button class="theme-selector" :class="{ 'theme-selector--no-colored': !coloredModeState, 'theme-selector--colored': coloredModeState }" @click="toggleColoredMode"></button>
+      <div class="social-networks">
+        <g-link light light-colored to="https://discord.com/invite/SJK32GY">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/discord-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+        <g-link light light-colored to="https://t.me/SCRTcommunity">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/telegram-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/telegram-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+        <g-link light light-colored to="https://twitter.com/SecretNetwork">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/twitter-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/twitter-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+        <g-link light light-colored to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/youtube-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/youtube-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+      </div>
+      <div class="toggles">
+        <button @click="toggleDarkLightMode">
+          <themed-image>
+            <g-image light light-colored src="@/assets/moon.svg"></g-image>
+            <g-image dark  dark-colored src="@/assets/sun.svg"></g-image>
+          </themed-image>
+        </button>
+        <button @click="toggleColoredMode">
+          <themed-image>
+            <g-image light         src="@/assets/toggle-color-on-black.svg"></g-image>
+            <g-image light-colored src="@/assets/toggle-color-off-black.svg"></g-image>
+            <g-image dark          src="@/assets/toggle-color-on-white.svg"></g-image>
+            <g-image dark-colored  src="@/assets/toggle-color-off-white.svg"></g-image>
+          </themed-image>
+        </button>
+      </div>
+    </template>
+    <template #nav-toggle>
+      <themed-image>
+        <g-image light light-colored src="@/assets/menu-black.svg"></g-image>
+        <g-image dark dark-colored src="@/assets/menu-white.svg"></g-image>
+      </themed-image>
     </template>
     <base-page>
       <slot></slot>
@@ -26,16 +73,36 @@
         <div class="custom-footer__content">
           <div>
             <themed-image>
-              <g-image dark light-colored src="@/assets/secret-logo--black.svg" class="custom-footer__logo"></g-image>
-              <g-image light dark-colored src="@/assets/secret-logo--white.svg" class="custom-footer__logo"></g-image>
+              <g-image light light-colored src="@/assets/secret-logo--black.svg" class="custom-footer__logo"></g-image>
+              <g-image dark dark-colored src="@/assets/secret-logo--white.svg" class="custom-footer__logo"></g-image>
             </themed-image>
             <p>This website has a secret, contact us at</p>
             <p><g-link to="mailto:info@secret.foundation">info@secret.foundation</g-link></p>
             <div class="custom-footer__social">
-              <g-link to="https://discord.com/invite/SJK32GY"><g-image src="../assets/discord.svg"></g-image></g-link>
-              <g-link to="https://t.me/SCRTcommunity"><g-image src="../assets/telegram.svg"></g-image></g-link>
-              <g-link to="https://twitter.com/SecretNetwork"><g-image src="../assets/twitter.svg"></g-image></g-link>
-              <g-link to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw"><g-image src="../assets/youtube.svg"></g-image></g-link>
+              <g-link light light-colored to="https://discord.com/invite/SJK32GY">
+                <themed-image>
+                  <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>
+                  <g-image light light-colored src="@/assets/discord-black.svg"></g-image>
+                </themed-image>
+              </g-link>
+              <g-link light light-colored to="https://t.me/SCRTcommunity">
+                <themed-image>
+                  <g-image dark dark-colored src="@/assets/telegram-white.svg"></g-image>
+                  <g-image light light-colored src="@/assets/telegram-black.svg"></g-image>
+                </themed-image>
+              </g-link>
+              <g-link light light-colored to="https://twitter.com/SecretNetwork">
+                <themed-image>
+                  <g-image dark dark-colored src="@/assets/twitter-white.svg"></g-image>
+                  <g-image light light-colored src="@/assets/twitter-black.svg"></g-image>
+                </themed-image>
+              </g-link>
+              <g-link light light-colored to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw">
+                <themed-image>
+                  <g-image dark dark-colored src="@/assets/youtube-white.svg"></g-image>
+                  <g-image light light-colored src="@/assets/youtube-black.svg"></g-image>
+                </themed-image>
+              </g-link>
             </div>
           </div>
           <div class="custom-footer__links">
@@ -99,6 +166,53 @@ export default {
 </script>
 
 <style lang="scss">
+.header {
+  .no-column {
+    padding: 0 $gutter;
+  }
+  &__actions {
+    display: grid;
+    grid-auto-flow: column;
+
+    @include respond-to("large and up") {
+      grid-column-gap: $gutter-xlarge;
+    }
+  }
+  .main-nav {
+    height: 100%;
+
+    &__primary {
+      height: 100%;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-content: center center;
+
+        &:hover {
+          transition: background-color 300ms ease-in-out;
+
+          @include theme(dark light) {
+            background-color: var(--theme-fg);
+            color: var(--theme-bg);
+          }
+          @include theme(dark-colored light-colored) {
+            @each $name, $color in $primary-colors {
+              &[#{$name}] {
+                background-color: $color;
+                color: white;
+              }
+              &[pink] {
+                color: $primary-black-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .logo {
   width: auto;
   height: rem(58px);
@@ -228,5 +342,19 @@ export default {
       }
     }
   }
+}
+.social-networks {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: $gutter-small;
+
+  @include respond-to("large and down") {
+    display: none;
+  }
+}
+.toggles {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: $gutter-xsmall;
 }
 </style>

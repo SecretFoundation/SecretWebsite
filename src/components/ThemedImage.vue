@@ -10,22 +10,22 @@
     display: none;
 
     &[dark] {
-      @include theme(light) {
-        display: block;
-      }
-    }
-    &[light] {
       @include theme(dark) {
         display: block;
       }
     }
-    &[dark-colored] {
-      @include theme(dark-colored) {
+    &[light] {
+      @include theme(light) {
         display: block;
       }
     }
     &[light-colored] {
       @include theme(light-colored) {
+        display: block;
+      }
+    }
+    &[dark-colored] {
+      @include theme(dark-colored) {
         display: block;
       }
     }

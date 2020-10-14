@@ -1,15 +1,26 @@
+// Colors
 $primary-black-color: #1B1B1B;
 $primary-blue-color: #1F50FA;
 $primary-orange-color: #FE7F61;
 $primary-pink-color: #F5BBBA;
 $primary-teal-color: #57BFE7;
 $primary-purple-color: #6D5EDA;
+$primary-red-color: #D53A2C;
+
+$primary-colors: (
+  "blue": $primary-blue-color,
+  "orange": $primary-orange-color,
+  "pink": $primary-pink-color,
+  "teal": $primary-teal-color,
+  "purple": $primary-purple-color,
+  "red": $primary-red-color
+);
 
 
+// Texts
 $text-font: 'Hind', sans-serif;
 $text-color: var(--theme-fg);
 
-// Texts
 $h3-text-size: 36px;
 $h3-text-margin: 0 0 25px 0;
 $h4-text-size: 28px;
@@ -33,6 +44,10 @@ $header-background-color: transparent;
 $header-nav-active-color: var(--theme-fg);
 $header-nav-hover-color: var(--theme-fg);
 $header-nav-visited-color: var(--theme-fg);
+$header-nav-justify-items: start;
+$header-nav-spacing: 0px;
+$header-actions-space-width: 220px;
+$header-logo-space-width: 142px;
 
 // Hero
 $hero-headings-text-color: var(--theme-fg);

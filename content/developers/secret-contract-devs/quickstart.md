@@ -2,58 +2,57 @@
 layout: ~/layouts/DocumentationLayout
 ---
 
-# Secret Network Contracts Introduction
+# Secret Contract Dev Guide
 
-
-Get up and running on Secret Network testnet (enigma-pub-testnet-4) to start working with Secret Contracts.
+Get up and running on Secret Network testnet (holodeck) to start working with Secret Contracts.
 
 Secret Contracts are written in Rust and based on CosmWasm. The module is referred to as `compute` in the Secret Network
 
-# Setup the Secret Network light client
----------------------------------------------------------------------------------
+Learn more about the [privacy model](https://github.com/SecretFoundation/SecretWebsite/blob/master/content/developers/secret-contract-devs/privacy-model-of-secret-contracts.md) of Secret Contracts.
+
+## Setup Light Client
 
 *   install [secretcli](https://github.com/enigmampc/SecretNetwork/blob/master/docs/testnet/install_cli.md)
     
-*   use [version 0.8.1](https://github.com/enigmampc/SecretNetwork/releases/tag/v0.8.1) for testnet
+*   use [version 1.0.0](https://github.com/chainofsecrets/SecretNetwork/releases/tag/v1.0.0) for testnet
     
-*   configure secretcli to use the testnet
+*   configure secretcli
     
     ```
-    secretcli config node tcp://bootstrap.pub.testnet3.enigma.co:26657
+    secretcli config node http://bootstrap.secrettestnet.io:26657
     
-    secretcli config chain-id enigma-pub-testnet-4
+    secretcli config chain-id holodeck
     
     secretcli config trust-node true
     
     ```
-    
 
-# Setup Secret Contracts
----------------------------------------------------
+## Setup Dev Environment
 
-Secret Contracts are based on [CosmWasm](https://www.cosmwasm.com) , which is the de facto standard for smart contracts in the Cosmos ecosystem. CosmWasm is kind of like the EVM in Ethereum; however, CosmWasm enables multi-chain smart contracts utilizing the [Inter-Blockchain Communication Protocol](https://cosmos.network/ibc) (IBC). For now, Secret Contracts are written in the Rust programming language.
+Secret contracts are based on [CosmWasm 0.10](https://www.cosmwasm.com) ([docs](https://docs.cosmwasm.com)) which is the de facto standard for smart contracts in the Cosmos blockchain ecosystem. Secret Network implements a `compute` module used to store, query and instantiate secret contracts for decentralized, secure computation. These privacy-preserving smart contracts run inside secure enclaves or Trusted Execution Environments (TEEs), in which encrypted contract data (inputs & state) is processsed. Once stored on the blockchain, a contract has to be created (or instantiated) in order to execute its methods. If you're familiar with Solidity, you can think of this like migrating solidity code using Truffle, which handles the deployment of smart contracts on Ethereum.
 
-The SecretNetwork has a _compute_ module that we use to store, query and instantiate the smart contract. Once stored on the blockchain the smart contract has to be created (or instantiated) in order to execute its methods. This is similar to doing an Ethereum `migrate` using truffle, which handles the deployment and creation of a smart contract. Secret Contracts run inside secure enclaves or Trusted Execution Environments (TEEs), where computations are performed on encrypted contract data (i.e. inputs & state).
+CosmWasm is kind of like the EVM in Ethereum; however, CosmWasm enables multi-chain smart contracts using the [Inter-Blockchain Communication Protocol](https://cosmos.network/ibc) (IBC). For now, Secret Contracts (and other CosmWasm-based smart contracts) are written in the Rust programming language.
 
-Next, we'll walkthrough steps to:
+Next, we will show you how to get started with Rust, if you haven’t already. The Rust programming language is reliable, performant, and it has a wonderful community!
 
-*   install Rust (you can check out the Rust book, rustlings course, examples and more at https://www.rust-lang.org/learn)
+*   install Rust
 *   install the Rust dependencies
 *   create your first project
 
-The Rust dependencies include the Rust compiler, cargo (_package manager_), toolchain and a package to generate projects (you can check out the Rust book, rustlings course, examples and more at https://www.rust-lang.org/learn).
+The Rust dependencies include the Rust compiler, cargo (_package manager_), toolchain and a package to generate projects (you can check out the Rust book, rustlings course, examples and more at [Rust-Lang.org](https://www.rust-lang.org/learn).
 
-1.  Install Rust
+### 1.  Install Rust:
 
-More information about installing Rust can be found here: https://www.rust-lang.org/tools/install.
+More information about installing Rust can be found here:
+https://www.rust-lang.org/tools/install
 
 ```
-curl --proto 'https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 
 ```
 
-1.  Add rustup target wasm32 for both stable and nightly
+### 2.  Add rustup target wasm32 for both stable and nightly:
 
 ```
 rustup default stable
@@ -65,51 +64,64 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 
 ```
 
-1.  If using linux, install the standard build tools:
+### 3.  If using linux, install the standard build tools:
 
 ```
 apt install build-essential
 
 ```
 
-1.  Run cargo install cargo-generate
+### 4.  Run cargo install cargo-generate:
 
-Cargo generate is the tool you'll use to create a smart contract project (https://doc.rust-lang.org/cargo).
+Cargo generate is the tool you'll use to create a smart contract project:
+https://doc.rust-lang.org/cargo)
 
 ```
 cargo install cargo-generate --features vendored-openssl
 
 ```
 
-# Create Initial Smart Contract
------------------------------------------------------------------
+## Tools for Secret Contract Devs
+
+### Testnet Explorer
+
+https://explorer.secrettestnet.io
+
+### Testnet Faucet
+
+https://faucet.secrettestnet.io
+
+### Secret API
+
+https://secretapi.io ([more info](https://blog.scrt.network/secret-api))
+
+
+## Create Initial Secret Contract
 
 To create the smart contract you'll:
 
-*   generate the initial project
-*   compile the smart contract
-*   run unit tests
-*   optimize the wasm contract bytecode to prepare for deployment
-*   deploy the smart contract to your local SecretNetwork
-*   instantiate it with contract parameters
+* Generate Your Project
+* Compile a Secret Contract
+* Deploy on Testnet
+* Instantiate With Parameters
 
-Generate the smart contract project
+### 1. Generate
 
 ```
 cargo generate --git https://github.com/enigmampc/secret-template --name mysimplecounter
 
 ```
 
-The git project above is a cosmwasm smart contract template that implements a simple counter. The contract is created with a parameter for the initial count and allows subsequent incrementing.
+The git project above is a CosmWasm smart contract template that implements a simple counter. The contract is created with a parameter for the initial count and allows subsequent incrementing.
 
-Change directory to the project you created and view the structure and files that were created.
+Change directory to the project you created and view the structure and files that were created:
 
 ```
 cd mysimplecounter
 
 ```
 
-The generate creates a directory with the project name and has this structure:
+The generate command creates a directory with the project name with the following structure:
 
 ```
 Cargo.lock	Developing.md	LICENSE		Publishing.md	examples	schema		tests
@@ -117,114 +129,54 @@ Cargo.toml	Importing.md	NOTICE		README.md	rustfmt.toml	src
 
 ```
 
-# Compile
----------------------
+### 2. Compile
 
-Use the following command to compile the smart contract which produces the wasm contract file.
-
-```
-cargo wasm
+Use the following command to compile the Secret Contract, producing the wasm contract file. The Makefile uses wasm-opt, a WebAssembly optimizer.
 
 ```
+npm i -g wasm-opt
 
-# Unit Tests (NB Tests in this template currently fail unless you have SGX enabled)
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-Run unit tests
-
-```
-RUST_BACKTRACE1 cargo unit-test
-
+make
 ```
 
-# Integration Tests
------------------------------------------
+### 3. Deploy
 
-The integration tests are under the `tests/` directory and run as:
+Upload the optimized contract.wasm to _holodeck_ :
 
 ```
-cargo integration-test
+secretcli tx compute store contract.wasm.gz --from <your account alias> -y --gas 1000000 --gas-prices=1.0uscrt
 
 ```
 
-# Generate Msg Schemas
------------------------------------------------
-
-We can also generate JSON Schemas that serve as a guide for anyone trying to use the contract, to specify which arguments they need.
-
-Auto-generate msg schemas (when changed):
+The result is a txhash ~ if you query it, you can see the code_id in the logs. In our case, it's 45. We need the code_id to instantiate the contract:
 
 ```
-cargo schema
+secretcli q tx 86FCA39283F0BD80A1BE42288506C47041BE2FEE5F6DB13F4652CD5594B5D875
 
 ```
+### Verify Storage
 
-# Deploy Smart Contract
--------------------------------------------------
+The following command lists any secret contract code:
 
-Before deploying or storing the contract on the testnet, need to run the cosmwasm optimizer.
-
-###  Optimize compiled wasm
+`secretcli query compute list-code`
 
 ```
-docker run --rm -v "$(pwd)":/code \
-  --mount typevolume,source"$(basename "$(pwd)")_cache",target/code/target \
-  --mount typevolume,sourceregistry_cache,target/usr/local/cargo/registry \
-  cosmwasm/rust-optimizer:0.8.0
-
-```
-
-The contract wasm needs to be optimized to get a smaller footprint. Cosmwasm notes state the contract would be too large for the blockchain unless optimized. This example contract.wasm is 1.8M before optimizing, 90K after.
-
-The optimization creates two files:
-
-*   contract.wasm
-*   hash.txt
-
-###  Store the Smart Contract on our local Testnet
-
-Upload the optimized contract.wasm to _enigma-pub-testnet-2_ :
-
-```
-secretcli tx compute store contract.wasm --from <your account alias> --gas 500000 --gas-prices1.0uscrt
-
-```
-
-The result is a txhash, query it you can see the code\_id in the logs, in this case it's 93 as shown below. We'll need the code\_id to create an instance of the contract.
-
-```
-secretcli q tx 9A07B4A7FDD23BF654A6A8C1CE44EF410252AA3707590D347D4761D70B8C4B44
-
-```
-
-###  Querying the Smart Contract and Code
-
-List current smart contract code
-
-```
-secretcli query compute list-code
 [
-  {
-    "id": 92,
-    "creator": "secret16xum37xp3pt6jxwy8hyhylhnfju7z6wwwn4jpz",
-    "data_hash": "799601F9CF41C9E89A23762AF19A884A82073955AEF75A54A0DBD53EAE1C8229",
-    "source": "",
-    "builder": ""
-  },
-  {
-    "id": 93,
-    "creator": "secret1ddhvtztgr9kmtg2sr5gjmz60rhnqv8vwm5wjuh",
-    "data_hash": "61039E55062807E982BFAEC1921A438716155162F10356E0C34E564078E7E3A3",
-    "source": "",
-    "builder": ""
-  }
+{
+"id": 45,
+"creator": "secret1ddhvtztgr9kmtg2sr5gjmz60rhnqv8vwm5wjuh",
+"data_hash": "E15E697E5EB2144C1BF697F1127EDF1C4322004DA7F032209D2D445BCAE46FE0",
+"source": "",
+"builder": ""
+}
 ]
-
 ```
 
-###  Instantiate the Smart Contract
 
-To create an instance of this project we must also provide some JSON input data, a starting count.
+### 4. Instantiate
+
+To create an instance of this project we must also provide some JSON input data, including a starting count. You should change the label to be something unique, which can be referenced by label instead of contract address for convenience:
+
 
 ```
 INIT"{\"count\": 100000000}"
@@ -240,9 +192,11 @@ secretcli query compute list-contract-by-code $CODE_ID
 
 ```
 
-Our instance is secret1tss72nzwqzverru7fy5s49czqepmvdgwdz3gcx
+Our instance is `secret1htxt8p8lu0v53ydsdguk9pc0x9gg060k7x4qxr`
 
-We can query the contract state
+### Usage
+
+Query the contract state:
 
 ```
 CONTRACTsecret1tss72nzwqzverru7fy5s49czqepmvdgwdz3gcx
@@ -251,15 +205,14 @@ secretcli query compute query $CONTRACT "{\"get_count\": {}}"
 
 ```
 
-And we can increment our counter
+Increment the counter:
 
 ```
 secretcli tx compute execute $CONTRACT "{\"increment\": {}}" --from <your account alias>
 
 ```
 
-# Smart Contract
------------------------------------
+## Secret Contracts
 
 ###  Project Structure
 
@@ -348,8 +301,7 @@ mod tests {
 
 ```
 
-# Resources
--------------------------
+## Resources
 
 Smart Contracts in the Secret Network use cosmwasm. Therefore, for troubleshooting and additional context, cosmwasm documentation may be very useful. Here are some of the links we relied on in putting together this guide:
 
@@ -358,8 +310,7 @@ Smart Contracts in the Secret Network use cosmwasm. Therefore, for troubleshooti
 *   [Setting up a local "testnet"](https://www.cosmwasm.com/docs/getting-started/using-the-sdk)
 *   [cosmwasm docs](https://www.cosmwasm.com/docs/intro/overview)
 
-# What's next?
-
+## What's next?
 
 *   [CosmWasm JS](/dev/cosmwasm-js.html)
 *   [Frontend development](/dev/building-a-frontend.html)

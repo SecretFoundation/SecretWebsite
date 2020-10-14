@@ -40,12 +40,14 @@ export default {
     }
   },
   created() {
-    this.currentNav = window.location.pathname
-    Object.keys(this.nav).forEach(key => {
-      this.$set(this.expanded, key, false)
-    })
-    const index = this.search(this.currentNav) || 0
-    this.$set(this.expanded, index, true)
+    if (process.isClient) {
+      this.currentNav = window.location.pathname
+      Object.keys(this.nav).forEach(key => {
+        this.$set(this.expanded, key, false)
+      })
+      const index = this.search(this.currentNav) || 0
+      this.$set(this.expanded, index, true)
+    }
   },
   methods: {
     expand(index) {

@@ -9,7 +9,6 @@ Secret Contracts are written in Rust and based on CosmWasm. The module is referr
 Learn more about the [privacy model](https://github.com/SecretFoundation/SecretWebsite/blob/master/content/developers/secret-contract-devs/privacy-model-of-secret-contracts.md) of Secret Contracts.
 
 ## Setup Light Client
----------------------------------------------------------------------------------
 
 *   install [secretcli](https://github.com/enigmampc/SecretNetwork/blob/master/docs/testnet/install_cli.md)
     
@@ -28,19 +27,18 @@ Learn more about the [privacy model](https://github.com/SecretFoundation/SecretW
     
 
 ## Setup Dev Environment
----------------------------------------------------
 
-Secret Contracts are based on [CosmWasm](https://www.cosmwasm.com), which is the de facto standard for smart contracts in the Cosmos ecosystem. CosmWasm is kind of like the EVM in Ethereum; however, CosmWasm enables multi-chain smart contracts using the [Inter-Blockchain Communication Protocol](https://cosmos.network/ibc) (IBC). For now, Secret Contracts (and other CosmWasm-based smart contracts) are written in the Rust programming language.
+Secret contracts are based on [CosmWasm 0.10](https://www.cosmwasm.com) ([docs](https://docs.cosmwasm.com)) which is the de facto standard for smart contracts in the Cosmos blockchain ecosystem. Secret Network implements a `compute` module used to store, query and instantiate secret contracts for decentralized, secure computation. These privacy-preserving smart contracts run inside secure enclaves or Trusted Execution Environments (TEEs), in which encrypted contract data (inputs & state) is processsed. Once stored on the blockchain, a contract has to be created (or instantiated) in order to execute its methods. If you're familiar with Solidity, you can think of this like migrating solidity code using Truffle, which handles the deployment of smart contracts on Ethereum.
 
-The SecretNetwork has a _compute_ module that we use to store, query and instantiate the smart contract. Once stored on the blockchain the smart contract has to be created (or instantiated) in order to execute its methods. This is similar to doing an Ethereum `migrate` using truffle, which handles the deployment and creation of a smart contract. Secret Contracts run inside secure enclaves or Trusted Execution Environments (TEEs), where computations are performed on encrypted contract data (i.e. inputs & state).
+CosmWasm is kind of like the EVM in Ethereum; however, CosmWasm enables multi-chain smart contracts using the [Inter-Blockchain Communication Protocol](https://cosmos.network/ibc) (IBC). For now, Secret Contracts (and other CosmWasm-based smart contracts) are written in the Rust programming language.
 
-Next, we'll walkthrough steps to:
+Next, we will show you how to get started with Rust, if you haven’t already. The Rust programming language is reliable, performant, and it has a wonderful community!
 
-*   install Rust (you can check out the Rust book, rustlings course, examples and more at https://www.rust-lang.org/learn)
+*   install Rust
 *   install the Rust dependencies
 *   create your first project
 
-The Rust dependencies include the Rust compiler, cargo (_package manager_), toolchain and a package to generate projects (you can check out the Rust book, rustlings course, examples and more at https://www.rust-lang.org/learn).
+The Rust dependencies include the Rust compiler, cargo (_package manager_), toolchain and a package to generate projects (you can check out the Rust book, rustlings course, examples and more at [Rust-Lang.org](https://www.rust-lang.org/learn).
 
 ### 1.  Install Rust:
 
@@ -216,7 +214,6 @@ secretcli tx compute execute $CONTRACT "{\"increment\": {}}" --from <your accoun
 ```
 
 ## Secret Contracts
------------------------------------
 
 ###  Project Structure
 
@@ -306,7 +303,6 @@ mod tests {
 ```
 
 ## Resources
--------------------------
 
 Smart Contracts in the Secret Network use cosmwasm. Therefore, for troubleshooting and additional context, cosmwasm documentation may be very useful. Here are some of the links we relied on in putting together this guide:
 

@@ -1,0 +1,146 @@
+[
+  {
+    "text":"What is secret network",
+    "sublinks":[
+      {
+        "href":"/developers/introduction/overview",
+        "text":"Overview"
+      },
+      {
+        "href":"/developers/introduction/network-architecture",
+        "text":"Network architecture"
+      },
+      {
+        "href":"/developers/introduction/development-roadmap",
+        "text":"Development roadmap"
+      },
+      {
+        "href":"/developers/introduction/using-scrt-with-ledger-cli",
+        "text":"Using scrt with ledger CLI"
+      }
+    ]
+  },
+  {
+    "text":"Developing secret contracts",
+    "sublinks":[
+      {
+        "href":"/developers/secret-contract-devs/secret-contracts",
+        "text":"Secret contracts"
+      },
+      {
+        "href":"/developers/secret-contract-devs/privacy-model-of-secret-contracts",
+        "text":"Privacy model of secret contracts"
+      },
+      {
+        "href":"/developers/secret-contract-devs/quickstart",
+        "text":"Quickstart"
+      },
+      {
+        "href":"/developers/secret-contract-devs/secret-contract-devs",
+        "text":"Secret contract devs"
+      },
+      {
+        "href":"/developers/secret-contract-devs/secretjs",
+        "text":"Secretjs"
+      }
+    ]
+  },
+  {
+    "text":"Validators",
+    "sublinks":[
+      {
+        "href":"/developers/node-operators/secret-light-client",
+        "text":"Secret light client"
+      },
+      {
+        "href":"/developers/node-operators/validators/setup-sgx",
+        "text":"Setup sgx"
+      },
+      {
+        "href":"/developers/node-operators/validators/run-a-full-node",
+        "text":"Run a full node"
+      },
+      {
+        "href":"/developers/node-operators/validators/join-as-a-validator",
+        "text":"Join as a validator"
+      },
+      {
+        "href":"/developers/node-operators/validators/backup-a-validator",
+        "text":"Backup a validator"
+      },
+      {
+        "href":"/developers/node-operators/validators/migrate-a-validator",
+        "text":"Migrate a validator"
+      },
+      {
+        "href":"/developers/node-operators/validators/sentry-nodes",
+        "text":"Sentry nodes"
+      },
+      {
+        "href":"/developers/node-operators/validators/vulcan-netwrok-upgrade",
+        "text":"Vulcan netwrok upgrade"
+      },
+      {
+        "href":"/developers/node-operators/delegators/delegators",
+        "text":"Delegators"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/validators-cli",
+        "text":"Validators cli"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/setup-sgx",
+        "text":"Setup sgx"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/verify-sgx",
+        "text":"Verify sgx"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/run-a-full-node",
+        "text":"Run a full node"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/run-a-full-node-docker",
+        "text":"Run a full node docker"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/join-as-a-validator",
+        "text":"Join as a validator"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/backup-a-validator",
+        "text":"Backup a validator"
+      },
+      {
+        "href":"/developers/testnet/validators-cli/migrate-a-validator",
+        "text":"Migrate a validator"
+      }
+    ]
+  },
+  {
+    "text":"Protocol",
+    "sublinks":[
+      {
+        "href":"/developers/protocol/components",
+        "text":"Components"
+      },
+      {
+        "href":"/developers/protocol/encryption",
+        "text":"Encryption"
+      },
+      {
+        "href":"/developers/protocol/transactions",
+        "text":"Transactions"
+      },
+      {
+        "href":"/developers/protocol/governance",
+        "text":"Governance"
+      },
+      {
+        "href":"/developers/protocol/intel-sgx",
+        "text":"Intel"
+      }
+    ]
+  }
+]

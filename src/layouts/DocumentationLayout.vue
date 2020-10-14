@@ -1,122 +1,131 @@
 <template>
-  <single-column class="documentation">
-    <slim-column class="documentation__sidebar">
-      <ul>
-        <li>
-          <a href="/developers/introduction/what-is-secret-network">What is secret network</a>
-        </li>
-        <li>
-          <a href="/developers/introduction/overview">Overview</a>
-        </li>
-        <li>
-          <a href="/developers/introduction/network-architecture">Network architecture</a>
-        </li>
-        <li>
-          <a href="/developers/introduction/development-roadmap">Development roadmap</a>
-        </li>
-        <li>
-          <a href="/developers/introduction/using-scrt-with-ledger-cli">Using scrt with ledger CLI</a>
-        </li>
-        <li>
-          <a href="/developers/secret-contract-devs/developing-secret-contracts">Developing secret contracts</a>
-        </li>
-        <li>
-          <a href="/developers/secret-contract-devs/secret-contracts">Secret contracts</a>
-        </li>
-        <li>
-          <a href="/developers/secret-contract-devs/privacy-model-of-secret-contracts">Privacy model of secret contracts</a>
-        </li>
-        <li>
-          <a href="/developers/secret-contract-devs/quickstart">Quickstart</a>
-        </li>
-        <li>
-          <a href="/developers/secret-contract-devs/secret-contract-devs">Secret contract devs</a>
-        </li>
-        <li>
-          <a href="/developers/secret-contract-devs/secretjs">Secretjs</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/validators">Validators</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/secret-light-client">Secret light client</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/setup-sgx">Setup sgx</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/run-a-full-node">Run a full node</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/join-as-a-validator">Join as a validator</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/backup-a-validator">Backup a validator</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/migrate-a-validator">Migrate a validator</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/sentry-nodes">Sentry nodes</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/validators/vulcan-netwrok-upgrade">Vulcan netwrok upgrade</a>
-        </li>
-        <li>
-          <a href="/developers/node-operators/delegators/delegators">Delegators</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/validators-cli">Validators cli</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/setup-sgx">Setup sgx</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/verify-sgx">Verify sgx</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/run-a-full-node">Run a full node</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/run-a-full-node-docker">Run a full node docker</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/join-as-a-validator">Join as a validator</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/backup-a-validator">Backup a validator</a>
-        </li>
-        <li>
-          <a href="/developers/testnet/validators-cli/migrate-a-validator">Migrate a validator</a>
-        </li>
-        <li>
-          <a href="/developers/protocol/protocol">Protocol</a>
-        </li>
-        <li>
-          <a href="/developers/protocol/components">Components</a>
-        </li>
-        <li>
-          <a href="/developers/protocol/encryption">Encryption</a>
-        </li>
-        <li>
-          <a href="/developers/protocol/transactions">Transactions</a>
-        </li>
-        <li>
-          <a href="/developers/protocol/governance">Governance</a>
-        </li>
-        <li>
-          <a href="/developers/protocol/intel-sgx">Intel</a>
+  <single-column class="docs">
+    <div class="docs__sidebar">
+      <ul class="docs-index">
+        <li v-for="(item, index) in nav" :key="item.href">
+          <div class="docs-index__menu" @click="expand(index)">
+            <span>{{ item.text }}</span>
+            <themed-image class="docs-index__chevron" :class="{ 'docs-index__chevron--show': !expanded[index] }">
+              <g-image dark dark-colored src="@/assets/chevron-right-dark.svg"></g-image>
+              <g-image light light-colored src="@/assets/chevron-right-light.svg"></g-image>
+            </themed-image>
+            <themed-image class="docs-index__chevron" :class="{ 'docs-index__chevron--show': expanded[index] }">
+              <g-image dark dark-colored src="@/assets/chevron-down-dark.svg"></g-image>
+              <g-image light light-colored src="@/assets/chevron-down-light.svg"></g-image>
+            </themed-image>
+          </div>
+          <ul class="docs-index__submenu" :class="{ 'docs-index__submenu--expanded': expanded[index] }">
+            <li v-for="subItem in item.sublinks" :key="subItem.href" :class="{ 'docs-index__submenu--current': subItem.href === currentNav }">
+              <g-link :to="subItem.href">{{ subItem.text }}</g-link>
+            </li>
+          </ul>
         </li>
       </ul>
-    </slim-column>
-    <slim-column class="documentation__body">
+    </div>
+    <slim-column class="docs__body">
       <slot name="default"></slot>
     </slim-column>
   </single-column>
 </template>
 
+<script>
+import nav from './docs-nav.json'
+
+export default {
+  data() {
+    return {
+      nav,
+      expanded: {},
+      currentNav: '',
+    }
+  },
+  created() {
+    this.currentNav = window.location.pathname
+    Object.keys(this.nav).forEach(key => {
+      this.$set(this.expanded, key, false)
+    })
+    const index = this.search(this.currentNav) || 0
+    this.$set(this.expanded, index, true)
+  },
+  methods: {
+    expand(index) {
+      if (typeof this.expanded[index] === 'undefined') {
+        this.$set(this.expanded, index, false)
+      }
+      this.$set(this.expanded, index, !this.expanded[index])
+      this.reset(index)
+    },
+    reset(ignoreIndex) {
+      Object.keys(this.nav)
+        .filter(key => key != ignoreIndex)
+        .forEach(key => this.$set(this.expanded, key, false))
+    },
+    search(pathname) {
+      let index = null
+      for (let i = 0; i < this.nav.length; i++) {
+        for (let j = 0; j < this.nav[i].sublinks.length; j++) {
+          if (this.nav[i].sublinks[j].href === pathname) {
+            index = i
+            break
+          }
+        }
+        if (index != null) break
+      }
+      return index
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
-.documentation {
+$-icon-size: 10px;
+
+.docs-index {
+
+  &__menu {
+    display: grid;
+    grid-template-columns: max-content $-icon-size;
+    grid-column-gap: $gutter-xsmall;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+    span {
+      font-weight: bold;
+    }
+
+    img {
+      width: $-icon-size;
+      height: $-icon-size;
+    }
+  }
+
+  &__submenu {
+    display: none;
+    padding: $gutter 0 0 $gutter;
+
+    &--expanded {
+      display: block;
+    }
+
+    &--current {
+      a {
+        color: $primary-orange-color;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__chevron {
+    display: none;
+
+    &--show {
+      display: block;
+    }
+  }
+}
+
+.docs {
   display: grid;
   justify-content: space-between;
 
@@ -128,12 +137,19 @@
     grid-auto-flow: row;
   }
 
+  &__body {
+    &.column {
+      padding-top: 0;
+    }
+  }
+
   &__sidebar {
     @include respond-to("large and up") {
       position: sticky;
       top: 0;
       overflow: auto;
       height: min-content;
+      padding: $gutter-xlarge 0;
     }
   }
 }

@@ -24,7 +24,6 @@ Learn more about the [privacy model](https://github.com/SecretFoundation/SecretW
     secretcli config trust-node true
     
     ```
-    
 
 ## Setup Dev Environment
 
@@ -96,7 +95,6 @@ https://secretapi.io ([more info](https://blog.scrt.network/secret-api))
 
 
 ## Create Initial Secret Contract
------------------------------------------------------------------
 
 To create the smart contract you'll:
 
@@ -130,7 +128,6 @@ Cargo.toml	Importing.md	NOTICE		README.md	rustfmt.toml	src
 ```
 
 ### 2. Compile
----------------------
 
 Use the following command to compile the Secret Contract, producing the wasm contract file. The Makefile uses wasm-opt, a WebAssembly optimizer.
 

@@ -139,7 +139,7 @@ $-icon-size: 10px;
 
   &__body {
     &.column {
-      padding-top: 0;
+      padding: 0;
     }
   }
 

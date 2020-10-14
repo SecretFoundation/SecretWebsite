@@ -26,8 +26,8 @@
         <div class="custom-footer__content">
           <div>
             <themed-image>
-              <g-image dark dark-colored src="@/assets/secret-logo--black.svg" class="custom-footer__logo"></g-image>
-              <g-image light light-colored src="@/assets/secret-logo--white.svg" class="custom-footer__logo"></g-image>
+              <g-image dark light-colored src="@/assets/secret-logo--black.svg" class="custom-footer__logo"></g-image>
+              <g-image light dark-colored src="@/assets/secret-logo--white.svg" class="custom-footer__logo"></g-image>
             </themed-image>
             <p>This website has a secret, contact us at</p>
             <p><g-link to="mailto:info@secret.foundation">info@secret.foundation</g-link></p>

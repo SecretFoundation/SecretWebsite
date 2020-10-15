@@ -16,6 +16,7 @@ import CommitteeCard from './components/CommitteeCard'
 import ThemedImage from '@/components/ThemedImage'
 
 require('hind');
+require('typeface-montserrat');
 
 export default function (Vue, { router, head, isClient }) {
   Vue.config.productionTip = false

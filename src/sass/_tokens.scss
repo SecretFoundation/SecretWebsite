@@ -20,6 +20,7 @@ $primary-colors: (
 // Texts
 $text-font: 'Hind', sans-serif;
 $text-color: var(--theme-fg);
+$headers-default-font: 'Montserrat';
 
 $h3-text-size: 36px;
 $h3-text-margin: 0 0 25px 0;
@@ -36,6 +37,7 @@ $grid-mobile-row-gap: 34px;
 
 // Links
 $links-text-color: var(--theme-fg);
+$links-text-hover-color: $primary-orange-color;
 
 // Header
 $header-height: 90px;

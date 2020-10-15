@@ -1,8 +1,11 @@
 <template>
-  <section class="hero" @mousemove="applyMask">
+  <section class="hero">
     <div class="hero__cover">
-      <g-image ref="bg" class="hero__bg" :src="require(`!!assets-loader!@images/${bg}`)"></g-image>
-      <g-image ref="fg" class="hero__fg" :src="require(`!!assets-loader!@images/${fg}`)"></g-image>
+      <themed-image>
+        <g-image light src="@/assets/hero-black.svg"></g-image>
+        <g-image dark src="@/assets/hero-white.svg"></g-image>
+        <g-image light-colored dark-colored src="@/assets/hero-color.svg"></g-image>
+      </themed-image>
     </div>
     <div class="hero__content">
       <div class="hero__title">

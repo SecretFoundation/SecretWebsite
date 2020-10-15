@@ -4,36 +4,27 @@ layout: ~/layouts/DocumentationLayout
 
 # Using SCRT with Ledger
 
-
 Note: This guide is for Ledger Nano S but according to community members it also works for Ledger Nano X.
 
-# Prerequisites
----------------------------------
+## Prerequisites
 
-*   This guide assumes you have a verified, genuine Ledger Nano S device.
-*   If you don't, or you using your Ledger device for the first time, you should check Ledger's [Getting Started](https://support.ledger.com/hc/en-us/sections/360001415213-Getting-started) guide.
-*   We also advise you to check your Ledger's genuineness and upgrade your firmware to the newest one available (`v1.6.0+`).
-*   Have a machine with [Ledger Live](https://www.ledger.com/ledger-live) installed.
-*   Have the latest version of our latest binaries installed. You can get it [here](https://github.com/enigmampc/SecretNetwork/releases/latest) .
+- This guide assumes you have a verified, genuine Ledger Nano S device.
+- If you don't, or you using your Ledger device for the first time, you should check Ledger's [Getting Started](https://support.ledger.com/hc/en-us/sections/360001415213-Getting-started) guide.
+- We also advise you to check your Ledger's genuineness and upgrade your firmware to the newest one available (`v1.6.0+`).
+- Have a machine with [Ledger Live](https://www.ledger.com/ledger-live) installed.
+- Have the latest version of our latest binaries installed. You can get it [here](https://github.com/enigmampc/SecretNetwork/releases/latest) .
 
-# Install Cosmos Ledger App
----------------------------------------------------------
+## Install Cosmos Ledger App
 
-*   Open Ledger Live and go to Settings (gear icon on the top right corner):
-    
-*   Enable developer mode:  
-    
-*   Now go to Manager and search "Cosmos":
-    
-*   Our binaries require Cosmos App Version `1.5.1` (if you only see a lower version available, like `1.0.0`, then you need to upgrade your Ledger firmware).
-    
-*   Hit "Install" and wait for the process to complete.
-    
+- Open Ledger Live and go to Settings (gear icon on the top right corner):
+- Enable developer mode:
+- Now go to Manager and search "Cosmos":
+- Our binaries require Cosmos App Version `1.5.1` (if you only see a lower version available, like `1.0.0`, then you need to upgrade your Ledger firmware).
+- Hit "Install" and wait for the process to complete.
 
 _Ref: https://github.com/cosmos/ledger-cosmos_
 
-# Common commands
--------------------------------------
+## Common commands
 
 These are some basic examples of commands you can use with your Ledger. You may notice that most commands stay the same, you just need to add the `--ledger` flag.
 
@@ -44,10 +35,13 @@ _Ref: https://medium.com/cryptium-cosmos/how-to-store-your-cosmos-atoms-on-your-
 
 Some users may not have their ledger recognized by their Linux host. To fix this issue implement the fix for connection issues on Linux from the [ledger support page](https://support.ledger.com/hc/en-us/articles/115005165269-Connection-issues-with-Windows-or-Linux)
 
-```
-wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
+<code-syntax language="bash">
 
 ```
+wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
+```
+
+</code-syntax>
 
 ## Create an account
 

@@ -1,7 +1,11 @@
 [
   {
-    "text":"What is secret network",
+    "text":"Introduction",
     "sublinks":[
+      {
+        "href": "/developers/introduction/what-is-secret-network",
+        "text": "What is Secret Network?"
+      },
       {
         "href":"/developers/introduction/overview",
         "text":"Overview"
@@ -21,23 +25,27 @@
     ]
   },
   {
-    "text":"Developing secret contracts",
+    "text":"Developing Secret Contracts",
     "sublinks":[
+      {
+        "href": "/developers/secret-contract-devs/secret-contract-devs",
+        "text":"Getting Started"
+      },
       {
         "href":"/developers/secret-contract-devs/secret-contracts",
         "text":"Secret contracts"
       },
       {
         "href":"/developers/secret-contract-devs/privacy-model-of-secret-contracts",
-        "text":"Privacy model of secret contracts"
+        "text":"Privacy Model"
+      },
+      {
+        "href":"/developers/secret-contract-devs/secret-contract-devs-guide",
+        "text":"Development Guide"
       },
       {
         "href":"/developers/secret-contract-devs/quickstart",
         "text":"Quickstart"
-      },
-      {
-        "href":"/developers/secret-contract-devs/secret-contract-devs",
-        "text":"Secret contract devs"
       },
       {
         "href":"/developers/secret-contract-devs/secretjs",
@@ -46,81 +54,90 @@
     ]
   },
   {
-    "text":"Validators",
+    "text":"Node Operators",
     "sublinks":[
       {
         "href":"/developers/node-operators/secret-light-client",
-        "text":"Secret light client"
+        "text":"Secret Light Client"
+      },
+      {
+        "href":"/developers/node-operators/validators/validators",
+        "text":"Validators"
       },
       {
         "href":"/developers/node-operators/validators/setup-sgx",
-        "text":"Setup sgx"
+        "text":"Setup SGX"
       },
       {
         "href":"/developers/node-operators/validators/run-a-full-node",
-        "text":"Run a full node"
+        "text":"Run a Full Node"
       },
       {
         "href":"/developers/node-operators/validators/join-as-a-validator",
-        "text":"Join as a validator"
+        "text":"Join as a Validator"
       },
       {
         "href":"/developers/node-operators/validators/backup-a-validator",
-        "text":"Backup a validator"
+        "text":"Backup a Validator"
       },
       {
         "href":"/developers/node-operators/validators/migrate-a-validator",
-        "text":"Migrate a validator"
+        "text":"Migrate a Validator"
       },
       {
         "href":"/developers/node-operators/validators/sentry-nodes",
-        "text":"Sentry nodes"
+        "text":"Sentry Nodes"
       },
       {
         "href":"/developers/node-operators/validators/vulcan-netwrok-upgrade",
-        "text":"Vulcan netwrok upgrade"
+        "text":"Vulcan Netwrok Upgrade"
       },
       {
         "href":"/developers/node-operators/delegators/delegators",
         "text":"Delegators"
-      },
-      {
-        "href":"/developers/testnet/validators-cli/validators-cli",
-        "text":"Validators cli"
-      },
+      }
+    ]
+  },
+  {
+    "text":"Testnet",
+    "sublinks":[
       {
         "href":"/developers/testnet/validators-cli/setup-sgx",
-        "text":"Setup sgx"
+        "text":"Setup SGX"
       },
       {
         "href":"/developers/testnet/validators-cli/verify-sgx",
-        "text":"Verify sgx"
+        "text":"Verify SGX"
       },
       {
         "href":"/developers/testnet/validators-cli/run-a-full-node",
-        "text":"Run a full node"
+        "text":"Run a Full Node"
       },
       {
         "href":"/developers/testnet/validators-cli/run-a-full-node-docker",
-        "text":"Run a full node docker"
+        "text":"Run a Full Node Docker"
       },
       {
         "href":"/developers/testnet/validators-cli/join-as-a-validator",
-        "text":"Join as a validator"
+        "text":"Join as a Validator"
       },
       {
         "href":"/developers/testnet/validators-cli/backup-a-validator",
-        "text":"Backup a validator"
+        "text":"Backup a Validator"
       },
       {
         "href":"/developers/testnet/validators-cli/migrate-a-validator",
-        "text":"Migrate a validator"
+        "text":"Migrate a Validator"
       }
     ]
   },
   {
     "text":"Protocol",
     "sublinks":[
+      {
+        "href":"/developers/protocol/protocol",
+        "text":"About the Protocol"
+      },
       {
         "href":"/developers/protocol/components",
         "text":"Components"

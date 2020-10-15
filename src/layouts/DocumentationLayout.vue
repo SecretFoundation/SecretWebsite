@@ -112,7 +112,7 @@ $-icon-size: 10px;
 
     &--current {
       a {
-        color: $primary-orange-color;
+        color: $primary-purple-color;
         font-weight: bold;
       }
     }

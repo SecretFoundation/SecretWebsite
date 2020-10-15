@@ -2,24 +2,29 @@
   <section class="main-page-hero">
     <div class="main-page-hero__cover">
       <themed-image>
-        <img light src="@/assets/hero-black.svg" alt="hero">
-        <img dark src="@/assets/hero-white.svg" alt="hero">
-        <img light-colored dark-colored src="@/assets/hero-color.svg" alt="hero">
+        <img light src="@/assets/hero-black.svg" alt="main-page-hero">
+        <img dark src="@/assets/hero-white.svg" alt="main-page-hero">
+        <img light-colored dark-colored src="@/assets/hero-color.svg" alt="main-page-hero">
       </themed-image>
     </div>
     <div class="main-page-hero__content">
       <div class="main-page-hero__title">
-        <g-image class="main-page-hero__logo" src="../assets/logo-seal.svg"></g-image>
-        <slot></slot>
+        <div class="main-page-hero__title__container">
+          <g-image class="main-page-hero__logo" src="@/assets/logo-seal.svg"></g-image>
+          <slot></slot>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $-hero-desktop-height: 339px;
 $-hero-tablet-height: 280px;
 $-hero-mobile-height: 280px;
+
+$-logo-size-desktop: 118px;
+$-logo-size-mobile: 68px;
 
 .main-page-hero {
   position: relative;
@@ -42,8 +47,6 @@ $-hero-mobile-height: 280px;
       height: 100%;
       overflow: hidden;
       object-fit: cover;
-      object-position: 50% -10%;
-      display: none;
       transform: rotate(180deg);
 
       @include respond-to("small and down") {
@@ -55,24 +58,13 @@ $-hero-mobile-height: 280px;
       }
       @include respond-to("large and up") {
         height: rem($-hero-desktop-height);
-      }
-
-      &[data-src*=black] {
-        @include theme(light) {
-          display: block;
-        }
-      }
-      &[data-src*=white] {
-        @include theme(dark) {
-          display: block;
-        }
-      }
-      &[data-src*=color] {
-        @include theme(light-colored dark-colored) {
-          display: block;
-        }
+        object-position: 100% -15%;
       }
     }
+  }
+
+  &__fg {
+    display: none;
   }
 
   &__content {
@@ -82,55 +74,64 @@ $-hero-mobile-height: 280px;
     transform: translate(-50%, -50%);
     border: 4px solid;
     border-radius: 16px;
-    padding: rem(86px) 0;
-    width: 100%;
 
-    @include respond-to("small and down") {
-      max-width: rem(280px);
-    }
-    @include respond-to("medium") {
-      max-width: rem(680px);
-    }
-    @include respond-to("large and up") {
-      max-width: rem(788px);
-    }
+    background-color: var(--theme-bg);
+    color: var(--theme-fg);
 
-    @include theme(dark dark-colored) {
-      border-color: white;
-      background: $primary-black-color;
-    }
-    @include theme(light light-colored) {
-      border-color: $primary-black-color;
-      background: white;
-    }
-    @include respond-to("small and down") {
-      padding: 55px 0;
-    }
+    min-width: 788px;
   }
 
   &__title {
     position: relative;
-    h2 {
-      margin: 0;
-      text-align: center;
+    width: 100%;
+    height: 100%;
+
+    @include respond-to("large and up") {
+      padding: $gutter-xxlarge;
+    }
+    @include respond-to("medium") {
+      padding: $gutter-xxlarge 0;
+    }
+    @include respond-to("small and down") {
+      padding: $gutter-large 0;
+    }
+
+    &__container {
+      width: 100%;
+      height: 100%;
+
+      h2 {
+        margin: 0;
+        text-align: center;
+
+        @include respond-to("small and down") {
+          width: rem(303px);
+        }
+      }
+
+      img {
+        @include respond-to("medium and up") {
+          width: rem($-logo-size-desktop);
+          height: rem($-logo-size-desktop);
+        }
+        @include respond-to("small and down") {
+          width: rem($-logo-size-mobile);
+          height: rem($-logo-size-mobile);
+        }
+      }
     }
   }
 
   &__logo {
     position: absolute;
-    top: 0%;
-    left: 50%;
 
+    @include respond-to("medium and up") {
+      top: - ($-logo-size-desktop / 2);
+      left: calc(100% / 2 - #{$-logo-size-desktop / 2});
+    }
     @include respond-to("small and down") {
-      max-width: rem(68px);
-      transform: translate(-50%, -130%);
-    }
-    @include respond-to("medium") {
-      max-width: rem(80px);
-    }
-    @include respond-to("large and up") {
-      max-width: rem(118px);
-      transform: translate(-50%, -125%);
+      top: - ($-logo-size-mobile / 2);
+      left: calc(100% / 2 - #{$-logo-size-mobile / 2});
     }
   }
 }

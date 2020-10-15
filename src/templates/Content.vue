@@ -1,6 +1,6 @@
 <template>
   <base-layout>
-    <VueRemarkContent />
+    <VueRemarkContent class="content" />
   </base-layout>
 </template>
 
@@ -23,4 +23,7 @@ query ($id: ID!) {
 </page-query>
 
 <style lang="scss">
+.content {
+  padding-bottom: $gutter-xlarge;
+}
 </style>

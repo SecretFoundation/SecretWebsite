@@ -4,8 +4,9 @@
 
 <slim-column>
 
-### About
-## What’s the secret of Secret Network?
+#### About
+
+## What is the secret of Secret Network?
 
 Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
 
@@ -17,47 +18,60 @@ These are some ways you can join the Secret Network:
 
 <template v-slot:left>
 
-<simple-card to="/community">
+<home-card to="/about/about-secret-network" vertical>
 
-### **Join the**<br>Community
+### **Learn about**<br>Secret Network
 
-![Community](./img/illustration_community.png)
+<separator small />
 
-</simple-card>
+![Community](./img/learn-about-secret-network.png)
+
+</home-card>
 
 </template>
 
 <template v-slot:middle>
 
-<simple-card to="/developers/introduction/overview">
+<home-card to="/community" vertical>
 
-### **Build a**<br> Secret App
+### **Join**<br>Our Community
 
-![Secret App](./img/illustration_secret-app.png)
+<separator small />
 
-</simple-card>
+![Secret App](./img/join-our-community.png)
+
+</home-card>
 
 </template>
-  
+
 <template v-slot:right>
 
-<simple-card to="/developers/node-operators/validators/validators">
+<home-card to="/developers" vertical>
 
-### **Become a**<br>Node Operator
+### **Build your own**<br>Secret App
 
-![Node Operator](./img/illustration_node-operator.png)
+<separator small />
 
-</simple-card>
+![Node Operator](./img/build-your-own-secret-app.png)
+
+</home-card>
 
 </template>
 
 </triplet-columns>
 
-</text-banner>
+<single-column>
 
-<style lang="scss">
-.triplets-columns {
-  grid-row-gap: rem(34px);
-  padding-bottom: rem(100px);
-}
-</style>
+<home-card to="/ecosystem/overview" horizontal>
+
+### **Explore the**<br>Ecosystem
+
+<separator small />
+
+![Node Operator](./img/explore-the-ecosystem.png)
+
+</home-card>
+
+</single-column>
+
+<separator center />

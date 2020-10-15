@@ -9,7 +9,7 @@
     </div>
     <div class="hero__content">
       <div class="hero__title">
-        <g-image class="hero__logo" src="../assets/logo-seal.svg"></g-image>
+        <g-image class="hero__logo" src="@/assets/logo-seal.svg"></g-image>
         <h2>Welcome to Secret Network</h2>
       </div>
     </div>
@@ -86,7 +86,7 @@ export default {
 </script>
 
 <style lang="scss">
-$-hero-desktop-height: 527px;
+$-hero-desktop-height: 540px;
 $-hero-tablet-height: 400px;
 $-hero-mobile-height: 400px;
 

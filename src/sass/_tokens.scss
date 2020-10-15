@@ -16,7 +16,6 @@ $primary-colors: (
   "red": $primary-red-color
 );
 
-
 // Texts
 $text-font: 'Hind', sans-serif;
 $text-color: var(--theme-fg);
@@ -61,6 +60,9 @@ $footer-link-default-color: var(--theme-fg);
 $footer-link-hover-color: var(--theme-fg);
 $footer-link-active-color: var(--theme-fg);
 $footer-link-visited-color: var(--theme-fg);
+
+// Triplet Columns
+$triplet-column-row-gap: 34px;
 
 // Themes
 $default-theme: dark;

@@ -10,9 +10,7 @@ html {
 }
 
 .column {
-  @include respond-to("large and up") {
-    padding: rem($gutter-xlarge);
-  }
+  padding-bottom: $gutter-xlarge;
 }
 
 a {

@@ -34,15 +34,8 @@ export default {
   width: 100%;
   max-width: rem(378px);
   height: 100%;
-  border: 3px solid;
+  border: 3px solid var(--theme-fg);
   border-radius: 22px;
-
-  @include theme(dark dark-colored) {
-    border-color: white;
-  }
-  @include theme(light light-colored) {
-    border-color: $primary-black-color;
-  }
 
   a:not([aria-hidden=true]) {
     display: block;

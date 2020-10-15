@@ -7,8 +7,8 @@ import Flare from '@lkmx/flare/src/main'
 
 import Faq from './components/Faq'
 import Newsletter from './components/Newsletter'
-import HomePageHero from './components/HomePageHero'
-import SimpleCard from './components/SimpleCard'
+import HomePageHero from './components/home/HomePageHero'
+import HomeCard from './components/home/HomeCard'
 import Separator from './components/Separator'
 import Card from './components/Card'
 import CardHolder from './components/CardHolder'
@@ -25,7 +25,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Faq', Faq)
   Vue.component('Newsletter', Newsletter)
   Vue.component('HomePageHero', HomePageHero)
-  Vue.component('SimpleCard', SimpleCard)
+  Vue.component('HomeCard', HomeCard)
   Vue.component('Separator', Separator)
   Vue.component('Card', Card)
   Vue.component('CardHolder', CardHolder)

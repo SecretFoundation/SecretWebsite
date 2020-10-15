@@ -64,21 +64,30 @@ $-strong-font-size: 24px;
   }
 
   &[vertical] {
+    position: relative;
     padding: $gutter;
+
+    width: 100%;
     height: 100%;
+    min-height: rem(516px);
 
     p {
-      position: relative;
+      position: absolute;
       padding: 0;
       margin: 0;
+      border-radius: $gutter-large;
 
-      width: calc(100% + #{$gutter * 2});
-      height: 100%;
-      left: - $gutter;
-      bottom: - $gutter;
+      width: 100%;
+      max-height: 390px;
+      overflow: hidden;
+
+      left: 0;
+      bottom: 0;
+      right: 0;
 
       img {
         width: 100%;
+        object-fit: cover;
       }
     }
   }

@@ -34,7 +34,7 @@ Transactions, validators, governance proposals, and more can be viewed using the
 
 ## Wallets
 
-* [Ledger Nano S and Ledger Nano X](/ledger-nano-s.html)
+* [Ledger Nano S and Ledger Nano X](/developers/introduction/using-scrt-with-ledger-cli)
 * [Math Wallet](https://mathwallet.org/web/enigma)
 
 ## Blockchain REST Providers

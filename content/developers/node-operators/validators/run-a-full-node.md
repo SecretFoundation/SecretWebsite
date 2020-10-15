@@ -9,7 +9,7 @@ This document details how to join the Secret Network `mainnet` as a validator.
 
 ###  Requirements
 
-*   Up to date SGX ([Read this](https://learn.scrt.network/sgx.html) , [Setup](/validators-and-full-nodes/setup-sgx.html), [Verify](/validators-and-full-nodes/verify-sgx.html))
+*   Up to date SGX ([Read this](https://learn.scrt.network/sgx.html) , [Setup](/developers/node-operators/validators/setup-sgx), [Verify](/developers/node-operators/validators/verify-your-sgx-setup))
 *   Ubuntu/Debian host (with ZFS or LVM to be able to add more storage easily)
 *   A public IP address
 *   Open ports `TCP 26656 & 26657` _Note: If you're behind a router or firewall then you'll need to port forward on the network device._
@@ -17,14 +17,14 @@ This document details how to join the Secret Network `mainnet` as a validator.
 
 ####  Minimum requirements
 
-*   Up to date SGX ([Read this](https://learn.scrt.network/sgx.html) , [Setup](/validators-and-full-nodes/setup-sgx.html), [Verify](/validators-and-full-nodes/verify-sgx.html))
+*   Up to date SGX ([Read this](https://learn.scrt.network/sgx.html) , [Setup](/developers/node-operators/validators/setup-sgx), [Verify](/developers/node-operators/validators/verify-your-sgx-setup))
 *   1GB RAM
 *   100GB HDD
 *   1 dedicated core of any Intel Skylake processor (Intel® 6th generation) or better
 
 ####  Recommended requirements
 
-*   Up to date SGX ([Read this](https://learn.scrt.network/sgx.html) , [Setup](/validators-and-full-nodes/setup-sgx.html), [Verify](/validators-and-full-nodes/verify-sgx.html))
+*   Up to date SGX ([Read this](https://learn.scrt.network/sgx.html) , [Setup](/developers/node-operators/validators/setup-sgx), [Verify](/developers/node-operators/validators/verify-your-sgx-setup))
 *   2GB RAM
 *   256GB SSD
 *   2 dedicated cores of any Intel Skylake processor (Intel® 6th generation) or better

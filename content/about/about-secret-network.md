@@ -191,7 +191,7 @@ Individuals have a right to their own privacy, their own self-expression, and th
 
 ###  What is the Secret Network?
 
-The Secret Network is a decentralized network of computers (which we call "secret nodes") that use hardware-based and software-based privacy technologies to enable **[secure computation](/questions.html#what-is-computational-privacy).** On top of this network, developers can build **Secret Apps** - unstoppable, permissionless applications that can utilize encrypted data without ever exposing the data itself, even to the nodes in the network performing computations.
+The Secret Network is a decentralized network of computers (which we call "secret nodes") that use hardware-based and software-based privacy technologies to enable **secure computation.** On top of this network, developers can build **Secret Apps** - unstoppable, permissionless applications that can utilize encrypted data without ever exposing the data itself, even to the nodes in the network performing computations.
 
 </faq>
 
@@ -219,7 +219,7 @@ A secret is something that you don’t want to share with _everyone_, but still 
 
 "Secret contracts" are _privacy-preserving_ smart contracts built on Secret Network. Smart contracts (in this context) are essentially self-executing pieces of code that are managed on a blockchain. Secret contracts improve on regular smart contracts in that they not only solve for _correctness_, but also for _data privacy_. Secret contracts are written in the [Rust programming language](https://www.rust-lang.org) . Secret Apps utilize the capabilities of secret contracts to enable unique use cases that empower users and increase opportunities for growth and impact.
 
-> Learn more on the [Protocol](/protocol.html) page or visit our [full documentation](https://build.scrt.network) .
+> Learn more on the [Protocol](../developers/protocol/components) page or visit our [full documentation](../developers/introduction/overview) .
 
 </faq>
 
@@ -265,7 +265,7 @@ SCRT (pronounced "Secret") is the native coin of the Secret Network. This means 
 
 Another utility for SCRT is governance of the network. Secret nodes can create and vote on governance proposals using SCRT, allowing for decentralized control of the network.
 
-> Learn more on the [Network](/network.html) page or visit our [full documentation](https://build.scrt.network/validators-and-full-nodes/secret-nodes.html) .
+> Learn more on the [Network](/about/about-the-network) page or visit our [full documentation](../developers/node-operators/validators/validators) .
 
 </faq>
 

@@ -7,9 +7,9 @@ layout: ~/layouts/DocumentationLayout
 
 ⚠️ ⚠️ ⚠️
 
-Please make sure you [backup your validator](/validators-and-full-nodes/backup-a-validator.html) before you migrate it.
+Please make sure you [backup your validator](/developers/node-operators/validators/backup-a-validator) before you migrate it.
 
-###  1. [Run a new full node](/validators-and-full-nodes/run-full-node-mainnet.html) on a new machine.
+###  1. [Run a new full node](/developers/node-operators/validators/run-a-full-node) on a new machine.
 
 ###  2. Confirm you have the recovery seed phrase information for the active key running on the old machine
 
@@ -61,7 +61,7 @@ secretcli status | jq .sync_info
 
 To prevert double signing, you should stop the validator node and only then stop the new full node.
 
-Please read about [the dangers in running a validator](/validators-and-full-nodes/join-validator-mainnet.html#dangers-in-running-a-validator).
+Please read about [the dangers in running a validator](/developers/node-operators/validators/join-as-a-validator#dangers-in-running-a-validator).
 
 On the validator node on the old machine:
 

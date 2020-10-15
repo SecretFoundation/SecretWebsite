@@ -10,7 +10,7 @@ layout: ~/layouts/DocumentationLayout
 
 `secretcli` is the command-line interface tool that enables you to interact with a node that runs on the Secret Network.
 
-[How to install and use `secretcli`](/light-client-mainnet.html).
+[How to install and use `secretcli`](/developers/node-operators/light-client-mainnet).
 
 - [Secret Network Light Client](#secret-network-light-client)
   - [# Secret CLI](#h1-idsecret-cli-29secret-clih1)
@@ -442,7 +442,7 @@ secretcli q compute query $CONTRACT_ADDRESS "$QUERY_INPUT_MSG"
 
 Note
 
-You can find Slashing related CLI commands under [Validators/Slashing](/validators-and-full-nodes/join-validator-mainnet.html#Slashing).
+You can find Slashing related CLI commands under [Validators/Slashing](/developers/node-operators/validators/join-as-a-validator#Slashing).
 
 ###  Minting
 
@@ -471,7 +471,7 @@ secretcli q mint annual-provisions
 
 Note
 
-You can find CLI commands related to delegating under [Delegate](/validators-and-full-nodes/delegating-mainnet.html).
+You can find CLI commands related to delegating under [Delegate](/developers/node-operators/delegators/delegators).
 
 ###  Nodes
 
@@ -482,13 +482,13 @@ secretcli status
 
 ```
 
-[How to run a full node on mainnet](/validators-and-full-nodes/run-full-node-mainnet.html).
+[How to run a full node on mainnet](/developers/node-operators/validators/run-a-full-node).
 
 ###  Governance
 
 Governance is the process from which users in the Secret Network can come to consensus on software upgrades, parameters of the mainnet or signaling mechanisms through text proposals. This is done through voting on proposals, which will be submitted by `SCRT` holders on the mainnet.
 
-[How to participate in on-chain governance](/protocol/governance.html).
+[How to participate in on-chain governance](/developers/protocol/governance).
 
 ###  Fee Distribution
 

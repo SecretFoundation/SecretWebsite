@@ -23,8 +23,8 @@ For more information about the governance process and how it works, please check
 # Setup
 -----------------
 
-*   [How to use a light client (Windows, Mac & Linux)](/light-client-mainnet.html)
-*   [Ledger Nano S support](/ledger-nano-s.html)
+*   [How to use a light client (Windows, Mac & Linux)](/developers/node-operators/light-client-mainnet)
+*   [Ledger Nano S support](/developers/introduction/using-scrt-with-ledger-cli)
 
 # Create a Governance Proposal
 ---------------------------------------------------------------

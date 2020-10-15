@@ -7,7 +7,7 @@ layout: ~/layouts/DocumentationLayout
 
 ###  How to become a validator on Secret Network
 
-####  1. [Run a new full node](/testnet/run-full-node-testnet.html) on a new machine.
+####  1. [Run a new full node](/developers/testnet/validators-cli/run-a-full-node) on a new machine.
 
 ####  2. Set your `minimum-gas-price` parameter
 
@@ -28,7 +28,7 @@ secretcli keys add <key-alias>
 
 ```
 
-**⚠️Note⚠️: Backup the mnemonics!** **⚠️Note⚠️: Please make sure you also [backup your validator](/validators-and-full-nodes/backup-a-validator.html)**
+**⚠️Note⚠️: Backup the mnemonics!** **⚠️Note⚠️: Please make sure you also [backup your validator](/developers/node-operators/validators/backup-a-validator)**
 
 **Note**: If you already have a key you can import it with the bip39 mnemonic with `secretcli keys add <key-alias> --recover` or with `secretcli keys export` (exports to `stderr`!!) & `secretcli keys import`.
 
@@ -61,7 +61,7 @@ ERROR: unknown address: account secret1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx do
 
 ```
 
-####  6. Join the network as a new validator: replace `<MONIKER>` with the moniker you configured in step 3 of [creating a full-node](/testnet/run-full-node-testnet.html), and adjust the amount you want to stake
+####  6. Join the network as a new validator: replace `<MONIKER>` with the moniker you configured in step 3 of [creating a full-node](/developers/testnet/validators-cli/run-a-full-node), and adjust the amount you want to stake
 
 (remember 1 SCRT  1,000,000 uSCRT, and so the command below stakes 100k SCRT).
 
@@ -117,7 +117,7 @@ Penalties for double-signing:
 
 ###  Protecting your validator agains DDoS attacks
 
-See [Sentry Nodes](/validators-and-full-nodes/sentry-nodes.html).
+See [Sentry Nodes](/developers/node-operators/validators/sentry-nodes).
 
 ###  Staking more tokens
 

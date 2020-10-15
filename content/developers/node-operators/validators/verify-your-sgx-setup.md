@@ -4,9 +4,8 @@ layout: ~/layouts/DocumentationLayout
 
 # Verify your SGX setup
 
-
-# Background
-
+[#](#background) Background
+===========================
 
 To make sure the entire network runs on SGX nodes we use a process called _registration_. This process, performed by each node runner, involves authenticating the local enclave both with Intel Attestation Services and on-chain.
 
@@ -16,7 +15,7 @@ For this reason it is recommended to check ahead of time the result of the attes
 
 **Note:** for the incentivized testnet we are going to run with more relaxed requirements than mainnet - be aware that your incentivized testnet setup may not work on mainnet if you do not verify it
 
-# Instructions
+[#](#instructions) Instructions
 -------------------------------
 
 These instructions refer to an installation using:
@@ -29,20 +28,20 @@ See SGX installation instructions [here](/developers/node-operators/validators/s
 
 Other driver/OS combinations are not guaranteed to work with these instructions. Let us know on `chat.scrt.network` if you intend to run on a different setup.
 
-###  1. Download the test package
+### [#](#_1-download-the-test-package) 1. Download the test package
 
-`wget https://github.com/enigmampc/SecretNetwork/releases/download/v0.7.0/secretnetwork_0.7.0_amd64.deb`
+`wget https://github.com/enigmampc/SecretNetwork/releases/download/v1.0.0/secretnetwork_1.0.0_amd64.deb`
 
-###  2. Unpack
+### [#](#_2-unpack) 2. Unpack
 
-####  This will install `secretd`
-
-```
-sudo dpkg -i secretnetwork_0.7.0_amd64.deb
+#### [#](#this-will-install-secretd) This will install `secretd`
 
 ```
+sudo dpkg -i secretnetwork_1.0.0_amd64.deb
 
-###  3. Initialize the enclave
+```
+
+### [#](#_3-initialize-the-enclave) 3. Initialize the enclave
 
 Create the `.sgx_secrets` directory if it doesn't already exist
 
@@ -54,11 +53,11 @@ mkdir .sgx_secrets
 Then initialize the enclave
 
 ```
-SCRT_ENCLAVE_DIR/usr/lib secretd init-enclave
+SCRT_ENCLAVE_DIR=/usr/lib secretd init-enclave
 
 ```
 
-(or `SCRT_ENCLAVE_DIR/usr/lib secretd init-enclave | grep -Po 'isvEnclaveQuoteStatus":".+?"'`)
+(or `SCRT_ENCLAVE_DIR=/usr/lib secretd init-enclave | grep -Po 'isvEnclaveQuoteStatus":".+?"'`)
 
 This step, if successful, will create an output similar to this -
 
@@ -83,11 +82,11 @@ For the status `CONFIGURATION_AND_SW_HARDENING_NEEDED` we perform a deeper inspe
 *   `"INTEL-SA-00334"`
 *   `"INTEL-SA-00219"`
 
-Consult with the [Intel API](https://api.trustedservices.intel.com/documents/sgx-attestation-api-spec.pdf#page21) for more on these values.
+Consult with the [Intel API](https://api.trustedservices.intel.com/documents/sgx-attestation-api-spec.pdf#page=21) for more on these values.
 
 If you do not see such an output, look for a file called `attestation_cert.der` which should have been created in your `$HOME` directory. You can then use the command `secretd parse <path/to/attestation_cert.der>` to check the result a successful result should be a 64 byte hex string (e.g. `0x9efe0dc689447514d6514c05d1161cea15c461c62e6d72a2efabcc6b85ed953b`.
 
-###  4. What to do if this didn't work?
+### [#](#_4-what-to-do-if-this-didn-t-work) 4. What to do if this didn't work?
 
 1.  Running `secretd init-enclave` should have created a file called `attestation_cert.der`. This file contains the attestation report from above.
 2.  Contact us on the proper channels on `chat.scrt.network`
@@ -97,29 +96,23 @@ If you do not see such an output, look for a file called `attestation_cert.der` 
     *   BIOS versions
     *   The file `attestation_cert.der`
 
-###  5. Troubleshooting
+### [#](#_5-troubleshooting) 5. Troubleshooting
 
-####  Output is:
+#### [#](#output-is) Output is:
 
 ```
 secretd init-enclave
-2020-07-12 13:21:31,864 INFO  [go_cosmwasm] Hello from right before key_gen
-2020-07-12 13:21:31,864 INFO  [cosmwasm_sgx_vm::seed] Hello from just before initializing - untrusted_key_gen
 2020-07-12 13:21:31,864 ERROR [go_cosmwasm] Error :(
 ERROR: failed to initialize enclave: Error calling the VM: SGX_ERROR_ENCLAVE_FILE_ACCESS
 
 ```
 
-Make sure you have the environment variable `SCRT_ENCLAVE_DIR/usr/lib` set before you run `secretd`.
+Make sure you have the environment variable `SCRT_ENCLAVE_DIR=/usr/lib` set before you run `secretd`.
 
-####  Output is:
+#### [#](#output-is-2) Output is:
 
 ```
 secretd init-enclave
-2020-07-12 13:37:26,549 INFO  [go_cosmwasm] Hello from right before key_gen
-2020-07-12 13:37:26,549 INFO  [cosmwasm_sgx_vm::seed] Hello from just before initializing - untrusted_key_gen
-2020-07-12 13:37:26,689 INFO  [cosmwasm_sgx_vm::seed] Hello from just after initializing - untrusted_key_gen
-DEBUG  [wasmi_runtime_enclave::crypto::key_manager] Seed not initialized! Cannot derive enclave keys
 ERROR  [wasmi_runtime_enclave::crypto::key_manager] Error sealing registration key
 ERROR  [wasmi_runtime_enclave::registration::offchain] Failed to create registration key
 2020-07-12 13:37:26,690 ERROR [go_cosmwasm] Error :(
@@ -129,22 +122,10 @@ ERROR: failed to initialize enclave: Error calling the VM: SGX_ERROR_UNEXPECTED
 
 Make sure the directory `~/.sgx_secrets/` is created. If that still doesn't work, try to create `/root/.sgx_secrets`
 
-####  Output is:
+#### [#](#output-is-3) Output is:
 
 ```
 secretd init-enclave
-2020-07-12 13:46:34,463 INFO  [go_cosmwasm] Hello from right before key_gen
-2020-07-12 13:46:34,463 INFO  [cosmwasm_sgx_vm::seed] Hello from just before initializing - untrusted_key_gen
-2020-07-12 13:46:34,609 INFO  [cosmwasm_sgx_vm::seed] Hello from just after initializing - untrusted_key_gen
-DEBUG  [wasmi_runtime_enclave::crypto::key_manager] Seed not initialized! Cannot derive enclave keys
-INFO  [wasmi_runtime_enclave::registration::offchain] ecall_key_gen key pk: [216, 167, 170, 152, 151, 228, 78, 162, 141, 2, 6, 132, 35, 245, 214, 206, 128, 29, 141, 28, 42, 185, 186, 181, 122, 84, 172, 21, 78, 17, 106, 85]
-2020-07-12 13:46:34,617 INFO  [cosmwasm_sgx_vm::attestation] Hello from just before initializing - create_attestation_report_u
-2020-07-12 13:46:34,617 INFO  [cosmwasm_sgx_vm::attestation] Hello from just after initializing - create_attestation_report_u
-2020-07-12 13:46:34,617 INFO  [cosmwasm_sgx_vm::attestation] Entered produce report
-DEBUG  [wasmi_runtime_enclave::crypto::key_manager] Seed not initialized! Cannot derive enclave keys
-INFO  [wasmi_runtime_enclave::registration::offchain] ecall_get_attestation_report key pk: [216, 167, 170, 152, 151, 228, 78, 162, 141, 2, 6, 132, 35, 245, 214, 206, 128, 29, 141, 28, 42, 185, 186, 181, 122, 84, 172, 21, 78, 17, 106, 85]
-2020-07-12 13:46:34,618 INFO  [cosmwasm_sgx_vm::attestation] Entering ocall_sgx_init_quote
-DEBUG  [wasmi_runtime_enclave::registration::attestation] EPID group  [0, 0, 0, 0]
 ERROR  [wasmi_runtime_enclave::registration::attestation] Error in create_attestation_report: SGX_ERROR_SERVICE_UNAVAILABLE
 ERROR  [wasmi_runtime_enclave::registration::offchain] Error in create_attestation_certificate: SGX_ERROR_SERVICE_UNAVAILABLE
 ERROR: failed to create attestation report: Error calling the VM: SGX_ERROR_SERVICE_UNAVAILABLE
@@ -153,7 +134,7 @@ ERROR: failed to create attestation report: Error calling the VM: SGX_ERROR_SERV
 
 Make sure the `aesmd-service` is running `systemctl status aesmd.service`
 
-####  I'm seeing `CONFIGURATION_AND_SW_HARDENING_NEEDED` in the `isvEnclaveQuoteStatus` field, but with more advisories than what is allowed
+#### [#](#i-m-seeing-configuration-and-sw-hardening-needed-in-the-isvenclavequotestatus-field-but-with-more-advisories-than-what-is-allowed) I'm seeing `CONFIGURATION_AND_SW_HARDENING_NEEDED` in the `isvEnclaveQuoteStatus` field, but with more advisories than what is allowed
 
 This could mean a number of different things related to the configuration of the machine. Most common are:
 
@@ -161,6 +142,6 @@ This could mean a number of different things related to the configuration of the
 *   \["INTEL-SA-00289"\] - Overclocking/undervolting must be disabled by the BIOS
 *   \["INTEL-SA-00219"\] - Integrated graphics should be disabled in the BIOS - we recommend performing this step if you can, though it isn't required
 
-####  I'm seeing `SGX_ERROR_DEVICE_BUSY`
+#### [#](#i-m-seeing-sgx-error-device-busy) I'm seeing `SGX_ERROR_DEVICE_BUSY`
 
 Most likely you tried reinstalling the driver and rerunning the enclave - restarting should solve the problem

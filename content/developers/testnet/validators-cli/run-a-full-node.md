@@ -36,7 +36,7 @@ Refer to https://ark.intel.com/content/www/us/en/ark.html#@Processors if unsure 
 
 ###  0. Step up SGX on your local machine
 
-See instructions for [setup](/validators-and-full-nodes/setup-sgx.html) and [verification](/testnet/verify-sgx.html).
+See instructions for [setup](/developers/node-operators/validators/setup-sgx) and [verification](/developers/testnet/validators-cli/verify-sgx).
 
 ###  1. Download the Secret Network package installer for Debian/Ubuntu:
 
@@ -45,7 +45,7 @@ wget https://github.com/enigmampc/SecretNetwork/releases/download/v0.8.1/secretn
 
 ```
 
-([How to verify releases](/verify-releases.html))
+([How to verify releases](/developers/testnet/validators-cli/how-to-verify-releases))
 
 ###  2. Install the package:
 
@@ -135,7 +135,7 @@ echo $PUBLIC_KEY
 
 The steps using `secretcli` can be run on any machine, they don't need to be on the full node itself. We'll refer to the machine where you are using `secretcli` as the "CLI machine" below.
 
-To run the steps with `secretcli` on another machine, [set up the CLI](/testnet/install_cli.html) there.
+To run the steps with `secretcli` on another machine, [set up the CLI](/developers/testnet/validators-cli/validators-cli) there.
 
 Configure `secretcli`. Initially you'll be using the bootstrap node, as you'll need to connect to a running node and your own node is not running yet.
 

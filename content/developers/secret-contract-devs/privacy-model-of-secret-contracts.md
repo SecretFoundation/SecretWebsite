@@ -7,8 +7,8 @@ layout: ~/layouts/DocumentationLayout
 
 Secret Contracts are based on CosmWasm v0.10, but they have additional privacy properties that can only be found on Secret Network.
 
-If you're a contract developer, you might want to first catch up on [developing Secret Contracts](/dev/dev/developing-secret-contracts.html).  
-For an in depth look at the Secret Network encryption specs, visit [here](/dev/protocol/encryption-specs.html).
+If you're a contract developer, you might want to first catch up on [developing Secret Contracts](/developers/secret-contract-devs/developing-secret-contracts).  
+For an in depth look at the Secret Network encryption specs, visit [here](/developers/protocol/encryption).
 
 Secret Contract developers must always consider the trade-off between privacy, user experience, performance and gas usage.
 
@@ -68,7 +68,7 @@ The parameter verification method depends on the contract caller:
     *   Caller contract creates `callback_signature` based on parameters it sends, passes it on to the next contract.
     *   Receiver contract creates `callback_signature` based on the parameter it got.
     *   Receiver contract verifies that the signature it created matches the signature it got from the caller.
-    *   For the specifics, visit the [encryption specs](/protocol/encryption-specs.html#Output).
+    *   For the specifics, visit the [encryption specs](/developers/protocol/encryption#Output).
 
 # `Init` and `Handle`
 
@@ -381,7 +381,7 @@ Depending on the contract's implementation, an attacker might be able to de-anon
 
 In all the following scenarios, assume that an attacker has a local full node in its control. They cannot break into SGX, but they can tightly monitor and debug every other aspect of the node, including trying to feed old transactions directly to the contract inside SGX (replay). Also, though it's encrypted, they can also monitor memory (size), CPU (load) and disk usage (read/write timings and sizes) of the SGX chip.
 
-For encryption, the Secret Network is using [AES-SIV](https://tools.ietf.org/html/rfc5297) , which does not pad the ciphertext. This means it leaks information about the plaintext data, specifically about its size, though in most cases it's more secure than other padded encryption schemes. Read more about the encryption specs [in here](/dev/protocol/encryption-specs.html).
+For encryption, the Secret Network is using [AES-SIV](https://tools.ietf.org/html/rfc5297) , which does not pad the ciphertext. This means it leaks information about the plaintext data, specifically about its size, though in most cases it's more secure than other padded encryption schemes. Read more about the encryption specs [in here](/dev/developers/protocol/encryption).
 
 Most of the below examples talk about an attacker revealing which function was executed on the contract, but this is not the only type of data leakage that an attacker might target.
 

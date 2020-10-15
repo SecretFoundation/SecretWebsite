@@ -9,8 +9,8 @@ The Secret Network Protocol is run by all validators in the network. The protoco
 
 Secret Network enables validators to perform computation over private data. This involves a number of processes, including:
 
-*   [Registration](/protocol/encryption-specs.html#new-node-registration): the process of a new validator joining the network
-*   [Encryption / Decryption](/protocol/encryption-specs.html): both of network-wide state keys, as well as encryption keys for input and output of specific computations
+*   [Registration](/developers/protocol/encryption#new-node-registration): the process of a new validator joining the network
+*   [Encryption / Decryption](/developers/protocol/encryption): both of network-wide state keys, as well as encryption keys for input and output of specific computations
 *   [Computation](/protocol/components.html#secret-contracts): executing Secret Contract code
 
 The Secret Network performs computations in a Trusted Execution Environment. More precisely, the Secret Network currently uses [Intel® Software Guard Extensions](https://en.wikipedia.org/wiki/Software_Guard_Extensions) (Intel® SGX), which is set of instructions that increase the security of application code and data, giving them more protection from disclosure or modification.
@@ -36,11 +36,11 @@ Figure: diagram of Core, trusted and untrusted components
 
 Trusted Execution Environments are essentially stateless. To preserve the information that’s stored in an enclave, it must be explicitly sent outside the enclave to untrusted memory. SGX provides a capability called [data sealing](https://software.intel.com/en-us/blogs/2016/05/04/introduction-to-intel-sgx-sealing) which encrypts enclave data in the enclave using an encryption key that is derived from the CPU. This encrypted data block can only be decrypted, or unsealed, on the same system. This SGX-specific method for storing data is not used to store computation input/output data in the Secret Network. It is used to store the enclave’s signing key.
 
-We seal the signing key because this key is created during the remote attestation process. We do not want the enclave to be required to perform [remote attestation](/protocol/encryption-specs.html#new-node-registration) between each computation. If the enclave fails for some reason, and the key is lost, the worker would be obligated to go through the remote attestation process again. The only way to store persistent data from the enclave is through sealing.
+We seal the signing key because this key is created during the remote attestation process. We do not want the enclave to be required to perform [remote attestation](/developers/protocol/encryption#new-node-registration) between each computation. If the enclave fails for some reason, and the key is lost, the worker would be obligated to go through the remote attestation process again. The only way to store persistent data from the enclave is through sealing.
 
 # Registration and Cryptography
 -----------------------------------------------------------------
 
-The Secret Network enables Secret Contracts through the use of both encryption protocols and trusted execution environments (TEEs). The reliability of TEEs is verified through a process known as remote attestation, which is required for a node to participate in the network. The Secret Network uses both symmetric and asymmetric encryption protocols. Specifically, asymmetric cryptography is used for achieving consensus and sharing secrets between nodes and users, whereas symmetric cryptography is used for input/output encryption with users of Secret Contracts, as well as internal contract state encryption. For a more extensive discussion of our cryptography approaches, see our [encryption specs](/protocol/encryption-specs.html).
+The Secret Network enables Secret Contracts through the use of both encryption protocols and trusted execution environments (TEEs). The reliability of TEEs is verified through a process known as remote attestation, which is required for a node to participate in the network. The Secret Network uses both symmetric and asymmetric encryption protocols. Specifically, asymmetric cryptography is used for achieving consensus and sharing secrets between nodes and users, whereas symmetric cryptography is used for input/output encryption with users of Secret Contracts, as well as internal contract state encryption. For a more extensive discussion of our cryptography approaches, see our [encryption specs](/developers/protocol/encryption).
 
 Secret Network Protocol uses ECDH key exchange mechanism between users and validators. This process involves the user, the Secret Blockchain, as well as the trusted component of the Secret Protocol. It is initiated any time a transaction is sent from the user to the Secret Contract.

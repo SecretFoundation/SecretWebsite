@@ -597,7 +597,7 @@ msg  codeHashAndMsg.slice(64);
     
     ```
     
-    For more on that, [read here](/dev/privacy-model-of-secret-contracts.html#verified-values-during-contract-execution).
+    For more on that, [read here](/developers/secret-contract-devs/privacy-model-of-secret-contracts#verified-values-during-contract-execution).
     
 *   For the rest of the encrypted outputs we only need to send the ciphertext, as the tx sender can get `consensus_io_exchange_prubkey` from `genesis.json` and `nonce` from the `tx_input` that is attached to the `tx_output`.
     

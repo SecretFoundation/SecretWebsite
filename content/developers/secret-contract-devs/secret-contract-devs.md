@@ -5,24 +5,24 @@ layout: ~/layouts/DocumentationLayout
 # Secret Contract Devs
 
 
-Developers can write Secret Contracts for CosmWasm running inside secure enclaves with encryption capabilities. Once the network upgrade integrating Secret Contract functionality has been completed, developers will be able to use private data in contracts running on the live Secret Network. Currently, we have a [contract development guide for developers](/archive/contract-dev-guide.html) that demonstrates how to get the Secret Network up and running on a local deployment using Docker, as well as how to write simple contracts in Rust using CosmWasm.
+Developers can write Secret Contracts for CosmWasm running inside secure enclaves with encryption capabilities. Once the network upgrade integrating Secret Contract functionality has been completed, developers will be able to use private data in contracts running on the live Secret Network. Currently, we have a [contract development guide for developers](/developers/secret-contract-devs/secret-contract-dev-guide) that demonstrates how to get the Secret Network up and running on a local deployment using Docker, as well as how to write simple contracts in Rust using CosmWasm.
 
 # Getting Started
 -------------------------------------
 
 ###  1. Start a Node Locally
 
-####  1.1 Make sure to [install SGX](/validators-and-full-nodes/setup-sgx.html)
+####  1.1 Make sure to [install SGX](/developers/node-operators/validators/setup-sgx)
 
-####  1.2 Download the [secret node package](/testnet/testnet-docs.html) and follow the instructions
+####  1.2 Download the [secret node package](/developers/testnet/testnet-docs) and follow the instructions
 
 ###  2. Get Your Testnet Account
 
-####  2.1 Create a [local scrt address](/validators-and-full-nodes/secretcli.html)
+####  2.1 Create a [local scrt address](/developers/node-operators/secret-light-client)
 
 ####  2.2 Get some test SCRT from the [faucet](https://faucet.testnet.enigma.co)
 
-###  3. Start a [Node on Testnet](/testnet/run-full-node-testnet.html)
+###  3. Start a [Node on Testnet](/developers/testnet/validators-cli/run-a-full-node)
 
 ####  3.1 Make sure you can access the IP and DNS address you created
 

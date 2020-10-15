@@ -30,6 +30,9 @@ main {
     border-left: 3px solid $primary-teal-color;
     line-height: $paragraph-line-height;
   }
+  a {
+    text-decoration: underline;
+  }
 }
 
 hr {

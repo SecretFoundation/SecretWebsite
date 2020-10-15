@@ -19,11 +19,22 @@
 <script>
 import BlogAuthor from '@/components/blog/BlogAuthor'
 
+const colors = ['blue', 'orange', 'pink', 'purple']
+
 export default {
   components: { BlogAuthor },
-  props: {
-    color: {
-      type: String
+  data() {
+    return {
+      color: ''
+    }
+  },
+  created() {
+    this.color = this.getColor()
+  },
+  methods: {
+    getColor() {
+      const color = Math.floor(Math.random() * colors.length)
+      return colors[color]
     }
   }
 }

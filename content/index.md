@@ -74,4 +74,20 @@ These are some ways you can join the Secret Network:
 
 </single-column>
 
-<separator center />
+<separator center space-xlarge />
+
+<single-column>
+
+#### Blog
+
+### The secrets that surround us
+
+Read, watch and absorb the secrets that we publish in our official blog.
+
+<latest-posts></latest-posts>
+
+<br>
+
+[Unveil more secrets](/blog)
+
+</single-column>

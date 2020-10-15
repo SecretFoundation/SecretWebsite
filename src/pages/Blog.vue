@@ -6,7 +6,7 @@
       </template>
       <single-column>
         <grid columns="3">
-          <blog-card v-for="{ node } in $page.posts.edges" :key="node.id" :color="getColor()">
+          <blog-card v-for="{ node } in $page.posts.edges" :key="node.id">
             <template #tag v-if="node.primary_tag">{{ node.primary_tag.name }}</template>
             <h4><g-link :to="`/blog/${node.slug}`">{{ node.title }}</g-link></h4>
             <separator small space-small></separator>
@@ -30,16 +30,8 @@ import BaseLayout from '../layouts/BaseLayout'
 import MainPageLayout from '../layouts/MainPageLayout'
 import BlogCard from '../components/blog/BlogCard'
 
-const colors = ['blue', 'orange', 'pink', 'purple']
-
 export default {
   components: { BaseLayout, MainPageLayout, BlogCard },
-  methods: {
-    getColor() {
-      const color = Math.floor(Math.random() * colors.length)
-      return colors[color]
-    }
-  }
 }
 </script>
 

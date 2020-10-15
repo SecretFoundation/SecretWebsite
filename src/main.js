@@ -14,6 +14,7 @@ import Card from './components/Card'
 import CardHolder from './components/CardHolder'
 import CommitteeCard from './components/CommitteeCard'
 import ThemedImage from '@/components/ThemedImage'
+import LatestPosts from '@/components/blog/LatestPosts'
 
 require('hind');
 require('typeface-montserrat');
@@ -31,6 +32,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('CardHolder', CardHolder)
   Vue.component('CommitteeCard', CommitteeCard)
   Vue.component('ThemedImage', ThemedImage)
+  Vue.component('LatestPosts', LatestPosts)
 
   if (isClient) {
     Vue.$setDefaultTheme()

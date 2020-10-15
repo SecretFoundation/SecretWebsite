@@ -1,8 +1,8 @@
 <template>
   <section class="blog-hero">
     <themed-image class="blog-hero__cover">
-      <g-image dark src="~/assets/hero-black.svg" alt="cover image"></g-image>
-      <g-image light src="~/assets/hero-white.svg" alt="cover image"></g-image>
+      <g-image light src="~/assets/hero-black.svg" alt="cover image"></g-image>
+      <g-image dark src="~/assets/hero-white.svg" alt="cover image"></g-image>
       <g-image light-colored dark-colored src="~/assets/hero-color.svg" alt="cover image"></g-image>
     </themed-image>
     <div class="blog-hero__content">
@@ -34,7 +34,7 @@
       transform: rotate(180deg);
 
       @include respond-to("large and up") {
-        height: 120px;
+        height: 80px;
       }
       @include respond-to("medium") {
         height: 80px;
@@ -68,7 +68,7 @@
 
     div[tag] {
       text-transform: uppercase;
-      color: $primary-teal-color;
+      color: $primary-blue-color;
     }
   }
 }

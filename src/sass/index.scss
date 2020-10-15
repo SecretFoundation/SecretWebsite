@@ -3,14 +3,16 @@
 
 html {
   --black-color: #{$primary-black-color};
-  --blue-color: #{$primary-blue-color};
-  --orange-color: #{$primary-orange-color};
-  --pink-color: #{$primary-pink-color};
   --purple-color: #{$primary-purple-color};
+  --orange-color:  #{$primary-orange-color};
+  --cream-color: #{$primary-cream-color};
+  --blue-color: #{$primary-blue-color};
+  --yellow-color: #{$primary-yellow-color};
+  --red-color: #{$primary-red-color};
 }
 
 .column {
-  padding-bottom: $gutter-xlarge;
+  padding: $gutter-large 0;
 }
 
 a {
@@ -27,7 +29,7 @@ main {
     font-size: $base-size;
     margin: 0 0 $gutter-xlarge;
     padding: 0 $gutter;
-    border-left: 3px solid $primary-teal-color;
+    border-left: 3px solid $primary-blue-color;
     line-height: $paragraph-line-height;
   }
   a {

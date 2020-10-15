@@ -19,10 +19,6 @@ export default {
 
 <style lang="scss">
 .card-holder {
-  &.column {
-    padding: 0 $gutter;
-  }
-
   &--bi {
     .card {
       &:nth-of-type(1) {

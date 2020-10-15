@@ -83,7 +83,7 @@ Gathering a list of compatible hardware solutions.
 
 </committee-card>
 
-<committee-card pink>
+<committee-card cream>
 
 <template v-slot:header>
 
@@ -121,7 +121,7 @@ Discussing project updates and governance issues.
 
 </committee-card>
 
-<committee-card teal>
+<committee-card blue>
 
 <template v-slot:header>
 

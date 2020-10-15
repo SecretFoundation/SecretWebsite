@@ -39,6 +39,9 @@ export default {
       width: 100%;
     }
   }
+  a {
+    text-decoration: none;
+  }
 }
 .kg-card {
   margin-bottom: $gutter-xlarge;
@@ -56,7 +59,7 @@ export default {
     @include respond-to("large and up") {
       grid-auto-flow: column;
       grid-template-columns: 1fr 231px;
-      grid-template-rows: minmax(100%, 156px);
+      grid-template-rows: minmax(156px, 100%);
     }
     @include respond-to("medium and down") {
       grid-template-columns: 1fr;
@@ -67,6 +70,7 @@ export default {
     padding: $gutter;
     grid-auto-rows: max-content;
     grid-row-gap: $gutter;
+    width: 100%;
   }
   &-icon {
     width: rem(24px);
@@ -91,14 +95,24 @@ export default {
   }
   &-author:after {
     content: "•";
-    margin-left: $gutter-small;
+    margin-left: $gutter-xsmall;
   }
   &-metadata {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: rem(24px) max-content max-content;
-    align-items: center;
-    grid-column-gap: $gutter-small;
+    @include respond-to("large and up") {
+      display: grid;
+      grid-auto-columns: max-content;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-column-gap: $gutter-xsmall;
+    }
+    @include respond-to("medium and down") {
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: $gutter-small;
+        margin-bottom: $gutter-small;
+      }
+    }
   }
 }
 </style>

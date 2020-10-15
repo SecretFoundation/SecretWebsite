@@ -13,11 +13,10 @@
 
 <style lang="scss" scoped>
 .newsletter {
-  background-color: $primary-black-color;
+  background-color: var(--theme-fg);
 
-  // Override default text color for this component only
   & * {
-    color: white;
+    color: var(--theme-bg);
   }
 
   @include respond-to("medium") {
@@ -52,7 +51,7 @@
 
     button {
       padding: rem(15px);
-      background-color: $primary-blue-color;
+      background-color: $primary-purple-color;
       color: white;
       border-radius: 4px;
       font-weight: bold;

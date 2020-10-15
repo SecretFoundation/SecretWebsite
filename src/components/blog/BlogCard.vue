@@ -19,7 +19,7 @@
 <script>
 import BlogAuthor from '@/components/blog/BlogAuthor'
 
-const colors = ['blue', 'orange', 'pink', 'purple']
+const colors = ['purple','orange','cream','blue','yellow','red']
 
 export default {
   components: { BlogAuthor },

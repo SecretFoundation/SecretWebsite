@@ -1,18 +1,19 @@
 // Colors
 $primary-black-color: #1B1B1B;
-$primary-blue-color: #1F50FA;
-$primary-orange-color: #FE7F61;
-$primary-pink-color: #F5BBBA;
-$primary-teal-color: #57BFE7;
-$primary-purple-color: #6D5EDA;
+$primary-purple-color: #605982;
+$primary-orange-color:  #EA7534;
+$primary-cream-color: #E5C7A3;
+$primary-blue-color: #2CA6B1;
+$primary-yellow-color: #FFF251;
 $primary-red-color: #D53A2C;
 
 $primary-colors: (
-  "blue": $primary-blue-color,
-  "orange": $primary-orange-color,
-  "pink": $primary-pink-color,
-  "teal": $primary-teal-color,
+  "black": $primary-black-color,
   "purple": $primary-purple-color,
+  "orange": $primary-orange-color,
+  "cream": $primary-cream-color,
+  "blue": $primary-blue-color,
+  "yellow": $primary-yellow-color,
   "red": $primary-red-color
 );
 

@@ -9,6 +9,18 @@
   img {
     display: none;
 
+    &[alt*=black] {
+      @include theme(dark) {
+        display: block;
+      }
+    }
+
+    &[alt*=white] {
+      @include theme(light) {
+        display: block;
+      }
+    }
+
     &[dark] {
       @include theme(dark) {
         display: block;

@@ -60,7 +60,7 @@ These are some ways you can join the Secret Network:
 
 </triplet-columns>
 
-<single-column>
+<single-column class="ecosystem">
 
 <home-card to="/ecosystem/overview" horizontal>
 
@@ -74,7 +74,7 @@ These are some ways you can join the Secret Network:
 
 </single-column>
 
-<separator center space-xlarge />
+<separator center space-large />
 
 <single-column>
 
@@ -91,3 +91,12 @@ Read, watch and absorb the secrets that we publish in our official blog.
 [Unveil more secrets](/blog)
 
 </single-column>
+
+<style lang="scss">
+.ecosystem {
+  @include respond-to("large and up") {
+    padding-top: 0;
+    padding-bottom: 89px;
+  }
+}
+</style>

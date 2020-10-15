@@ -62,7 +62,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:footer>
 
-[Join the discusion]()
+[Join the discusion](https://forum.scrt.network/)
 
 </template>
 
@@ -80,11 +80,11 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:footer>
 
-[Join a Committee]()
+[Read the blog](/blog)
 
 </template>
 
-![Join us and get all the secrets](./img/secret-forum.png)
+![Read the blog](./img/blog.png)
 
 </card>
 
@@ -92,13 +92,13 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:header>
 
-#### Rocket Chat
+#### Discord
 
 </template>
 
 <template v-slot:footer>
 
-[Join a Committee]()
+[Join us and get all the secrets](https://discord.com/invite/SJK32GY)
 
 </template>
 

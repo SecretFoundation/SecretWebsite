@@ -2,7 +2,6 @@
 
 # Commonly Asked Questions
 
-
 <faq>
 
 ###  What is the Secret Network?

@@ -28,6 +28,10 @@ $-strong-font-size: 24px;
     font-size: $-strong-font-size;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   &[horizontal] {
     position: relative;
 

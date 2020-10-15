@@ -7,12 +7,12 @@
       </g-link>
     </template>
     <template #navigation>
-      <g-link blue to="/about/about-secret-network">About</g-link>
-      <g-link orange to="/blog">Blog</g-link>
-      <g-link pink to="/community">Community</g-link>
-      <g-link teal to="/developers/introduction/overview">Developers</g-link>
-      <g-link purple to="/ecosystem/overview">Ecosystem</g-link>
-      <g-link red to="https://forum.scrt.network/">Forum</g-link>
+      <g-link cream to="/about/about-secret-network">About</g-link>
+      <g-link red to="/blog">Blog</g-link>
+      <g-link purple to="/community">Community</g-link>
+      <g-link yellow to="/developers">Developers</g-link>
+      <g-link orange to="/ecosystem/overview">Ecosystem</g-link>
+      <g-link blue to="https://forum.scrt.network/">Forum</g-link>
     </template>
     <template #actions>
       <div class="social-networks">
@@ -203,7 +203,7 @@ export default {
                 background-color: $color;
                 color: white;
               }
-              &[pink] {
+              &[cream], &[yellow], &[orange] {
                 color: $primary-black-color;
               }
             }

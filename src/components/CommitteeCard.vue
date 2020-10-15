@@ -17,49 +17,15 @@
   width: 100%;
   height: 100%;
 
-  &[blue] {
-    border-color: $primary-blue-color;
-    a:not([aria-hidden=true]) {
-      background-color: $primary-blue-color;
-    }
-    @at-root & #{$root}__header {
-      border-color: $primary-blue-color;
-    }
-  }
-  &[orange] {
-    border-color: $primary-orange-color;
-    a:not([aria-hidden=true]) {
-      background-color: $primary-orange-color;
-    }
-    @at-root & #{$root}__header {
-      border-color: $primary-orange-color;
-    }
-  }
-  &[pink] {
-    border-color: $primary-pink-color;
-    a:not([aria-hidden=true]) {
-      background-color: $primary-pink-color;
-    }
-    @at-root & #{$root}__header {
-      border-color: $primary-pink-color;
-    }
-  }
-  &[teal] {
-    border-color: $primary-teal-color;
-    a:not([aria-hidden=true]) {
-      background-color: $primary-teal-color;
-    }
-    @at-root & #{$root}__header {
-      border-color: $primary-teal-color;
-    }
-  }
-  &[purple] {
-    border-color: $primary-purple-color;
-    a:not([aria-hidden=true]) {
-      background-color: $primary-purple-color;
-    }
-    @at-root & #{$root}__header {
-      border-color: $primary-purple-color;
+  @each $name, $color in $primary-colors {
+    &[#{$name}] {
+      border-color: var(--#{$name}-color);
+      a:not([aria-hidden=true]) {
+        background-color: var(--#{$name}-color);
+      }
+      @at-root & #{$root}__header {
+        border-color: var(--#{$name}-color);
+      }
     }
   }
 

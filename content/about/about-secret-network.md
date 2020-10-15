@@ -92,7 +92,7 @@ Enabling more open and more usable gaming experiences.
 
 <template v-slot:footer>
 
-[Go ahead and read de FAQ](#commonly-asked-questions)
+[Go ahead and read de FAQ](#frequenly-asked-questions)
 
 </template>
 
@@ -179,13 +179,13 @@ We prioritize adoption - applications that will make the greatest difference for
 
 Individuals have a right to their own privacy, their own self-expression, and their own data.
 
-<separator space-large />
-
 </slim-column>
+
+<separator space-large center />
 
 <slim-column>
 
-## Commonly Asked Questions
+## Frequenly Asked Questions
 
 <faq>
 
@@ -323,3 +323,9 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
 </faq>
 
 </slim-column>
+
+<style lang="scss">
+#frequenly-asked-questions {
+  margin-bottom: $gutter-xxlarge;
+}
+</style>

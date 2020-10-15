@@ -1,9 +1,9 @@
 <template>
   <section class="blog-hero">
     <themed-image class="blog-hero__cover">
-      <g-image light src="~/assets/hero-black.svg" alt="cover image"></g-image>
-      <g-image dark src="~/assets/hero-white.svg" alt="cover image"></g-image>
-      <g-image light-colored dark-colored src="~/assets/hero-color.svg" alt="cover image"></g-image>
+      <img light src="@/assets/hero-black.svg" alt="hero">
+      <img dark src="@/assets/hero-white.svg" alt="hero">
+      <img light-colored dark-colored src="@/assets/hero-color.svg" alt="hero">
     </themed-image>
     <div class="blog-hero__content">
       <slot></slot>
@@ -29,6 +29,7 @@
 
   &__cover {
     img {
+      width: 100%;
       object-fit: cover;
       object-position: top;
       transform: rotate(180deg);

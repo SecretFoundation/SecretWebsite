@@ -2,13 +2,15 @@
 @import "~@lkmx/flare/src/flare";
 
 html {
-  --black-color: #{$primary-black-color};
-  --purple-color: #{$primary-purple-color};
-  --orange-color:  #{$primary-orange-color};
-  --cream-color: #{$primary-cream-color};
-  --blue-color: #{$primary-blue-color};
-  --yellow-color: #{$primary-yellow-color};
-  --red-color: #{$primary-red-color};
+  --purple-color: #{$secondary-purple-color};
+  --yellow-color: #{$secondary-yellow-color};
+  --green-color: #{$secondary-green-color};
+  --peach-color: #{$secondary-peach-color};
+  --turquoise-color: #{$secondary-turquoise-color};
+  --pink-color: #{$secondary-pink-color};
+  --red-color: #{$secondary-red-color};
+  --orange-color: #{$secondary-orange-color};
+  --blue-color: #{$secondary-blue-color};
 }
 
 .column {

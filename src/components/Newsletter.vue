@@ -5,7 +5,7 @@
       <p>Get the latest from the Secret Network ecosystem<br>and engineering updates, straight to your inbox.</p>
       <form>
         <input type="text" placeholder="Your email">
-        <button>Suscribe</button>
+        <button>Subscribe</button>
       </form>
     </single-column>
   </div>
@@ -13,6 +13,11 @@
 
 <style lang="scss" scoped>
 .newsletter {
+
+  .column {
+    padding: $gutter-xlarge $gutter;
+  }
+
   background-color: var(--theme-fg);
 
   & * {
@@ -29,7 +34,7 @@
     @include respond-to("large and up") {
       grid-auto-flow: column;
       grid-column-gap: rem(16px);
-      grid-template-columns: rem(453px) min-content;
+      grid-template-columns: rem(453px) rem(181px);
     }
     @include respond-to("medium") {
       grid-auto-flow: column;
@@ -43,17 +48,17 @@
     }
 
     input {
-      padding: rem(15px);
-      border-radius: 4px;
+      padding: $gutter;
+      border-radius: 8px;
       border: 1px solid $primary-black-color;
       font-family: $text-font;
     }
 
     button {
-      padding: rem(15px);
+      padding: $gutter;
       background-color: $primary-purple-color;
       color: white;
-      border-radius: 4px;
+      border-radius: 8px;
       font-weight: bold;
     }
   }

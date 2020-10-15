@@ -4,7 +4,7 @@ layout: ~/layouts/MainPageLayout
 
 <template v-slot:title>
 
-## Developers
+## Secret Network Developers
 
 </template>
 

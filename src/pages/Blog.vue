@@ -6,7 +6,7 @@
       </template>
       <single-column>
         <grid columns="3">
-          <blog-card v-for="{ node } in $page.posts.edges" :key="node.id">
+          <blog-card v-for="{ node } in $page.posts.edges" :key="node.id" :tag="node.primary_tag != null ? node.primary_tag.name : ''">
             <template #tag v-if="node.primary_tag">{{ node.primary_tag.name }}</template>
             <h4><g-link :to="`/blog/${node.slug}`">{{ node.title }}</g-link></h4>
             <separator small space-small></separator>

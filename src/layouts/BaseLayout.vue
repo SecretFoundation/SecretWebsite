@@ -16,25 +16,25 @@
     </template>
     <template #actions>
       <div class="social-networks">
-        <g-link light light-colored to="https://discord.com/invite/SJK32GY">
+        <g-link to="https://discord.com/invite/SJK32GY">
           <themed-image>
             <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>
             <g-image light light-colored src="@/assets/discord-black.svg"></g-image>
           </themed-image>
         </g-link>
-        <g-link light light-colored to="https://t.me/SCRTcommunity">
+        <g-link to="https://t.me/SCRTcommunity">
           <themed-image>
             <g-image dark dark-colored src="@/assets/telegram-white.svg"></g-image>
             <g-image light light-colored src="@/assets/telegram-black.svg"></g-image>
           </themed-image>
         </g-link>
-        <g-link light light-colored to="https://twitter.com/SecretNetwork">
+        <g-link to="https://twitter.com/SecretNetwork">
           <themed-image>
             <g-image dark dark-colored src="@/assets/twitter-white.svg"></g-image>
             <g-image light light-colored src="@/assets/twitter-black.svg"></g-image>
           </themed-image>
         </g-link>
-        <g-link light light-colored to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw">
+        <g-link to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw">
           <themed-image>
             <g-image dark dark-colored src="@/assets/youtube-white.svg"></g-image>
             <g-image light light-colored src="@/assets/youtube-black.svg"></g-image>
@@ -44,16 +44,14 @@
       <div class="toggles">
         <button @click="toggleDarkLightMode">
           <themed-image>
-            <g-image light light-colored src="@/assets/moon.svg"></g-image>
-            <g-image dark  dark-colored src="@/assets/sun.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/moon.svg"></g-image>
+            <g-image light light-colored src="@/assets/sun.svg"></g-image>
           </themed-image>
         </button>
         <button @click="toggleColoredMode">
           <themed-image>
-            <g-image light         src="@/assets/toggle-color-on-black.svg"></g-image>
-            <g-image light-colored src="@/assets/toggle-color-off-black.svg"></g-image>
-            <g-image dark          src="@/assets/toggle-color-on-white.svg"></g-image>
-            <g-image dark-colored  src="@/assets/toggle-color-off-white.svg"></g-image>
+            <g-image dark light src="@/assets/mono.svg"></g-image>
+            <g-image dark-colored light-colored src="@/assets/chromo.svg"></g-image>
           </themed-image>
         </button>
       </div>
@@ -258,6 +256,9 @@ export default {
   }
 }
 .custom-footer {
+  a:hover {
+    text-decoration: underline;
+  }
   &.single-column {
     @include respond-to("large and up") {
       padding: 0;
@@ -355,6 +356,10 @@ export default {
 .toggles {
   display: grid;
   grid-auto-flow: column;
-  grid-column-gap: $gutter-xsmall;
+  grid-column-gap: $gutter;
+  img {
+    width: 24px;
+    height: 24px;
+  }
 }
 </style>

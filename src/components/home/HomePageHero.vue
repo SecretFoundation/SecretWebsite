@@ -2,15 +2,17 @@
   <section class="hero">
     <div class="hero__cover">
       <themed-image>
-        <g-image light src="@/assets/hero-black.svg"></g-image>
-        <g-image dark src="@/assets/hero-white.svg"></g-image>
-        <g-image light-colored dark-colored src="@/assets/hero-color.svg"></g-image>
+        <img light src="@/assets/hero-black.svg" alt="hero">
+        <img dark src="@/assets/hero-white.svg" alt="hero">
+        <img light-colored dark-colored src="@/assets/hero-color.svg" alt="hero">
       </themed-image>
     </div>
     <div class="hero__content">
       <div class="hero__title">
-        <g-image class="hero__logo" src="@/assets/logo-seal.svg"></g-image>
-        <h2>Welcome to Secret Network</h2>
+        <div class="hero__title__container">
+          <g-image class="hero__logo" src="@/assets/logo-seal.svg"></g-image>
+          <h2>Welcome to Secret Network</h2>
+        </div>
       </div>
     </div>
   </section>
@@ -90,6 +92,9 @@ $-hero-desktop-height: 540px;
 $-hero-tablet-height: 400px;
 $-hero-mobile-height: 400px;
 
+$-logo-size-desktop: 118px;
+$-logo-size-mobile: 68px;
+
 .hero {
   position: relative;
   max-width: 100%;
@@ -137,38 +142,63 @@ $-hero-mobile-height: 400px;
     transform: translate(-50%, -50%);
     border: 4px solid;
     border-radius: 16px;
-    padding: 86px 76px;
 
-    @include theme(dark dark-colored) {
-      border-color: white;
-      background: $primary-black-color;
-    }
-    @include theme(light light-colored) {
-      border-color: $primary-black-color;
-      background: white;
-    }
-    @include respond-to("small and down") {
-      padding: 55px 21px;
-    }
+    background-color: var(--theme-bg);
+    color: var(--theme-fg);
   }
 
   &__title {
     position: relative;
-    h2 {
-      margin: 0;
-      text-align: center;
+    width: 100%;
+    height: 100%;
 
-      @include respond-to("small and down") {
-        width: rem(303px);
+    @include respond-to("large and up") {
+      padding: $gutter-xxlarge;
+    }
+    @include respond-to("medium") {
+      padding: $gutter-xxlarge 0;
+    }
+    @include respond-to("small and down") {
+      padding: $gutter-large 0;
+    }
+
+    &__container {
+      width: 100%;
+      height: 100%;
+
+      h2 {
+        margin: 0;
+        text-align: center;
+
+        @include respond-to("small and down") {
+          width: rem(303px);
+        }
+      }
+
+      img {
+        @include respond-to("medium and up") {
+          width: rem($-logo-size-desktop);
+          height: rem($-logo-size-desktop);
+        }
+        @include respond-to("small and down") {
+          width: rem($-logo-size-mobile);
+          height: rem($-logo-size-mobile);
+        }
       }
     }
   }
 
   &__logo {
     position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -120%);
+
+    @include respond-to("medium and up") {
+      top: - ($-logo-size-desktop / 2);
+      left: calc(100% / 2 - #{$-logo-size-desktop / 2});
+    }
+    @include respond-to("small and down") {
+      top: - ($-logo-size-mobile / 2);
+      left: calc(100% / 2 - #{$-logo-size-mobile / 2});
+    }
   }
 }
 </style>

@@ -17,6 +17,28 @@ $primary-colors: (
   "red": $primary-red-color
 );
 
+$secondary-purple-color: #A9A7D3;
+$secondary-yellow-color: #F4DD7D;
+$secondary-green-color: #A6DDA9;
+$secondary-peach-color: #FFDEC0;
+$secondary-turquoise-color: #83D9DD;
+$secondary-pink-color: #E4CDE8;
+$secondary-red-color: #EF726C;
+$secondary-orange-color: #F2A37C;
+$secondary-blue-color: #92BCEF;
+
+$secondary-colors: (
+  "purple": $secondary-purple-color,
+  "yellow": $secondary-yellow-color,
+  "green": $secondary-green-color,
+  "peach": $secondary-peach-color,
+  "turquoise": $secondary-turquoise-color,
+  "pink": $secondary-pink-color,
+  "red": $secondary-red-color,
+  "orange": $secondary-orange-color,
+  "blue": $secondary-blue-color
+);
+
 // Texts
 $text-font: 'Hind', sans-serif;
 $text-color: var(--theme-fg);
@@ -37,7 +59,7 @@ $grid-mobile-row-gap: 34px;
 
 // Links
 $links-text-color: var(--theme-fg);
-$links-text-hover-color: $primary-orange-color;
+$links-text-hover-color: $primary-purple-color;
 
 // Header
 $header-height: 90px;
@@ -48,7 +70,7 @@ $header-nav-hover-color: var(--theme-fg);
 $header-nav-visited-color: var(--theme-fg);
 $header-nav-justify-items: start;
 $header-nav-spacing: 0px;
-$header-actions-space-width: 220px;
+$header-actions-space-width: 232px;
 $header-logo-space-width: 142px;
 
 // Hero
@@ -58,7 +80,7 @@ $hero-headings-text-color: var(--theme-fg);
 $footer-text-color: var(--theme-fg);
 $footer-background-color: var(--theme-bg);
 $footer-link-default-color: var(--theme-fg);
-$footer-link-hover-color: var(--theme-fg);
+$footer-link-hover-color: $primary-purple-color;
 $footer-link-active-color: var(--theme-fg);
 $footer-link-visited-color: var(--theme-fg);
 

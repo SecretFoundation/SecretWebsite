@@ -1,9 +1,11 @@
 <template>
   <section class="main-page-hero">
     <div class="main-page-hero__cover">
-      <g-image src="../assets/hero-black.svg" alt="hero image"></g-image>
-      <g-image src="../assets/hero-white.svg" alt="hero image"></g-image>
-      <g-image src="../assets/hero-color.svg" alt="hero image"></g-image>
+      <themed-image>
+        <img light src="@/assets/hero-black.svg" alt="hero">
+        <img dark src="@/assets/hero-white.svg" alt="hero">
+        <img light-colored dark-colored src="@/assets/hero-color.svg" alt="hero">
+      </themed-image>
     </div>
     <div class="main-page-hero__content">
       <div class="main-page-hero__title">

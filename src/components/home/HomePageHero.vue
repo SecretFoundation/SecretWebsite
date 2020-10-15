@@ -2,9 +2,9 @@
   <section class="hero">
     <div class="hero__cover">
       <themed-image>
-        <g-image light src="@/assets/hero-black.svg"></g-image>
-        <g-image dark src="@/assets/hero-white.svg"></g-image>
-        <g-image light-colored dark-colored src="@/assets/hero-color.svg"></g-image>
+        <img light src="@/assets/hero-black.svg" alt="hero">
+        <img dark src="@/assets/hero-white.svg" alt="hero">
+        <img light-colored dark-colored src="@/assets/hero-color.svg" alt="hero">
       </themed-image>
     </div>
     <div class="hero__content">

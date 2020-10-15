@@ -78,7 +78,9 @@ $-logo-size-mobile: 68px;
     background-color: var(--theme-bg);
     color: var(--theme-fg);
 
-    min-width: 788px;
+    @include respond-to("large and up") {
+      min-width: 788px;
+    }
   }
 
   &__title {
@@ -93,7 +95,7 @@ $-logo-size-mobile: 68px;
       padding: $gutter-xxlarge 0;
     }
     @include respond-to("small and down") {
-      padding: $gutter-large 0;
+      padding: $gutter-xlarge $gutter;
     }
 
     &__container {

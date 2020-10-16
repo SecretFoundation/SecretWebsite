@@ -165,11 +165,13 @@ export default {
     }
   },
   created() {
-    const theme = localStorage.getItem('theme')
-    if (!theme) return
-    this.darkLightModeState = !theme.includes('dark')
-    this.coloredModeState = theme.includes('colored')
-    this.setBodyAttr(theme)
+    if (process.isClient) {
+      const theme = localStorage.getItem('theme')
+      if (!theme) return
+      this.darkLightModeState = !theme.includes('dark')
+      this.coloredModeState = theme.includes('colored')
+      this.setBodyAttr(theme)
+    }
   },
   methods: {
     toggleDarkLightMode() {
@@ -185,7 +187,9 @@ export default {
       const darkLightMode = this.darkLightModeState ? 'light' : 'dark'
       const theme = `${darkLightMode}${colorMode}`
       this.setBodyAttr(theme)
-      localStorage.setItem('theme', theme)
+      if (process.isClient) {
+        localStorage.setItem('theme', theme)
+      }
     },
     setBodyAttr(theme) {
       const [body] = document.getElementsByTagName('body')

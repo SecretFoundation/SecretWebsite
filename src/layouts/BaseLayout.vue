@@ -229,11 +229,16 @@ export default {
     }
 
     &__primary {
+      width: 100%;
+      max-width: $header-nav-items-width * $header-nav-items;
+      justify-self: center;
+
       @include respond-to("large and up") {
         height: 100%;
-      }
-      @include respond-to("medium and down") {
-        // here
+        // Check for the number of items in the header
+        grid-auto-columns: calc(100% / #{$header-nav-items});
+        // This is kind of a hack; avoid it at all costs... but for now is fine
+        grid-template-columns: unset;
       }
 
       a {
@@ -437,7 +442,7 @@ export default {
   grid-auto-flow: column;
   grid-column-gap: $gutter-small;
 
-  @include respond-to("large and down") {
+  @include respond-to("medium and down") {
     display: none;
   }
 }

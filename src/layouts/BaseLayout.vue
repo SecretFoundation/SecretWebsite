@@ -62,6 +62,20 @@
         <g-image dark dark-colored src="@/assets/menu-white.svg"></g-image>
       </themed-image>
     </template>
+    <template #nav-toggle-close>
+      <themed-image>
+        <g-image light light-colored src="@/assets/close-icon-black.svg"></g-image>
+        <g-image dark dark-colored src="@/assets/close-icon-white.svg"></g-image>
+      </themed-image>
+    </template>
+    <template #navigation-header>
+      <g-link to="/" home>
+        <themed-image>
+          <g-image light light-colored src="@/assets/badge-black.svg"></g-image>
+          <g-image dark dark-colored src="@/assets/badge-white.svg"></g-image>
+        </themed-image>
+      </g-link>
+    </template>
     <base-page>
       <slot></slot>
       <newsletter></newsletter>
@@ -177,16 +191,64 @@ export default {
     }
   }
   .main-nav {
-    height: 100%;
+
+    @include respond-to("large and up") {
+      height: 100%;
+    }
+
+    &__header {
+      @include respond-to("medium and down") {
+        padding: $gutter $gutter $gutter;
+      }
+    }
 
     &__primary {
-      height: 100%;
+      @include respond-to("large and up") {
+        height: 100%;
+      }
+      @include respond-to("medium and down") {
+        // here
+      }
 
       a {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        place-content: center center;
+        @include respond-to("large and up") {
+          width: 100%;
+          height: 100%;
+          display: grid;
+          place-content: center center;
+        }
+        @include respond-to("medium and down") {
+          font-size: rem(24px);
+
+          &:not(.active) {
+            padding: $gutter;
+          }
+        }
+
+        &.active {
+          &:not([home]) {
+            @include respond-to("small and down") {
+              display: grid;
+              place-content: center start;
+              padding: $gutter;
+            }
+            @include theme(dark light) {
+              background-color: var(--theme-fg);
+              color: var(--theme-bg);
+            }
+            @include theme(dark-colored light-colored) {
+              @each $name, $color in $primary-colors {
+                &[#{$name}] {
+                  background-color: $color;
+                  color: white;
+                }
+                &[cream], &[yellow], &[orange] {
+                  color: $primary-black-color;
+                }
+              }
+            }
+          }
+        }
 
         &:hover {
           transition: background-color 300ms ease-in-out;

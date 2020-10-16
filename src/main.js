@@ -16,7 +16,7 @@ import CommitteeCard from './components/CommitteeCard'
 import ThemedImage from '@/components/ThemedImage'
 import LatestPosts from '@/components/blog/LatestPosts'
 
-require('hind');
+require('typeface-hind');
 require('typeface-montserrat');
 
 export default function (Vue, { router, head, isClient }) {

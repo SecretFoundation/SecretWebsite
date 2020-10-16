@@ -70,8 +70,11 @@ $header-nav-hover-color: var(--theme-fg);
 $header-nav-visited-color: var(--theme-fg);
 $header-nav-justify-items: start;
 $header-nav-spacing: 0px;
+$header-nav-default-color: var(--theme-bg);
+$header-nav-color: var(--theme-fg);
 $header-actions-space-width: 232px;
 $header-logo-space-width: 142px;
+$header-nav-close-toggle-size: 24px;
 
 // Hero
 $hero-headings-text-color: var(--theme-fg);

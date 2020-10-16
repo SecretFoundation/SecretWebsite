@@ -140,6 +140,9 @@ $-icon-size: 10px;
   }
 
   &__body {
+    // TODO Just while fixing the docs
+    overflow-x: scroll;
+    overflow-y: hidden;
     &.column {
       padding: 0;
     }

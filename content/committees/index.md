@@ -83,7 +83,7 @@ Gathering a list of compatible hardware solutions.
 
 </committee-card>
 
-<committee-card cream>
+<committee-card red>
 
 <template v-slot:header>
 

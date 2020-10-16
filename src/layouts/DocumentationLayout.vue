@@ -148,10 +148,19 @@ $-icon-size: 10px;
   &__sidebar {
     @include respond-to("large and up") {
       position: sticky;
-      top: 0;
       overflow: auto;
       height: min-content;
       padding: $gutter-xlarge 0;
+
+      @include respond-to("small and down") {
+       top: $page-mobile-header-offset;
+      }
+      @include respond-to("medium") {
+        top: $page-tablet-header-offset;
+      }
+      @include respond-to("large and up") {
+        top: $page-desktop-header-offset;
+      }
     }
   }
 }

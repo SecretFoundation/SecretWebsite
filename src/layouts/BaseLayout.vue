@@ -151,9 +151,14 @@ export default {
   data() {
     return {
       theme: null,
-      darkLightModeState: false, // false is dark
-      coloredModeState: false, // false is not activated
+      darkLightModeState: null, // false is dark
+      coloredModeState: null, // false is not activated
     }
+  },
+  created() {
+    const theme = localStorage.getItem('theme')
+    if (!theme) return
+    this.setBodyAttr(theme)
   },
   methods: {
     toggleDarkLightMode() {
@@ -165,13 +170,16 @@ export default {
       this.setTheme()
     },
     setTheme() {
-      const [body] = document.getElementsByTagName('body')
-      if (!body) return
       const colorMode = this.coloredModeState ? '-colored' : ''
       const darkLightMode = this.darkLightModeState ? 'light' : 'dark'
       const theme = `${darkLightMode}${colorMode}`
+      this.setBodyAttr(theme)
+      localStorage.setItem('theme', theme)
+    },
+    setBodyAttr(theme) {
+      const [body] = document.getElementsByTagName('body')
+      if (!body) return
       body.setAttribute('theme', theme)
-      this.$root.$emit('theme', theme)
     }
   }
 }

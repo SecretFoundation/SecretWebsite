@@ -6,7 +6,7 @@
 
 #### About
 
-## What is the secret of Secret Network?
+## What is the Secret Network?
 
 Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
 

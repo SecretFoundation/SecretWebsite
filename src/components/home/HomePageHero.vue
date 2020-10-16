@@ -88,7 +88,7 @@ export default {
 </script>
 
 <style lang="scss">
-$-hero-desktop-height: 540px;
+$-hero-desktop-height: 700px;
 $-hero-tablet-height: 400px;
 $-hero-mobile-height: 400px;
 

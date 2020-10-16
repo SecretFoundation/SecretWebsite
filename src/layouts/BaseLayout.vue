@@ -88,8 +88,17 @@
               <g-image light light-colored src="@/assets/secret-logo--black.svg" class="custom-footer__logo"></g-image>
               <g-image dark dark-colored src="@/assets/secret-logo--white.svg" class="custom-footer__logo"></g-image>
             </themed-image>
-            <p>This website has a secret, contact us at</p>
-            <p><g-link to="mailto:info@secret.foundation">info@secret.foundation</g-link></p>
+            <p>This website has a secret. It’s 100% opensource!</p>
+            <p>
+              Contribute at
+              <g-link to="https://github.com/SecretFoundation/SecretWebsite">
+                Github
+                <themed-image class="github-link">
+                  <g-image light light-colored src="@/assets/github-black.png"></g-image>
+                  <g-image dark  dark-colored  src="@/assets/github-white.png"></g-image>
+                </themed-image>
+              </g-link>
+            </p>
             <div class="custom-footer__social">
               <g-link light light-colored to="https://discord.com/invite/SJK32GY">
                 <themed-image>
@@ -151,13 +160,15 @@ export default {
   data() {
     return {
       theme: null,
-      darkLightModeState: null, // false is dark
-      coloredModeState: null, // false is not activated
+      darkLightModeState: false, // false is dark
+      coloredModeState: false, // false is not activated
     }
   },
   created() {
     const theme = localStorage.getItem('theme')
     if (!theme) return
+    this.darkLightModeState = !theme.includes('dark')
+    this.coloredModeState = theme.includes('colored')
     this.setBodyAttr(theme)
   },
   methods: {
@@ -433,6 +444,14 @@ export default {
   img {
     width: 24px;
     height: 24px;
+  }
+}
+.github-link {
+  display: inline-block;
+  vertical-align: middle;
+  img {
+    width: rem(24px);
+    height: rem(24px);
   }
 }
 </style>

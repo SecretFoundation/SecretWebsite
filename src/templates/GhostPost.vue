@@ -31,6 +31,12 @@ export default {
 
 <style lang="scss">
 .post {
+  p {
+    font-family: $secondary-text-font;
+    font-size: $secondary-font-size;
+    line-height: rem(32px);
+  }
+
   &__content {
     iframe {
       width: 100%;
@@ -115,21 +121,21 @@ export default {
 </style>
 
 <page-query>
-query Post ($path: String!) {
+  query Post ($path: String!) {
   post: ghostPost (path: $path) {
-    title
-    path
-    date: published_at (format: "D MMM YYYY")
-    description: excerpt
-    content: html
-    coverImage: feature_image
-    primary_tag {
-      name
-    }
-    primary_author {
-      name
-      profile_image
-    }
+  title
+  path
+  date: published_at (format: "D MMM YYYY")
+  description: excerpt
+  content: html
+  coverImage: feature_image
+  primary_tag {
+  name
   }
-}
+  primary_author {
+  name
+  profile_image
+  }
+  }
+  }
 </page-query>

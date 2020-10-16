@@ -4,7 +4,7 @@
       <h2>Subscribe for<br>Secret Network<br>updates</h2>
       <p>Get the latest from the Secret Network ecosystem<br>and engineering updates, straight to your inbox.</p>
       <form action="https://network.us2.list-manage.com/subscribe/post?u=7a05e306cd4c801a88ddcb060&amp;id=889f1a33bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email" required>
         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
       </form>
     </single-column>

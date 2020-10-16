@@ -18,7 +18,7 @@ Developers can write Secret Contracts for CosmWasm running inside secure enclave
 
 <template v-slot:left>
 
-<home-card to="/developers/secret-contract-devs/secret-contract-devs" vertical>
+<home-card to="https://build.scrt.network/dev/secret-contracts.html" vertical>
 
 ### **What is a**<br>Secret Contract
 
@@ -32,7 +32,7 @@ Developers can write Secret Contracts for CosmWasm running inside secure enclave
 
 <template v-slot:middle>
 
-<home-card to="/developers/secret-contract-devs/quickstart" vertical>
+<home-card to="https://www.rust-lang.org/learn" vertical>
 
 ### **Quickstart**<br>Rust Resources
 
@@ -46,7 +46,7 @@ Developers can write Secret Contracts for CosmWasm running inside secure enclave
 
 <template v-slot:right>
 
-<home-card to="/developers/introduction/overview" vertical>
+<home-card to="https://build.scrt.network/" vertical>
 
 ### **Get all the secrets**<br>Documentation
 

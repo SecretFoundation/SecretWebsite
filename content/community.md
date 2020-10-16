@@ -97,7 +97,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <slim-column>
 
-### COMMITEES
+### COMMITTEES
 
 <separator small />
 
@@ -105,7 +105,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <slim-column>
 
-There is no more consequential way to get involved than to join a commitee. Committees are made up of experts and enthusiasts working together to build network.
+There is no more consequential way to get involved than to join a committee. Committees are made up of experts and enthusiasts working together to build network.
 
 #### [Learn More or Join](/committees)
 

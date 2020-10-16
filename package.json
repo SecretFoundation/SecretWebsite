@@ -11,7 +11,7 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/source-ghost": "^0.4.0",
     "@gridsome/vue-remark": "^0.2.5",
-    "@lkmx/flare": "0.28.13",
+    "@lkmx/flare": "0.28.14",
     "gridsome": "^0.7.0",
     "typeface-hind": "^1.1.13",
     "typeface-montserrat": "^1.1.13"

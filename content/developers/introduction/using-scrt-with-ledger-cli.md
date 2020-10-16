@@ -35,13 +35,9 @@ _Ref: https://medium.com/cryptium-cosmos/how-to-store-your-cosmos-atoms-on-your-
 
 Some users may not have their ledger recognized by their Linux host. To fix this issue implement the fix for connection issues on Linux from the [ledger support page](https://support.ledger.com/hc/en-us/articles/115005165269-Connection-issues-with-Windows-or-Linux)
 
-<code-syntax language="bash">
-
 ```
 wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
 ```
-
-</code-syntax>
 
 ## Create an account
 

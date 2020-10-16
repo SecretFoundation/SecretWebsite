@@ -6,9 +6,6 @@
       <separator small space-small center />
       <p>{{ $page.post.description }}</p>
     </template>
-    <single-column>
-      <g-image :src="$page.post.coverImage" class="post cover image"></g-image>
-    </single-column>
     <slim-column>
       <blog-author>
         <g-image picture :src="$page.post.primary_author.profile_image"></g-image>

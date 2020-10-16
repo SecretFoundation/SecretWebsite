@@ -8,6 +8,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.2",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/source-ghost": "^0.4.0",
     "@gridsome/vue-remark": "^0.2.5",

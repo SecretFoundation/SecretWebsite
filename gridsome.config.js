@@ -44,6 +44,12 @@ module.exports = {
         baseUrl: 'https://blog.scrt.network',
         contentKey: '74d989aa8008b1d8e3c9464b65',
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-173950488-3'
+      }
     }
   ],
   templates: {

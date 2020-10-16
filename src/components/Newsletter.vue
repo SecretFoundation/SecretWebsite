@@ -3,9 +3,9 @@
     <single-column>
       <h2>Subscribe for<br>Secret Network<br>updates</h2>
       <p>Get the latest from the Secret Network ecosystem<br>and engineering updates, straight to your inbox.</p>
-      <form>
-        <input type="text" placeholder="Your email">
-        <button>Subscribe</button>
+      <form action="https://network.us2.list-manage.com/subscribe/post?u=7a05e306cd4c801a88ddcb060&amp;id=889f1a33bc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
       </form>
     </single-column>
   </div>
@@ -15,7 +15,7 @@
 .newsletter {
 
   .column {
-    padding: $gutter-xlarge $gutter;
+    padding: $gutter-xlarge $gutter 0;
   }
 
   background-color: var(--theme-fg);
@@ -26,6 +26,11 @@
 
   @include respond-to("medium") {
     text-align: center;
+  }
+
+  span {
+    text-decoration: underline;
+    margin-bottom: $gutter;
   }
 
   form {
@@ -52,14 +57,25 @@
       border-radius: 8px;
       border: 1px solid $primary-black-color;
       font-family: $text-font;
+      font-size: $base-size;
+      color: $primary-black-color;
+
+      &:focus {
+        outline: unset;
+      }
     }
 
-    button {
+    input[type=submit] {
       padding: $gutter;
       background-color: $primary-purple-color;
       color: white;
       border-radius: 8px;
       font-weight: bold;
+      cursor: pointer;
+
+      &[subscribed] {
+        background-color: lightness($primary-purple-color);
+      }
     }
   }
 }

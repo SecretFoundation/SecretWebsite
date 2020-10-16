@@ -14,23 +14,29 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 </slim-column>
 
-<card-holder>
+<slim-column>
+
+### JOIN THE CONVERSATION
+
+<separator small />
+
+</slim-column>
+
+<card-holder columns="3">
 
 <card>
 
 <template v-slot:header>
 
-#### Foundation
+#### Telegram: Network
 
 </template>
 
 <template v-slot:footer>
 
-[Join the conversation](/committees/about-secret-foundation)
+[Talk about the Network](https://t.me/SCRTCommunity)
 
 </template>
-
-![Foundation](./img/foundation.png)
 
 </card>
 
@@ -38,53 +44,15 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:header>
 
-#### Committees
+#### Telegram: $SCRT
 
 </template>
 
 <template v-slot:footer>
 
-[Join a Committee](/committees)
+[Chat about Markets](https://t.me/scrtmarkets)
 
 </template>
-
-![Foundation](./img/committees.png)
-
-</card>
-
-<card>
-
-<template v-slot:header>
-
-#### Secret Forum
-
-</template>
-
-<template v-slot:footer>
-
-[Join the discusion](https://forum.scrt.network/)
-
-</template>
-
-![Foundation](./img/secret-forum.png)
-
-</card>
-
-<card>
-
-<template v-slot:header>
-
-#### Official Blog
-
-</template>
-
-<template v-slot:footer>
-
-[Read the blog](/blog)
-
-</template>
-
-![Read the blog](./img/blog.png)
 
 </card>
 
@@ -98,12 +66,47 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:footer>
 
-[Join us and get all the secrets](https://discord.com/invite/SJK32GY)
+[Join the deeper conversation](https://discord.com/invite/SJK32GY)
 
 </template>
-
-![Join the conversation](./img/rocket-chat.png)
 
 </card>
 
 </card-holder>
+
+<card-holder columns="1">
+
+<card>
+
+<template v-slot:header>
+
+#### Secret Forum
+
+</template>
+
+<template v-slot:footer>
+
+[Make it official](https://forum.scrt.network/)
+
+</template>
+
+</card>
+
+</card-holder>
+
+
+<slim-column>
+
+### COMMITEES
+
+<separator small />
+
+</slim-column>
+
+<slim-column>
+
+There is no more consequential way to get involved than to join a commitee. Committees are made up of experts and enthusiasts working together to build network.
+
+#### [Learn More or Join](/committees)
+
+</slim-column>

@@ -190,6 +190,9 @@ export default {
       grid-column-gap: $gutter-xlarge;
     }
   }
+  @include theme(light light-colored) {
+    border-bottom: 1px solid $primary-black-color;
+  }
   .main-nav {
 
     @include respond-to("large and up") {

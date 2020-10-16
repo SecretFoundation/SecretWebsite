@@ -62,9 +62,10 @@ $links-text-color: var(--theme-fg);
 $links-text-hover-color: $primary-purple-color;
 
 // Header
+$header-position: fixed;
 $header-height: 90px;
 $header-text-color: var(--theme-fg);
-$header-background-color: transparent;
+$header-background-color: var(--theme-bg);
 $header-nav-active-color: var(--theme-fg);
 $header-nav-hover-color: var(--theme-fg);
 $header-nav-visited-color: var(--theme-fg);

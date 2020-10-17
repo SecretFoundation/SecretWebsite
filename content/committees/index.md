@@ -218,7 +218,6 @@ Coordinate research into OEMs and cloud service providers that support SGX.
 ##### Responsibilities
 
 Improving documentation for validators.
-----
 
 ### Decentralization
 

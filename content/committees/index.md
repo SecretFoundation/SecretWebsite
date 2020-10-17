@@ -195,6 +195,56 @@ Disseminating and amplifying relevant content.
 - Community outreach.
 - Supporting Sharing Secrets and other content initiatives.
 
+### Infrastructure
+
+Meetings
+
+Every Other Tuesday, 4pm UTC
+
+[Join Meeting]()
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+Coordinate research into OEMs and cloud service providers that support SGX.
+
+##### Goals
+
+- Staying up-to-date on hardware issues
+
+##### Responsibilities
+
+Improving documentation for validators.
+----
+
+### Decentralization
+
+Meetings
+
+Every Other Tuesday, 4pm UTC
+
+[Join Meeting]()
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+To steward the network down the path of decentralization with a focus on network efficency, transparency, and community empowerment.
+
+##### Goals
+
+- Evaluate, discuss, and balance decentralization in the Secret Network.
+
+##### Responsibilities
+
+Discuss, research, and ultimately impliment inititives that empower users and help keep the network Decentralized.
+
+
 </template>
 
 </committee-card>

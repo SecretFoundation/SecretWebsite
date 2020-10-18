@@ -74,7 +74,7 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 <template v-slot:footer>
 
-[See documentation]()
+[See documentation](https://build.scrt.network/ledger-nano-s.html)
 
 </template>
 
@@ -90,7 +90,23 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 <template v-slot:footer>
 
-[Visit website]()
+[Visit website](https://wallet.keplr.app)
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+  
+#### Cosmostation<br>Wallet;
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website](https://wallet.cosmostation.io/)
 
 </template>
 
@@ -106,7 +122,7 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 <template v-slot:footer>
 
-[Visit website]()
+[Visit website](https://mathwallet.org/web/secret)
 
 </template>
 
@@ -137,7 +153,7 @@ Use the following Secret Network block explorers for staking, governance proposa
 
 <template v-slot:footer>
 
-[Visit website]()
+[Visit website](https://puzzle.report)
 
 </template>
 
@@ -153,7 +169,7 @@ Use the following Secret Network block explorers for staking, governance proposa
 
 <template v-slot:footer>
 
-[Visit website]()
+[Visit website](https://explorer.cashmaney.com/)
 
 </template>
 
@@ -179,7 +195,7 @@ You can find information on staking rewards calculations at:
 
 <template v-slot:footer>
 
-[Visit website]()
+[Visit website](https://stakeordie.com/rewards-calculator)
 
 </template>
 
@@ -195,7 +211,7 @@ You can find information on staking rewards calculations at:
 
 <template v-slot:footer>
 
-[Visit website]()
+[Visit website](https://www.stakingrewards.com/earn/secret-network)
 
 </template>
 
@@ -239,7 +255,7 @@ You can find information on staking rewards calculations at:
 
 <template v-slot:footer>
 
-[See documentation]()
+[See documentation](https://learn.scrt.network/sgx.html)
 
 </template>
 

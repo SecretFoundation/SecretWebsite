@@ -4,13 +4,11 @@
 
 <slim-column>
 
-#### About
+## Want to build a better internet? Solve for privacy.
 
-## What is the Secret Network?
+Secret Network is the first blockchain with privacy-preserving smart contracts. That means applications built on Secret can utilize encrypted data without revealing it to anyone, even the nodes in the network. For the first time, Secret Network allows developers to build powerful, permissionless, privacy-preserving applications - Secret Apps.
 
-Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains. Our mission: improve the adoption and usability of decentralized technologies, for the benefit of all.
-
-These are some ways you can join the Secret Network:
+Blockchains are public by default. That means that all the data used in smart contracts is exposed to everyone. For blockchain technology to achieve global adoption, users and organizations need control over how their data is used – they can’t just expose it to everyone. Secret Network solves the problem of privacy, helping to secure and scale the decentralized web.
 
 </slim-column>
 
@@ -80,9 +78,9 @@ These are some ways you can join the Secret Network:
 
 #### Blog
 
-### The secrets that surround us
+### Learn all of our secrets
 
-Read, watch and absorb the secrets that we publish in our official blog.
+Read the latest blog posts and updates from the many contributors to Secret Network!
 
 <latest-posts></latest-posts>
 

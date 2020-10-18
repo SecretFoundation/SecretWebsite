@@ -100,7 +100,7 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 <template v-slot:header>
   
-#### Cosmostation<br>Wallet;
+#### Cosmostation<br>Wallet
 
 </template>
 

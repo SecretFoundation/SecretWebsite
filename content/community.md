@@ -16,7 +16,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <slim-column>
 
-### JOIN THE CONVERSATION
+### Join the Conversation
 
 <separator small />
 
@@ -28,13 +28,13 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:header>
 
-#### Telegram: Network
+#### Secret Chat<br>(Official)
 
 </template>
 
 <template v-slot:footer>
 
-[Talk about the Network](https://t.me/SCRTCommunity)
+[Join now](https://discord.com/invite/SJK32GY)
 
 </template>
 
@@ -44,13 +44,13 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:header>
 
-#### Telegram: $SCRT
+#### Telegram
 
 </template>
 
 <template v-slot:footer>
 
-[Chat about Markets](https://t.me/scrtmarkets)
+[Join now](https://t.me/SCRTCommunity)
 
 </template>
 
@@ -60,13 +60,13 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:header>
 
-#### Discord
+#### Secret Forum
 
 </template>
 
 <template v-slot:footer>
 
-[Join the deeper conversation](https://discord.com/invite/SJK32GY)
+[Join now](https://forum.scrt.network/)
 
 </template>
 
@@ -80,13 +80,13 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:header>
 
-#### Secret Forum
+#### Twitter
 
 </template>
 
 <template v-slot:footer>
 
-[Make it official](https://forum.scrt.network/)
+[Follow us](https://twitter.com/secretnetwork)
 
 </template>
 
@@ -94,10 +94,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 </card-holder>
 
-
 <slim-column>
 
-### COMMITTEES
+### Committee
 
 <separator small />
 
@@ -105,7 +104,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <slim-column>
 
-There is no more consequential way to get involved than to join a committee. Committees are made up of experts and enthusiasts working together to build network.
+There is no more consequential way to get involved than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
 
 #### [Learn More or Join](/committees)
 

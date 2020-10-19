@@ -15,12 +15,12 @@
             <h2 class="hero__message">Welcome to Secret Network</h2>
             <div class="intro-nav">
               <a @click="changeStage('intro--playing')" href="">See the video</a> - 
-              <a @click="changeStage('intro--ended')" href="">Skip</a>
+              <a @click="changeStage('intro--ended')" href="">Skip video</a>
             </div>
           </div>
           <div v-if="stage == 'intro--playing'">
-            <iframe class="intro-video" v-show="stage == 'intro--playing'" src="https://www.youtube.com/embed/c70BBVUCxxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a class="intro-nav" @click="changeStage('intro--ended')" href="">Skip</a>
+            <iframe class="intro-video" v-show="stage == 'intro--playing'" src="https://www.youtube.com/embed/c70BBVUCxxk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="intro-nav" @click="changeStage('intro--ended')" href="">Skip video</a>
           </div>
           <div v-if="stage == 'intro--ended'">
             <h2 class="hero__message">Welcome to Secret Network</h2>
@@ -112,7 +112,7 @@ $-hero-tablet-height--arriving: 400px;
 $-hero-desktop-height--arriving: 500px;
 
 $-hero-mobile-height--playing: 400px;
-$-hero-tablet-height--playing: 400px;
+$-hero-tablet-height--playing: 700px;
 $-hero-desktop-height--playing: 700px;
 
 $-hero-mobile-height--ended: 400px;
@@ -154,11 +154,14 @@ $-logo-size-mobile: 68px;
     @include respond-to("small and down") {
       height: rem($-hero-mobile-height--playing);
       .hero__content {
-        width: 100%;
+        width: calc(100% - #{$gutter * 2});
       }
     }
     @include respond-to("medium") {
       height: rem($-hero-tablet-height--playing);
+      .hero__content {
+        width: rem(600px);
+      }
     }
     @include respond-to("large and up") {
       height: rem($-hero-desktop-height--playing);
@@ -182,11 +185,10 @@ $-logo-size-mobile: 68px;
 
 
   .intro-video {
-    margin-bottom: $gutter;
     max-width: 100%;
     @include respond-to("small and down") {
       width: 100%;
-      height: 168px;
+      height: 200px;
     }
     @include respond-to("medium") {
       width: 800px;
@@ -235,10 +237,10 @@ $-logo-size-mobile: 68px;
       padding: $gutter;
     }
     @include respond-to("medium") {
-      padding: $gutter-xxlarge 0;
+      padding: $gutter-xlarge 0  $gutter;
     }
     @include respond-to("small and down") {
-      padding: $gutter-large 0;
+      padding: $gutter-large 0 0;
     }
 
     &__container {
@@ -269,11 +271,12 @@ $-logo-size-mobile: 68px;
 
   &__message {
     @include respond-to("small and down") {
-      font-size: rem(24px);
+      font-size: rem(30px);
       padding: $gutter;
       padding-top: $gutter-large;
     }
     @include respond-to("medium") {
+      font-size: rem(36px);
     }
     @include respond-to("large and up") {
       padding: $gutter-large;
@@ -284,17 +287,19 @@ $-logo-size-mobile: 68px;
   .intro-nav {
     text-align: center;
     display: block;
-    padding-bottom: $gutter;
+
+    padding: $gutter;
   }
 
   &__logo {
     position: absolute;
 
-    @include respond-to("medium and up") {
+    @include respond-to("large and up") {
       top: - ($-logo-size-desktop / 2);
       left: calc(100% / 2 - #{$-logo-size-desktop / 2});
     }
-    @include respond-to("small and down") {
+    @include respond-to("medium and down") {
+      display: none;
       top: - ($-logo-size-mobile / 2);
       left: calc(100% / 2 - #{$-logo-size-mobile / 2});
     }

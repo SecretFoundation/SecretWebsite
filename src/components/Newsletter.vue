@@ -15,10 +15,11 @@
 .newsletter {
 
   .column {
-    padding: $gutter-xlarge $gutter 0;
+    padding: $gutter-xxxlarge $gutter;
   }
 
   background-color: var(--theme-fg);
+  height: min-content;
 
   & * {
     color: var(--theme-bg);
@@ -30,7 +31,6 @@
 
   span {
     text-decoration: underline;
-    margin-bottom: $gutter;
   }
 
   form {

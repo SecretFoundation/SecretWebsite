@@ -19,11 +19,11 @@
 </template>
 
 <style lang="scss">
-$-hero-desktop-height: 339px;
+$-hero-mobile-height: 240px;
 $-hero-tablet-height: 280px;
-$-hero-mobile-height: 280px;
+$-hero-desktop-height: 250px;
 
-$-logo-size-desktop: 118px;
+$-logo-size-desktop: 78px;
 $-logo-size-mobile: 68px;
 
 .main-page-hero {
@@ -52,13 +52,15 @@ $-logo-size-mobile: 68px;
       @include respond-to("small and down") {
         object-position: left;
         min-height: rem($-hero-mobile-height);
+                object-position: 0% 0%;
+
       }
       @include respond-to("medium") {
         min-height: rem($-hero-tablet-height);
       }
       @include respond-to("large and up") {
         height: rem($-hero-desktop-height);
-        object-position: 100% -15%;
+        object-position: 0% 0%;
       }
     }
   }
@@ -79,7 +81,7 @@ $-logo-size-mobile: 68px;
     color: var(--theme-fg);
 
     @include respond-to("large and up") {
-      min-width: 788px;
+      min-width: rem(600px);
     }
   }
 
@@ -88,14 +90,16 @@ $-logo-size-mobile: 68px;
     width: 100%;
     height: 100%;
 
-    @include respond-to("large and up") {
-      padding: $gutter-xxlarge;
+    @include respond-to("small and down") {
+      padding-top: rem(24px);
+      padding-bottom: rem(24px);
     }
     @include respond-to("medium") {
-      padding: $gutter-xxlarge 0;
+      padding: $gutter-large;
     }
-    @include respond-to("small and down") {
-      padding: $gutter-xlarge $gutter;
+    @include respond-to("large and up") {
+      padding-top: rem(55px);
+      padding-bottom: rem(34px);
     }
 
     &__container {
@@ -108,6 +112,14 @@ $-logo-size-mobile: 68px;
 
         @include respond-to("small and down") {
           width: rem(303px);
+          // TODO Maybe pass to a token
+          font-size: rem(24px);
+        }
+        @include respond-to("medium") {
+
+        }
+        @include respond-to("large and up") {
+          font-size: rem(32px);
         }
       }
 
@@ -132,6 +144,7 @@ $-logo-size-mobile: 68px;
       left: calc(100% / 2 - #{$-logo-size-desktop / 2});
     }
     @include respond-to("small and down") {
+      display: none;
       top: - ($-logo-size-mobile / 2);
       left: calc(100% / 2 - #{$-logo-size-mobile / 2});
     }

@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section class="hero" :class="stage">
     <div class="hero__cover">
       <themed-image>
         <g-image light src="@/assets/hero-black.svg" alt="hero" immediate="true" quality="100"></g-image>
@@ -11,7 +11,21 @@
       <div class="hero__title">
         <div class="hero__title__container">
           <g-image class="hero__logo" src="@/assets/logo-seal.svg"></g-image>
-          <h2>Welcome to Secret Network</h2>
+          <div v-if="stage == 'intro--arriving'">
+            <h2 class="hero__message">Welcome to Secret Network</h2>
+            <div class="intro-nav">
+              <a @click="changeStage('intro--playing')" href="">See the video</a> - 
+              <a @click="changeStage('intro--ended')" href="">Skip</a>
+            </div>
+          </div>
+          <div v-if="stage == 'intro--playing'">
+            <iframe class="intro-video" v-show="stage == 'intro--playing'" src="https://www.youtube.com/embed/c70BBVUCxxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="intro-nav" @click="changeStage('intro--ended')" href="">Skip</a>
+          </div>
+          <div v-if="stage == 'intro--ended'">
+            <h2 class="hero__message">Welcome to Secret Network</h2>
+            <a class="intro-nav" @click="changeStage('intro--playing')" href="">See the video</a>
+          </div>
         </div>
       </div>
     </div>
@@ -43,7 +57,8 @@ export default {
     return {
       bg: null,
       fg: null,
-      themeIndex: 0
+      themeIndex: 0,
+      stage: 'intro--ended'
     }
   },
   created() {
@@ -56,6 +71,9 @@ export default {
     this.fg = currentTheme.fg
   },
   methods: {
+    changeStage(newStage) {
+      this.stage = newStage;
+    },
     applyMask(event) {
       const fg = this.$refs.fg
       fg.style.display = 'block'
@@ -88,26 +106,98 @@ export default {
 </script>
 
 <style lang="scss">
-$-hero-desktop-height: 700px;
-$-hero-tablet-height: 400px;
-$-hero-mobile-height: 400px;
 
-$-logo-size-desktop: 118px;
+$-hero-mobile-height--arriving: 400px;
+$-hero-tablet-height--arriving: 400px;
+$-hero-desktop-height--arriving: 500px;
+
+$-hero-mobile-height--playing: 400px;
+$-hero-tablet-height--playing: 400px;
+$-hero-desktop-height--playing: 700px;
+
+$-hero-mobile-height--ended: 400px;
+$-hero-tablet-height--ended: 400px;
+$-hero-desktop-height--ended: 400px;
+
+
+$-logo-size-desktop: 100px;
 $-logo-size-mobile: 68px;
 
 .hero {
   position: relative;
   max-width: 100%;
+  margin-bottom: $gutter;
 
-  @include respond-to("small and down") {
-    min-height: rem($-hero-mobile-height);
+  // Transitions used
+  transition: height 0.5s ease-out;
+  .hero__content {
+    transition: height 0.5s ease-out;
   }
-  @include respond-to("medium") {
-    min-height: rem($-hero-tablet-height);
+
+
+
+  // Intro arriving
+  &.intro--arriving {
+    @include respond-to("small and down") {
+      height: rem($-hero-mobile-height--arriving);
+    }
+    @include respond-to("medium") {
+      height: rem($-hero-tablet-height--arriving);
+    }
+    @include respond-to("large and up") {
+      height: rem($-hero-desktop-height--arriving);
+    }
   }
-  @include respond-to("large and up") {
-    height: rem($-hero-desktop-height);
+
+  // Intro playing
+  &.intro--playing {
+    @include respond-to("small and down") {
+      height: rem($-hero-mobile-height--playing);
+      .hero__content {
+        width: 100%;
+      }
+    }
+    @include respond-to("medium") {
+      height: rem($-hero-tablet-height--playing);
+    }
+    @include respond-to("large and up") {
+      height: rem($-hero-desktop-height--playing);
+    }
   }
+
+  // Intro ended or skipped
+  &.intro--ended {
+    @include respond-to("small and down") {
+      height: rem($-hero-mobile-height--ended);
+    }
+    @include respond-to("medium") {
+      height: rem($-hero-tablet-height--ended);
+    }
+    @include respond-to("large and up") {
+      height: rem($-hero-desktop-height--ended);
+    }
+  }
+
+
+
+
+  .intro-video {
+    margin-bottom: $gutter;
+    max-width: 100%;
+    @include respond-to("small and down") {
+      width: 100%;
+      height: 168px;
+    }
+    @include respond-to("medium") {
+      width: 800px;
+      height: 450px;
+    }
+    @include respond-to("large and up") {
+      width: 800px;
+      height: 450px;
+    }
+  }
+
 
   &__cover {
     img {
@@ -117,17 +207,6 @@ $-logo-size-mobile: 68px;
       overflow: hidden;
       object-fit: cover;
       object-position: bottom;
-
-      @include respond-to("small and down") {
-        object-position: left;
-        min-height: rem($-hero-mobile-height);
-      }
-      @include respond-to("medium") {
-        min-height: rem($-hero-tablet-height);
-      }
-      @include respond-to("large and up") {
-        height: rem($-hero-desktop-height);
-      }
     }
   }
 
@@ -153,7 +232,7 @@ $-logo-size-mobile: 68px;
     height: 100%;
 
     @include respond-to("large and up") {
-      padding: $gutter-xxlarge;
+      padding: $gutter;
     }
     @include respond-to("medium") {
       padding: $gutter-xxlarge 0;
@@ -186,6 +265,26 @@ $-logo-size-mobile: 68px;
         }
       }
     }
+  }
+
+  &__message {
+    @include respond-to("small and down") {
+      font-size: rem(24px);
+      padding: $gutter;
+      padding-top: $gutter-large;
+    }
+    @include respond-to("medium") {
+    }
+    @include respond-to("large and up") {
+      padding: $gutter-large;
+      padding-top: $gutter-xlarge;
+    }
+  }
+
+  .intro-nav {
+    text-align: center;
+    display: block;
+    padding-bottom: $gutter;
   }
 
   &__logo {

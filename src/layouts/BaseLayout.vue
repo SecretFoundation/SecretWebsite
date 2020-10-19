@@ -85,8 +85,8 @@
         <div class="custom-footer__content">
           <div>
             <themed-image>
-              <g-image light light-colored src="@/assets/secret-logo--black.svg" class="custom-footer__logo"></g-image>
-              <g-image dark dark-colored src="@/assets/secret-logo--white.svg" class="custom-footer__logo"></g-image>
+              <g-image light light-colored src="@/assets/secret-logo-footer--black.svg" class="custom-footer__logo"></g-image>
+              <g-image dark dark-colored src="@/assets/secret-logo-footer--white.svg" class="custom-footer__logo"></g-image>
             </themed-image>
             <p>This website has a secret. It’s 100% opensource!</p>
             <p>
@@ -214,7 +214,7 @@ export default {
     }
   }
   @include theme(light light-colored) {
-    border-bottom: 1px solid $primary-black-color;
+    //border-bottom: 1px solid $primary-black-color;
   }
   .main-nav {
 
@@ -253,6 +253,7 @@ export default {
 
           &:not(.active) {
             padding: $gutter;
+            color: var(--theme-fg);
           }
         }
 
@@ -271,7 +272,7 @@ export default {
               @each $name, $color in $primary-colors {
                 &[#{$name}] {
                   background-color: $color;
-                  color: white;
+                  color: var(--theme-fg);
                 }
                 &[cream], &[yellow], &[orange] {
                   color: $primary-black-color;

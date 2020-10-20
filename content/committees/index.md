@@ -39,7 +39,7 @@ Engineering a secret source of truth.
 
 Improving documentation for developers.
 
-##### Iniciatives
+##### Initiatives
 
 Hackathons.
 
@@ -48,6 +48,38 @@ Hackathons.
 </committee-card>
 
 <committee-card blue>
+
+<template v-slot:header>
+
+### Infrastructure
+
+Meetings
+
+Every Other Tuesday, 4pm UTC
+
+[Join Meeting]()
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+Coordinate research into OEMs and cloud service providers that support SGX.
+
+##### Goals
+
+- Staying up-to-date on hardware issues
+
+##### Responsibilities
+
+Improving documentation for validators.
+
+</template>
+
+</committee-card>
+
+<!-- <committee-card blue>
 
 <template v-slot:header>
 
@@ -75,9 +107,42 @@ Coordinate research into OEMs and cloud service providers that support SGX.
 
 Improving documentation for validators.
 
-##### Iniciatives
+##### Initiatives
 
 Gathering a list of compatible hardware solutions.
+
+</template>
+
+</committee-card> -->
+
+
+<committee-card blue>
+
+<template v-slot:header>
+
+### Decentralization
+
+Meetings
+
+Every Other Tuesday, 4pm UTC
+
+[Join Meeting]()
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+To steward the network down the path of decentralization with a focus on network efficency, transparency, and community empowerment.
+
+##### Goals
+
+- Evaluate, discuss, and balance decentralization in the Secret Network.
+
+##### Responsibilities
+
+Discuss, research, and ultimately impliment inititives that empower users and help keep the network Decentralized.
 
 </template>
 
@@ -113,7 +178,7 @@ Facilitating coordination of Secret Network participants.
 
 Making decisions cooperatively.
 
-##### Iniciatives
+##### Initiatives
 
 Discussing project updates and governance issues.
 
@@ -121,7 +186,7 @@ Discussing project updates and governance issues.
 
 </committee-card>
 
-<committee-card blue>
+<committee-card green>
 
 <template v-slot:header>
 
@@ -151,7 +216,7 @@ Helping anyone understand the importance of programmable privacy.
 
 Creating effective content efficiently.
 
-##### Iniciatives
+##### Initiatives
 
 Secret Foundation Wiki.
 
@@ -189,60 +254,11 @@ Amplifying our network and our materials in order to drive adoption and communit
 
 Disseminating and amplifying relevant content.
 
-##### Iniciatives
+##### Initiatives
 
 - Secret branding.
 - Community outreach.
 - Supporting Sharing Secrets and other content initiatives.
-
-### Infrastructure
-
-Meetings
-
-Every Other Tuesday, 4pm UTC
-
-[Join Meeting]()
-
-</template>
-
-<template v-slot:body>
-
-##### Purpose
-
-Coordinate research into OEMs and cloud service providers that support SGX.
-
-##### Goals
-
-- Staying up-to-date on hardware issues
-
-##### Responsibilities
-
-Improving documentation for validators.
-
-### Decentralization
-
-Meetings
-
-Every Other Tuesday, 4pm UTC
-
-[Join Meeting]()
-
-</template>
-
-<template v-slot:body>
-
-##### Purpose
-
-To steward the network down the path of decentralization with a focus on network efficency, transparency, and community empowerment.
-
-##### Goals
-
-- Evaluate, discuss, and balance decentralization in the Secret Network.
-
-##### Responsibilities
-
-Discuss, research, and ultimately impliment inititives that empower users and help keep the network Decentralized.
-
 
 </template>
 

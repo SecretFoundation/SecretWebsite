@@ -124,7 +124,7 @@ Gathering a list of compatible hardware solutions.
 
 Meetings
 
-Every Other Tuesday, 4pm UTC
+CANCELED DUE TO RAIN AND THUNDER STORMS⛈️
 
 [Join Meeting]()
 

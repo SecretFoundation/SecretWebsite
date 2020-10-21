@@ -202,6 +202,7 @@ export default {
 
 <style lang="scss">
 .header {
+  border-bottom: 1px solid var(--theme-fg);
   .no-column {
     padding: 0 $gutter;
   }

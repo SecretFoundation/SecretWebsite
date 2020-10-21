@@ -11,8 +11,10 @@
 .separator {
   display: grid;
 
-  @include respond-to("medium and down") {
-    padding: 0 $gutter;
+  &:not([small]) {
+    @include respond-to("medium and down") {
+      padding: 0 $gutter;
+    }
   }
 
   &[small] {

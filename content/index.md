@@ -90,17 +90,19 @@ Read the latest blog posts and updates from the many contributors to Secret Netw
 
 </single-column>
 
-<announcement>
+<simple-section background-color="var(--theme-fg)" color="var(--theme-bg)">
 
-<template v-slot:title>
+<slim-column>
+
+#### Announcement
 
 ### Upgrade Complete:<br>Secret Contracts are LIVE on Mainnet!
 
-</template>
-
 The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
 
-</announcement>
+</slim-column>
+
+</simple-section>
 
 <style lang="scss">
 .ecosystem {
@@ -108,5 +110,8 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
     padding-top: 0;
     padding-bottom: 89px;
   }
+}
+.simple-section {
+  text-align: center;
 }
 </style>

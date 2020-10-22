@@ -44,6 +44,7 @@ export default {
   }
   a {
     text-decoration: none;
+    word-break: break-word;
   }
 }
 .kg-card {

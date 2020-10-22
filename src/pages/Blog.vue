@@ -5,6 +5,13 @@
         <h2>Secret Network Blog</h2>
       </template>
       <single-column>
+        <h2>Featured Posts</h2>
+        <hr>
+        <featured-posts></featured-posts>
+      </single-column>
+      <single-column>
+        <h2>All Posts</h2>
+        <hr>
         <posts :posts="$page.posts.edges"></posts>
       </single-column>
     </main-page-layout>

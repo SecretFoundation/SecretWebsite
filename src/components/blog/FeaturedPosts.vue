@@ -12,7 +12,7 @@ export default {
 
 <static-query>
 {
-  posts: allGhostPost(sortBy: "published_at", order: DESC, limit: 3) {
+  posts: allGhostPost(filter: { featured: { eq: true }}, sortBy: "published_at", limit: 3) {
     edges {
       node {
         title

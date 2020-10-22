@@ -1,5 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
+import openGraph from './config/open-graph'
 
 import './sass/index.scss'
 
@@ -15,11 +16,15 @@ import CardHolder from './components/CardHolder'
 import CommitteeCard from './components/CommitteeCard'
 import ThemedImage from '@/components/ThemedImage'
 import LatestPosts from '@/components/blog/LatestPosts'
+import FeaturedPosts from '@/components/blog/FeaturedPosts'
+import SimpleSection from '@/components/SimpleSection'
 
 require('typeface-hind');
 require('typeface-montserrat');
 
 export default function (Vue, { router, head, isClient }) {
+  openGraph.forEach(item => head.meta.push(item))
+
   Vue.config.productionTip = false
   Vue.use(Flare)
 
@@ -33,6 +38,8 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('CommitteeCard', CommitteeCard)
   Vue.component('ThemedImage', ThemedImage)
   Vue.component('LatestPosts', LatestPosts)
+  Vue.component('FeaturedPosts', FeaturedPosts)
+  Vue.component('SimpleSection', SimpleSection)
 
   if (isClient) {
     Vue.$setDefaultTheme()

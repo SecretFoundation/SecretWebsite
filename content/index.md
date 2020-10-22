@@ -97,4 +97,7 @@ Read the latest blog posts and updates from the many contributors to Secret Netw
     padding-bottom: 89px;
   }
 }
+.simple-section {
+  text-align: center;
+}
 </style>

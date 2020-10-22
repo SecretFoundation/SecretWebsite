@@ -69,14 +69,14 @@ $links-text-hover-color: $primary-purple-color;
 // Header
 $header-position: fixed;
 $header-height: 90px;
-$header-text-color: white; // var(--theme-fg);
-$header-background-color: black; //var(--theme-bg);
-$header-nav-active-color: white; //var(--theme-fg);
-$header-nav-hover-color: white; // var(--theme-fg);
-$header-nav-visited-color: white; // var(--theme-fg);
+$header-text-color: var(--theme-fg);
+$header-background-color: var(--theme-bg);
+$header-nav-active-color: var(--theme-fg);
+$header-nav-hover-color: var(--theme-fg);
+$header-nav-visited-color: var(--theme-fg);
 $header-nav-justify-items: start;
 $header-nav-spacing: 0px;
-$header-nav-default-color: white; // var(--theme-fg);
+$header-nav-default-color: var(--theme-fg);
 $header-nav-background-color: var(--theme-bg);
 $header-nav-color: var(--theme-fg);
 $header-actions-space-width: 232px;
@@ -84,6 +84,7 @@ $header-logo-space-width: 142px;
 $header-nav-close-toggle-size: 24px;
 $header-nav-items-width: 150px;
 $header-nav-items: 6;
+
 
 // Hero
 $hero-headings-text-color: var(--theme-fg);

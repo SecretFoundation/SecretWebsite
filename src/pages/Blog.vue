@@ -1,25 +1,18 @@
 <template>
-  <base-layout>
+  <base-layout class="blog">
     <main-page-layout>
       <template #title>
         <h2>Secret Network Blog</h2>
       </template>
       <single-column>
-        <grid columns="3">
-          <blog-card v-for="{ node } in $page.posts.edges" :key="node.id" :tag="node.primary_tag != null ? node.primary_tag.name : ''">
-            <template #tag v-if="node.primary_tag">{{ node.primary_tag.name }}</template>
-            <h4><g-link :to="`/blog/${node.slug}`">{{ node.title }}</g-link></h4>
-            <separator small space-small></separator>
-            <p>{{ node.description }}</p>
-            <template #footer>
-              <g-image picture :src="node.primary_author.profile_image"></g-image>
-              <div info>
-                <div>{{ node.primary_author.name }}</div>
-                <div>{{ node.date }} &#8226; {{ node.reading_time }} min read</div>
-              </div>
-            </template>
-          </blog-card>
-        </grid>
+        <h2>Featured Posts</h2>
+        <hr>
+        <featured-posts></featured-posts>
+      </single-column>
+      <single-column>
+        <h2>All Posts</h2>
+        <hr>
+        <posts :posts="$page.posts.edges"></posts>
       </single-column>
     </main-page-layout>
   </base-layout>
@@ -28,10 +21,10 @@
 <script>
 import BaseLayout from '../layouts/BaseLayout'
 import MainPageLayout from '../layouts/MainPageLayout'
-import BlogCard from '../components/blog/BlogCard'
+import Posts from '@/components/blog/Posts'
 
 export default {
-  components: { BaseLayout, MainPageLayout, BlogCard },
+  components: { BaseLayout, MainPageLayout, Posts },
 }
 </script>
 
@@ -58,3 +51,14 @@ export default {
   }
 }
 </page-query>
+
+<style lang="scss" scoped>
+.blog {
+  h2 {
+    margin: 0;
+  }
+  hr {
+    margin: $gutter-xlarge 0;
+  }
+}
+</style>

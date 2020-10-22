@@ -47,21 +47,11 @@
   }
 
   &__content {
-    position: absolute;
-    top: 0;
-    left: 50%;
     width: 100%;
     max-width: rem(742px);
     text-align: center;
-    transform: translate(-50%, 0%);
     padding: 0 $gutter;
-
-    @include respond-to("medium and up") {
-      transform: translate(-50%, 71px);
-    }
-    @include respond-to("small and down") {
-      transform: translate(-50%, 41px);
-    }
+    margin: 0 auto;
 
     h1 {
       margin-top: 0;

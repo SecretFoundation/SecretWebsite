@@ -3,7 +3,6 @@
     <template #title>
       <div tag v-if="$page.post.primary_tag">{{ $page.post.primary_tag.name }}</div>
       <h1>{{ $page.post.title }}</h1>
-      <separator small space-small center />
       <p>{{ $page.post.description }}</p>
     </template>
     <slim-column>
@@ -44,7 +43,7 @@ export default {
   }
   a {
     text-decoration: none;
-    word-break: break-word;
+    word-break: break-all;
   }
 }
 .kg-card {

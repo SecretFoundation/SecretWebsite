@@ -36,7 +36,8 @@ export default {
         { key: 'og:url', property: 'og:url', content: `${url}${this.$route.fullPath}` },
         { key: 'og:title', property: 'og:title', content: this.$page.post.title },
         { key: 'og:description', property: 'og:description', content: this.$page.post.description },
-        { key: 'og:image', property: 'og:image', content: this.$page.post.coverImage }
+        { key: 'og:image', property: 'og:image', content: this.$page.post.coverImage },
+        { key: 'twitter:image', property: 'twitter:image', content: this.$page.post.coverImage }
       ],
     }
   }

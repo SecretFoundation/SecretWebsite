@@ -55,7 +55,7 @@ Hackathons.
 
 Meetings
 
-Every Other Tuesday, 4pm UTC
+Meetings on Pause, committee needs a lead to run meetings.
 
 [Join Meeting]()
 

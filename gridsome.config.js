@@ -24,6 +24,7 @@ function addStyleResource(rule) {
 
 module.exports = {
   siteName: 'Secret Network',
+  siteUrl: 'https://scrt.network',
   plugins: [
     {
       use: '@gridsome/vue-remark',

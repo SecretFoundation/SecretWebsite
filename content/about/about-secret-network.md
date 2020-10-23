@@ -12,8 +12,6 @@ layout: ~/layouts/MainPageLayout
 
 ### What is Secret Network?
 
-<separator space-large small/>
-
 Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains
 
 By supporting encrypted inputs, encrypted outputs, and encrypted state for smart contracts, Secret Network allows for new kinds of powerful decentralized applications to be built. This can unlock substantial value across multiple verticals and industries, including the following:
@@ -104,8 +102,6 @@ Enabling more open and more usable gaming experiences.
 
 ### How Secret Network Operates
 
-<separator space-large small/>
-
 The Secret Network is a decentralized network of computers (secret nodes) that utilize trusted execution environments (TEEs) to enable secure, private computation over encrypted data. TEEs function like a “black box” for data processing, and they are utilized in all types of everyday platforms such as smartphones and video game consoles.
 
 The Secret Network blockchain is based on Cosmos SDK / Tendermint, meaning the network has its own independent consensus, on-chain governance, and features like slashing and delegation. It is secured by the native coin Secret (SCRT), which must be staked by network validators and is used for transaction fees as well as governance.
@@ -117,8 +113,6 @@ Secret Apps - powered by “secret”, privacy-preserving smart contracts - are 
 <slim-column>
 
 ### Network Flow
-
-<separator space-large small/>
 
 <grid columns="2">
 
@@ -163,8 +157,6 @@ The work is verified as correct, and payment is released to the secret node that
 
 ### About Our Values
 
-<separator space-large small/>
-
 The Secret Network community is dedicated to building privacy-first solutions and applications for the benefit of all, because we believe that privacy is a public good. Here are our primary values.
 
 #### Usability and Sustainability
@@ -180,8 +172,6 @@ We prioritize adoption - applications that will make the greatest difference for
 Individuals have a right to their own privacy, their own self-expression, and their own data.
 
 </slim-column>
-
-<separator space-large center />
 
 <slim-column>
 

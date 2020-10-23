@@ -23,8 +23,23 @@
 import BlogEntryLayout from '@/layouts/BlogEntryLayout'
 import BlogAuthor from '@/components/blog/BlogAuthor'
 
+const url = `https://scrt.network`
+
 export default {
-  components: { BlogEntryLayout, BlogAuthor }
+  components: { BlogEntryLayout, BlogAuthor },
+  metaInfo() {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        { name: 'title', content: this.$page.post.title },
+        { name: 'author', content: this.$page.post.primary_author.name },
+        { key: 'og:url', name: 'og:url', content: `${url}${this.$route.fullPath}` },
+        { key: 'og:title', name: 'og:title', content: this.$page.post.title },
+        { key: 'og:description', name: 'og:description', content: this.$page.post.description },
+        { key: 'og:image', name: 'og:image', content: this.$page.post.coverImage }
+      ],
+    }
+  }
 }
 </script>
 
@@ -121,21 +136,21 @@ export default {
 </style>
 
 <page-query>
-  query Post ($path: String!) {
+query Post ($path: String!) {
   post: ghostPost (path: $path) {
-  title
-  path
-  date: published_at (format: "D MMM YYYY")
-  description: excerpt
-  content: html
-  coverImage: feature_image
-  primary_tag {
-  name
+    title
+    path
+    date: published_at (format: "D MMM YYYY")
+    description: excerpt
+    content: html
+    coverImage: feature_image
+    primary_tag {
+      name
+    }
+    primary_author {
+      name
+      profile_image
+    }
   }
-  primary_author {
-  name
-  profile_image
-  }
-  }
-  }
+}
 </page-query>

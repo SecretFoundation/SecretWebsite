@@ -18,8 +18,6 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 ### Join the Conversation
 
-<separator small />
-
 </slim-column>
 
 <card-holder columns="3">
@@ -97,8 +95,6 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 <slim-column>
 
 ### Committee
-
-<separator small />
 
 </slim-column>
 

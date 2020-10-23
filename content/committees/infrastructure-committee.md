@@ -2,8 +2,7 @@
 
 # Infrastructure Committee
 
-**Meetings every Tuesday at 4pm UTC**
-Join here: https://meet.scrt.network/infrastructure
+**Meetings on Pause, committee needs a lead to run meetings.**
 
 ## Purpose:
 * coordinate research into OEMs and cloud service providers that support SGX

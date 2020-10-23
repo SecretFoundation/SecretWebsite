@@ -323,6 +323,9 @@ $-logo-size-mobile: 68px;
           vertical-align: middle;
           margin-left: 10px;
         }
+        @include respond-to("medium and down") {
+          text-align: left;
+        }
       }
     }
   }

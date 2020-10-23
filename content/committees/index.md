@@ -55,7 +55,7 @@ Hackathons.
 
 Meetings
 
-Meetings on Pause, committee needs a lead to run meetings.
+Meetings on Pause, committee needs a lead to run meetings. 10/23/2020
 
 [Join Meeting]()
 

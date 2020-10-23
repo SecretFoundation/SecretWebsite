@@ -2,7 +2,7 @@
 
 # Infrastructure Committee
 
-**Meetings on Pause, committee needs a lead.**
+**Meetings on Pause, committee needs a lead to run meetings.**
 
 ## Purpose:
 * coordinate research into OEMs and cloud service providers that support SGX

@@ -33,10 +33,10 @@ export default {
       meta: [
         { name: 'title', content: this.$page.post.title },
         { name: 'author', content: this.$page.post.primary_author.name },
-        { key: 'og:url', name: 'og:url', content: `${url}${this.$route.fullPath}` },
-        { key: 'og:title', name: 'og:title', content: this.$page.post.title },
-        { key: 'og:description', name: 'og:description', content: this.$page.post.description },
-        { key: 'og:image', name: 'og:image', content: this.$page.post.coverImage }
+        { key: 'og:url', property: 'og:url', content: `${url}${this.$route.fullPath}` },
+        { key: 'og:title', property: 'og:title', content: this.$page.post.title },
+        { key: 'og:description', property: 'og:description', content: this.$page.post.description },
+        { key: 'og:image', property: 'og:image', content: this.$page.post.coverImage }
       ],
     }
   }

@@ -55,7 +55,7 @@ Hackathons.
 
 Meetings
 
-Meetings on Pause, committee needs a lead to run meetings. 10/23/2020
+Meetings on Pause, committee needs a lead to run meetings.
 
 [Join Meeting]()
 
@@ -124,7 +124,7 @@ Gathering a list of compatible hardware solutions.
 
 Meetings
 
-Every Other Tuesday, 4pm UTC
+CANCELED DUE TO RAIN AND THUNDER STORMS⛈️
 
 [Join Meeting]()
 

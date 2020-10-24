@@ -5,6 +5,15 @@
         <h2>Secret Network Blog</h2>
       </template>
       <single-column>
+        <div class="inline">
+          <h2>Featured Secrets</h2>
+          <hr>
+        </div>
+        <featured-posts :posts="$page.posts.edges"></featured-posts>
+        <hr>
+      </single-column>
+      <single-column>
+        <h2>All Secrets</h2>
         <posts :posts="$page.posts.edges"></posts>
       </single-column>
     </main-page-layout>
@@ -15,9 +24,10 @@
 import BaseLayout from '../layouts/BaseLayout'
 import MainPageLayout from '../layouts/MainPageLayout'
 import Posts from '@/components/blog/Posts'
+import PostsFeatured from '@/components/blog/PostsFeatured'
 
 export default {
-  components: { BaseLayout, MainPageLayout, Posts },
+  components: { BaseLayout, MainPageLayout, Posts, PostsFeatured },
 }
 </script>
 
@@ -49,9 +59,21 @@ export default {
 .blog {
   h2 {
     margin: 0;
+    padding: 0 0 rem(55px) 0;
   }
   hr {
     margin: $gutter-xlarge 0;
+  }
+  .inline {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: rem(47px);
+    align-items: center;
+    padding-bottom: rem(55px);
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 </style>

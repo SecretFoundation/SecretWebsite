@@ -305,4 +305,29 @@ $-logo-size-mobile: 68px;
     }
   }
 }
+
+.twin-columns {
+  .twins-column {
+    &--start, &--end {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &--end {
+      p {
+        text-align: right;
+        a {
+          text-decoration: none;
+          color: $primary-orange-color;
+        }
+        img {
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+        @include respond-to("medium and down") {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
 </style>

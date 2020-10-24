@@ -74,6 +74,16 @@ export default {
       margin: 0;
       padding: 0;
     }
+    @include respond-to("medium and down") {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-column-gap: 0;
+      align-items: left;
+      padding-bottom: rem(55px);
+      hr {
+        display: none;
+      }
+    }
   }
 }
 </style>

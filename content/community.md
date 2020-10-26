@@ -72,7 +72,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 </card-holder>
 
-<card-holder columns="1">
+<card-holder columns="3">
 
 <card>
 
@@ -85,6 +85,58 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 <template v-slot:footer>
 
 [Follow us](https://twitter.com/secretnetwork)
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### Reddit
+
+</template>
+
+<template v-slot:footer>
+
+[Join now]()
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+#### LinkedIn
+
+</template>
+
+<template v-slot:footer>
+
+[Join now]()
+
+</template>
+
+</card>
+
+</card-holder>
+
+<card-holder columns="1">
+
+<card>
+
+<template v-slot:header>
+
+#### Facebook
+
+</template>
+
+<template v-slot:footer>
+
+[Join now]()
 
 </template>
 

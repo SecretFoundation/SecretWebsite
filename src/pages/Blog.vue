@@ -1,6 +1,6 @@
 <template>
   <base-layout class="blog">
-    <main-page-layout>
+    <main-page-layout class="tururu">
       <template #title>
         <h2>Secret Network Blog</h2>
       </template>
@@ -59,7 +59,7 @@ export default {
 .blog {
   h2 {
     margin: 0;
-    padding: 0 0 rem(55px) 0;
+    padding: 0;
   }
   hr {
     margin: $gutter-xlarge 0;
@@ -69,7 +69,6 @@ export default {
     grid-template-columns: auto 1fr;
     grid-column-gap: rem(47px);
     align-items: center;
-    padding-bottom: rem(55px);
     h2 {
       margin: 0;
       padding: 0;
@@ -79,11 +78,13 @@ export default {
       grid-template-columns: 100%;
       grid-column-gap: 0;
       align-items: left;
-      padding-bottom: rem(55px);
       hr {
-        display: none;
+        margin: $gutter-large 0;
       }
     }
+  }
+  .grid {
+    margin-top: rem(55px);
   }
 }
 </style>

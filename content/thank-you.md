@@ -1,20 +1,22 @@
 ---
-layout: ~/layouts/MainPageLayout
+layout: ~/layouts/ThankYouLayout
 ---
 
-<template v-slot:title>
+<text-banner>
 
-## Secret Network Community
+## Subscription Confirmed
 
-</template>
+</text-banner>
 
-<slim-column>
+<text-banner class="thank-you-banner">
 
-Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer, there are many ways for you to contribute to Secret Network. Come talk with our community about Secret Network, privacy-preserving applications, and how we can enable a more human-centric, sustainable, decentralized future.
+## Thank you for subscribing!
 
-</slim-column>
+You've been added to our mailing list and will now be among the first to hear about new updates. We hope you enjoy being part of our Secret Network.
 
-<slim-column>
+</text-banner>
+
+<slim-column class="join">
 
 ### Join the Conversation
 
@@ -143,17 +145,3 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 </card>
 
 </card-holder>
-
-<slim-column>
-
-### Committee
-
-</slim-column>
-
-<slim-column>
-
-There is no more consequential way to get involved than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
-
-#### [Learn More or Join](/committees)
-
-</slim-column>

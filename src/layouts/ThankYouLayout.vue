@@ -25,7 +25,7 @@ export default {
 <style lang="scss">
 $-hero-mobile-height: 240px;
 $-hero-tablet-height: 280px;
-$-hero-desktop-height: 94px;
+$-hero-desktop-height: 250px;
 
 $-logo-size-desktop: 78px;
 $-logo-size-mobile: 68px;
@@ -41,7 +41,7 @@ $-logo-size-mobile: 68px;
     min-height: rem($-hero-tablet-height);
   }
   @include respond-to("large and up") {
-    height: rem($-hero-desktop-height);
+    height: rem(94px);
   }
 
   &__cover {

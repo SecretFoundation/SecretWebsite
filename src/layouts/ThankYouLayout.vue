@@ -1,11 +1,11 @@
 <template>
   <div>
-    <section class="main-page-hero">
-        <div class="main-page-hero__cover">
+    <section class="thank-you-page-hero">
+        <div class="thank-you-page-hero__cover">
         <themed-image>
-            <img light src="@/assets/hero-black.svg" alt="main-page-hero">
-            <img dark src="@/assets/hero-white.svg" alt="main-page-hero">
-            <img light-colored dark-colored src="@/assets/hero-green.svg" alt="main-page-hero">
+            <img light src="@/assets/hero-black.svg" alt="thank-you-page-hero">
+            <img dark src="@/assets/hero-white.svg" alt="thank-you-page-hero">
+            <img light-colored dark-colored src="@/assets/hero-green.svg" alt="thank-you-page-hero">
         </themed-image>
         </div>
     </section>
@@ -30,7 +30,7 @@ $-hero-desktop-height: 250px;
 $-logo-size-desktop: 78px;
 $-logo-size-mobile: 68px;
 
-.main-page-hero {
+.thank-you-page-hero {
   position: relative;
   max-width: 100%;
 
@@ -63,11 +63,8 @@ $-logo-size-mobile: 68px;
         min-height: rem($-hero-tablet-height);
       }
       @include respond-to("large and up") {
-        height: rem($-hero-desktop-height);
+        height: rem(94px);
         object-position: 0% 0%;
-      }
-      svg {
-          fill: yellow;
       }
     }
   }

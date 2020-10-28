@@ -23,3 +23,6 @@ npm run develop
 ```
 
 Usually the website is brough up at [http://localhost:8080](http://localhost:8080)
+
+### Hosted Dev Link
+https://vigilant-poitras-561134.netlify.app

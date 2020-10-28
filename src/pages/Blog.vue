@@ -1,6 +1,6 @@
 <template>
   <base-layout class="blog">
-    <main-page-layout class="tururu">
+    <main-page-layout>
       <template #title>
         <h2>Secret Network Blog</h2>
       </template>

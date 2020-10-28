@@ -56,6 +56,14 @@ export default {
     iframe {
       width: 100%;
     }
+    .kg-image-card {
+      img[src*=small-black-squiggle], img[src*=Black-Squiggle-Separator] {
+        @include theme(dark dark-colored) {
+          -webkit-filter: invert(100%);
+          filter: invert(100%);
+        }
+      }
+    }
   }
   a {
     text-decoration: none;

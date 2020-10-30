@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="thank-you-layout">
     <section class="thank-you-page-hero">
         <div class="thank-you-page-hero__cover">
         <themed-image>
@@ -29,6 +29,12 @@ $-hero-desktop-height: 250px;
 
 $-logo-size-desktop: 78px;
 $-logo-size-mobile: 68px;
+
+.thank-you-layout {
+  + .newsletter {
+    display: none;
+  }
+}
 
 .thank-you-page-hero {
   position: relative;
@@ -168,7 +174,5 @@ $-logo-size-mobile: 68px;
     }
 }
 
-.newsletter {
-    display: none;
-}
+
 </style>

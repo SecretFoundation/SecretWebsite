@@ -60,7 +60,7 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 </slim-column>
 
-<card-holder>
+<card-holder columns="2">
 
 <card>
 
@@ -93,6 +93,10 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 </template>
 
 </card>
+
+</card-holder>
+
+<card-holder columns="2">
 
 <card>
 
@@ -221,7 +225,7 @@ You can find information on staking rewards calculations at:
 
 </slim-column>
 
-<card-holder>
+<card-holder columns="2">
 
 <card>
 
@@ -254,6 +258,10 @@ You can find information on staking rewards calculations at:
 </template>
 
 </card>
+
+</card-holder>
+
+<card-holder columns="2">
 
 <card>
 

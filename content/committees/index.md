@@ -51,38 +51,6 @@ Hackathons.
 
 <template v-slot:header>
 
-### Infrastructure
-
-Meetings
-
-Meetings on Pause, committee needs a lead to run meetings.
-
-[Join Meeting]()
-
-</template>
-
-<template v-slot:body>
-
-##### Purpose
-
-Coordinate research into OEMs and cloud service providers that support SGX.
-
-##### Goals
-
-- Staying up-to-date on hardware issues
-
-##### Responsibilities
-
-Improving documentation for validators.
-
-</template>
-
-</committee-card>
-
-<committee-card blue>
-
-<template v-slot:header>
-
 ### Puzzle
 
 Meetings
@@ -104,7 +72,7 @@ To facilitate opportunities for collaboration between the community and Puzzle.
 
 - Collect feedback and feature requests for Puzzle.
 - Determine the biggest pain points users are having with Puzzle.
-- Impliment features that empower users, committees, and other ecoystem particpants.
+- Implement features that empower users, committees, and other ecosystem participants.
 
 ##### Responsibilities
 

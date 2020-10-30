@@ -14,8 +14,14 @@
       <g-link orange to="/ecosystem/overview">Ecosystem</g-link>
       <g-link blue to="https://forum.scrt.network/">Forum</g-link>
     </template>
-    <template #actions>
+    <template #actions> 
       <div class="social-networks">
+        <g-link to="https://github.com/SecretFoundation/SecretWebsite">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/github-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/github-black.svg"></g-image>
+          </themed-image>
+        </g-link>
         <g-link to="https://discord.com/invite/SJK32GY">
           <themed-image>
             <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>

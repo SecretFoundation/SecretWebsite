@@ -10,8 +10,6 @@ layout: ~/layouts/MainPageLayout
 
 <single-column>
 
-### All Media Articles
-
 <template>
 
 <grid columns="3">

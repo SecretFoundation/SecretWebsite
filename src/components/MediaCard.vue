@@ -34,7 +34,8 @@ const colors = {
   "solutions": "green",
   "": "blue",
   "podcast": "red",
-  "video": "turquoise"
+  "video": "turquoise",
+  "blog post": "yellow"
 }
 
 export default {

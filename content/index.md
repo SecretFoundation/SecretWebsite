@@ -74,9 +74,7 @@ Blockchains are public by default. That means that all the data used in smart co
 
 <single-column>
 
-#### Blog
-
-### Learn all of our secrets
+### Latest Blog Posts
 
 <twin-columns>
 

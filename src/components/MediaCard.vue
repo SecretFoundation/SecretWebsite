@@ -1,11 +1,13 @@
 <template>
   <div class="media-card" :color="color">
     <div class="media-card__body">
-      <div class="media-card__tag" :style="{ color: `var(--${color}-color)` }">
-        <slot>{{ tag }}</slot>
+      <div class="media-card__header">
+        <div class="media-card__tag" :style="{ color: `var(--${color}-color)` }">
+          <slot>{{ tag }}</slot>
+        </div>
+        <h4>{{ title }}</h4>
+        <separator small space-small></separator>
       </div>
-      <h4>{{ title }}</h4>
-      <separator small space-small></separator>
       <div class="media-card__image">
         <g-image :src="require(`!!assets-loader!@images/${src}`)"></g-image>
       </div>
@@ -138,7 +140,21 @@ $-card-min-height: 415px;
       text-decoration: none;
     }
   }
-
+  @media (min-width: 768px) and (max-width: 1007px) {
+    min-height: rem(360px);
+    &__header {
+      margin-bottom: $gutter;
+      min-height: rem(104px);
+    }
+  } 
+  @media (min-width: 1008px) and (max-width: 1199px) {
+    min-height: rem(360px);
+    &__header {
+      h4 {
+        font-size: 22px;
+      }
+    }
+  } 
   @include respond-to("medium and down") {
     width: 100%;
     &__image {

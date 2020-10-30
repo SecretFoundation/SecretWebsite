@@ -55,7 +55,7 @@ Hackathons.
 
 Meetings
 
-Biweekly Tuesdays 4PM UTC
+Tuesdays 4PM UTC
 (Starting Nov 10th 2020)
 
 [Join Meeting]()

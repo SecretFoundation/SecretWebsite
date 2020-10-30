@@ -20,6 +20,7 @@ import FeaturedPosts from '@/components/blog/FeaturedPosts'
 import SimpleSection from '@/components/SimpleSection'
 import BlogCardFeatured from '@/components/blog/BlogCardFeatured'
 import PostsFeatured from '@/components/blog/PostsFeatured'
+import MediaCard from '@/components/MediaCard'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -44,6 +45,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('SimpleSection', SimpleSection)
   Vue.component('BlogCardFeatured', BlogCardFeatured)
   Vue.component('PostsFeatured', PostsFeatured)
+  Vue.component('MediaCard', MediaCard)
 
   if (isClient) {
     Vue.$setDefaultTheme()

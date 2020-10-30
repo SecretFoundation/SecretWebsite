@@ -72,7 +72,7 @@ To facilitate opportunities for collaboration between the community and Puzzle.
 
 - Collect feedback and feature requests for Puzzle.
 - Determine the biggest pain points users are having with Puzzle.
-- Impliment features that empower users, committees, and other ecoystem particpants.
+- Implement features that empower users, committees, and other ecosystem participants.
 
 ##### Responsibilities
 

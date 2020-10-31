@@ -72,13 +72,11 @@ Blockchains are public by default. That means that all the data used in smart co
 
 </single-column>
 
-<single-column>
-
-### Latest Blog Posts
-
 <twin-columns>
 
 <template v-slot:left>
+  
+### Latest Blog Posts
 
 Read, watch and absorb the secrets that we publish in our official blog.
 
@@ -91,6 +89,8 @@ Read, watch and absorb the secrets that we publish in our official blog.
 </template>
 
 </twin-columns>
+
+<single-column>
 
 <latest-posts></latest-posts>
 

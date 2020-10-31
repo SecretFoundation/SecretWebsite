@@ -19,7 +19,7 @@ layout: ~/layouts/DocumentationLayout
 # Validators
 
 
-All coordination efforts will be done in the [#mainnet-validators](https://discord.com/channels/360051864110235648/760896341403631648) channel in the Secret Network Rocket.Chat.
+All coordination efforts will be done in the [#mainnet-validators](https://discord.gg/yusPuh8ebK) channel in the Secret Network Rocket.Chat.
 
 ⚠️ Don't delete your `secret-1` machine, as we might have to relaunch it.
 

@@ -173,7 +173,7 @@
           <div class="custom-footer__links">
             <h4>Secret Community</h4>
             <g-link to="https://blog.scrt.network/">Secret Blog</g-link>
-            <g-link to="https://discord.com/channels/360051864110235648/748902174637162606">Secret Chat</g-link>
+            <g-link to="https://discord.gg/7t7PqPZFJq">Secret Chat</g-link>
             <g-link to="https://forum.scrt.network/">Secret Forum</g-link>
             <g-link to="/committees/introduction">Committees</g-link>
           </div>

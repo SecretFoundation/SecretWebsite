@@ -20,7 +20,7 @@ Mainnet is out! Get the latest release [here](https://github.com/enigmampc/Secre
 - [Discord](https://discord.com/invite/SJK32GY)
 - [Blog](https://blog.scrt.network)
 - [Twitter](https://twitter.com/SecretNetwork)
-- [Main Chat](https://discord.com/channels/360051864110235648/748902174637162606)
+- [Main Chat](https://discord.gg/yevT2xcfS9)
 - [Telegram Channel](https://t.me/SCRTnetwork)
 
 ## Block Explorers

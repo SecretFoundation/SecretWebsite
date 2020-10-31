@@ -3,7 +3,7 @@
 # SGX Compliance
 
 
-The Secret Network has the requirement of running a compliant SGX enclave in order to successfully deploy a full node or a Secret Node. This page will go over the supported hardware and cloud providers. If you'd like to contribute more options please make a pull request or join us in the [the infrastructure room](https://chat.scrt.network/channel/infrastructure) .
+The Secret Network has the requirement of running a compliant SGX enclave in order to successfully deploy a full node or a Secret Node. This page will go over the supported hardware and cloud providers. If you'd like to contribute more options please make a pull request or join us in the [the infrastructure room](https://discord.com/channels/360051864110235648/760897475514204160) .
 
 # CPU Support
 
@@ -30,7 +30,7 @@ SuperMicro motherboards.
 # Cloud Support
 
 
-Note: Not all offerings from these providers will work with SGX. Be sure to pay attention to the instance you are purchasing and if you have any questions ask in [the infrastructure room](https://chat.scrt.network/channel/infrastructure) .
+Note: Not all offerings from these providers will work with SGX. Be sure to pay attention to the instance you are purchasing and if you have any questions ask in [the infrastructure room](https://discord.com/channels/360051864110235648/760897475514204160) .
 
 1.  Microsoft Azure Confidential Computing
     

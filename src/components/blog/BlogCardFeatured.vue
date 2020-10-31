@@ -186,5 +186,8 @@ $-card-min-height: 487px;
   .separator {
     padding: 0 $gutter;
   }
+  @include respond-to("medium and down") {
+    width: 100%;
+  }
 }
 </style>

@@ -72,10 +72,10 @@ Blockchains are public by default. That means that all the data used in smart co
 
 </single-column>
 
-<twin-columns>
+<twin-columns class="latest-posts">
 
 <template v-slot:left>
-  
+
 ### Latest Blog Posts
 
 Read, watch and absorb the secrets that we publish in our official blog.
@@ -92,7 +92,63 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 <single-column>
 
-<latest-posts></latest-posts>
+<latest-posts class="latest-blog-cards"></latest-posts>
+
+</single-column>
+
+<twin-columns class="announcement">
+
+<template v-slot:left>
+
+#### Announcement
+
+### Upgrade Complete:<br>Secret Contracts are<br>LIVE on Mainnet!
+
+The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
+
+[Read more](https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet) ![](../src/assets/arrow-right-circle.svg)
+
+</template>
+
+<template v-slot:right>
+
+![](../src/assets/announcement.png)
+
+</template>
+
+</twin-columns>
+
+<twin-columns class="latest-media-articles">
+
+<template v-slot:left>
+
+## Latest Media Articles
+
+</template>
+
+<template v-slot:right>
+
+[View all articles](/media) ![](../src/assets/arrow-right-circle.svg)
+
+</template>
+
+</twin-columns>
+
+<single-column>
+
+<template>
+
+<grid columns="3">
+
+<media-card tag="podcast" title="Tor Bair on Nugget's News Podcast" src="image1.png" to="https://www.youtube.com/watch?v=2kttQDQOT3Y" cta="Listen Now"></media-card>
+
+<media-card tag="podcast" title="Decentralize This! Podcast" src="image2.png" to="https://www.youtube.com/watch?v=BGRWDKU1f6w" cta="Listen Now"></media-card>
+
+<media-card tag="video" title="Tor Bair's interview with Ivan on Tech" src="image3.png" to="https://www.youtube.com/watch?v=rvkMPcMK_7Ah" cta="Listen Now"></media-card>
+
+</grid>
+
+</template>
 
 </single-column>
 
@@ -105,5 +161,57 @@ Read, watch and absorb the secrets that we publish in our official blog.
 }
 .simple-section {
   text-align: center;
+}
+.latest-blog-cards {
+  padding-bottom: $gutter-xxxlarge;
+}
+.announcement {
+  background-color: $primary-purple-color;
+  padding-top: rem(78px);
+  padding-bottom: rem(78px);
+  .twins-column {
+    &--start {
+      h4 {
+        font-size: 24px;
+      }
+      p {
+        a {
+          text-decoration: none;
+          color: $primary-orange-color;
+        }
+        img {
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  @include respond-to("medium and down") {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+  }
+}
+.latest-posts, .latest-media-articles {
+  align-items: end;
+  padding-top: $gutter-xxxlarge;
+  padding-bottom: 0;
+  .twins-column {
+    &--end {
+      p {
+        text-align: right;
+        a {
+          text-decoration: none;
+          color: $primary-orange-color;
+        }
+        img {
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+        @include respond-to("medium and down") {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 </style>

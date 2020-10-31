@@ -29,7 +29,7 @@ $-chevron-height: 6px;
   border-bottom: 1px solid var(--theme-fg);
   margin-bottom: $gutter-large;
 
-  h3 {
+  h4 {
     position: relative;
 
     &:after {
@@ -54,7 +54,7 @@ $-chevron-height: 6px;
     display: none;
   }
   &__expanded {
-    h3 {
+    h4 {
       &:after {
         @include theme(dark dark-colored) {
           background-image: url('../assets/chevron-up-light.svg');

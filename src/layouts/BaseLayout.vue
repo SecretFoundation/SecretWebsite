@@ -13,9 +13,47 @@
       <g-link yellow to="/developers">Developers</g-link>
       <g-link orange to="/ecosystem/overview">Ecosystem</g-link>
       <g-link blue to="https://forum.scrt.network/">Forum</g-link>
+      <div class="social-networks__mobile">
+        <g-link to="https://github.com/SecretFoundation/SecretWebsite">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/github-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/github-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+        <g-link to="https://discord.com/invite/SJK32GY">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/discord-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+        <g-link to="https://t.me/SCRTcommunity">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/telegram-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/telegram-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+        <g-link to="https://twitter.com/SecretNetwork">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/twitter-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/twitter-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+        <g-link to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/youtube-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/youtube-black.svg"></g-image>
+          </themed-image>
+        </g-link>
+      </div>
     </template>
-    <template #actions>
+    <template #actions> 
       <div class="social-networks">
+        <g-link to="https://github.com/SecretFoundation/SecretWebsite">
+          <themed-image>
+            <g-image dark dark-colored src="@/assets/github-white.svg"></g-image>
+            <g-image light light-colored src="@/assets/github-black.svg"></g-image>
+          </themed-image>
+        </g-link>
         <g-link to="https://discord.com/invite/SJK32GY">
           <themed-image>
             <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>
@@ -143,6 +181,7 @@
             <h4>Secret Network</h4>
             <g-link to="/about/about-secret-network">About</g-link>
             <g-link to="/about/faq">FAQ</g-link>
+            <g-link to="/media">Media Articles</g-link>
           </div>
         </div>
         <div class="custom-footer__copy">
@@ -446,6 +485,28 @@ export default {
 
   @include respond-to("medium and down") {
     display: none;
+  }
+  &__mobile {
+    @include respond-to("large and up") {
+      display: none;
+    }
+    @include respond-to("medium and down") {
+      padding: $gutter;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 67px);
+      align-items: center;
+      width: calc(100% - #{$gutter-xxxlarge});
+      position: fixed;
+      bottom: 0;
+      a {
+        .themed-image {
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
   }
 }
 .toggles {

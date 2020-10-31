@@ -102,7 +102,7 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 #### Announcement
 
-## Upgrade Complete: Secret Contracts are LIVE on Mainnet!
+### Upgrade Complete:<br>Secret Contracts are<br>LIVE on Mainnet!
 
 The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
 
@@ -171,6 +171,9 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
   padding-bottom: rem(78px);
   .twins-column {
     &--start {
+      h4 {
+        font-size: 24px;
+      }
       p {
         a {
           text-decoration: none;

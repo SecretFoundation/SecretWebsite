@@ -72,8 +72,6 @@ Blockchains are public by default. That means that all the data used in smart co
 
 </single-column>
 
-<single-column>
-
 <twin-columns class="latest-posts">
 
 <template v-slot:left>
@@ -92,11 +90,33 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 </twin-columns>
 
-<latest-posts></latest-posts>
+<single-column>
+
+<latest-posts class="latest-blog-cards"></latest-posts>
 
 </single-column>
 
-<single-column>
+<twin-columns class="announcement">
+
+<template v-slot:left>
+
+#### Announcement
+
+## Upgrade Complete: Secret Contracts are LIVE on Mainnet!
+
+The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
+
+[Read more](https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet) ![](../src/assets/arrow-right-circle.svg)
+
+</template>
+
+<template v-slot:right>
+
+![](../src/assets/announcement.png)
+
+</template>
+
+</twin-columns>
 
 <twin-columns class="latest-media-articles">
 
@@ -113,6 +133,8 @@ Read, watch and absorb the secrets that we publish in our official blog.
 </template>
 
 </twin-columns>
+
+<single-column>
 
 <template>
 
@@ -140,10 +162,53 @@ Read, watch and absorb the secrets that we publish in our official blog.
 .simple-section {
   text-align: center;
 }
-.latest-media-articles {
-  align-items: end;
+.latest-blog-cards {
+  padding-bottom: $gutter-xxxlarge;
 }
-.latest-posts {
+.announcement {
+  background-color: $primary-purple-color;
+  padding-top: rem(78px);
+  padding-bottom: rem(78px);
+  .twins-column {
+    &--start {
+      p {
+        a {
+          text-decoration: none;
+          color: $primary-orange-color;
+        }
+        img {
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  @include respond-to("medium and down") {
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+  }
+}
+.latest-posts, .latest-media-articles {
   align-items: end;
+  padding-top: $gutter-xxxlarge;
+  padding-bottom: 0;
+  .twins-column {
+    &--end {
+      p {
+        text-align: right;
+        a {
+          text-decoration: none;
+          color: $primary-orange-color;
+        }
+        img {
+          vertical-align: middle;
+          margin-left: 10px;
+        }
+        @include respond-to("medium and down") {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 </style>

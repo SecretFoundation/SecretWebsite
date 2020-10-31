@@ -51,11 +51,12 @@ Hackathons.
 
 <template v-slot:header>
 
-### Infrastructure
+### Puzzle
 
 Meetings
 
-Meetings on Pause, committee needs a lead to run meetings.
+Tuesdays 4PM UTC
+(Starting Nov 10th 2020)
 
 [Join Meeting]()
 
@@ -65,84 +66,17 @@ Meetings on Pause, committee needs a lead to run meetings.
 
 ##### Purpose
 
-Coordinate research into OEMs and cloud service providers that support SGX.
+To facilitate opportunities for collaboration between the community and Puzzle. 
 
 ##### Goals
 
-- Staying up-to-date on hardware issues
+- Collect feedback and feature requests for Puzzle.
+- Determine the biggest pain points users are having with Puzzle.
+- Implement features that empower users, committees, and other ecosystem participants.
 
 ##### Responsibilities
 
-Improving documentation for validators.
-
-</template>
-
-</committee-card>
-
-<!-- <committee-card blue>
-
-<template v-slot:header>
-
-### Infrastructure
-
-Meetings
-
-Tuesdays, 4pm UTC
-
-[Join Meeting]()
-
-</template>
-
-<template v-slot:body>
-
-##### Purpose
-
-Coordinate research into OEMs and cloud service providers that support SGX.
-
-##### Goals
-
-- Staying up-to-date on hardware issues
-
-##### Responsibilities
-
-Improving documentation for validators.
-
-##### Initiatives
-
-Gathering a list of compatible hardware solutions.
-
-</template>
-
-</committee-card> -->
-
-
-<committee-card blue>
-
-<template v-slot:header>
-
-### Decentralization
-
-Meetings
-
-CANCELED DUE TO RAIN AND THUNDER STORMS⛈️
-
-[Join Meeting]()
-
-</template>
-
-<template v-slot:body>
-
-##### Purpose
-
-To steward the network down the path of decentralization with a focus on network efficency, transparency, and community empowerment.
-
-##### Goals
-
-- Evaluate, discuss, and balance decentralization in the Secret Network.
-
-##### Responsibilities
-
-Discuss, research, and ultimately impliment inititives that empower users and help keep the network Decentralized.
+Making sure Puzzle develpment continues to fullfil community needs.
 
 </template>
 

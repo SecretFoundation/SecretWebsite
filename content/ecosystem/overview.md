@@ -14,7 +14,7 @@ Secret Network is currently supported by over 30 active validators as well as a 
 
 A few key network contributors are featured below.
 
-<grid column="4">
+<grid column="4" class="ecosystem-logos">
 
 <div>
 
@@ -280,3 +280,16 @@ You can find information on staking rewards calculations at:
 </card>
 
 </card-holder>
+
+<style lang="scss">
+.ecosystem-logos {
+    div {
+        p {
+            img {
+                border: 2px solid white;
+                border-radius: rem(10px);
+            }
+        }
+    }
+}
+</style>

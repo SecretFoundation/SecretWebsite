@@ -20,7 +20,7 @@ By supporting encrypted inputs, encrypted outputs, and encrypted state for smart
 
 <card-holder>
 
-<card>
+<card class="industry-card">
 
 <template v-slot:header>
 
@@ -32,7 +32,7 @@ Support for privacy-preserving asset transfers, lending, and more.
 
 </card>
 
-<card>
+<card class="industry-card">
 
 <template v-slot:header>
 
@@ -44,7 +44,7 @@ Sharing and monetizing data while keeping it secure.
 
 </card>
 
-<card>
+<card class="industry-card">
 
 <template v-slot:header>
 
@@ -56,7 +56,7 @@ Discovering powerful insights while protecting underlying data.
 
 </card>
 
-<card>
+<card class="industry-card">
 
 <template v-slot:header>
 
@@ -68,7 +68,7 @@ Allowing research over encrypted data, driving innovation.
 
 </card>
 
-<card>
+<card class="industry-card">
 
 <template v-slot:header>
 
@@ -80,7 +80,7 @@ Enabling more open and more usable gaming experiences.
 
 </card>
 
-<card>
+<card class="know-other-keys">
 
 <template v-slot:header>
 
@@ -88,11 +88,7 @@ Enabling more open and more usable gaming experiences.
 
 </template>
 
-<template v-slot:footer>
-
-[Go ahead and read de FAQ](#frequently-asked-questions)
-
-</template>
+[Read the FAQ](#frequently-asked-questions) ![](../../src/assets/arrow-right-circle.svg)
 
 </card>
 
@@ -317,5 +313,51 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
 <style lang="scss">
 #frequently-asked-questions {
   margin-bottom: $gutter-xxlarge;
+}
+.industry-card {
+  border: 1px solid white !important;
+  border-radius: 10px !important;
+  .card__header {
+    .separator {
+      display: none;
+    }
+  }
+  .card__body {
+    padding: 0;
+  }
+  .card__footer {
+    display: none;
+  }
+}
+.know-other-keys {
+  border: 0 !important;
+  .card__header {
+    .separator {
+      display: none;
+    }
+  }
+  .card__body--unwrapped {
+    padding: 0 16px 16px 16px;
+    p {
+      a {
+        width: auto !important;
+        text-align: left !important;
+        display: inline-block !important;
+        background-color: transparent !important;
+        color: $primary-orange-color !important;
+        font-weight: 100 !important;
+      }
+      img {
+        vertical-align: middle;
+        margin-left: 10px;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .card__footer {
+    display: none;
+  }
 }
 </style>

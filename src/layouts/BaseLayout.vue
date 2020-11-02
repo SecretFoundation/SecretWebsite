@@ -407,6 +407,9 @@ export default {
   &__logo {
     width: rem(110px);
     margin-bottom: rem(20px);
+    @include respond-to("medium and down") {
+      margin: 0 auto rem(20px) auto;
+    }
   }
   &__social {
     margin-top: rem(16px);

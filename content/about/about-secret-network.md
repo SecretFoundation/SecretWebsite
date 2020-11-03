@@ -315,7 +315,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
   margin-bottom: $gutter-xxlarge;
 }
 .industry-card {
-  border: 1px solid white !important;
+  border: 1px solid var(--theme-fg) !important;
   border-radius: 10px !important;
   .card__header {
     .separator {

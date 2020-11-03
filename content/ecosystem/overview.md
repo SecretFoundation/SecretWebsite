@@ -286,7 +286,7 @@ You can find information on staking rewards calculations at:
     div {
         p {
             img {
-                border: 2px solid white;
+                border: 2px solid var(--theme-fg);
                 border-radius: rem(10px);
             }
         }

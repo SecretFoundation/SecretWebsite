@@ -2,9 +2,9 @@
   <section class="hero" :class="stage">
     <div class="hero__cover">
       <themed-image>
-        <img light src="@/assets/hero-black.svg" alt="hero">
-        <img dark src="@/assets/hero-white.svg" alt="hero">
-        <img light-colored dark-colored src="@/assets/hero-color.svg" alt="hero">
+        <g-image light src="@/assets/hero-black.svg" immediate="true"></g-image>
+        <g-image dark src="@/assets/hero-white.svg" immediate="true"></g-image>
+        <g-image light-colored dark-colored src="@/assets/hero-color.svg" immediate="true"></g-image>
       </themed-image>
     </div>
     <div class="hero__content">

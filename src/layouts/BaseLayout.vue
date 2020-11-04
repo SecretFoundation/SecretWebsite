@@ -211,7 +211,6 @@ export default {
       if (!theme) return
       this.darkLightModeState = !theme.includes('dark')
       this.coloredModeState = theme.includes('colored')
-      this.setBodyAttr(theme)
     }
   },
   methods: {

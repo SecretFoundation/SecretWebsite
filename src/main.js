@@ -48,7 +48,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('MediaCard', MediaCard)
 
   if (isClient) {
-    Vue.$setDefaultTheme()
   }
 }
 

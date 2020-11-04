@@ -140,11 +140,11 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 
 <grid columns="3">
 
-<media-card tag="podcast" title="Tor Bair on Nugget's News Podcast" src="image1.png" to="https://www.youtube.com/watch?v=2kttQDQOT3Y" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Private Smart Contracts: Anthony Pompliano" src="image1.png" to="https://www.youtube.com/watch?v=Kx9hb3U7pfs" cta="Listen Now"></media-card>
 
-<media-card tag="podcast" title="Decentralize This! Podcast" src="image2.png" to="https://www.youtube.com/watch?v=BGRWDKU1f6w" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Secret Network on The Defiant Podcast" src="image2.png" to="https://anchor.fm/thedefiant/episodes/Privacy-Might-be-the-Only-Thing-Left-That-Makes-Web-3-0-a-Viable-Alternative-Tor-Bair-of-Secret-Foundation-el9n52" cta="Listen Now"></media-card>
 
-<media-card tag="video" title="Tor Bair's interview with Ivan on Tech" src="image3.png" to="https://www.youtube.com/watch?v=rvkMPcMK_7Ah" cta="Listen Now"></media-card>
+<media-card tag="video" title="Defi Privacy Is Here: Ivan on Tech" src="image3.png" to="https://www.youtube.com/watch?v=rvkMPcMK_7Ah" cta="Listen Now"></media-card>
 
 </grid>
 

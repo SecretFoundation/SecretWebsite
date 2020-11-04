@@ -2,15 +2,15 @@
   <section class="hero" :class="stage">
     <div class="hero__cover">
       <themed-image>
-        <g-image light src="@/assets/hero-black.svg" alt="hero" immediate="true" quality="100"></g-image>
-        <g-image dark src="@/assets/hero-white.svg" alt="hero" immediate="true" quality="100"></g-image>
-        <g-image light-colored dark-colored src="@/assets/hero-color.svg" alt="hero" immediate="true" quality="100"></g-image>
+        <img light src="@/assets/hero-black.svg" alt="hero">
+        <img dark src="@/assets/hero-white.svg" alt="hero">
+        <img light-colored dark-colored src="@/assets/hero-color.svg" alt="hero">
       </themed-image>
     </div>
     <div class="hero__content">
       <div class="hero__title">
         <div class="hero__title__container">
-          <g-image class="hero__logo" src="@/assets/logo-seal.svg"></g-image>
+          <g-image class="hero__logo" src="@/assets/logo-seal.svg" immediate="true"></g-image>
           <div v-if="stage == 'intro--arriving'">
             <h2 class="hero__message">Welcome to Secret Network</h2>
             <div class="intro-nav">
@@ -60,15 +60,6 @@ export default {
       themeIndex: 0,
       stage: 'intro--ended'
     }
-  },
-  created() {
-    this.$root.$on('theme', (theme) => {
-      this.setTheme(theme)
-      this.applyTheme(theme)
-    });
-    const currentTheme = themes[this.getTheme()]
-    this.bg = currentTheme.bg
-    this.fg = currentTheme.fg
   },
   methods: {
     changeStage(newStage) {

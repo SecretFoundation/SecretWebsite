@@ -2,8 +2,10 @@
   <simple-layout>
     <template #logo>
       <g-link to="/">
-        <g-image class="logo" src="../assets/secret-logo--black.svg"></g-image>
-        <g-image class="logo" src="../assets/secret-logo--white.svg"></g-image>
+        <themed-image>
+          <g-image light light-colored class="logo" src="../assets/secret-logo--black.svg" immediate="true"></g-image>
+          <g-image dark dark-colored class="logo" src="../assets/secret-logo--white.svg" immediate="true"></g-image>
+        </themed-image>
       </g-link>
     </template>
     <template #navigation>
@@ -16,80 +18,80 @@
       <div class="social-networks__mobile">
         <g-link to="https://github.com/SecretFoundation/SecretWebsite">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/github-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/github-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/github-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/github-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://discord.com/invite/SJK32GY">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/discord-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/discord-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/discord-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://t.me/SCRTcommunity">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/telegram-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/telegram-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/telegram-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/telegram-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://twitter.com/SecretNetwork">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/twitter-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/twitter-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/twitter-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/twitter-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/youtube-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/youtube-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/youtube-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/youtube-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
       </div>
     </template>
-    <template #actions> 
+    <template #actions>
       <div class="social-networks">
         <g-link to="https://github.com/SecretFoundation/SecretWebsite">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/github-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/github-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/github-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/github-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://discord.com/invite/SJK32GY">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/discord-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/discord-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/discord-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/discord-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://t.me/SCRTcommunity">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/telegram-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/telegram-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/telegram-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/telegram-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://twitter.com/SecretNetwork">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/twitter-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/twitter-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/twitter-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/twitter-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
         <g-link to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/youtube-white.svg"></g-image>
-            <g-image light light-colored src="@/assets/youtube-black.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/youtube-white.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/youtube-black.svg" immediate="true"></g-image>
           </themed-image>
         </g-link>
       </div>
       <div class="toggles">
         <button @click="toggleDarkLightMode">
           <themed-image>
-            <g-image dark dark-colored src="@/assets/moon.svg"></g-image>
-            <g-image light light-colored src="@/assets/sun.svg"></g-image>
+            <g-image dark dark-colored src="@/assets/moon.svg" immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/sun.svg" immediate="true"></g-image>
           </themed-image>
         </button>
         <button @click="toggleColoredMode">
           <themed-image>
-            <g-image dark light src="@/assets/mono.svg"></g-image>
-            <g-image dark-colored light-colored src="@/assets/chromo.svg"></g-image>
+            <g-image dark light src="@/assets/mono.svg" immediate="true"></g-image>
+            <g-image dark-colored light-colored src="@/assets/chromo.svg" immediate="true"></g-image>
           </themed-image>
         </button>
       </div>
@@ -348,22 +350,6 @@ export default {
 .logo {
   width: auto;
   height: rem(58px);
-  &[src*=black] {
-    @include theme(dark dark-colored) {
-      display: none;
-    }
-    @include theme(light light-colored) {
-      display: block;
-    }
-  }
-  &[src*=white] {
-    @include theme(dark dark-colored) {
-      display: block;
-    }
-    @include theme(light light-colored) {
-      display: none;
-    }
-  }
 }
 .theme-selector {
   width: rem(18px);

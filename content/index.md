@@ -1,6 +1,6 @@
-<ClientOnly>
-<home-page-hero></home-page-hero>
-</ClientOnly>
+---
+layout: ~/layouts/HomePageLayout
+---
 
 <slim-column>
 

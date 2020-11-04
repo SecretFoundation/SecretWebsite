@@ -110,44 +110,51 @@ Secret Apps - powered by “secret”, privacy-preserving smart contracts - are 
 
 ### Network Flow
 
-<grid columns="2">
+</slim-column>
 
-<div>
+<card-holder class="network-flow">
 
-#### Step 1
+<card>
+
+<h4 class="orange">01</h4>
+
+#### Writing
 
 A developer writes "secret" smart contracts and deploys them to the Secret Network.
 
-</div>
+</card>
 
-<div>
+<card>
 
-#### Step 2
+<h4 class="blue">02</h4>
+
+#### Submission
 
 Users submit encrypted data to Secret Network that can’t be read by anyone else — including the node doing the computation.
 
-</div>
+</card>
 
-<div>
+<card>
 
-#### Step 3
+<h4 class="yellow">03</h4>
+
+#### Computation
 
 A "secret node" in the network performs the computation, and returns the result.
 
-</div>
+</card>
 
-<div>
+<card>
 
-#### Step 4
+<h4 class="red">04</h4>
+
+#### Verification
 
 The work is verified as correct, and payment is released to the secret node that performed the work.
 
-</div>
+</card>
 
-</grid>
-
-</slim-column>
-
+</card-holder>
 
 <slim-column>
 
@@ -358,6 +365,87 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
   }
   .card__footer {
     display: none;
+  }
+}
+.network-flow {
+  .grid {
+    --columns: 4 !important;
+    .card {
+      border: 1px solid var(--theme-fg) !important;
+      border-radius: 10px !important;
+      position: relative;
+      &__header {
+        padding: 0;
+        .separator {
+          display: none;
+        }
+      }
+      &__body{
+        padding: $gutter 0;
+        h4 {
+          &.orange {
+            color: $primary-orange-color;
+          }
+          &.blue {
+            color: $primary-blue-color;
+          }
+          &.yellow {
+            color: #EDC92B;
+          }
+          &.red {
+            color: $primary-red-color;
+          }
+        }
+      }
+      &__footer {
+        padding: 0;
+      }
+      &:after {
+        position: absolute;
+        top: 45%;
+        right: rem(-30px);
+        @include theme(dark dark-colored) {
+          content: url('../../src/assets/arrow-right-white.svg');
+        }
+        @include theme(light light-colored) {
+          content: url('../../src/assets/arrow-right-black.svg');
+        }
+      }
+      &:last-child {
+        &:after {
+          @include theme(dark dark-colored) {
+            content: ' ';
+          }
+          @include theme(light light-colored) {
+            content: ' ';
+          }
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1007px) {
+        &:after {
+          @include theme(dark dark-colored) {
+            content: ' ';
+          }
+          @include theme(light light-colored) {
+            content: ' ';
+          }
+        }
+      }
+      @include respond-to("small and down") {
+        &:after {
+          top: unset;
+          bottom: rem(-30px);
+          right: unset;
+          left: 47%;
+          @include theme(dark dark-colored) {
+            content: url('../../src/assets/arrow-down-white.svg');
+          }
+          @include theme(light light-colored) {
+            content: url('../../src/assets/arrow-down-black.svg');
+          }
+        }
+      }
+    }
   }
 }
 </style>

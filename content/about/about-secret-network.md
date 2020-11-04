@@ -375,10 +375,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
       border-radius: 10px !important;
       position: relative;
       &__header {
-        padding: 0;
-        .separator {
-          display: none;
-        }
+         display: none;
       }
       &__body{
         padding: $gutter 0;

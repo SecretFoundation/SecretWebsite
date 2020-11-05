@@ -23,7 +23,8 @@ $-strong-font-size: 24px;
 .home-card {
   border: 3px solid var(--theme-fg);
   border-radius: rem($gutter-large);
-
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
   h3 > strong {
     font-size: $-strong-font-size;
   }
@@ -93,6 +94,10 @@ $-strong-font-size: 24px;
         max-height: rem(332px);
       } 
     }
+  }
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
   }
 }
 </style>

@@ -84,7 +84,7 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 <template v-slot:right>
 
-[Unveil more secrets](/blog) ![](../src/assets/arrow-right-circle.svg)
+[Unveil more secrets](/blog)
 
 </template>
 
@@ -106,7 +106,7 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
 
-[Read more](https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet) ![](../src/assets/arrow-right-circle.svg)
+[Read more](https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet) ![](../src/assets/arrow-right-circle-turquoise.svg)
 
 </template>
 
@@ -128,7 +128,7 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 
 <template v-slot:right>
 
-[View all media](/media) ![](../src/assets/arrow-right-circle.svg)
+[View all media](/media)
 
 </template>
 
@@ -182,7 +182,7 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
         color: white;
         a {
           text-decoration: none;
-          color: $primary-orange-color;
+          color: $secondary-turquoise-color;
         }
         img {
           vertical-align: middle;
@@ -204,16 +204,32 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
     &--end {
       p {
         text-align: right;
+        padding-right: rem(26px);
         a {
+          font-weight: bold;
           text-decoration: none;
-          color: $primary-orange-color;
-        }
-        img {
-          vertical-align: middle;
-          margin-left: 10px;
+          position: relative;
+          @include theme(dark dark-colored) {
+            color: $secondary-turquoise-color;
+          }
+          @include theme(light light-colored) {
+            color: $primary-blue-color;
+          }
+          &:after {
+            position: absolute;
+            top: rem(5px);
+            right: rem(-26px);
+            @include theme(dark dark-colored) {
+              content: url('../src/assets/arrow-right-circle-turquoise.svg');
+            }
+            @include theme(light light-colored) {
+              content: url('../src/assets/arrow-right-circle-blue.svg');
+            }
+          }
         }
         @include respond-to("medium and down") {
           text-align: left;
+          padding-right: 0;
         }
       }
     }

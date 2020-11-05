@@ -39,6 +39,7 @@ const colors = {
   "privacy": "purple",
   "secret apps": "green",
   "solutions": "green",
+  "ecosystem": "red",
   "": "blue"
 }
 

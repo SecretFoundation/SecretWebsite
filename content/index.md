@@ -144,7 +144,7 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 
 <media-card tag="podcast" title="Decentralize This! Podcast" src="image2.png" to="https://www.youtube.com/watch?v=BGRWDKU1f6w" cta="Listen Now"></media-card>
 
-<media-card tag="video" title="Tor Bair's interview with Ivan on Tech" src="image3.png" to="https://www.youtube.com/watch?v=rvkMPcMK_7Ah" cta="Listen Now"></media-card>
+<media-card tag="video" title="Tor Bair's interview with Ivan on Tech" src="image3.png" to="https://www.youtube.com/watch?v=rvkMPcMK_7Ah" cta="Watch Now"></media-card>
 
 </grid>
 

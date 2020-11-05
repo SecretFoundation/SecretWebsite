@@ -86,7 +86,7 @@ $-card-min-height: 415px;
 .media-card {
   $root: &;
   display: grid;
-  grid-template-rows: 26px 100px 22px 1fr 62px;
+  grid-template-rows: 26px 1fr 22px 185px 62px;
   position: relative;
   border: 3px solid;
   border-color: var(--theme-fg);
@@ -147,10 +147,7 @@ $-card-min-height: 415px;
   } 
   @media (min-width: 1008px) and (max-width: 1199px) {
     min-height: rem(360px);
-    grid-template-rows: 26px 80px 22px 1fr 62px;
-    h4 {
-      font-size: 22px;
-    }
+    grid-template-rows: 26px 1fr 22px 149px 62px;
   } 
   @include respond-to("small and down") {
     width: 100%;

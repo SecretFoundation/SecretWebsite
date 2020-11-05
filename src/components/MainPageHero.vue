@@ -10,7 +10,7 @@
     <div class="main-page-hero__content">
       <div class="main-page-hero__title">
         <div class="main-page-hero__title__container">
-          <g-image class="main-page-hero__logo" src="@/assets/logo-seal.svg"></g-image>
+          <g-image class="main-page-hero__logo" src="@/assets/logo-seal.svg" immediate="true"></g-image>
           <slot></slot>
         </div>
       </div>

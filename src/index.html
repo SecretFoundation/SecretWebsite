@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ${htmlAttrs}>
+  <head>
+    ${head}
+  </head>
+  <body ${bodyAttrs}>
+    <script>
+      (function() {
+        let theme = localStorage.getItem('theme')
+        if (!theme) theme = 'dark'
+        const [body] = document.getElementsByTagName('body')
+        if (!body) return
+        body.setAttribute('theme', theme.trim())
+      })();
+    </script>
+    ${app}
+    ${scripts}
+  </body>
+</html>

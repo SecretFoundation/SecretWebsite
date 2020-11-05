@@ -1,6 +1,6 @@
-<ClientOnly>
-<home-page-hero></home-page-hero>
-</ClientOnly>
+---
+layout: ~/layouts/HomePageLayout
+---
 
 <slim-column>
 
@@ -173,8 +173,13 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
     &--start {
       h4 {
         font-size: 24px;
+        color: white;
+      }
+      h3 {
+        color: white;
       }
       p {
+        color: white;
         a {
           text-decoration: none;
           color: $primary-orange-color;

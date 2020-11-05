@@ -94,6 +94,8 @@ $-card-min-height: 415px;
   height: 100%;
   min-height: rem($-card-min-height);
   padding: $gutter;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
   @each $name, $color in $secondary-colors {
     &[color=#{$name}] a:hover {
       color: var(--#{$name}-color);
@@ -136,6 +138,10 @@ $-card-min-height: 415px;
       font-weight: bold;
       text-decoration: none;
     }
+  }
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
   }
   @media (min-width: 768px) and (max-width: 1007px) {
     //min-height: rem(360px);

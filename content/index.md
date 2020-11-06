@@ -84,7 +84,9 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 <template v-slot:right>
 
-[Unveil more secrets](/blog)
+<blue-button tag="Unveil more secrets" to="/blog">
+
+</blue-button>
 
 </template>
 
@@ -128,7 +130,9 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 
 <template v-slot:right>
 
-[View all media](/media)
+<blue-button tag="View all media" to="/media">
+
+</blue-button>
 
 </template>
 
@@ -202,35 +206,9 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
   padding-bottom: 0;
   .twins-column {
     &--end {
-      p {
-        text-align: right;
-        padding-right: rem(26px);
-        a {
-          font-weight: bold;
-          text-decoration: none;
-          position: relative;
-          @include theme(dark dark-colored) {
-            color: $secondary-turquoise-color;
-          }
-          @include theme(light light-colored) {
-            color: $primary-blue-color;
-          }
-          &:after {
-            position: absolute;
-            top: rem(5px);
-            right: rem(-26px);
-            @include theme(dark dark-colored) {
-              content: url('../src/assets/arrow-right-circle-turquoise.svg');
-            }
-            @include theme(light light-colored) {
-              content: url('../src/assets/arrow-right-circle-blue.svg');
-            }
-          }
-        }
-        @include respond-to("medium and down") {
-          text-align: left;
-          padding-right: 0;
-        }
+      text-align: right;
+      @include respond-to("medium and down") {
+        text-align: left;
       }
     }
   }

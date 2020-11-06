@@ -88,7 +88,9 @@ Enabling more open and more usable gaming experiences.
 
 </template>
 
-[Read the FAQ](#frequently-asked-questions) ![](../../src/assets/arrow-right-circle.svg)
+<blue-button tag="Read the FAQ" to="#frequently-asked-questions">
+
+</blue-button>
 
 </card>
 
@@ -345,21 +347,16 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
   }
   .card__body--unwrapped {
     padding: 0 16px 16px 16px;
-    p {
-      a {
-        width: auto !important;
-        text-align: left !important;
-        display: inline-block !important;
-        background-color: transparent !important;
-        color: $primary-orange-color !important;
-        font-weight: 100 !important;
+    .blue-button {
+      display: inline-block !important;
+      width: auto !important;
+      padding: 10px $gutter !important;
+      background-color: transparent !important;
+      @include theme(dark dark-colored) {
+        color: $secondary-turquoise-color;
       }
-      img {
-        vertical-align: middle;
-        margin-left: 10px;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
+      @include theme(light light-colored) {
+        color: $primary-blue-color;
       }
     }
   }
@@ -370,6 +367,13 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
 .network-flow {
   .grid {
     --columns: 4 !important;
+    @include respond-to("large and up") {
+      grid-column-gap: rem(56px);
+    }
+    @include respond-to("small and down") {
+      grid-column-gap: unset;
+      grid-row-gap: rem(56px);
+    }
     .card {
       border: 1px solid var(--theme-fg) !important;
       border-radius: 10px !important;
@@ -400,7 +404,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
       &:after {
         position: absolute;
         top: 45%;
-        right: rem(-30px);
+        right: rem(-40px);
         @include theme(dark dark-colored) {
           content: url('../../src/assets/arrow-right-white.svg');
         }
@@ -431,7 +435,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
       @include respond-to("small and down") {
         &:after {
           top: unset;
-          bottom: rem(-30px);
+          bottom: rem(-42px);
           right: unset;
           left: 47%;
           @include theme(dark dark-colored) {
@@ -443,6 +447,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
         }
       }
     }
+    
   }
 }
 </style>

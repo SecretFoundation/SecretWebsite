@@ -501,6 +501,9 @@ export default {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: $gutter;
+  button {
+    cursor: pointer;
+  }
   img {
     width: 24px;
     height: 24px;

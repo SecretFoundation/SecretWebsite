@@ -22,138 +22,125 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <card-holder columns="3">
 
-<card>
+<community-card name="Secret Forum" to="https://forum.scrt.network/" class="forum">
 
-<template v-slot:header>
+<template v-slot:icon>
 
-#### Secret Chat<br>(Official)
+<themed-image class="community-icon">
 
-</template>
+<g-image light light-colored src="../src/assets/community-icons/forum-black.svg"></g-image>
 
-<template v-slot:footer>
+<g-image dark dark-colored src="../src/assets/community-icons/forum-white.svg"></g-image>
 
-[Join now](https://discord.com/invite/SJK32GY)
-
-</template>
-
-</card>
-
-<card>
-
-<template v-slot:header>
-
-#### Telegram
+</themed-image>
 
 </template>
 
-<template v-slot:footer>
+</community-card>
 
-[Join now](https://t.me/SCRTCommunity)
+<community-card name="Discord Chat" to="https://discord.com/invite/SJK32GY" class="discord">
 
-</template>
+<template v-slot:icon>
 
-</card>
+<themed-image class="community-icon">
 
-<card>
+<g-image light light-colored src="../src/assets/community-icons/discord-black.svg"></g-image>
 
-<template v-slot:header>
+<g-image dark dark-colored src="../src/assets/community-icons/discord-white.svg"></g-image>
 
-#### Secret Forum
-
-</template>
-
-<template v-slot:footer>
-
-[Join now](https://forum.scrt.network/)
+</themed-image>
 
 </template>
 
-</card>
+</community-card>
+
+<community-card name="Telegram" to="https://t.me/SCRTCommunity" class="telegram">
+
+<template v-slot:icon>
+
+<themed-image class="community-icon">
+
+<g-image light light-colored src="../src/assets/community-icons/telegram-black.svg"></g-image>
+
+<g-image dark dark-colored src="../src/assets/community-icons/telegram-white.svg"></g-image>
+
+</themed-image>
+
+</template>
+
+</community-card>
+
+<community-card name="Twitter" to="https://twitter.com/SecretNetwork" class="twitter">
+
+<template v-slot:icon>
+
+<themed-image class="community-icon">
+
+<g-image light light-colored src="../src/assets/community-icons/twitter-black.svg"></g-image>
+
+<g-image dark dark-colored src="../src/assets/community-icons/twitter-white.svg"></g-image>
+
+</themed-image>
+
+</template>
+
+</community-card>
+
+<community-card name="YouTube Channel" to="https://www.youtube.com/channel/UCZPqj7h7mzjwuSfw_UWxQPw" class="youtube">
+
+<template v-slot:icon>
+
+<themed-image class="community-icon">
+
+<g-image light light-colored src="../src/assets/community-icons/youtube-black.svg"></g-image>
+
+<g-image dark dark-colored src="../src/assets/community-icons/youtube-white.svg"></g-image>
+
+</themed-image>
+
+</template>
+
+</community-card>
+
+<community-card name="Github Repository" to="https://github.com/SecretFoundation/SecretWebsite" class="github">
+
+<template v-slot:icon>
+
+<themed-image class="community-icon">
+
+<g-image light light-colored src="../src/assets/community-icons/github-black.svg"></g-image>
+
+<g-image dark dark-colored src="../src/assets/community-icons/github-white.svg"></g-image>
+
+</themed-image>
+
+</template>
+
+</community-card>
 
 </card-holder>
 
-<card-holder columns="3">
-
-<card>
-
-<template v-slot:header>
-
-#### Twitter
-
-</template>
-
-<template v-slot:footer>
-
-[Follow us](https://twitter.com/secretnetwork)
-
-</template>
-
-</card>
-
-<card>
-
-<template v-slot:header>
-
-#### Reddit
-
-</template>
-
-<template v-slot:footer>
-
-[Join now]()
-
-</template>
-
-</card>
-
-<card>
-
-<template v-slot:header>
-
-#### LinkedIn
-
-</template>
-
-<template v-slot:footer>
-
-[Join now]()
-
-</template>
-
-</card>
-
-</card-holder>
-
-<card-holder columns="1">
-
-<card>
-
-<template v-slot:header>
-
-#### Facebook
-
-</template>
-
-<template v-slot:footer>
-
-[Join now]()
-
-</template>
-
-</card>
-
-</card-holder>
-
-<slim-column>
-
-### Committee
-
-</slim-column>
-
-<slim-column>
-
-There is no more consequential way to get involved than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
-
-#### [Learn More or Join](/committees)
-
-</slim-column>
+<style lang="scss">
+.community-card {
+    &:hover {
+        &.forum {
+            background-color: $primary-orange-color;
+        }
+        &.discord {
+            background-color: #7289DA;
+        }
+        &.telegram {
+            background-color: #0085D3;
+        }
+        &.twitter {
+            background-color: #1DA1F2;
+        }
+        &.youtube {
+            background-color: #F00;
+        }
+        &.github {
+            background-color: #24292E;
+        }
+    }
+}
+</style>

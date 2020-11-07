@@ -68,6 +68,7 @@ export default {
     }
     p {
       height: 100%;
+      font-size: $secondary-font-size;
     }
     img {
       width: 100%;

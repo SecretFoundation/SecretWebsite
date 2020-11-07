@@ -113,6 +113,9 @@ $-card-min-height: 487px;
 
   &__body {
     padding: $gutter;
+    p {
+      font-size: $secondary-font-size;
+    }
   }
 
   &__footer {

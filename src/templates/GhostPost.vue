@@ -48,7 +48,6 @@ export default {
 .post {
   p {
     font-family: $secondary-text-font;
-    font-size: $secondary-font-size;
     line-height: rem(32px);
   }
 

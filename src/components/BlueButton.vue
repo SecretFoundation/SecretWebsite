@@ -29,6 +29,7 @@ export default {
   display: inline-block;
   padding: 10px $gutter;
   font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
   border-radius: 10px;
   margin: 0 0 $gutter 0;

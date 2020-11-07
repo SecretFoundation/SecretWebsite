@@ -14,41 +14,217 @@ Secret Network is currently supported by over 30 active validators as well as a 
 
 A few key network contributors are featured below.
 
-<grid column="4" class="ecosystem-logos">
+<logos-grid>
 
-<div>
+<contributor-logo role="validator" name="Secret Foundation">
 
-![Secret Foundation] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1597690136171-R6WAZXAIM1QXJICWWHD8/ke17ZwdGBToddI8pDm48kPJXHKy2-mnvrsdpGQjlhod7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmrMDYraMJMCQwFxTSOIP7LpSBEQpA-g5k6VTjWbSuadHJq0dp98hg5AZvIaPb3DoM/SF+Wordmark+Vert+Dark.png?format500w)
+<template v-slot:image>
 
-[Secret Foundation](https://blog.scrt.network/introducing-secret-foundation/) 
+![] (../img/contributors/image1.png)
 
-</div>
+</template>
 
-<div>
+</contributor-logo>
 
-![](https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1594304382888-CRT1OIMTDPSEW7VTWV9B/ke17ZwdGBToddI8pDm48kOyctPanBqSdf7WQMpY1FsRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyD4IQ_uEhoqbBUjTJFcqKvko9JlUzuVmtjr1UPhOA5qkTLSJODyitRxw8OQt1oetw/Enigma+Web+Logo.png?format500w)
+<contributor-logo role="developer" name="Secret Nodes">
 
-[Enigma](https://www.enigma.co/) 
+<template v-slot:image>
 
-</div>
+![] (../img/contributors/image2.png)
 
-<div>
+</template>
 
-![secretnodes.org] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590509410311-BZUYNYQRISGOB8MSQYP5/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/Secretnodes+Web+Logo.png?format500w)
+</contributor-logo>
 
-[Secretnodes.org](https://secretnodes.org/) 
+<contributor-logo role="validator" name="Enigma">
 
-</div>
+<template v-slot:image>
 
-<div>
+![] (../img/contributors/image3.png)
 
-![Chain of Secrets] (https://images.squarespace-cdn.com/content/v1/5ecd1c3f27eb1f230be0e3e0/1590583777640-YNP6YCPKAQHPB5JHFLTW/ke17ZwdGBToddI8pDm48kAf-OpKpNsh_OjjU8JOdDKBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwkCFOLgzJj4yIx-vIIEbyWWRd0QUGL6lY_wBICnBy59Ye9GKQq6_hlXZJyaybXpCc/chain+of+secrets.png?format500w)
+</template>
 
-[Chain of Secrets](https://chainofsecrets.org/) 
+</contributor-logo>
 
-</div>
+<contributor-logo role="validator" name="Chain of Secrets">
 
-</grid>
+<template v-slot:image>
+
+![] (../img/contributors/image4.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="Protonic">
+
+<template v-slot:image>
+
+![] (../img/contributors/image5.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="validator" name="Technology">
+
+<template v-slot:image>
+
+![] (../img/contributors/image6.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="validator" name="Daitum">
+
+<template v-slot:image>
+
+![] (../img/contributors/image7.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="Nexus">
+
+<template v-slot:image>
+
+![] (../img/contributors/image8.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="validator" name="Xectra">
+
+<template v-slot:image>
+
+![] (../img/contributors/image9.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="CodePath">
+
+<template v-slot:image>
+
+![] (../img/contributors/image10.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="ByteBase">
+
+<template v-slot:image>
+
+![] (../img/contributors/image11.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="Code">
+
+<template v-slot:image>
+
+![] (../img/contributors/image12.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="validator" name="Pickaw">
+
+<template v-slot:image>
+
+![] (../img/contributors/image13.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="Nodes">
+
+<template v-slot:image>
+
+![] (../img/contributors/image14.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="validator" name="Xilof">
+
+<template v-slot:image>
+
+![] (../img/contributors/image15.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="Network">
+
+<template v-slot:image>
+
+![] (../img/contributors/image16.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="EV Software">
+
+<template v-slot:image>
+
+![] (../img/contributors/image17.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="validator" name="Attainable">
+
+<template v-slot:image>
+
+![] (../img/contributors/image18.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="developer" name="GOMI Software">
+
+<template v-slot:image>
+
+![] (../img/contributors/image19.png)
+
+</template>
+
+</contributor-logo>
+
+<contributor-logo role="validator" name="Mosh">
+
+<template v-slot:image>
+
+![] (../img/contributors/image20.png)
+
+</template>
+
+</contributor-logo>
+
+</logos-grid>
+
+</slim-column>
+
+<slim-column class="see-more">
+
+<blue-button tag="See more" to="/contributors">
+
+</blue-button>
 
 </slim-column>
 
@@ -137,7 +313,6 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 ### Block Explorers and Staking
 
 Use the following Secret Network block explorers for staking, governance proposals, viewing transactions and active validators, and much more:
-
 
 </slim-column>
 
@@ -282,13 +457,42 @@ You can find information on staking rewards calculations at:
 </card-holder>
 
 <style lang="scss">
-.ecosystem-logos {
-    div {
+.contributors-grid {
+    grid-column-gap: $gutter !important;
+    grid-row-gap: $gutter !important;
+    p {
+        margin: 0;
+        line-height: 0;
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        img {
+            border-radius: rem(10px);
+        }
+        &:hover {
+            visibility : hidden;
+        }
+    }
+    @include respond-to("medium and down") {
+        grid-template-columns: repeat(3, 1fr) !important;
         p {
-            img {
-                border: 2px solid var(--theme-fg);
-                border-radius: rem(10px);
+            &:nth-child(13), :nth-child(14), :nth-child(15), :nth-child(16), :nth-child(17), :nth-child(18), :nth-child(19), &:last-child {
+                display: none;
             }
+        }
+    }
+}
+.see-more {
+    width: auto;
+    text-align: center;
+    .blue-button {
+      display: inline-block;
+      margin: 0 auto;
+    }
+    @include respond-to("medium and down") {
+        width: 100%;
+        .blue-button {
+            margin: unset;
+            display: unset;
         }
     }
 }

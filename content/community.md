@@ -146,13 +146,33 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <slim-column>
 
-### Committee
+### About Our Values
+
+The Secret Network community is dedicated to building privacy-first solutions and applications for the benefit of all, because we believe that privacy is a public good. Here are our primary values.
+
+#### Usability and Sustainability
+
+We focus on usability of our network and applications to create meaningful value that is sustainable for the long-term.
+
+#### Optimize for Impact
+
+We prioritize adoption - applications that will make the greatest difference for the most people.
+
+#### Individual Empowerment
+
+Individuals have a right to their own privacy, their own self-expression, and their own data.
 
 </slim-column>
 
 <slim-column>
 
-There is no more consequential way to get involved than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
+### Committees
+
+</slim-column>
+
+<slim-column>
+
+There is no more consequential way to get involved with Secret Network than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
 
 #### [Learn More or Join](/committees)
 

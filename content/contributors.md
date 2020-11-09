@@ -10,9 +10,9 @@ layout: ~/layouts/MainPageLayout
 
 <slim-column>
 
-<logos-grid>
+<grid columns="4" class="logos-grid">
 
-<contributor-logo role="validator" name="Secret Foundation">
+<contributor-logo role="" roleTwo="" name="Secret Foundation" to="https://learn.scrt.network/foundation.html">
 
 <template v-slot:image>
 
@@ -22,7 +22,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Secret Nodes">
+<contributor-logo role="validator" roleTwo="developer" name="Secret Nodes" to="https://secretnodes.org/#/">
 
 <template v-slot:image>
 
@@ -32,7 +32,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Enigma">
+<contributor-logo role="developer" roleTwo="" name="Enigma" to="https://www.enigma.co/">
 
 <template v-slot:image>
 
@@ -42,7 +42,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Chain of Secrets">
+<contributor-logo role="validator" roleTwo="developer" name="Chain of Secrets" to="https://chainofsecrets.org/">
 
 <template v-slot:image>
 
@@ -52,7 +52,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Protonic">
+<contributor-logo role="wallet" roleTwo="validator" name="Mathwallet" to="http://mathwallet.org/">
 
 <template v-slot:image>
 
@@ -62,7 +62,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Technology">
+<contributor-logo role="fund" roleTwo="validator" name="Outlier" to="https://outlierventures.io">
 
 <template v-slot:image>
 
@@ -72,7 +72,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Daitum">
+<contributor-logo role="validator" roleTwo="" name="Dokia Capital" to="https://dokia.capital/">
 
 <template v-slot:image>
 
@@ -82,7 +82,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Nexus">
+<contributor-logo role="validator" roleTwo="" name="Citadel.one" to="https://citadel.one">
 
 <template v-slot:image>
 
@@ -92,7 +92,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Xectra">
+<contributor-logo role="fund" roleTwo="" name="Fenbushi" to="https://fenbushi.vc">
 
 <template v-slot:image>
 
@@ -102,7 +102,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="CodePath">
+<contributor-logo role="fund" roleTwo="" name="Hashed" to="https://hashed.com">
 
 <template v-slot:image>
 
@@ -112,7 +112,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="ByteBase">
+<contributor-logo role="validator" roleTwo="" name="B-Harvest" to="https://bharvest.io">
 
 <template v-slot:image>
 
@@ -122,7 +122,7 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Code">
+<contributor-logo role="validator" roleTwo="" name="Chorus One" to="https://chorus.one">
 
 <template v-slot:image>
 
@@ -132,186 +132,14 @@ layout: ~/layouts/MainPageLayout
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Pickaw">
-
-<template v-slot:image>
-
-![] (./img/contributors/image13.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="Nodes">
-
-<template v-slot:image>
-
-![] (./img/contributors/image14.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Xilof">
-
-<template v-slot:image>
-
-![] (./img/contributors/image15.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="Network">
-
-<template v-slot:image>
-
-![] (./img/contributors/image16.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="EV Software">
-
-<template v-slot:image>
-
-![] (./img/contributors/image17.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Attainable">
-
-<template v-slot:image>
-
-![] (./img/contributors/image18.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="GOMI Software">
-
-<template v-slot:image>
-
-![] (./img/contributors/image19.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Mosh">
-
-<template v-slot:image>
-
-![] (./img/contributors/image20.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Secret Foundation">
-
-<template v-slot:image>
-
-![] (./img/contributors/image1.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="Secret Nodes">
-
-<template v-slot:image>
-
-![] (./img/contributors/image2.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Enigma">
-
-<template v-slot:image>
-
-![] (./img/contributors/image3.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Chain of Secrets">
-
-<template v-slot:image>
-
-![] (./img/contributors/image4.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="Protonic">
-
-<template v-slot:image>
-
-![] (./img/contributors/image5.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Technology">
-
-<template v-slot:image>
-
-![] (./img/contributors/image6.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Daitum">
-
-<template v-slot:image>
-
-![] (./img/contributors/image7.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="Nexus">
-
-<template v-slot:image>
-
-![] (./img/contributors/image8.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Xectra">
-
-<template v-slot:image>
-
-![] (./img/contributors/image9.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="CodePath">
-
-<template v-slot:image>
-
-![] (./img/contributors/image10.png)
-
-</template>
-
-</contributor-logo>
-
-</logos-grid>
+</grid>
 
 </slim-column>
+
+<style lang="scss">
+.logos-grid {
+    @include respond-to("medium and down") {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+</style>

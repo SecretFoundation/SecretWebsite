@@ -25,12 +25,7 @@ export default {
     return {
       unwrapped: false
     }
-  },
-  mounted() {
-    const body = this.$refs.body
-    const img = body.querySelector('img')
-    this.unwrapped = img != null
-  },
+  }
 }
 </script>
 

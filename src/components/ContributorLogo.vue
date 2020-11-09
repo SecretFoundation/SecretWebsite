@@ -1,20 +1,32 @@
 <template>
-  <div class="contributor-logo">
+  <g-link class="contributor-logo" :to="to">
     <div class="contributor-logo__hover">
-      <span :style="{ color: `var(--${color}-color)` }">{{ role }}</span>
+      <span :style="{ color: `var(--${color}-color)` }">{{ role }} </span>
+      <span :style="{ color: `var(--${colorTwo}-color)` }">{{ roleTwo }} </span>
       <p>{{ name }}</p>
     </div>
     <div class="contributor-logo__image">
       <slot name="image"></slot>
     </div>
-  </div>
+  </g-link>
 </template>
 
 <script>
 const colors = {
   "developer": "blue",
   "validator": "red",
-  "": "yellow"
+  "wallet": "orange",
+  "fund": "purple",
+  "": "yellow",
+  undefined: "black"
+}
+const colorsTwo = {
+  "developer": "blue",
+  "validator": "red",
+  "wallet": "orange",
+  "fund": "purple",
+  "": "yellow",
+  undefined: "black"
 }
 
 export default {
@@ -23,7 +35,15 @@ export default {
       type: String,
       required: false
     },
+    roleTwo: {
+      type: String,
+      required: false
+    },
     name: {
+      type: String,
+      required: false
+    },
+    to: {
       type: String,
       required: false
     }
@@ -31,21 +51,21 @@ export default {
   data() {
     return {
       unwrapped: false,
-      color: ''
+      color: '',
+      colorTwo: ''
     }
   },
   created() {
     this.color = this.getColor()
+    this.colorTwo = this.getSecondColor()
   },
   methods: {
     getColor() {
       return colors[this.role.toLowerCase()]
-    }
-  },
-  mounted() {
-    const body = this.$refs.body
-    const img = body.querySelector('img')
-    this.unwrapped = img != null
+    },
+    getSecondColor() {
+      return colorsTwo[this.roleTwo.toLowerCase()]
+    },
   }
 }
 </script>
@@ -76,13 +96,18 @@ export default {
             background-color: rgba(black, 0.9);
         }
         span {
+            display: block;
             text-transform: uppercase;
-            line-height: 1.6em;
+            line-height: 1em;
+            &:nth-last-child(2) {
+              margin-bottom: 10px;
+            }
         }
         p {
             margin: 0;
             font-weight: bold;
             color: var(--theme-bg);
+            line-height: 1em;
         }
     }
     &__image {
@@ -105,9 +130,6 @@ export default {
         }
     }
     @include respond-to("medium and down") {
-        &:nth-child(13), &:nth-child(14), &:nth-child(15), &:nth-child(16),  &:nth-child(17), &:nth-child(18), &:nth-child(19), &:last-child {
-            display: none;
-        }
     }
 }
 </style>

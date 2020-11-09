@@ -14,9 +14,9 @@ Secret Network is currently supported by over 30 active validators as well as a 
 
 A few key network contributors are featured below.
 
-<logos-grid>
+<grid columns="4" class="logos-grid">
 
-<contributor-logo role="validator" name="Secret Foundation">
+<contributor-logo role="" roleTwo="" name="Secret Foundation" to="https://learn.scrt.network/foundation.html">
 
 <template v-slot:image>
 
@@ -26,7 +26,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Secret Nodes">
+<contributor-logo role="validator" roleTwo="developer" name="Secret Nodes" to="https://secretnodes.org/#/">
 
 <template v-slot:image>
 
@@ -36,7 +36,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Enigma">
+<contributor-logo role="developer" roleTwo="" name="Enigma" to="https://www.enigma.co/">
 
 <template v-slot:image>
 
@@ -46,7 +46,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Chain of Secrets">
+<contributor-logo role="validator" roleTwo="developer" name="Chain of Secrets" to="https://chainofsecrets.org/">
 
 <template v-slot:image>
 
@@ -56,7 +56,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Protonic">
+<contributor-logo role="wallet" roleTwo="validator" name="Mathwallet" to="http://mathwallet.org/">
 
 <template v-slot:image>
 
@@ -66,7 +66,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Technology">
+<contributor-logo role="fund" roleTwo="validator" name="Outlier" to="https://outlierventures.io">
 
 <template v-slot:image>
 
@@ -76,7 +76,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Daitum">
+<contributor-logo role="validator" roleTwo="" name="Dokia Capital" to="https://dokia.capital/">
 
 <template v-slot:image>
 
@@ -86,7 +86,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Nexus">
+<contributor-logo role="validator" roleTwo="" name="Citadel.one" to="https://citadel.one">
 
 <template v-slot:image>
 
@@ -96,7 +96,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Xectra">
+<contributor-logo role="fund" roleTwo="" name="Fenbushi" to="https://fenbushi.vc">
 
 <template v-slot:image>
 
@@ -106,7 +106,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="CodePath">
+<contributor-logo role="fund" roleTwo="" name="Hashed" to="https://hashed.com">
 
 <template v-slot:image>
 
@@ -116,7 +116,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="ByteBase">
+<contributor-logo role="validator" roleTwo="" name="B-Harvest" to="https://bharvest.io">
 
 <template v-slot:image>
 
@@ -126,7 +126,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="developer" name="Code">
+<contributor-logo role="validator" roleTwo="" name="Chorus One" to="https://chorus.one">
 
 <template v-slot:image>
 
@@ -136,87 +136,7 @@ A few key network contributors are featured below.
 
 </contributor-logo>
 
-<contributor-logo role="validator" name="Pickaw">
-
-<template v-slot:image>
-
-![] (../img/contributors/image13.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="Nodes">
-
-<template v-slot:image>
-
-![] (../img/contributors/image14.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Xilof">
-
-<template v-slot:image>
-
-![] (../img/contributors/image15.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="Network">
-
-<template v-slot:image>
-
-![] (../img/contributors/image16.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="EV Software">
-
-<template v-slot:image>
-
-![] (../img/contributors/image17.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Attainable">
-
-<template v-slot:image>
-
-![] (../img/contributors/image18.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="developer" name="GOMI Software">
-
-<template v-slot:image>
-
-![] (../img/contributors/image19.png)
-
-</template>
-
-</contributor-logo>
-
-<contributor-logo role="validator" name="Mosh">
-
-<template v-slot:image>
-
-![] (../img/contributors/image20.png)
-
-</template>
-
-</contributor-logo>
-
-</logos-grid>
+</grid>
 
 </slim-column>
 
@@ -457,6 +377,11 @@ You can find information on staking rewards calculations at:
 </card-holder>
 
 <style lang="scss">
+.logos-grid {
+    @include respond-to("medium and down") {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
 .contributors-grid {
     grid-column-gap: $gutter !important;
     grid-row-gap: $gutter !important;
@@ -474,11 +399,6 @@ You can find information on staking rewards calculations at:
     }
     @include respond-to("medium and down") {
         grid-template-columns: repeat(3, 1fr) !important;
-        p {
-            &:nth-child(13), :nth-child(14), :nth-child(15), :nth-child(16), :nth-child(17), :nth-child(18), :nth-child(19), &:last-child {
-                display: none;
-            }
-        }
     }
 }
 .see-more {

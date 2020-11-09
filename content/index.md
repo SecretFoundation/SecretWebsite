@@ -108,7 +108,13 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
 
-[Read more](https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet) ![](../src/assets/arrow-right-circle-turquoise.svg)
+<g-link to="https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet" class="read-more-button">
+
+<span>Read more</span>
+
+<g-image src="../src/assets/arrow-right-turquoise.svg"></g-image>
+
+</g-link>
 
 </template>
 
@@ -193,6 +199,30 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
           margin-left: 10px;
         }
       }
+      .read-more-button {
+          display: inline-block;
+          padding: 10px $gutter;
+          border-radius: 10px;
+          margin: 0 0 $gutter 0;
+          border: 1px solid $secondary-turquoise-color;
+          p {
+            display: inline-block;
+            margin: 0;
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              font-weight: bold;
+              font-size: 20px;
+              text-decoration: none;
+              color: $secondary-turquoise-color;
+            }
+          }
+          .g-image {
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: rem(13px);
+          }
+        }
     }
   }
   @include respond-to("medium and down") {

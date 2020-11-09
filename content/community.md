@@ -140,6 +140,29 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
         }
         &.github {
             background-color: #24292E;
+            @include theme(dark dark-colored) {
+                .community-card__icon {
+                    .themed-image {
+                        img {
+                            filter: invert(0);
+                        }
+                    }
+                }
+            }
+            @include theme(light light-colored) {
+                .community-card__icon {
+                    .themed-image {
+                        img {
+                            filter: invert(1);
+                        }
+                    }
+                }
+            }
+            .community-card__name {
+                h4 {
+                    color: white;
+                }
+            }
         }
     }
 }

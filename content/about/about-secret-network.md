@@ -112,6 +112,8 @@ Secret Apps - powered by “secret”, privacy-preserving smart contracts - are 
 
 ### Network Flow
 
+The following process describes, step by step, how a contract is submitted and a computation performed on the Secret Network:
+
 </slim-column>
 
 <card-holder class="network-flow">

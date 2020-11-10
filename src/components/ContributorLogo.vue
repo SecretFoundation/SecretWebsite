@@ -79,36 +79,42 @@ export default {
     border-radius: 10px;
     position: relative;
     &__hover {
-        opacity: 0;
-        border-radius: 10px;
-        padding: $gutter;
-        position: absolute;
-        z-index: 10;
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        transition: 0.5s ease;
-        -webkit-transition: 0.5s ease;
-        @include theme(dark dark-colored) {
-            background-color: rgba(white, 0.9);
-        }
-        @include theme(light light-colored) {
-            background-color: rgba(black, 0.9);
-        }
-        span {
-            display: block;
-            text-transform: uppercase;
-            line-height: 1em;
-            &:nth-last-child(2) {
-              margin-bottom: 10px;
-            }
-        }
+      opacity: 0;
+      border-radius: 10px;
+      padding: $gutter;
+      position: absolute;
+      z-index: 10;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s ease;
+      -webkit-transition: 0.5s ease;
+      @include theme(dark dark-colored) {
+          background-color: rgba(white, 0.9);
+      }
+      @include theme(light light-colored) {
+          background-color: rgba(black, 0.9);
+      }
+      span {
+          display: block;
+          text-transform: uppercase;
+          line-height: 1em;
+          &:nth-last-child(2) {
+            margin-bottom: 10px;
+          }
+      }
+      p {
+          margin: 0;
+          font-weight: bold;
+          color: var(--theme-bg);
+          line-height: 1em;
+      }
+      @include respond-to("medium and down") {
+        padding: $gutter 10px;
         p {
-            margin: 0;
-            font-weight: bold;
-            color: var(--theme-bg);
-            line-height: 1em;
+          font-size: $gutter;
         }
+      }
     }
     &__image {
         position: relative;

@@ -22,9 +22,10 @@ import BlogCardFeatured from '@/components/blog/BlogCardFeatured'
 import PostsFeatured from '@/components/blog/PostsFeatured'
 import MediaCard from '@/components/MediaCard'
 import BlueButton from './components/BlueButton'
-import LogosGrid from './components/LogosGrid'
 import ContributorLogo from './components/ContributorLogo'
 import CommunityCard from './components/CommunityCard'
+import Announcement from './components/Announcement'
+import SmallAnnouncement from './components/SmallAnnouncement'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -51,9 +52,10 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('PostsFeatured', PostsFeatured)
   Vue.component('MediaCard', MediaCard)
   Vue.component('BlueButton', BlueButton)
-  Vue.component('LogosGrid', LogosGrid)
   Vue.component('ContributorLogo', ContributorLogo)
   Vue.component('CommunityCard', CommunityCard)
+  Vue.component('Announcement', Announcement)
+  Vue.component('SmallAnnouncement', SmallAnnouncement)
 
   if (isClient) {
   }

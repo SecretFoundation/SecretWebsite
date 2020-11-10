@@ -78,6 +78,34 @@ A few key network contributors are featured below.
 
 </slim-column>
 
+<announcement>
+
+<template v-slot:content-left>
+
+#### Announcement
+
+### Secret Network<br>Ecosystem Update:<br>October 2020
+
+Read a comprehensive update on what is happening across the Secret Network ecosystem, including product and technical updates, 5 episodes of Sharing Secrets, potential community-spend proposals, and new charters by leaders of the various committees!
+
+<g-link to="https://scrt.network/blog/secret-network-ecosystem-update-october-2020/" class="read-more-button">
+
+<span>Read more</span>
+
+<g-image src="../../src/assets/arrow-right-turquoise.svg"></g-image>
+
+</g-link>
+
+</template>
+
+<template v-slot:content-right>
+
+![](../../src/assets/announcement.png)
+
+</template>
+
+</announcement>
+
 <slim-column>
 
 ### Exchange and Wallet Support

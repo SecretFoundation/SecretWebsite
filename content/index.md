@@ -72,6 +72,36 @@ Blockchains are public by default. That means that all the data used in smart co
 
 </single-column>
 
+<triplet-columns class="announcement">
+
+<template v-slot:left>
+
+#### Announcement
+
+### Secret Network Gets a Secret API!
+
+Chain of Secrets just launched the Secret API for Secret Network as part of our developer community on-boarding efforts. We hope to connect and collaborate with all kinds of secret app builders!
+
+<g-link to="/contributors" class="read-more-button">
+
+<span>Read more</span>
+
+<g-image src="../src/assets/arrow-right-turquoise.svg"></g-image>
+
+</g-link>
+
+</template>
+
+<template v-slot:middle>
+
+</template>
+
+<template v-slot:right>
+
+</template>
+
+</triplet-columns>
+
 <twin-columns class="latest-posts">
 
 <template v-slot:left>
@@ -177,9 +207,10 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 }
 .announcement {
   background-color: $primary-purple-color;
-  padding-top: rem(78px);
-  padding-bottom: rem(78px);
+  padding: 0;
   .twins-column {
+    padding-top: rem(78px);
+    padding-bottom: rem(78px);
     &--start {
       h4 {
         font-size: 24px;
@@ -200,6 +231,77 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
         }
       }
       .read-more-button {
+        display: inline-block;
+        padding: 10px $gutter;
+        border-radius: 10px;
+        margin: 0 0 $gutter 0;
+        border: 1px solid $secondary-turquoise-color;
+        p {
+          display: inline-block;
+          margin: 0;
+          span {
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: none;
+            color: $secondary-turquoise-color;
+          }
+        }
+        .g-image {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: rem(13px);
+        }
+      }
+    }
+    @include respond-to("medium and down") {
+      padding-top: $gutter;
+      padding-bottom: $gutter;
+    }
+  }
+}
+.triplets-columns {
+  &.announcement {
+    background-color: unset;
+    @media (min-width: 320px) and (max-width: 1199px) {
+      background-color: $primary-purple-color;
+      grid-template-columns: 100%;
+      margin-top: $gutter-xxxlarge;
+    }
+    .triplets-columns {
+      &__section {
+        padding-top: rem(78px);
+        padding-bottom: rem(78px);
+        &:first-child {
+          background-color: $primary-purple-color;
+          grid-column: 1 / span 2;
+          @media (min-width: 320px) and (max-width: 1199px) {
+            grid-column: 1 / span 1;
+            padding: $gutter;
+            width: 1008px;
+            margin: 0 auto;
+          }
+        }
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+      &__column {
+        width: rem(800px);
+        text-align: left;
+        padding-right: rem(120px);
+        h4 {
+        font-size: 24px;
+        color: white;
+        }
+        h3 {
+          color: white;
+        }
+        p {
+          color: white;
+        }
+        .read-more-button {
           display: inline-block;
           padding: 10px $gutter;
           border-radius: 10px;
@@ -223,11 +325,12 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
               margin-left: rem(13px);
           }
         }
+        @media (min-width: 320px) and (max-width: 1199px) {
+          width: 100%;
+          padding: $gutter 0;
+        }
+      }
     }
-  }
-  @include respond-to("medium and down") {
-    padding-top: $gutter;
-    padding-bottom: $gutter;
   }
 }
 .latest-posts, .latest-media-articles {

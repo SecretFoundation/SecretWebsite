@@ -10,6 +10,8 @@ layout: ~/layouts/MainPageLayout
 
 <slim-column>
 
+### Contributors
+
 Secret Network is currently supported by over 30 active validators as well as a number of key contributors to the ecosystem developing network tooling, core protocol functionality, and more. 
 
 A few key network contributors are featured below.

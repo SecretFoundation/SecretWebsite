@@ -495,7 +495,7 @@ export default {
         }
         &:hover {
           @include theme(dark dark-colored) {
-            background-color: var(--theme-bg);
+            background-color: var(--theme-fg);
             .themed-image {
                 img {
                     filter: invert(1);

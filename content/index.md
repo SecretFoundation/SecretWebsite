@@ -108,7 +108,7 @@ Chain of Secrets just launched the Secret API for Secret Network as part of our 
 
 ### Latest Blog Posts
 
-Read, watch and absorb the secrets that we publish in our official blog.
+Read, watch and absorb the secrets that we publish in<br/>our official blog.
 
 </template>
 
@@ -346,6 +346,12 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
       @include respond-to("medium and down") {
         text-align: left;
       }
+    }
+    p {
+      margin: 0;
+    }
+    .blue-button {
+      margin: 0;
     }
   }
 }

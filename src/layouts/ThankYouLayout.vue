@@ -34,6 +34,9 @@ $-logo-size-mobile: 68px;
   + .newsletter {
     display: none;
   }
+  #subscription-confirmed {
+    margin: 0;
+  }
 }
 
 .thank-you-page-hero {
@@ -163,8 +166,12 @@ $-logo-size-mobile: 68px;
 
 .thank-you-banner {
     background-color: $secondary-green-color;
-    h2, p {
+    h1, p {
         color: $primary-black-color;
+    }
+    h1 {
+      font-size: rem(64px);
+      margin-top: 0;
     }
 }
 

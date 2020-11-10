@@ -2,8 +2,8 @@
 
 # Devs Committee
 
-**Meetings every Monday at 3pm UTC**
-Join here: https://meet.scrt.network/dev
+**Meetings every Monday at 4pm UTC**
+Join here: [Discord](https://discord.com/invite/SJK32GY)
 
 ## Purpose:
 * engineering a secret source of truth

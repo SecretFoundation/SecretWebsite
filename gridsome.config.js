@@ -67,6 +67,6 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type));
     });
-    config.resolve.alias.set('@images', '@/../content/img/media')
+    config.resolve.alias.set('@images', '@/../content/img')
   },
 };

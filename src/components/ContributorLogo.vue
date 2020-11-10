@@ -6,7 +6,7 @@
       <p>{{ name }}</p>
     </div>
     <div class="contributor-logo__image">
-      <slot name="image"></slot>
+      <g-image :src="require(`!!assets-loader!@images/${src}`)"></g-image>
     </div>
   </g-link>
 </template>
@@ -44,6 +44,10 @@ export default {
       required: false
     },
     to: {
+      type: String,
+      required: false
+    },
+    src: {
       type: String,
       required: false
     }
@@ -119,15 +123,8 @@ export default {
     &__image {
         position: relative;
         z-index: -1;
-        p {
-            margin: 0;
-            line-height: 0;
-            width: 100%;
-            height: 100%;
+        img {
             border-radius: 10px;
-            img {
-                border-radius: 10px;
-            }
         }
     }
     &:hover {

@@ -493,6 +493,22 @@ export default {
             margin: 0 auto;
           }
         }
+        &:hover {
+          @include theme(dark dark-colored) {
+            .themed-image {
+                img {
+                    filter: invert(1);
+                }
+            }
+          }
+          @include theme(light light-colored) {
+            .themed-image {
+              img {
+                  filter: invert(1);
+              }
+            }
+          }
+        }
       }
     }
   }

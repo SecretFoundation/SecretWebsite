@@ -120,6 +120,16 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 </card-holder>
 
+<slim-column>
+
+### Committees
+
+There is no more consequential way to get involved with Secret Network than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
+
+#### [Learn More or Join](/committees)
+
+</slim-column>
+
 <style lang="scss">
 .community-card {
     &:hover {

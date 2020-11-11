@@ -50,7 +50,10 @@ export default {
     font-family: $secondary-text-font;
     line-height: rem(32px);
   }
-
+  a {
+    text-decoration: none;
+    word-break: break-all;
+  }
   &__content {
     iframe {
       width: 100%;
@@ -63,15 +66,15 @@ export default {
         }
       }
     }
-  }
-  a {
-    word-break: break-all;
-    font-weight: bold;
-    @include theme(dark dark-colored) {
-      color: $secondary-turquoise-color;
-    }
-    @include theme(light light-colored) {
-      color: $primary-blue-color;
+    a {
+      text-decoration: underline;
+      font-weight: bold;
+      @include theme(dark dark-colored) {
+        color: $secondary-turquoise-color;
+      }
+      @include theme(light light-colored) {
+        color: $primary-blue-color;
+      }
     }
   }
 }

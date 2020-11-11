@@ -12,9 +12,11 @@ layout: ~/layouts/MainPageLayout
 
 ### What is Secret Network?
 
-Secret Network is a blockchain-based, open-source protocol that lets anyone perform computations on encrypted data, bringing privacy to smart contracts and public blockchains
+Secret Network is a first-of-its-kind, open-source blockchain that provides **data privacy by default.**
 
-By supporting encrypted inputs, encrypted outputs, and encrypted state for smart contracts, Secret Network allows for new kinds of powerful decentralized applications to be built. This can unlock substantial value across multiple verticals and industries, including the following:
+While blockchains have the promise to create a more open and sustainable Internet, they've been held back by one major flaw: they expose all your data to everyone. A better Internet must protect data privacy and give users and organizations control over how their data is used and shared. **Secret is a decentralized network that finally solves this problem of privacy,** helping to secure and scale the decentralized web.
+
+As the first blockchain to support encrypted inputs, encrypted outputs, and encrypted state for smart contracts, Secret Network allows for new kinds of powerful decentralized applications to be built. This can unlock substantial value across multiple verticals and industries, including the following:
 
 </slim-column>
 
@@ -84,7 +86,7 @@ Enabling more open and more usable gaming experiences.
 
 <template v-slot:header>
 
-#### Want to know some other secret keys?
+#### Want to learn some other secrets?
 
 </template>
 
@@ -100,11 +102,11 @@ Enabling more open and more usable gaming experiences.
 
 ### How Secret Network Operates
 
-The Secret Network is a decentralized network of computers (secret nodes) that utilize trusted execution environments (TEEs) to enable secure, private computation over encrypted data. TEEs function like a “black box” for data processing, and they are utilized in all types of everyday platforms such as smartphones and video game consoles.
-
-The Secret Network blockchain is based on Cosmos SDK / Tendermint, meaning the network has its own independent consensus, on-chain governance, and features like slashing and delegation. It is secured by the native coin Secret (SCRT), which must be staked by network validators and is used for transaction fees as well as governance.
+Secret Network is a decentralized network of computers (secret nodes) that utilize trusted execution environments (TEEs) to enable secure, private computation over encrypted data. TEEs function like a “black box” for data processing, and they are utilized in all types of everyday platforms such as smartphones and video game consoles.
 
 Secret Apps - powered by “secret”, privacy-preserving smart contracts - are built with CosmWasm smart contracts that are written in the Rust programming language and deployed on the Secret Network.
+
+The Secret Network blockchain itself is based on Cosmos SDK / Tendermint, meaning the network has its own independent consensus, on-chain governance, and features like slashing and delegation. It is secured by the native coin Secret (SCRT), which must be staked by network validators and is used for transaction fees as well as governance.
 
 </slim-column>
 
@@ -159,26 +161,6 @@ The work is verified as correct, and payment is released to the secret node that
 </card>
 
 </card-holder>
-
-<slim-column>
-
-### About Our Values
-
-The Secret Network community is dedicated to building privacy-first solutions and applications for the benefit of all, because we believe that privacy is a public good. Here are our primary values.
-
-#### Usability and Sustainability
-
-We focus on usability of our network and applications to create meaningful value that is sustainable for the long-term.
-
-#### Optimize for Impact
-
-We prioritize adoption - applications that will make the greatest difference for the most people.
-
-#### Individual Empowerment
-
-Individuals have a right to their own privacy, their own self-expression, and their own data.
-
-</slim-column>
 
 <slim-column>
 

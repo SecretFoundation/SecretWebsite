@@ -18,7 +18,7 @@ layout: ~/layouts/MainPageLayout
 
 Meetings
 
-Mondays, 3pm UTC
+Mondays, 4pm UTC
 
 [Join Meeting]()
 
@@ -90,7 +90,7 @@ Making sure Puzzle develpment continues to fullfil community needs.
 
 Meetings
 
-Wednesdays, 3pm UTC
+Wednesdays, 4pm UTC
 
 [Join Meeting]()
 
@@ -166,7 +166,7 @@ Secret Foundation Wiki.
 
 Meetings
 
-Fridays, 3pm UTC
+Mondays, 5pm UTC
 
 [Join Meeting]()
 

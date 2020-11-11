@@ -65,8 +65,14 @@ export default {
     }
   }
   a {
-    text-decoration: none;
     word-break: break-all;
+    font-weight: bold;
+    @include theme(dark dark-colored) {
+      color: $secondary-turquoise-color;
+    }
+    @include theme(light light-colored) {
+      color: $primary-blue-color;
+    }
   }
 }
 .kg-card {

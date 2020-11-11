@@ -91,6 +91,10 @@ $-card-min-height: 487px;
       color: var(--#{$name}-color);
     }
   }
+  svg {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+  }
   a {
     text-decoration: none;
   }

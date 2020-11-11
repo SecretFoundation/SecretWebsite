@@ -168,6 +168,8 @@ $-card-min-height: 487px;
   &__heading {
     width: 100%;
     height: rem($-heading-height);
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
   }
 
   &__badge {

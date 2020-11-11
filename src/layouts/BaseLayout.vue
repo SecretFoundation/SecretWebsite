@@ -493,6 +493,24 @@ export default {
             margin: 0 auto;
           }
         }
+        &:hover {
+          @include theme(dark dark-colored) {
+            background-color: var(--theme-fg);
+            .themed-image {
+                img {
+                    filter: invert(1);
+                }
+            }
+          }
+          @include theme(light light-colored) {
+            background-color: var(--theme-fg);
+            .themed-image {
+              img {
+                  filter: invert(1);
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -501,6 +519,9 @@ export default {
   display: grid;
   grid-auto-flow: column;
   grid-column-gap: $gutter;
+  button {
+    cursor: pointer;
+  }
   img {
     width: 24px;
     height: 24px;

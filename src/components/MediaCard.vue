@@ -131,12 +131,13 @@ $-card-min-height: 415px;
       display: block;
       width: 100%;
       border-radius: 10px;
-      padding: 15px;
+      padding: 13px;
       text-align: center;
       color: var(--theme-bg);
       background-color: var(--theme-fg);
       font-weight: bold;
       text-decoration: none;
+      font-size: $secondary-font-size;
     }
   }
   &:hover {

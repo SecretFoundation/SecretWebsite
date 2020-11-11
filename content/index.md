@@ -72,19 +72,43 @@ Blockchains are public by default. That means that all the data used in smart co
 
 </single-column>
 
+<small-announcement>
+
+<template v-slot:content>
+
+#### Announcement
+
+### Secret Network Gets a Secret API!
+
+Chain of Secrets just launched the Secret API for Secret Network as part of our developer community on-boarding efforts. We hope to connect and collaborate with all kinds of secret app builders!
+
+<g-link to="/contributors" class="read-more-button">
+
+<span>Read more</span>
+
+<g-image src="../src/assets/arrow-right-turquoise.svg"></g-image>
+
+</g-link>
+
+</template>
+
+</small-announcement>
+
 <twin-columns class="latest-posts">
 
 <template v-slot:left>
 
 ### Latest Blog Posts
 
-Read, watch and absorb the secrets that we publish in our official blog.
+Read, watch and absorb the secrets that we publish in<br/>our official blog.
 
 </template>
 
 <template v-slot:right>
 
-[Unveil more secrets](/blog)
+<blue-button tag="Unveil more secrets" to="/blog">
+
+</blue-button>
 
 </template>
 
@@ -96,9 +120,9 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 </single-column>
 
-<twin-columns class="announcement">
+<announcement>
 
-<template v-slot:left>
+<template v-slot:content-left>
 
 #### Announcement
 
@@ -106,17 +130,23 @@ Read, watch and absorb the secrets that we publish in our official blog.
 
 The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
 
-[Read more](https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet) ![](../src/assets/arrow-right-circle-turquoise.svg)
+<g-link to="https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet" class="read-more-button">
+
+<span>Read more</span>
+
+<g-image src="../src/assets/arrow-right-turquoise.svg"></g-image>
+
+</g-link>
 
 </template>
 
-<template v-slot:right>
+<template v-slot:content-right>
 
 ![](../src/assets/announcement.png)
 
 </template>
 
-</twin-columns>
+</announcement>
 
 <twin-columns class="latest-media-articles">
 
@@ -128,7 +158,9 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 
 <template v-slot:right>
 
-[View all media](/media)
+<blue-button tag="View all media" to="/media">
+
+</blue-button>
 
 </template>
 
@@ -140,11 +172,11 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 
 <grid columns="3">
 
-<media-card tag="podcast" title="Private Smart Contracts: Anthony Pompliano" src="image1.png" to="https://www.youtube.com/watch?v=Kx9hb3U7pfs" cta="Watch Now"></media-card>
+<media-card tag="podcast" title="Private Smart Contracts: Anthony Pompliano" src="media/image1.png" to="https://www.youtube.com/watch?v=Kx9hb3U7pfs" cta="Watch Now"></media-card>
 
-<media-card tag="podcast" title="Secret Network on The Defiant Podcast" src="image2.png" to="https://anchor.fm/thedefiant/episodes/Privacy-Might-be-the-Only-Thing-Left-That-Makes-Web-3-0-a-Viable-Alternative-Tor-Bair-of-Secret-Foundation-el9n52" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Secret Network on The Defiant Podcast" src="media/image2.png" to="https://anchor.fm/thedefiant/episodes/Privacy-Might-be-the-Only-Thing-Left-That-Makes-Web-3-0-a-Viable-Alternative-Tor-Bair-of-Secret-Foundation-el9n52" cta="Listen Now"></media-card>
 
-<media-card tag="video" title="Defi Privacy Is Here: Ivan on Tech" src="image3.png" to="https://www.youtube.com/watch?v=rvkMPcMK_7Ah" cta="Watch Now"></media-card>
+<media-card tag="video" title="Defi Privacy Is Here: Ivan on Tech" src="media/image3.png" to="https://www.youtube.com/watch?v=rvkMPcMK_7Ah" cta="Watch Now"></media-card>
 
 </grid>
 
@@ -165,73 +197,22 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 .latest-blog-cards {
   padding-bottom: $gutter-xxxlarge;
 }
-.announcement {
-  background-color: $primary-purple-color;
-  padding-top: rem(78px);
-  padding-bottom: rem(78px);
-  .twins-column {
-    &--start {
-      h4 {
-        font-size: 24px;
-        color: white;
-      }
-      h3 {
-        color: white;
-      }
-      p {
-        color: white;
-        a {
-          text-decoration: none;
-          color: $secondary-turquoise-color;
-        }
-        img {
-          vertical-align: middle;
-          margin-left: 10px;
-        }
-      }
-    }
-  }
-  @include respond-to("medium and down") {
-    padding-top: $gutter;
-    padding-bottom: $gutter;
-  }
-}
 .latest-posts, .latest-media-articles {
   align-items: end;
   padding-top: $gutter-xxxlarge;
   padding-bottom: 0;
   .twins-column {
     &--end {
-      p {
-        text-align: right;
-        padding-right: rem(26px);
-        a {
-          font-weight: bold;
-          text-decoration: none;
-          position: relative;
-          @include theme(dark dark-colored) {
-            color: $secondary-turquoise-color;
-          }
-          @include theme(light light-colored) {
-            color: $primary-blue-color;
-          }
-          &:after {
-            position: absolute;
-            top: rem(5px);
-            right: rem(-26px);
-            @include theme(dark dark-colored) {
-              content: url('../src/assets/arrow-right-circle-turquoise.svg');
-            }
-            @include theme(light light-colored) {
-              content: url('../src/assets/arrow-right-circle-blue.svg');
-            }
-          }
-        }
-        @include respond-to("medium and down") {
-          text-align: left;
-          padding-right: 0;
-        }
+      text-align: right;
+      @include respond-to("medium and down") {
+        text-align: left;
       }
+    }
+    p {
+      margin: 0;
+    }
+    .blue-button {
+      margin: 0;
     }
   }
 }

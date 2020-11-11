@@ -148,6 +148,8 @@ $-card-min-height: 487px;
   border-radius: $gutter;
   height: 100%;
   min-height: rem($-card-min-height);
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
 
   @each $name, $color in $secondary-colors {
     &[color=#{$name}] a:hover {
@@ -185,6 +187,10 @@ $-card-min-height: 487px;
 
   .separator {
     padding: 0 $gutter;
+  }
+  &:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
   }
   @include respond-to("medium and down") {
     width: 100%;

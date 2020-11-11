@@ -48,13 +48,27 @@ export default {
 .post {
   p {
     font-family: $secondary-text-font;
-    font-size: $secondary-font-size;
     line-height: rem(32px);
   }
-
+  a {
+    text-decoration: none;
+    word-break: break-all;
+  }
   &__content {
     iframe {
       width: 100%;
+    }
+    p {
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+        @include theme(dark dark-colored) {
+          color: $secondary-turquoise-color;
+        }
+        @include theme(light light-colored) {
+          color: $primary-blue-color;
+        }
+      }
     }
     .kg-image-card {
       img[src*=small-black-squiggle], img[src*=Black-Squiggle-Separator] {
@@ -64,10 +78,6 @@ export default {
         }
       }
     }
-  }
-  a {
-    text-decoration: none;
-    word-break: break-all;
   }
 }
 .kg-card {

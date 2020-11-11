@@ -58,22 +58,24 @@ export default {
     iframe {
       width: 100%;
     }
+    p {
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+        @include theme(dark dark-colored) {
+          color: $secondary-turquoise-color;
+        }
+        @include theme(light light-colored) {
+          color: $primary-blue-color;
+        }
+      }
+    }
     .kg-image-card {
       img[src*=small-black-squiggle], img[src*=Black-Squiggle-Separator] {
         @include theme(dark dark-colored) {
           -webkit-filter: invert(100%);
           filter: invert(100%);
         }
-      }
-    }
-    a {
-      text-decoration: underline;
-      font-weight: bold;
-      @include theme(dark dark-colored) {
-        color: $secondary-turquoise-color;
-      }
-      @include theme(light light-colored) {
-        color: $primary-blue-color;
       }
     }
   }

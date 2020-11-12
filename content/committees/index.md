@@ -198,4 +198,39 @@ Disseminating and amplifying relevant content.
 
 </committee-card>
 
+<committee-card blue>
+
+<template v-slot:header>
+
+### Website / Design
+
+Meetings
+
+Fridays, 4pm UTC
+
+[Join Meeting]()
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+- Build and Maintain the forward face the Secret Network.
+
+##### Goals
+
+- Manage website and design roadmaps.
+- Provide ideation and feedback to developers and designer.
+- Identify and agree on content initiatives that require funding.
+- Provide a link between the broader community and the website developers and designers.
+
+##### Responsibilities
+
+Provide communitee oversight and approval for website and design initiatives, both volunteer and paid.
+
+</template>
+
+</committee-card>
+
 </card-holder>

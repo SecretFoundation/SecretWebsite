@@ -1,9 +1,13 @@
 <template>
   <g-link class="contributor-logo" :to="to">
     <div class="contributor-logo__hover">
-      <span :style="{ color: `var(--${color}-color)` }">{{ role }} </span>
-      <span :style="{ color: `var(--${colorTwo}-color)` }">{{ roleTwo }} </span>
-      <p>{{ name }}</p>
+      <div class="top">
+        <p>{{ name }}</p>
+      </div>
+      <div class="bottom">
+        <span :style="{ color: `var(--${color}-color)` }">{{ role }} </span>
+        <span :style="{ color: `var(--${colorTwo}-color)` }">{{ roleTwo }} </span>
+      </div>
     </div>
     <div class="contributor-logo__image">
       <g-image :src="require(`!!assets-loader!@images/${src}`)"></g-image>
@@ -85,7 +89,7 @@ export default {
     &__hover {
       opacity: 0;
       border-radius: 10px;
-      padding: $gutter;
+      padding: $gutter 10px;
       position: absolute;
       z-index: 10;
       text-align: center;
@@ -99,26 +103,34 @@ export default {
       @include theme(light light-colored) {
           background-color: rgba(black, 0.9);
       }
-      span {
+      @include respond-to("medium and down") {
+        padding: $gutter 10px;
+      }
+      .top, .bottom {
+        display: block;
+        width: 100%;
+        height: 50%;
+        span {
           display: block;
           text-transform: uppercase;
           line-height: 1em;
-          &:nth-last-child(2) {
+          &:nth-child(2) {
             margin-bottom: 10px;
           }
-      }
-      p {
+        }
+        p {
           margin: 0;
           font-weight: bold;
           color: var(--theme-bg);
           line-height: 1em;
-      }
-      @include respond-to("medium and down") {
-        padding: $gutter 10px;
-        p {
-          font-size: $gutter;
+          @include respond-to("medium and down") {
+            p {
+              font-size: $gutter;
+            }
+          }
         }
       }
+      
     }
     &__image {
         position: relative;

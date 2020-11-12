@@ -202,7 +202,7 @@ Disseminating and amplifying relevant content.
 
 <template v-slot:header>
 
-### Website / Design
+### Website - Design
 
 Meetings
 

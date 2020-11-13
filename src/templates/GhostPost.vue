@@ -71,14 +71,27 @@ export default {
       }
     }
     pre {
-      white-space: pre-wrap;
-      word-break: break-word;
-      border: 1px solid black;
-      background-color: #0e0f11;
-      line-height: 1.5em;
-      padding: $gutter;
+      overflow-x: auto;
       margin: rem(25px) 0;
+      padding: $gutter;
+      border: 1px solid black;
+      color: #e5eff5;
+      font-size: 1.4rem;
+      line-height: 1.5em;
+      background: #0e0f11;
       border-radius: 3px;
+      white-space: pre;
+      word-break: break-word;
+      display: block;
+      @include respond-to("large and up") {
+        width: calc(#{$slim-column-width-xlarge} - 32px);
+      }
+      @media (min-width: 1008px) and (max-width: 1199px) {
+        width: calc(#{$slim-column-width-large} - 32px);
+      } 
+      @include respond-to("medium and down") {
+        width: calc(#{$slim-column-width-medium} - 32px);
+      }
       code {
         font-family: monospace, monospace;
         color: white;
@@ -94,6 +107,10 @@ export default {
         font-family: monospace, monospace;
         color: white;
       }
+    }
+    ul {
+      list-style: disc;
+      padding-left: 1.3em;
     }
     .kg-image-card {
       img[src*=small-black-squiggle], img[src*=Black-Squiggle-Separator] {
@@ -117,7 +134,7 @@ export default {
   &-container {
     display: grid;
     box-shadow: 0 0 1px var(--theme-fg);
-
+    border-radius: 3px;
     @include respond-to("large and up") {
       grid-auto-flow: column;
       grid-template-columns: 1fr 231px;
@@ -144,6 +161,9 @@ export default {
     grid-auto-rows: max-content;
     grid-row-gap: $gutter;
     width: 100%;
+    @include respond-to("medium and down") {
+      order: 2;
+    }
   }
   &-icon {
     width: rem(24px);
@@ -152,18 +172,41 @@ export default {
   &-title {
     font-size: 1rem;
     font-weight: bold;
+    line-height: $paragraph-line-height;
   }
   &-description {
-    overflow-y: hidden;
-    max-height: 48px;
+    line-height: $paragraph-line-height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
   }
   &-thumbnail {
-    height: 100%;
-
+    position: relative;
+    min-width: 33%;
+    max-height: 100%;
     img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
       width: 100%;
+      max-width: 1040px;
       height: 100%;
+      border-radius: 0 3px 3px 0;
+      -o-object-fit: cover;
       object-fit: cover;
+      vertical-align: middle;
+    }
+    @include respond-to("medium and down") {
+      order: 1;
+      min-height: rem(160px);
+      width: 100%;
+      img {
+        border-radius: 3px 3px 0 0;
+      }
     }
   }
   &-author:after {

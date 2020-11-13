@@ -52,7 +52,7 @@ export default {
   }
   a {
     text-decoration: none;
-    word-break: break-all;
+    word-break: break-word;
   }
   &__content {
     iframe {
@@ -68,6 +68,31 @@ export default {
         @include theme(light light-colored) {
           color: $primary-blue-color;
         }
+      }
+    }
+    pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      border: 1px solid black;
+      background-color: #0e0f11;
+      line-height: 1.5em;
+      padding: $gutter;
+      margin: rem(25px) 0;
+      border-radius: 3px;
+      code {
+        font-family: monospace, monospace;
+        color: white;
+      }
+    }
+    p {
+      code {
+        background-color: black;
+        line-height: 1em;
+        padding: 0 5px 2px;
+        font-size: .8em;
+        border-radius: 3px;
+        font-family: monospace, monospace;
+        color: white;
       }
     }
     .kg-image-card {
@@ -100,6 +125,17 @@ export default {
     }
     @include respond-to("medium and down") {
       grid-template-columns: 1fr;
+    }
+    &:hover {
+      color: var(--theme-fg);
+      .kg-bookmark-title {
+        @include theme(dark dark-colored) {
+          color: $secondary-turquoise-color;
+        }
+        @include theme(light light-colored) {
+          color: $primary-blue-color;
+        }
+      }
     }
   }
   &-content {

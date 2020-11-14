@@ -71,26 +71,28 @@ export default {
       }
     }
     pre {
+      white-space: pre;
+      word-break: break-word;
       overflow-x: auto;
+      width: min-content;
+      max-width: 100%;
       margin: rem(25px) 0;
       padding: $gutter;
       border: 1px solid black;
-      color: #e5eff5;
-      font-size: 1.4rem;
-      line-height: 1.5em;
-      background: #0e0f11;
+      background-color: $primary-black-color;
       border-radius: 3px;
-      white-space: pre;
-      word-break: break-word;
-      display: block;
+      line-height: 1.5em;
       @include respond-to("large and up") {
-        width: calc(#{$slim-column-width-xlarge} - 32px);
+        max-width: calc(#{$slim-column-width-xlarge} - 64px);
       }
       @media (min-width: 1008px) and (max-width: 1199px) {
-        width: calc(#{$slim-column-width-large} - 32px);
+        max-width: calc(#{$slim-column-width-large} - 64px);
+      }
+      @include respond-to("medium") {
+        max-width: calc(#{$slim-column-width-medium} - 32px);
       } 
-      @include respond-to("medium and down") {
-        width: calc(#{$slim-column-width-medium} - 32px);
+      @include respond-to("small and down") {
+        max-width: calc(#{$slim-column-width-medium} - 64px);
       }
       code {
         font-family: monospace, monospace;
@@ -99,13 +101,16 @@ export default {
     }
     p {
       code {
-        background-color: black;
+        background-color: $primary-black-color;
         line-height: 1em;
-        padding: 0 5px 2px;
+        padding: 2px 5px;
         font-size: .8em;
         border-radius: 3px;
         font-family: monospace, monospace;
         color: white;
+        white-space: pre-wrap;
+        word-break: break-word;
+        overflow-x: auto;
       }
     }
     ul {

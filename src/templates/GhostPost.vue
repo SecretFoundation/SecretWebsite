@@ -113,9 +113,17 @@ export default {
         overflow-x: auto;
       }
     }
+    ul, ol {
+      padding-left: 1.3em;
+      li {
+        font-family: $secondary-text-font;
+      }
+    }
     ul {
       list-style: disc;
-      padding-left: 1.3em;
+    }
+    ol {
+      list-style: decimal;
     }
     .kg-image-card {
       img[src*=small-black-squiggle], img[src*=Black-Squiggle-Separator] {
@@ -134,6 +142,12 @@ export default {
     text-align: center;
     text-decoration: underline;
   }
+}
+.kg-embed-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .kg-bookmark {
   &-container {
@@ -191,6 +205,7 @@ export default {
     position: relative;
     min-width: 33%;
     max-height: 100%;
+    background-color: $primary-black-color;
     img {
       display: block;
       position: absolute;

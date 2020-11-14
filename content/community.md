@@ -122,98 +122,6 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <slim-column>
 
-### Members
-
-Here are a few of our Secret Network Members:
-
-<grid columns="5" class="members-grid">
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image1.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image2.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image3.png" >
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image4.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image5.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image6.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image7.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image8.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image9.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image10.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image11.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image12.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image13.png" >
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image14.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image15.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image16.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image17.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image18.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image19.png">
-
-</contributor-logo>
-
-<contributor-logo role="" roleTwo="" name="" to="" src="members/image20.png">
-
-</contributor-logo>
-
-</grid>
-
-</slim-column>
-
-<slim-column>
-
 ### Committees
 
 There is no more consequential way to get involved with Secret Network than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
@@ -266,13 +174,6 @@ There is no more consequential way to get involved with Secret Network than to j
                 color: white;
             }
         }
-    }
-}
-.members-grid {
-    grid-row-gap: $gutter !important;
-    grid-column-gap: $gutter !important;
-    @include respond-to("medium and down") {
-        grid-template-columns: repeat(4, 1fr) !important;
     }
 }
 </style>

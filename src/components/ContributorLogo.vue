@@ -88,8 +88,10 @@ export default {
     position: relative;
     &__hover {
       opacity: 0;
-      border-radius: 10px;
-      padding: $gutter 10px;
+      border-radius: 7px;
+      padding: 3px;
+      display: grid;
+      grid-template-rows: repeat(2, 50%);
       position: absolute;
       z-index: 10;
       text-align: center;
@@ -109,7 +111,7 @@ export default {
       .top, .bottom {
         display: block;
         width: 100%;
-        height: 50%;
+        align-self: center;
         span {
           display: block;
           text-transform: uppercase;
@@ -136,7 +138,7 @@ export default {
         position: relative;
         z-index: -1;
         img {
-            border-radius: 10px;
+            border-radius: 7px;
         }
     }
     &:hover {

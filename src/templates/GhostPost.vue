@@ -91,8 +91,11 @@ export default {
       @include respond-to("medium") {
         max-width: calc(#{$slim-column-width-medium} - 32px);
       } 
-      @include respond-to("small and down") {
-        max-width: calc(#{$slim-column-width-medium} - 64px);
+      @include respond-to("small") {
+        max-width: calc(414px - 64px);
+      }
+      @include respond-to("xsmall and down") {
+        max-width: calc(375px - 64px);
       }
       code {
         font-family: monospace, monospace;

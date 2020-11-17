@@ -72,9 +72,9 @@ A few key network contributors are featured below.
 
 <slim-column class="see-more">
 
-<blue-button tag="See more" to="/contributors">
+<next-button tag="See more" to="/contributors">
 
-</blue-button>
+</next-button>
 
 </slim-column>
 
@@ -351,13 +351,13 @@ You can find information on staking rewards calculations at:
 .see-more {
     width: auto;
     text-align: center;
-    .blue-button {
+    .next-button {
       display: inline-block;
       margin: 0 auto;
     }
     @include respond-to("medium and down") {
         width: 100%;
-        .blue-button {
+        .next-button {
             margin: unset;
             display: unset;
         }

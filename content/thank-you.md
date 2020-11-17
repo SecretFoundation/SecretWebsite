@@ -145,28 +145,28 @@ You've been added to our mailing list and will now be among the first to hear ab
         }
         &.github {
             background-color: #24292E;
-            @include theme(dark dark-colored) {
-                .community-card__icon {
-                    .themed-image {
-                        img {
-                            filter: invert(0);
-                        }
+        }
+        @include theme(dark dark-colored) {
+            .community-card__icon {
+                .themed-image {
+                    img {
+                        filter: invert(0);
                     }
                 }
             }
-            @include theme(light light-colored) {
-                .community-card__icon {
-                    .themed-image {
-                        img {
-                            filter: invert(1);
-                        }
+        }
+        @include theme(light light-colored) {
+            .community-card__icon {
+                .themed-image {
+                    img {
+                        filter: invert(1);
                     }
                 }
             }
-            .community-card__name {
-                h4 {
-                    color: white;
-                }
+        }
+        .community-card__name {
+            h4 {
+                color: white;
             }
         }
     }

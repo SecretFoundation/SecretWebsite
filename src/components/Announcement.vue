@@ -31,30 +31,6 @@
           margin-left: 10px;
         }
       }
-      .read-more-button {
-        display: inline-block;
-        padding: 10px $gutter;
-        border-radius: 10px;
-        margin: 0 0 $gutter 0;
-        border: 1px solid $secondary-turquoise-color;
-        p {
-          display: inline-block;
-          margin: 0;
-          span {
-            display: inline-block;
-            vertical-align: middle;
-            font-weight: bold;
-            font-size: 20px;
-            text-decoration: none;
-            color: $secondary-turquoise-color;
-          }
-        }
-        .g-image {
-            display: inline-block;
-            vertical-align: middle;
-            margin-left: rem(13px);
-        }
-      }
     }
     @include respond-to("medium and down") {
       padding-top: $gutter;

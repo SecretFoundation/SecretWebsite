@@ -90,9 +90,9 @@ Enabling more open and more usable gaming experiences.
 
 </template>
 
-<blue-button tag="Read the FAQ" to="#frequently-asked-questions">
+<next-button tag="Read the FAQ" to="#frequently-asked-questions">
 
-</blue-button>
+</next-button>
 
 </card>
 
@@ -331,7 +331,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
   }
   .card__body--unwrapped {
     padding: 0 16px 16px 16px;
-    .blue-button {
+    .next-button {
       display: inline-block !important;
       width: auto !important;
       padding: 10px $gutter !important;
@@ -341,6 +341,28 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
       }
       @include theme(light light-colored) {
         color: $primary-blue-color;
+      }
+      &:hover {
+        transition: 0.5s ease;
+        -webkit-transition: 0.5s ease;
+        @include theme(dark dark-colored) {
+          background-color: $secondary-turquoise-color !important;
+          color: var(--theme-bg);
+          .themed-image {
+            img {
+              filter: brightness(0);
+            }
+          }
+        }
+        @include theme(light light-colored) {
+          background-color: $primary-blue-color !important;
+          color: var(--theme-bg);
+          .themed-image {
+            img {
+              filter: brightness(0) invert(1);
+            }
+          }
+        }
       }
     }
   }

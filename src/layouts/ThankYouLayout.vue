@@ -170,7 +170,6 @@ $-logo-size-mobile: 68px;
         color: $primary-black-color;
     }
     h1 {
-      font-size: rem(64px);
       margin-top: 0;
     }
 }

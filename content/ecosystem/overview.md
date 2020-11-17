@@ -340,23 +340,12 @@ You can find information on staking rewards calculations at:
         grid-template-columns: repeat(3, 1fr) !important;
     }
 }
-.contributors-grid {
-    grid-column-gap: $gutter !important;
-    grid-row-gap: $gutter !important;
-    p {
-        margin: 0;
-        line-height: 0;
-        transition: 0.5s ease;
-        -webkit-transition: 0.5s ease;
-        img {
-            border-radius: rem(10px);
-        }
-        &:hover {
-            visibility : hidden;
-        }
+.contributor-logo {
+    @include theme(dark dark-colored) {
+        border: 2px solid var(--theme-fg);
     }
-    @include respond-to("medium and down") {
-        grid-template-columns: repeat(3, 1fr) !important;
+    @include theme(light light-colored) {
+        border: 2px solid var(--theme-fg);
     }
 }
 .see-more {

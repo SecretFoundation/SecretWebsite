@@ -3,6 +3,8 @@
     <blog-card-featured v-for="{ node } in posts" :key="node.id" :tag="node.primary_tag != null ? node.primary_tag.name : ''">
       <template #tag v-if="node.primary_tag">{{ node.primary_tag.name }}</template>
       <h4><g-link :to="`/blog/${node.slug}`">{{ node.title }}</g-link></h4>
+      <separator small space-small></separator>
+      <p>{{ node.description | truncate }}</p>
       <template #footer>
         <g-image picture :src="node.primary_author.profile_image"></g-image>
         <div info>

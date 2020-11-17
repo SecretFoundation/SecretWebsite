@@ -64,10 +64,33 @@ layout: ~/layouts/MainPageLayout
 
 </slim-column>
 
+<slim-column class="back-to">
+
+<back-button tag="Back to Ecosystem" to="/ecosystem/overview">
+
+</back-button>
+
+</slim-column>
+
 <style lang="scss">
 .logos-grid {
     @include respond-to("medium and down") {
         grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+.back-to {
+    width: auto;
+    text-align: center;
+    .back-button {
+      display: inline-block;
+      margin: 0 auto;
+    }
+    @include respond-to("medium and down") {
+        width: 100%;
+        .back-button {
+            margin: unset;
+            display: unset;
+        }
     }
 }
 </style>

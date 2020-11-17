@@ -258,7 +258,6 @@ export default {
     //border-bottom: 1px solid $primary-black-color;
   }
   .main-nav {
-
     @include respond-to("large and up") {
       height: 100%;
     }
@@ -284,10 +283,23 @@ export default {
 
       a {
         @include respond-to("large and up") {
-          width: 100%;
+          width: calc(100% + 2px);
           height: 100%;
           display: grid;
           place-content: center center;
+          position: relative;
+          &:not(:nth-child(2)) {
+            &:before {
+              content: '';
+              position: absolute;
+              left: 0.5px;
+              width: 1px;
+              height: 26px;
+              top: 20px;
+              background: var(--theme-fg);
+              z-index: -1;
+            }
+          }
         }
         @include respond-to("medium and down") {
           font-size: rem(24px);
@@ -297,7 +309,6 @@ export default {
             color: var(--theme-fg);
           }
         }
-
         &.active {
           &:not([home]) {
             @include respond-to("small and down") {
@@ -322,10 +333,8 @@ export default {
             }
           }
         }
-
         &:hover {
-          transition: background-color 300ms ease-in-out;
-
+          transition: background-color 0.1s ease-in-out;
           @include theme(dark light) {
             background-color: var(--theme-fg);
             color: var(--theme-bg);
@@ -340,6 +349,16 @@ export default {
                 color: $primary-black-color;
               }
             }
+          }
+          &:before {
+            transition: background-color 300ms ease-in-out;
+            opacity: 0;
+          }
+        }
+        &:active {
+          background-color: yellow;
+          &:before {
+            display: none;
           }
         }
       }

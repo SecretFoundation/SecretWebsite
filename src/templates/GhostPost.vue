@@ -120,6 +120,7 @@ export default {
       padding-left: 1.3em;
       li {
         font-family: $secondary-text-font;
+        line-height: $paragraph-line-height;
       }
     }
     ul {

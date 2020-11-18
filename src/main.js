@@ -22,7 +22,7 @@ import BlogCardFeatured from '@/components/blog/BlogCardFeatured'
 import PostsFeatured from '@/components/blog/PostsFeatured'
 import MediaCard from '@/components/MediaCard'
 import NextButton from './components/NextButton'
-import ContributorLogo from './components/ContributorLogo'
+import GridItem from './components/GridItem'
 import CommunityCard from './components/CommunityCard'
 import Announcement from './components/Announcement'
 import SmallAnnouncement from './components/SmallAnnouncement'
@@ -53,7 +53,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('PostsFeatured', PostsFeatured)
   Vue.component('MediaCard', MediaCard)
   Vue.component('NextButton', NextButton)
-  Vue.component('ContributorLogo', ContributorLogo)
+  Vue.component('GridItem', GridItem)
   Vue.component('CommunityCard', CommunityCard)
   Vue.component('Announcement', Announcement)
   Vue.component('SmallAnnouncement', SmallAnnouncement)

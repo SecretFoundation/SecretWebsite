@@ -1,15 +1,15 @@
 <template>
-  <g-link class="contributor-logo" :to="to">
-    <div class="contributor-logo__hover">
+  <g-link class="grid-item" :to="to">
+    <div class="grid-item__hover">
       <div class="top">
         <p>{{ name }}</p>
       </div>
       <div class="bottom">
-        <span :style="{ color: `var(--${color}-color)` }">{{ role }} </span>
-        <span :style="{ color: `var(--${colorTwo}-color)` }">{{ roleTwo }} </span>
+        <span :style="{ color: `var(--${color}-color)` }">{{ tag }} </span>
+        <span :style="{ color: `var(--${colorTwo}-color)` }">{{ tagTwo }} </span>
       </div>
     </div>
-    <div class="contributor-logo__image">
+    <div class="grid-item__image">
       <g-image :src="require(`!!assets-loader!@images/${src}`)"></g-image>
     </div>
   </g-link>
@@ -21,25 +21,25 @@ const colors = {
   "validator": "red",
   "wallet": "orange",
   "fund": "purple",
-  "": "yellow",
-  undefined: "black"
+  undefined: "black",
+  "": "blue"
 }
 const colorsTwo = {
   "developer": "blue",
   "validator": "red",
   "wallet": "orange",
   "fund": "purple",
-  "": "yellow",
-  undefined: "black"
+  undefined: "black",
+  "": "blue"
 }
 
 export default {
   props: {
-    role: {
+    tag: {
       type: String,
       required: false
     },
-    roleTwo: {
+    tagTwo: {
       type: String,
       required: false
     },
@@ -69,17 +69,17 @@ export default {
   },
   methods: {
     getColor() {
-      return colors[this.role.toLowerCase()]
+      return colors[this.tag.toLowerCase()]
     },
     getSecondColor() {
-      return colorsTwo[this.roleTwo.toLowerCase()]
+      return colorsTwo[this.tagTwo.toLowerCase()]
     },
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.contributor-logo {
+.grid-item {
     margin: 0;
     line-height: 0;
     width: 100%;
@@ -131,8 +131,7 @@ export default {
             }
           }
         }
-      }
-      
+      } 
     }
     &__image {
         position: relative;
@@ -142,7 +141,7 @@ export default {
         }
     }
     &:hover {
-        .contributor-logo__hover {
+        .grid-item__hover {
             opacity: 1;
         }
     }

@@ -29,6 +29,10 @@
     text-align: center;
   }
 
+  p {
+    font-family: $text-font;
+  }
+
   span {
     text-decoration: underline;
   }

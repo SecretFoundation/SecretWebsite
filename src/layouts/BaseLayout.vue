@@ -406,7 +406,8 @@ export default {
     }
   }
   p {
-    line-height: rem(25px);
+    font-family: $text-font !important;
+    line-height: rem(25px) !important;
   }
   &__logo {
     width: rem(110px);

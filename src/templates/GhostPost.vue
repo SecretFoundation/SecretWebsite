@@ -55,6 +55,12 @@ export default {
     word-break: break-word;
   }
   &__content {
+    h2 {
+      margin: 50px 0 16px 0;
+    }
+    h3 {
+      margin: 48px 0 24px 0;
+    }
     iframe {
       width: 100%;
     }
@@ -69,8 +75,28 @@ export default {
           color: $primary-blue-color;
         }
       }
+      code {
+        line-height: 1em;
+        padding: 3px 5px;
+        font-size: .8em;
+        border-radius: 3px;
+        font-family: monospace, monospace;
+        white-space: pre-wrap;
+        word-break: break-word;
+        overflow-x: auto;
+        @include theme(dark dark-colored) {
+          background-color: #F2F2F2;
+          color: $primary-black-color;
+        }
+        @include theme(light light-colored) {
+          background-color: $primary-black-color;
+          color: white;
+        }
+      }
     }
     pre {
+      background-color: $primary-black-color;
+      border: 1px solid black;
       white-space: pre;
       word-break: break-word;
       overflow-x: auto;
@@ -78,10 +104,14 @@ export default {
       max-width: 100%;
       margin: rem(25px) 0;
       padding: $gutter;
-      border: 1px solid black;
-      background-color: $primary-black-color;
       border-radius: 3px;
       line-height: 1.5em;
+      @include theme(dark dark-colored) {
+        background-color: #F2F2F2;
+      }
+      @include theme(light light-colored) {
+        background-color: $primary-black-color;
+      }
       @include respond-to("large and up") {
         max-width: calc(#{$slim-column-width-xlarge} - 64px);
       }
@@ -99,21 +129,12 @@ export default {
       }
       code {
         font-family: monospace, monospace;
-        color: white;
-      }
-    }
-    p {
-      code {
-        background-color: $primary-black-color;
-        line-height: 1em;
-        padding: 2px 5px;
-        font-size: .8em;
-        border-radius: 3px;
-        font-family: monospace, monospace;
-        color: white;
-        white-space: pre-wrap;
-        word-break: break-word;
-        overflow-x: auto;
+        @include theme(dark dark-colored) {
+          color: $primary-black-color;
+        }
+        @include theme(light light-colored) {
+          color: white;
+        }
       }
     }
     ul, ol {
@@ -136,6 +157,11 @@ export default {
           filter: invert(100%);
         }
       }
+    }
+    blockquote {
+      font-family: $secondary-text-font;
+      font-size: 22px;
+      font-style: italic;
     }
   }
 }

@@ -180,6 +180,12 @@ export default {
   width: 100%;
 }
 .kg-bookmark {
+  &-card {
+    width: rem(600px);
+    @include respond-to("medium and down") {
+      width: 100%;
+    }
+  }
   &-container {
     display: grid;
     box-shadow: 0 0 1px var(--theme-fg);
@@ -231,6 +237,24 @@ export default {
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
   }
+  &-metadata {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: rem(337px);
+    @include respond-to("medium and down") {
+      max-width: 100%;
+      white-space: unset;
+      overflow: unset;
+      text-overflow: unset;
+    }
+  }
+  &-author {
+    &:after {
+      content: "•";
+      margin-left: $gutter-xsmall;
+    }
+  }
   &-thumbnail {
     position: relative;
     min-width: 33%;
@@ -258,10 +282,6 @@ export default {
         border-radius: 3px 3px 0 0;
       }
     }
-  }
-  &-author:after {
-    content: "•";
-    margin-left: $gutter-xsmall;
   }
   &-metadata {
     @include respond-to("large and up") {

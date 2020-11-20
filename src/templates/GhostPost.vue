@@ -77,7 +77,7 @@ export default {
       margin: 50px 0 16px 0;
     }
     h3 {
-      margin: 48px 0 24px 0;
+      margin: 36px 0 24px 0;
     }
     iframe {
       width: 100%;

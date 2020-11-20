@@ -38,7 +38,9 @@ const colors = {
   "privacy": "purple",
   "secret apps": "green",
   "solutions": "green",
-  "": "blue"
+  "": "blue",
+  null: "blue",
+  undefined: "blue"
 }
 
 export default {

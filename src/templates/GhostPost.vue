@@ -46,9 +46,27 @@ export default {
 
 <style lang="scss">
 .post {
+  .slim-column {
+    @include respond-to("xlarge and up") {
+      width: 900px;
+    }
+    @include respond-to("large") {
+      width: 750px;
+    }
+    @include respond-to("medium") {
+      width: 500px;
+    }
+  }
+  .blog-hero {
+    &__content {
+      p {
+        line-height: rem(32px);
+      }
+    }
+  }
   p {
     font-family: $secondary-text-font;
-    line-height: rem(32px);
+    line-height: 2.5rem;
   }
   a {
     text-decoration: none;
@@ -102,7 +120,7 @@ export default {
       overflow-x: auto;
       width: min-content;
       max-width: 100%;
-      margin: rem(25px) 0;
+      margin: 0 30px $gutter-large 20px;
       padding: $gutter;
       border-radius: 3px;
       line-height: 1.5em;
@@ -113,19 +131,22 @@ export default {
         background-color: $primary-black-color;
       }
       @include respond-to("large and up") {
-        max-width: calc(#{$slim-column-width-xlarge} - 64px);
+        width: 100%;
+        max-width: calc(858px - 40px);
       }
       @media (min-width: 1008px) and (max-width: 1199px) {
-        max-width: calc(#{$slim-column-width-large} - 64px);
+        width: 100%;
+        max-width: calc(708px - 40px);
       }
       @include respond-to("medium") {
-        max-width: calc(#{$slim-column-width-medium} - 32px);
+        width: 100%;
+        max-width: calc(458px - 40px);
       } 
       @include respond-to("small") {
-        max-width: calc(414px - 64px);
+        max-width: calc(715px - 40px);
       }
       @include respond-to("xsmall and down") {
-        max-width: calc(375px - 64px);
+        max-width: calc(375px - 40px);
       }
       code {
         font-family: monospace, monospace;
@@ -181,10 +202,9 @@ export default {
 }
 .kg-bookmark {
   &-card {
-    width: rem(600px);
-    @include respond-to("medium and down") {
-      width: 100%;
-    }
+    width: 100%;
+    padding: 0 30px 0 20px;
+    margin-bottom: $gutter-large;
   }
   &-container {
     display: grid;

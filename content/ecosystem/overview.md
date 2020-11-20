@@ -88,13 +88,9 @@ A few key network contributors are featured below.
 
 Read a comprehensive update on what is happening across the Secret Network ecosystem, including product and technical updates, 5 episodes of Sharing Secrets, potential community-spend proposals, and new charters by leaders of the various committees!
 
-<g-link to="https://scrt.network/blog/secret-network-ecosystem-update-october-2020/" class="read-more-button">
+<next-button class="turquoise" tag="Read more" to="/blog/secret-network-ecosystem-update-october-2020/">
 
-<span>Read more</span>
-
-<g-image src="../../src/assets/arrow-right-turquoise.svg"></g-image>
-
-</g-link>
+</next-button>
 
 </template>
 

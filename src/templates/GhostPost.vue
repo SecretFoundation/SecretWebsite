@@ -14,6 +14,7 @@
         </div>
       </blog-author>
       <hr>
+      <g-image class="cover-image" picture :src="$page.post.coverImage"></g-image>
       <div class="post__content" v-html="$page.post.content"></div>
     </slim-column>
   </blog-entry-layout>
@@ -71,6 +72,9 @@ export default {
   a {
     text-decoration: none;
     word-break: break-word;
+  }
+  .cover-image {
+    margin: rem($gutter) 0 rem(32px) 0;
   }
   &__content {
     h2 {

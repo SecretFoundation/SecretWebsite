@@ -74,7 +74,7 @@ export default {
     word-break: break-word;
   }
   .cover-image {
-    margin: rem($gutter) 0 rem(32px) 0;
+    margin: rem(16px) 0 rem(32px) 0;
   }
   &__content {
     h2 {

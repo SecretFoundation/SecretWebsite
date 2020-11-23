@@ -7,7 +7,8 @@
     </template>
     <slim-column>
       <blog-author>
-        <g-image picture :src="$page.post.primary_author.profile_image"></g-image>
+        <g-image picture v-if="$page.post.primary_author.profile_image" :src="$page.post.primary_author.profile_image"></g-image>
+        <g-image picture v-else src="@/assets/scrt-logo.png"></g-image>
         <div info>
           <div>{{ $page.post.primary_author.name }}</div>
           <div>{{ $page.post.date }} &#8226; {{ $page.post.reading_time }} min read</div>

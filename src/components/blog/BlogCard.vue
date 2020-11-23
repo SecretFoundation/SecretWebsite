@@ -39,6 +39,7 @@ const colors = {
   "secret apps": "green",
   "solutions": "green",
   "ecosystem": "red",
+  "staking": "peach",
   "": "blue",
   null: "blue",
   undefined: "blue"

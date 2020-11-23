@@ -120,6 +120,78 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 </card-holder>
 
+<slim-column>
+
+### Secret Agents
+
+Here are a few of our Secret Network Agents:
+
+<grid columns="5" class="agents-grid">
+
+<grid-item name="Mohammed" tag="Canada" tagTwo="" to="" src="agents/Mohammed - Canada.png">
+
+</grid-item>
+
+<grid-item name="Taariq" tag="South Africa" tagTwo="" to="" src="agents/Taariq - South Africa.png">
+
+</grid-item>
+
+<grid-item name="Brendan" tag="USA" tagTwo="" to="" src="agents/Brendan - USA.png" >
+
+</grid-item>
+
+<grid-item name="Ian" tag="Delta Quadrant" tagTwo="" to="" src="agents/Ian - Delta Quadrant.png">
+
+</grid-item>
+
+<grid-item name="Laura" tag="USA" tagTwo="" to="" src="agents/Laura - USA.png">
+
+</grid-item>
+
+<grid-item name="Vlad" tag="Russia" tagTwo="" to="" src="agents/Vlad - Russia.png">
+
+</grid-item>
+
+<grid-item name="Rina" tag="Russia" tagTwo="" to="" src="agents/Rina - Russia.png">
+
+</grid-item>
+
+<grid-item name="Vladimir" tag="Planet Earth" tagTwo="" to="" src="agents/Vladimir - Planet Earth.png">
+
+</grid-item>
+
+<grid-item name="James" tag="USA" tagTwo="" to="" src="agents/James - USA.png">
+
+</grid-item>
+
+<grid-item name="Josh" tag="UK" tagTwo="" to="" src="agents/Josh - UK.png">
+
+</grid-item>
+
+<grid-item name="Robin" tag="Switzerland" tagTwo="" to="" src="agents/Robin - Switzerland.png">
+
+</grid-item>
+
+<grid-item name="Eckhard" tag="Norway" tagTwo="" to="" src="agents/Eckhard - Norway.png">
+
+</grid-item>
+
+<grid-item name="Marcel" tag="Germany" tagTwo="" to="" src="agents/Marcel - Germany.png" >
+
+</grid-item>
+
+<grid-item name="Julian" tag="Switzerland" tagTwo="" to="" src="agents/Julian - Switzerland.png">
+
+</grid-item>
+
+<grid-item name="Zach" tag="USA" tagTwo="" to="" src="agents/Zach - USA.png">
+
+</grid-item>
+
+</grid>
+
+</slim-column>
+
 <single-column>
 
 <twin-columns class="sharing-secrets">
@@ -227,9 +299,15 @@ There is no more consequential way to get involved with Secret Network than to j
     .grid-item {
         border: 0 !important;
         &__hover {
+            .top {
+                p {
+                    font-size: 18px;
+                }
+            } 
             .bottom {
                 span {
                     color: $primary-blue-color !important;
+                    font-size: 15px;
                 }
             } 
         }

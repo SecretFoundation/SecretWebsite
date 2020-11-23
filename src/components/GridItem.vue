@@ -116,6 +116,12 @@ export default {
           display: block;
           text-transform: uppercase;
           line-height: 1em;
+          width: 100%;
+          word-break: break-word;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
           &:nth-child(2) {
             margin-bottom: 10px;
           }
@@ -125,6 +131,12 @@ export default {
           font-weight: bold;
           color: var(--theme-bg);
           line-height: 1em;
+          width: 100%;
+          word-break: break-word;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
           @include respond-to("medium and down") {
             p {
               font-size: $gutter;

@@ -26,7 +26,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/forum-black.svg"></g-image>
 
@@ -42,7 +42,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/discord-black.svg"></g-image>
 
@@ -58,7 +58,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/telegram-black.svg"></g-image>
 
@@ -74,7 +74,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/twitter-black.svg"></g-image>
 
@@ -90,7 +90,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/youtube-black.svg"></g-image>
 
@@ -106,7 +106,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/github-black.svg"></g-image>
 

@@ -335,6 +335,7 @@ There is no more consequential way to get involved with Secret Network than to j
         @include respond-to("medium and down") {
             grid-template-columns: 100%;
             grid-template-rows: auto;
+            grid-row-gap: rem(16px);
             .twins-column {
                 &--start {
                     width: 100%;

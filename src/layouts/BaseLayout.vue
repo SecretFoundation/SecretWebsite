@@ -311,7 +311,7 @@ export default {
         }
         &.active {
           &:not([home]) {
-            @include respond-to("small and down") {
+            @include respond-to("medium and down") {
               display: grid;
               place-content: center start;
               padding: $gutter;

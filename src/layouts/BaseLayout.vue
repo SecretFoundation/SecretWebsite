@@ -363,6 +363,14 @@ export default {
         }
       }
     }
+    @media screen and (max-height: 594px) {
+      overflow-y: auto;
+      .social-networks {
+        &__mobile {
+          position: unset;
+        }
+      }
+    }
   }
 }
 .logo {

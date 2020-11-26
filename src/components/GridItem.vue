@@ -89,7 +89,6 @@ export default {
     &__hover {
       opacity: 0;
       border-radius: 7px;
-      padding: 3px;
       display: grid;
       grid-template-rows: repeat(2, 50%);
       position: absolute;
@@ -105,8 +104,17 @@ export default {
       @include theme(light light-colored) {
           background-color: rgba(black, 0.9);
       }
-      @include respond-to("medium and down") {
-        padding: $gutter 10px;
+      @include respond-to("large and up") {
+          padding: $gutter 10px;
+      }
+      @include respond-to("medium") {
+          padding: $gutter 10px;
+      }
+      @include respond-to("small") {
+          padding: $gutter 10px;
+      }
+      @include respond-to("xsmall and down") {
+          padding: rem(5px);
       }
       .top, .bottom {
         display: block;
@@ -122,8 +130,20 @@ export default {
           -moz-hyphens: auto;
           -ms-hyphens: auto;
           hyphens: auto;
-          &:nth-child(2) {
-            margin-bottom: 10px;
+          @include respond-to("medium and up") {
+              font-size: 16px;
+          }
+          @media (min-width: 501px) and (max-width: 1007px) {
+              font-size: 15px;
+          }
+          @media (min-width: 414px) and (max-width: 500px) {
+              font-size: 12px;
+          }
+          @include respond-to("xsmall") {
+              font-size: 12px;
+          }
+          @include respond-to("xxsmall") {
+              font-size: 10px;
           }
         }
         p {
@@ -137,10 +157,20 @@ export default {
           -moz-hyphens: auto;
           -ms-hyphens: auto;
           hyphens: auto;
-          @include respond-to("medium and down") {
-            p {
-              font-size: $gutter;
-            }
+          @include respond-to("medium and up") {
+              font-size: 20px;
+          }
+          @media (min-width: 501px) and (max-width: 1007px) {
+              font-size: 18px;
+          }
+          @media (min-width: 414px) and (max-width: 500px) {
+              font-size: 16px;
+          }
+          @include respond-to("xsmall") {
+              font-size: 16px;
+          }
+          @include respond-to("xxsmall") {
+              font-size: 12px;
           }
         }
       } 
@@ -156,8 +186,6 @@ export default {
         .grid-item__hover {
             opacity: 1;
         }
-    }
-    @include respond-to("medium and down") {
     }
 }
 </style>

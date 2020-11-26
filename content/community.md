@@ -299,15 +299,26 @@ There is no more consequential way to get involved with Secret Network than to j
     .grid-item {
         border: 0 !important;
         &__hover {
-            .top {
-                p {
-                    font-size: 18px;
-                }
-            } 
-            .bottom {
+            @include respond-to("medium") {
+                padding: $gutter 10px;
+            }
+            @include respond-to("small") {
+                padding: $gutter 10px;
+            }
+            @include respond-to("xsmall and down") {
+                padding: rem(5px);
+            }
+            .top, .bottom {
                 span {
                     color: $primary-blue-color !important;
-                    font-size: 15px;
+                    @include respond-to("medium and up") {
+                        font-size: 15px;
+                    }
+                }
+                p {
+                    @include respond-to("medium and up") {
+                        font-size: 18px;
+                    }
                 }
             } 
         }

@@ -89,6 +89,9 @@ $-strong-font-size: 24px;
       img {
         width: 100%;
         object-fit: cover;
+        @media (min-width: 320px) and (max-width: 390px) {
+          height: rem(393px);
+        }
       }
       @media (min-width: 1008px) and (max-width: 1199px) {
         max-height: rem(332px);

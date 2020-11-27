@@ -148,10 +148,13 @@ export default {
         max-width: calc(458px - 40px);
       } 
       @include respond-to("small") {
-        max-width: calc(715px - 40px);
+        max-width: calc(415px - 40px);
       }
-      @include respond-to("xsmall and down") {
-        max-width: calc(375px - 40px);
+      @include respond-to("xsmall") {
+        max-width: calc(333px - 40px);
+      }
+      @media (min-width: 320px) and (max-width: 374px) {
+        max-width: calc(275px - 40px);
       }
       code {
         font-family: monospace, monospace;
@@ -188,6 +191,11 @@ export default {
       font-family: $secondary-text-font;
       font-size: 22px;
       font-style: italic;
+      @include respond-to("small and down") {
+        word-break: break-word;
+        font-size: 20px;
+        margin: 0;
+      }
     }
   }
 }

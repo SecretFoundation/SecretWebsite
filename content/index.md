@@ -207,5 +207,10 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
       margin: 0;
     }
   }
+  @include respond-to("medium and down") {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-row-gap: rem(16px);
+  }
 }
 </style>

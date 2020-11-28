@@ -118,7 +118,7 @@ The following process describes, step by step, how a contract is submitted and a
 
 </slim-column>
 
-<card-holder class="network-flow">
+<card-holder class="network-flow" columns="4">
 
 <card>
 
@@ -372,7 +372,6 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
 }
 .network-flow {
   .grid {
-    --columns: 4 !important;
     @include respond-to("large and up") {
       grid-column-gap: rem(56px);
     }
@@ -452,8 +451,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
           }
         }
       }
-    }
-    
+    } 
   }
 }
 </style>

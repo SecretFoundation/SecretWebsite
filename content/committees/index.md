@@ -198,4 +198,41 @@ Disseminating and amplifying relevant content.
 
 </committee-card>
 
+<committee-card blue>
+
+<template v-slot:header>
+
+### Website / Design
+
+Meetings
+
+Fridays, 4pm UTC
+
+[Join Meeting]()
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+- To oversee ongoing build and maintainence of scrt.network
+
+##### Goals
+
+- An ongoing website and design roadmap
+- Weekly reviews of current build and of latest Figma's
+- An engaged group of members that represents the community as a whole
+
+##### Responsibilities
+
+- Provide a link between the broader community and the website developers and designers
+- Provide ideation and feedback for developers and designers
+- Provide community endorsement for website and design initiatives, both volunteer and paid
+- Provide oversight of community fund spends for the website
+
+</template>
+
+</committee-card>
+
 </card-holder>

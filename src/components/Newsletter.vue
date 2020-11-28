@@ -29,6 +29,10 @@
     text-align: center;
   }
 
+  p {
+    font-family: $text-font;
+  }
+
   span {
     text-decoration: underline;
   }
@@ -66,6 +70,7 @@
     }
 
     input[type=submit] {
+      -webkit-appearance: none;
       padding: $gutter;
       background-color: $primary-purple-color;
       color: white;

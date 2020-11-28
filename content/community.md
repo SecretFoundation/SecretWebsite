@@ -26,7 +26,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/forum-black.svg"></g-image>
 
@@ -42,7 +42,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/discord-black.svg"></g-image>
 
@@ -58,7 +58,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/telegram-black.svg"></g-image>
 
@@ -74,7 +74,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/twitter-black.svg"></g-image>
 
@@ -90,7 +90,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/youtube-black.svg"></g-image>
 
@@ -106,7 +106,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <template v-slot:icon>
 
-<themed-image class="community-icon">
+<themed-image>
 
 <g-image light light-colored src="../src/assets/community-icons/github-black.svg"></g-image>
 
@@ -119,6 +119,120 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 </community-card>
 
 </card-holder>
+
+<slim-column>
+
+### Secret Agents
+
+Here are a few of our Secret Network Agents:
+
+<grid columns="5" class="agents-grid">
+
+<grid-item name="Mohammed" tag="Canada" tagTwo="" to="" src="agents/Mohammed - Canada.png">
+
+</grid-item>
+
+<grid-item name="Taariq" tag="South Africa" tagTwo="" to="" src="agents/Taariq - South Africa.png">
+
+</grid-item>
+
+<grid-item name="Brendan" tag="USA" tagTwo="" to="" src="agents/Brendan - USA.png" >
+
+</grid-item>
+
+<grid-item name="Ian" tag="Delta Quadrant" tagTwo="" to="" src="agents/Ian - Delta Quadrant.png">
+
+</grid-item>
+
+<grid-item name="Laura" tag="USA" tagTwo="" to="" src="agents/Laura - USA.png">
+
+</grid-item>
+
+<grid-item name="Vlad" tag="Russia" tagTwo="" to="" src="agents/Vlad - Russia.png">
+
+</grid-item>
+
+<grid-item name="Rina" tag="Russia" tagTwo="" to="" src="agents/Rina - Russia.png">
+
+</grid-item>
+
+<grid-item name="Vladimir" tag="Planet Earth" tagTwo="" to="" src="agents/Vladimir - Planet Earth.png">
+
+</grid-item>
+
+<grid-item name="James" tag="USA" tagTwo="" to="" src="agents/James - USA.png">
+
+</grid-item>
+
+<grid-item name="Josh" tag="UK" tagTwo="" to="" src="agents/Josh - UK.png">
+
+</grid-item>
+
+<grid-item name="Robin" tag="Switzerland" tagTwo="" to="" src="agents/Robin - Switzerland.png">
+
+</grid-item>
+
+<grid-item name="Eckhard" tag="Norway" tagTwo="" to="" src="agents/Eckhard - Norway.png">
+
+</grid-item>
+
+<grid-item name="Marcel" tag="Germany" tagTwo="" to="" src="agents/Marcel - Germany.png" >
+
+</grid-item>
+
+<grid-item name="Julian" tag="Switzerland" tagTwo="" to="" src="agents/Julian - Switzerland.png">
+
+</grid-item>
+
+<grid-item name="Zach" tag="USA" tagTwo="" to="" src="agents/Zach - USA.png">
+
+</grid-item>
+
+</grid>
+
+</slim-column>
+
+<single-column>
+
+<twin-columns class="sharing-secrets">
+
+<template v-slot:left>
+
+## Sharing Secrets Podcast
+
+Sharing Secrets - a new series from the Secret Foundation - explores the biggest secrets of the blockchain and cryptocurrency space. Hosted by Tor Bair, Sharing Secrets features everything from interviews, to monologues, to special guests, to technical explainers, to surprises, and beyond.
+
+</template>
+
+<template v-slot:right>
+
+<next-button tag="See more" to="/podcast">
+
+</next-button>
+
+</template>
+
+</twin-columns>
+
+</single-column>
+
+<single-column>
+
+<template>
+
+<grid columns="3">
+
+<media-card tag="podcast" title="Ep 10 - Brittany Kaiser - Cambridge Analytica & Own Your Data" src="media/image9.png" to="https://soundcloud.com/sharing-secrets/ep-10-brittany-kaiser-cambridge-analytica-own-your-data" cta="Listen Now"></media-card>
+
+<media-card tag="podcast" title="Ep 9 - Jamie Burke - Outlier Ventures" src="media/image9.png" to="https://soundcloud.com/sharing-secrets/ep-9-jamie-burke-outlier-ventures" cta="Listen Now"></media-card>
+
+<media-card tag="podcast" title="Ep 8 - RAC - Grammy Winning Musician" src="media/image9.png" to="https://soundcloud.com/sharing-secrets/ep-8-rac-grammy-winning-musician" cta="Listen Now"></media-card>
+
+</grid>
+
+</template>
+
+</single-column>
 
 <slim-column>
 
@@ -172,6 +286,79 @@ There is no more consequential way to get involved with Secret Network than to j
         .community-card__name {
             h4 {
                 color: white;
+            }
+        }
+    }
+}
+.agents-grid {
+    grid-row-gap: $gutter !important;
+    grid-column-gap: $gutter !important;
+    @include respond-to("medium and down") {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .grid-item {
+        border: 0 !important;
+        &__hover {
+            @include respond-to("medium") {
+                padding: $gutter 10px;
+            }
+            @include respond-to("small") {
+                padding: $gutter 10px;
+            }
+            @include respond-to("xsmall and down") {
+                padding: rem(5px);
+            }
+            .top, .bottom {
+                span {
+                    color: $primary-blue-color !important;
+                    @include respond-to("medium and up") {
+                        font-size: 15px;
+                    }
+                }
+                p {
+                    @include respond-to("medium and up") {
+                        font-size: 18px;
+                    }
+                }
+            } 
+        }
+    }
+}
+.twin-columns {
+    &.sharing-secrets {
+        grid-template-columns: 1fr 332px;
+        padding-bottom: 0;
+        .twins-column {
+            &--start {
+                width: 100%;
+                padding: 0;
+                justify-self: left;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            &--end {
+                width: 100%;
+                padding-right: 0;
+                text-align: right;
+            }
+        }
+        @include respond-to("medium and down") {
+            grid-template-columns: 100%;
+            grid-template-rows: auto;
+            grid-row-gap: rem(16px);
+            .twins-column {
+                &--start {
+                    width: 100%;
+                    padding: 0;
+                    justify-self: left;
+                }
+                &--end {
+                    width: 100%;
+                    padding-right: unset;
+                    padding-left: 0;
+                    text-align: left;
+                }
             }
         }
     }

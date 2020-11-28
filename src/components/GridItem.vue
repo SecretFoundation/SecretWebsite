@@ -1,15 +1,15 @@
 <template>
-  <g-link class="contributor-logo" :to="to">
-    <div class="contributor-logo__hover">
+  <g-link class="grid-item" :to="to">
+    <div class="grid-item__hover">
       <div class="top">
         <p>{{ name }}</p>
       </div>
       <div class="bottom">
-        <span :style="{ color: `var(--${color}-color)` }">{{ role }} </span>
-        <span :style="{ color: `var(--${colorTwo}-color)` }">{{ roleTwo }} </span>
+        <span :style="{ color: `var(--${color}-color)` }">{{ tag }} </span>
+        <span :style="{ color: `var(--${colorTwo}-color)` }">{{ tagTwo }} </span>
       </div>
     </div>
-    <div class="contributor-logo__image">
+    <div class="grid-item__image">
       <g-image :src="require(`!!assets-loader!@images/${src}`)"></g-image>
     </div>
   </g-link>
@@ -21,25 +21,25 @@ const colors = {
   "validator": "red",
   "wallet": "orange",
   "fund": "purple",
-  "": "yellow",
-  undefined: "black"
+  undefined: "black",
+  "": "blue"
 }
 const colorsTwo = {
   "developer": "blue",
   "validator": "red",
   "wallet": "orange",
   "fund": "purple",
-  "": "yellow",
-  undefined: "black"
+  undefined: "black",
+  "": "blue"
 }
 
 export default {
   props: {
-    role: {
+    tag: {
       type: String,
       required: false
     },
-    roleTwo: {
+    tagTwo: {
       type: String,
       required: false
     },
@@ -69,17 +69,17 @@ export default {
   },
   methods: {
     getColor() {
-      return colors[this.role.toLowerCase()]
+      return colors[this.tag.toLowerCase()]
     },
     getSecondColor() {
-      return colorsTwo[this.roleTwo.toLowerCase()]
+      return colorsTwo[this.tagTwo.toLowerCase()]
     },
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.contributor-logo {
+.grid-item {
     margin: 0;
     line-height: 0;
     width: 100%;
@@ -89,7 +89,6 @@ export default {
     &__hover {
       opacity: 0;
       border-radius: 7px;
-      padding: 3px;
       display: grid;
       grid-template-rows: repeat(2, 50%);
       position: absolute;
@@ -105,8 +104,17 @@ export default {
       @include theme(light light-colored) {
           background-color: rgba(black, 0.9);
       }
-      @include respond-to("medium and down") {
-        padding: $gutter 10px;
+      @include respond-to("large and up") {
+          padding: $gutter 10px;
+      }
+      @include respond-to("medium") {
+          padding: $gutter 10px;
+      }
+      @include respond-to("small") {
+          padding: $gutter 10px;
+      }
+      @include respond-to("xsmall and down") {
+          padding: rem(5px);
       }
       .top, .bottom {
         display: block;
@@ -116,8 +124,26 @@ export default {
           display: block;
           text-transform: uppercase;
           line-height: 1em;
-          &:nth-child(2) {
-            margin-bottom: 10px;
+          width: 100%;
+          word-break: break-word;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
+          @include respond-to("medium and up") {
+              font-size: 16px;
+          }
+          @media (min-width: 501px) and (max-width: 1007px) {
+              font-size: 15px;
+          }
+          @media (min-width: 414px) and (max-width: 500px) {
+              font-size: 12px;
+          }
+          @include respond-to("xsmall") {
+              font-size: 12px;
+          }
+          @include respond-to("xxsmall") {
+              font-size: 10px;
           }
         }
         p {
@@ -125,14 +151,29 @@ export default {
           font-weight: bold;
           color: var(--theme-bg);
           line-height: 1em;
-          @include respond-to("medium and down") {
-            p {
-              font-size: $gutter;
-            }
+          width: 100%;
+          word-break: break-word;
+          -webkit-hyphens: auto;
+          -moz-hyphens: auto;
+          -ms-hyphens: auto;
+          hyphens: auto;
+          @include respond-to("medium and up") {
+              font-size: 20px;
+          }
+          @media (min-width: 501px) and (max-width: 1007px) {
+              font-size: 18px;
+          }
+          @media (min-width: 414px) and (max-width: 500px) {
+              font-size: 16px;
+          }
+          @include respond-to("xsmall") {
+              font-size: 16px;
+          }
+          @include respond-to("xxsmall") {
+              font-size: 12px;
           }
         }
-      }
-      
+      } 
     }
     &__image {
         position: relative;
@@ -142,11 +183,9 @@ export default {
         }
     }
     &:hover {
-        .contributor-logo__hover {
+        .grid-item__hover {
             opacity: 1;
         }
-    }
-    @include respond-to("medium and down") {
     }
 }
 </style>

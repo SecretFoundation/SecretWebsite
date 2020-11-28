@@ -7,13 +7,15 @@
     </template>
     <slim-column>
       <blog-author>
-        <g-image picture :src="$page.post.primary_author.profile_image"></g-image>
+        <g-image picture v-if="$page.post.primary_author.profile_image" :src="$page.post.primary_author.profile_image"></g-image>
+        <g-image picture v-else src="@/assets/scrt-logo.png"></g-image>
         <div info>
           <div>{{ $page.post.primary_author.name }}</div>
           <div>{{ $page.post.date }} &#8226; {{ $page.post.reading_time }} min read</div>
         </div>
       </blog-author>
       <hr>
+      <g-image class="cover-image" picture :src="$page.post.coverImage"></g-image>
       <div class="post__content" v-html="$page.post.content"></div>
     </slim-column>
   </blog-entry-layout>
@@ -46,15 +48,42 @@ export default {
 
 <style lang="scss">
 .post {
+  .slim-column {
+    @include respond-to("xlarge and up") {
+      width: 900px;
+    }
+    @include respond-to("large") {
+      width: 750px;
+    }
+    @include respond-to("medium") {
+      width: 500px;
+    }
+  }
+  .blog-hero {
+    &__content {
+      p {
+        line-height: rem(32px);
+      }
+    }
+  }
   p {
     font-family: $secondary-text-font;
-    line-height: rem(32px);
+    line-height: 2.5rem;
   }
   a {
     text-decoration: none;
     word-break: break-word;
   }
+  .cover-image {
+    margin: rem(16px) 0 rem(32px) 0;
+  }
   &__content {
+    h2 {
+      margin: 50px 0 16px 0;
+    }
+    h3 {
+      margin: 36px 0 24px 0;
+    }
     iframe {
       width: 100%;
     }
@@ -69,57 +98,79 @@ export default {
           color: $primary-blue-color;
         }
       }
+      code {
+        line-height: 1em;
+        padding: 3px 5px;
+        font-size: .8em;
+        border-radius: 3px;
+        font-family: monospace, monospace;
+        white-space: pre-wrap;
+        word-break: break-word;
+        overflow-x: auto;
+        @include theme(dark dark-colored) {
+          background-color: #F2F2F2;
+          color: $primary-black-color;
+        }
+        @include theme(light light-colored) {
+          background-color: $primary-black-color;
+          color: white;
+        }
+      }
     }
     pre {
+      background-color: $primary-black-color;
+      border: 1px solid black;
       white-space: pre;
       word-break: break-word;
       overflow-x: auto;
       width: min-content;
       max-width: 100%;
-      margin: rem(25px) 0;
+      margin: 0 30px $gutter-large 20px;
       padding: $gutter;
-      border: 1px solid black;
-      background-color: $primary-black-color;
       border-radius: 3px;
       line-height: 1.5em;
+      @include theme(dark dark-colored) {
+        background-color: #F2F2F2;
+      }
+      @include theme(light light-colored) {
+        background-color: $primary-black-color;
+      }
       @include respond-to("large and up") {
-        max-width: calc(#{$slim-column-width-xlarge} - 64px);
+        width: 100%;
+        max-width: calc(858px - 40px);
       }
       @media (min-width: 1008px) and (max-width: 1199px) {
-        max-width: calc(#{$slim-column-width-large} - 64px);
+        width: 100%;
+        max-width: calc(708px - 40px);
       }
       @include respond-to("medium") {
-        max-width: calc(#{$slim-column-width-medium} - 32px);
+        width: 100%;
+        max-width: calc(458px - 40px);
       } 
       @include respond-to("small") {
-        max-width: calc(414px - 64px);
+        max-width: calc(415px - 40px);
       }
-      @include respond-to("xsmall and down") {
-        max-width: calc(375px - 64px);
+      @include respond-to("xsmall") {
+        max-width: calc(333px - 40px);
+      }
+      @media (min-width: 320px) and (max-width: 374px) {
+        max-width: calc(275px - 40px);
       }
       code {
         font-family: monospace, monospace;
-        color: white;
-      }
-    }
-    p {
-      code {
-        background-color: $primary-black-color;
-        line-height: 1em;
-        padding: 2px 5px;
-        font-size: .8em;
-        border-radius: 3px;
-        font-family: monospace, monospace;
-        color: white;
-        white-space: pre-wrap;
-        word-break: break-word;
-        overflow-x: auto;
+        @include theme(dark dark-colored) {
+          color: $primary-black-color;
+        }
+        @include theme(light light-colored) {
+          color: white;
+        }
       }
     }
     ul, ol {
       padding-left: 1.3em;
       li {
         font-family: $secondary-text-font;
+        line-height: $paragraph-line-height;
       }
     }
     ul {
@@ -134,6 +185,16 @@ export default {
           -webkit-filter: invert(100%);
           filter: invert(100%);
         }
+      }
+    }
+    blockquote {
+      font-family: $secondary-text-font;
+      font-size: 22px;
+      font-style: italic;
+      @include respond-to("small and down") {
+        word-break: break-word;
+        font-size: 20px;
+        margin: 0;
       }
     }
   }
@@ -153,6 +214,11 @@ export default {
   width: 100%;
 }
 .kg-bookmark {
+  &-card {
+    width: 100%;
+    padding: 0 30px 0 20px;
+    margin-bottom: $gutter-large;
+  }
   &-container {
     display: grid;
     box-shadow: 0 0 1px var(--theme-fg);
@@ -204,6 +270,24 @@ export default {
     -webkit-line-clamp: 2; /* number of lines to show */
     -webkit-box-orient: vertical;
   }
+  &-metadata {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: rem(337px);
+    @include respond-to("medium and down") {
+      max-width: 100%;
+      white-space: unset;
+      overflow: unset;
+      text-overflow: unset;
+    }
+  }
+  &-author {
+    &:after {
+      content: "•";
+      margin-left: $gutter-xsmall;
+    }
+  }
   &-thumbnail {
     position: relative;
     min-width: 33%;
@@ -231,10 +315,6 @@ export default {
         border-radius: 3px 3px 0 0;
       }
     }
-  }
-  &-author:after {
-    content: "•";
-    margin-left: $gutter-xsmall;
   }
   &-metadata {
     @include respond-to("large and up") {

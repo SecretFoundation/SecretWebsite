@@ -159,6 +159,7 @@ $-card-min-height: 415px;
   @include respond-to("small and down") {
     width: 100%;
     grid-template-rows: auto;
+    height: auto;
     &__image {
       img {
         width: 100%;

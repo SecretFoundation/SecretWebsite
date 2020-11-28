@@ -38,7 +38,11 @@ const colors = {
   "privacy": "purple",
   "secret apps": "green",
   "solutions": "green",
-  "": "blue"
+  "ecosystem": "red",
+  "staking": "peach",
+  "": "blue",
+  null: "blue",
+  undefined: "blue"
 }
 
 export default {
@@ -79,6 +83,7 @@ $-card-min-height: 487px;
   border: 3px solid;
   border-color: var(--theme-fg);
   border-radius: $gutter;
+  width: 100%;
   height: 100%;
   min-height: rem($-card-min-height);
   transition: 0.5s ease;

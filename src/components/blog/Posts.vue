@@ -6,7 +6,8 @@
       <separator small space-small></separator>
       <p>{{ node.description | truncate }}</p>
       <template #footer>
-        <g-image picture :src="node.primary_author.profile_image"></g-image>
+        <g-image picture v-if="node.primary_author.profile_image" :src="node.primary_author.profile_image"></g-image>
+        <g-image picture v-else src="@/assets/scrt-logo.png"></g-image>
         <div info>
           <div>{{ node.primary_author.name }}</div>
           <div>{{ node.date }} &#8226; {{ node.reading_time }} min read</div>

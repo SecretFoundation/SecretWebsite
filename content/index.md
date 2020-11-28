@@ -82,13 +82,9 @@ Blockchains are public by default. That means that all the data used in smart co
 
 Learn about some of the critical applications being built on Secret Network - and how you can get involved. Help us drive adoption of decentralized finance with security, privacy, and fairness!
 
-<g-link to="/blog/secret-2020-defi/" class="read-more-button">
+<next-button class="turquoise" tag="Read more" to="/blog/secret-2020-defi/">
 
-<span>Read more</span>
-
-<g-image src="../src/assets/arrow-right-turquoise.svg"></g-image>
-
-</g-link>
+</next-button>
 
 </template>
 
@@ -106,9 +102,9 @@ Read, watch and absorb the secrets that we publish in<br/>our official blog.
 
 <template v-slot:right>
 
-<blue-button tag="Unveil more secrets" to="/blog">
+<next-button tag="Unveil more secrets" to="/blog">
 
-</blue-button>
+</next-button>
 
 </template>
 
@@ -130,13 +126,9 @@ Read, watch and absorb the secrets that we publish in<br/>our official blog.
 
 The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
 
-<g-link to="https://scrt.network/blog/upgrade-complete-secret-contracts-live-mainnet" class="read-more-button">
+<next-button class="turquoise" tag="Read more" to="/blog/upgrade-complete-secret-contracts-live-mainnet">
 
-<span>Read more</span>
-
-<g-image src="../src/assets/arrow-right-turquoise.svg"></g-image>
-
-</g-link>
+</next-button>
 
 </template>
 
@@ -158,9 +150,9 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
 
 <template v-slot:right>
 
-<blue-button tag="View all media" to="/media">
+<next-button tag="View all media" to="/media">
 
-</blue-button>
+</next-button>
 
 </template>
 
@@ -211,9 +203,14 @@ The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Net
     p {
       margin: 0;
     }
-    .blue-button {
+    .next-button {
       margin: 0;
     }
+  }
+  @include respond-to("medium and down") {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-row-gap: rem(16px);
   }
 }
 </style>

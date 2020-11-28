@@ -12,55 +12,63 @@ layout: ~/layouts/MainPageLayout
 
 <grid columns="4" class="logos-grid">
 
-<contributor-logo role="" roleTwo="" name="Secret Foundation" to="https://learn.scrt.network/foundation.html" src="contributors/image1.png">
+<grid-item name="Secret Foundation" tag="" tagTwo="" to="https://learn.scrt.network/foundation.html" src="contributors/image1.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="validator" roleTwo="developer" name="Secret Nodes" to="https://secretnodes.org/#/" src="contributors/image2.png">
+<grid-item name="Secret Nodes" tag="validator" tagTwo="developer" to="https://secretnodes.org/#/" src="contributors/image2.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="developer" roleTwo="" name="Enigma"  to="https://www.enigma.co/" src="contributors/image3.png" >
+<grid-item name="Enigma" tag="developer" tagTwo="" to="https://www.enigma.co/" src="contributors/image3.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="validator" roleTwo="developer" name="Chain of Secrets" to="https://chainofsecrets.org/" src="contributors/image4.png">
+<grid-item name="Chain of Secrets" tag="validator" tagTwo="developer" to="https://chainofsecrets.org/" src="contributors/image4.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="wallet" roleTwo="validator" name="Mathwallet" to="http://mathwallet.org/" src="contributors/image5.png">
+<grid-item name="Mathwallet" tag="wallet" tagTwo="validator" to="http://mathwallet.org/" src="contributors/image5.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="fund" roleTwo="validator" name="Outlier" to="https://outlierventures.io" src="contributors/image6.png">
+<grid-item name="Outlier" tag="fund" tagTwo="validator" to="https://outlierventures.io" src="contributors/image6.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="validator" roleTwo="" name="Dokia Capital" to="https://dokia.capital/" src="contributors/image7.png">
+<grid-item name="Dokia Capital" tag="validator" tagTwo="" to="https://dokia.capital/" src="contributors/image7.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="validator" roleTwo="" name="Citadel.one" to="https://citadel.one" src="contributors/image8.png">
+<grid-item name="Citadel.one" tag="validator" tagTwo="" to="https://citadel.one" src="contributors/image8.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="fund" roleTwo="" name="Fenbushi" to="https://fenbushi.vc" src="contributors/image9.png">
+<grid-item name="Fenbushi" tag="fund" tagTwo="" to="https://fenbushi.vc" src="contributors/image9.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="fund" roleTwo="" name="Hashed" to="https://hashed.com" src="contributors/image10.png">
+<grid-item name="Hashed" tag="fund" tagTwo="" to="https://hashed.com" src="contributors/image10.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="validator" roleTwo="" name="B-Harvest" to="https://bharvest.io" src="contributors/image11.png">
+<grid-item name="B-Harvest" tag="validator" tagTwo="" to="https://bharvest.io" src="contributors/image11.png">
 
-</contributor-logo>
+</grid-item>
 
-<contributor-logo role="validator" roleTwo="" name="Chorus One" to="https://chorus.one" src="contributors/image12.png">
+<grid-item name="Chorus One" tag="validator" tagTwo="" to="https://chorus.one" src="contributors/image12.png">
 
-</contributor-logo>
+</grid-item>
 
 </grid>
+
+</slim-column>
+
+<slim-column class="back-to">
+
+<back-button tag="Back to Ecosystem" to="/ecosystem/overview">
+
+</back-button>
 
 </slim-column>
 
@@ -68,6 +76,21 @@ layout: ~/layouts/MainPageLayout
 .logos-grid {
     @include respond-to("medium and down") {
         grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+.back-to {
+    width: auto;
+    text-align: center;
+    .back-button {
+      display: inline-block;
+      margin: 0 auto;
+    }
+    @include respond-to("medium and down") {
+        width: 100%;
+        .back-button {
+            margin: unset;
+            display: unset;
+        }
     }
 }
 </style>

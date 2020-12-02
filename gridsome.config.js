@@ -11,13 +11,13 @@ function addStyleResource(rule) {
     patterns: [
       path.resolve(__dirname, './src/sass/_tokens.scss'),
       path.resolve(__dirname,
-          './node_modules/@lkmx/flare/src/components/**/*.scss'),
+          './node_modules/@lkmx/flare-legacy/src/components/**/*.scss'),
       path.resolve(__dirname,
-          './node_modules/@lkmx/flare/src/functions/**/*.scss'),
+          './node_modules/@lkmx/flare-legacy/src/functions/**/*.scss'),
       path.resolve(__dirname,
-          './node_modules/@lkmx/flare/src/guides/**/*.scss'),
+          './node_modules/@lkmx/flare-legacy/src/guides/**/*.scss'),
       path.resolve(__dirname,
-          './node_modules/@lkmx/flare/src/structures/**/*.scss'),
+          './node_modules/@lkmx/flare-legacy/src/structures/**/*.scss'),
     ],
   });
 }

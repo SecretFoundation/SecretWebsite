@@ -399,6 +399,9 @@ export default {
     background-color: #1B46FF;
   }
 }
+.footer {
+  margin-top: 68px;
+}
 .custom-footer {
   a:hover {
     text-decoration: underline;

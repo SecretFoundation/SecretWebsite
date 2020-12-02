@@ -334,7 +334,6 @@ export default {
           }
         }
         &:hover {
-          transition: background-color 0.1s ease-in-out;
           @include theme(dark light) {
             background-color: var(--theme-fg);
             color: var(--theme-bg);
@@ -351,7 +350,6 @@ export default {
             }
           }
           &:before {
-            transition: background-color 300ms ease-in-out;
             opacity: 0;
           }
         }

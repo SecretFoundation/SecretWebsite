@@ -354,7 +354,6 @@ export default {
           }
         }
         &:active {
-          background-color: yellow;
           &:before {
             display: none;
           }

@@ -214,8 +214,11 @@ export default {
   width: 100%;
   iframe[src*=youtube] {
     width: 612px;
+    @include respond-to("medium") {
+      width: 100%;
+    }
   }
-  @include respond-to("medium and down") {
+  @include respond-to("small and down") {
     padding: 0 30px 0 20px;
     iframe[src*=youtube] {
       width: 100%;

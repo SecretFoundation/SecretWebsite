@@ -192,6 +192,22 @@ Here are a few of our Secret Network Agents:
 
 </slim-column>
 
+<small-announcement>
+
+<template v-slot:content>
+
+#### Committees
+
+There is no more consequential way to get involved with Secret Network than to [become a Secret Agent](https://airtable.com/shr6FPA7SW6p2gDTY) and join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem by executing Secret Missions!
+
+<next-button class="turquoise" tag="Join Us Now" to="/committees">
+
+</next-button>
+
+</template>
+
+</small-announcement>
+
 <single-column>
 
 <twin-columns class="sharing-secrets">
@@ -233,16 +249,6 @@ Sharing Secrets - a new series from the Secret Foundation - explores the biggest
 </template>
 
 </single-column>
-
-<slim-column>
-
-### Committees
-
-There is no more consequential way to get involved with Secret Network than to join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem.
-
-#### [Learn More or Join](/committees)
-
-</slim-column>
 
 <style lang="scss">
 .community-card {

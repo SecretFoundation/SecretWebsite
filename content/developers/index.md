@@ -207,6 +207,17 @@ Join Secret Network developer program to receive help from funding to support in
 </card-holder>
 
 <style lang="scss">
+#secret-network-developerbrresources {
+   @include respond-to("large and up") {
+    line-height: rem(40px);
+  }
+   @include respond-to("medium and down") {
+    font-size: rem(24px);
+  }
+  @include respond-to("medium") {
+    padding-top: rem(21px);
+  }
+}
 #how-do-i-get-started {
     margin: 0;
 }

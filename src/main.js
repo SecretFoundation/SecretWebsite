@@ -4,7 +4,7 @@ import openGraph from './config/open-graph'
 
 import './sass/index.scss'
 
-import Flare from '@lkmx/flare/src/main'
+import Flare from '@lkmx/flare-legacy/src/main'
 
 import Faq from './components/Faq'
 import Newsletter from './components/Newsletter'

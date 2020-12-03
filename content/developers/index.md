@@ -94,7 +94,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 <template v-slot:footer>
 
-<next-button tag="Read guide" to="https://build.scrt.network/validators-and-full-nodes/secret-nodes.html">
+<next-button tag="Read guide" to="https://build.scrt.network/validators-and-full-nodes/join-validator-mainnet.html">
 
 </next-button>
 
@@ -114,7 +114,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 <template v-slot:footer>
 
-<next-button tag="View code" to="https://github.com/enigmampc">
+<next-button tag="View code" to="https://github.com/enigmampc/SecretNetwork">
 
 </next-button>
 

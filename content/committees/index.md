@@ -8,6 +8,16 @@ layout: ~/layouts/MainPageLayout
 
 </template>
 
+<slim-column>
+
+Secret Network is community-governed, both on-chain and off-chain. Our mission is to scale the global adoption of open-source, privacy-centric technologies that help support human empowerment and freedom.
+
+There is no more consequential way to get involved with Secret Network than to [become a Secret Agent](https://airtable.com/shr6FPA7SW6p2gDTY) and join a Secret Committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem. Members often also run validators, build apps, do research, create educational content, organize communities and events, and much more!
+
+If you'd like to contribute to any of the below committees - or start your own - [join the official Secret Chat](https://chat.scrt.network) and [get in touch with us](https://airtable.com/shr6FPA7SW6p2gDTY) to become a Secret Agent!
+
+</slim-column>
+
 <card-holder>
 
 <committee-card orange>
@@ -20,7 +30,7 @@ Meetings
 
 Mondays, 4pm UTC
 
-[Join Meeting]()
+[Join](https://airtable.com/shr6FPA7SW6p2gDTY)
 
 </template>
 
@@ -47,79 +57,6 @@ Hackathons.
 
 </committee-card>
 
-<committee-card blue>
-
-<template v-slot:header>
-
-### Puzzle
-
-Meetings
-
-Tuesdays 4PM UTC
-(Starting Nov 10th 2020)
-
-[Join Meeting]()
-
-</template>
-
-<template v-slot:body>
-
-##### Purpose
-
-To facilitate opportunities for collaboration between the community and Puzzle. 
-
-##### Goals
-
-- Collect feedback and feature requests for Puzzle.
-- Determine the biggest pain points users are having with Puzzle.
-- Implement features that empower users, committees, and other ecosystem participants.
-
-##### Responsibilities
-
-Making sure Puzzle develpment continues to fullfil community needs.
-
-</template>
-
-</committee-card>
-
-<committee-card red>
-
-<template v-slot:header>
-
-### Governance
-
-Meetings
-
-Wednesdays, 4pm UTC
-
-[Join Meeting]()
-
-</template>
-
-<template v-slot:body>
-
-##### Purpose
-
-Facilitating coordination of Secret Network participants.
-
-##### Goals
-
-- Promoting transparent collaboration.
-- Inviting everyone to join our community.
-- Communicating about proposals, voting, etc.
-
-##### Responsibilities
-
-Making decisions cooperatively.
-
-##### Initiatives
-
-Discussing project updates and governance issues.
-
-</template>
-
-</committee-card>
-
 <committee-card green>
 
 <template v-slot:header>
@@ -130,7 +67,7 @@ Meetings
 
 Thursdays, 4pm UTC
 
-[Join Meeting]()
+[Join](https://airtable.com/shr6FPA7SW6p2gDTY)
 
 </template>
 
@@ -168,7 +105,7 @@ Meetings
 
 Mondays, 5pm UTC
 
-[Join Meeting]()
+[Join](https://airtable.com/shr6FPA7SW6p2gDTY)
 
 </template>
 
@@ -202,13 +139,85 @@ Disseminating and amplifying relevant content.
 
 <template v-slot:header>
 
+### Puzzle
+
+Meetings
+
+Tuesdays 4PM UTC
+
+[Join](https://airtable.com/shr6FPA7SW6p2gDTY)
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+To facilitate opportunities for collaboration between the community and Puzzle. 
+
+##### Goals
+
+- Collect feedback and feature requests for Puzzle.
+- Determine the biggest pain points users are having with Puzzle.
+- Implement features that empower users, committees, and other ecosystem participants.
+
+##### Responsibilities
+
+Making sure Puzzle develpment continues to fullfil community needs.
+
+</template>
+
+</committee-card>
+
+<committee-card red>
+
+<template v-slot:header>
+
+### Governance
+
+Meetings
+
+Wednesdays, 4pm UTC
+
+[Join](https://airtable.com/shr6FPA7SW6p2gDTY)
+
+</template>
+
+<template v-slot:body>
+
+##### Purpose
+
+Facilitating coordination of Secret Network participants.
+
+##### Goals
+
+- Promoting transparent collaboration.
+- Inviting everyone to join our community.
+- Communicating about proposals, voting, etc.
+
+##### Responsibilities
+
+Making decisions cooperatively.
+
+##### Initiatives
+
+Discussing project updates and governance issues.
+
+</template>
+
+</committee-card>
+
+<committee-card blue>
+
+<template v-slot:header>
+
 ### Website / Design
 
 Meetings
 
 Fridays, 4pm UTC
 
-[Join Meeting]()
+[Join](https://airtable.com/shr6FPA7SW6p2gDTY)
 
 </template>
 

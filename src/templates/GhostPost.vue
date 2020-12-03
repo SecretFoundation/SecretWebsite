@@ -180,7 +180,7 @@ export default {
       list-style: decimal;
     }
     .kg-image-card {
-      img[src*=small-black-squiggle], img[src*=Black-Squiggle-Separator] {
+      img[src*=small-black-squiggle], img[src*=Black-Squiggle-Separator], img[src*=black-squiggle] {
         @include theme(dark dark-colored) {
           -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -191,6 +191,16 @@ export default {
       font-family: $secondary-text-font;
       font-size: 22px;
       font-style: italic;
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+        @include theme(dark dark-colored) {
+          color: $secondary-turquoise-color;
+        }
+        @include theme(light light-colored) {
+          color: $primary-blue-color;
+        }
+      }
       @include respond-to("small and down") {
         word-break: break-word;
         font-size: 20px;

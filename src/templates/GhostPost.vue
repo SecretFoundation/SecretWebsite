@@ -212,6 +212,15 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  iframe[src*=youtube] {
+    width: 612px;
+  }
+  @include respond-to("medium and down") {
+    padding: 0 30px 0 20px;
+    iframe[src*=youtube] {
+      width: 100%;
+    }
+  }
 }
 .kg-bookmark {
   &-card {

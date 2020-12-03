@@ -377,6 +377,9 @@ export default {
   width: auto;
   height: rem(58px);
 }
+.footer {
+  margin-top: $header-height;
+}
 .theme-selector {
   width: rem(18px);
   height: rem(18px);

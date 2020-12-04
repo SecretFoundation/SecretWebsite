@@ -6,7 +6,7 @@
 
 <style lang="scss" scoped>
 .themed-image {
-  img {
+  img, svg {
     display: none;
 
     &[alt*=black] {

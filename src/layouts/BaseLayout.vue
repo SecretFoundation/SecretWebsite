@@ -12,7 +12,7 @@
       <g-link cream to="/about/about-secret-network">About</g-link>
       <g-link red to="/blog">Blog</g-link>
       <g-link purple to="/community">Community</g-link>
-      <g-link yellow to="https://build.scrt.network">Developers</g-link>
+      <g-link yellow to="/developers">Developers</g-link>
       <g-link orange to="/ecosystem/overview">Ecosystem</g-link>
       <g-link blue to="https://forum.scrt.network">Forum</g-link>
       <div class="social-networks__mobile">
@@ -334,7 +334,6 @@ export default {
           }
         }
         &:hover {
-          transition: background-color 0.1s ease-in-out;
           @include theme(dark light) {
             background-color: var(--theme-fg);
             color: var(--theme-bg);
@@ -351,12 +350,10 @@ export default {
             }
           }
           &:before {
-            transition: background-color 300ms ease-in-out;
             opacity: 0;
           }
         }
         &:active {
-          background-color: yellow;
           &:before {
             display: none;
           }
@@ -403,6 +400,9 @@ export default {
   &--colored {
     background-color: #1B46FF;
   }
+}
+.footer {
+  margin-top: 68px;
 }
 .custom-footer {
   a:hover {

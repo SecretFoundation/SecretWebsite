@@ -47,6 +47,10 @@
         }
         p {
           color: white;
+          a {
+            text-decoration: none;
+            color: $secondary-turquoise-color;
+          }
         }
         @media (min-width: 320px) and (max-width: 1199px) {
           width: 100%;

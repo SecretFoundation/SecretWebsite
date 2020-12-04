@@ -8,10 +8,9 @@
 <style lang="scss">
 .announcement {
   background-color: $primary-purple-color;
-  padding: 0;
+  padding-top: rem(78px);
+  padding-bottom: rem(78px);
   .twins-column {
-    padding-top: rem(78px);
-    padding-bottom: rem(78px);
     &--start {
       h4 {
         font-size: 24px;
@@ -31,10 +30,6 @@
           margin-left: 10px;
         }
       }
-    }
-    @include respond-to("medium and down") {
-      padding-top: $gutter;
-      padding-bottom: $gutter;
     }
   }
 }

@@ -222,15 +222,26 @@ export default {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 0 30px 0 20px;
   iframe[src*=youtube] {
-    width: 612px;
+    width: 100%;
+    height: rem(375px);
     @include respond-to("medium") {
-      width: 100%;
+      height: rem(235px);
     }
-  }
-  @include respond-to("small and down") {
-    padding: 0 30px 0 20px;
-    iframe[src*=youtube] {
+    @media (min-width: 600px) and (max-width: 768px) {
+      height: 380px;
+    }
+    @media (min-width: 500px) and (max-width: 599px) {
+      height: 300px;
+    }
+    @media (min-width: 414px) and (max-width: 499px) {
+      height: 235px;
+    }
+    @media (min-width: 320px) and (max-width: 413px) {
+      height: 190px;
+    }
+    @include respond-to("small and down") {
       width: 100%;
     }
   }

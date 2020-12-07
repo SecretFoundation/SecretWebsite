@@ -144,10 +144,6 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 </card>
 
-</card-holder>
-
-<card-holder columns="2">
-
 <card>
 
 <template v-slot:header>
@@ -163,6 +159,10 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 </template>
 
 </card>
+
+</card-holder>
+
+<card-holder columns="2">
 
 <card>
 

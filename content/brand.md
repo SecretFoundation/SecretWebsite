@@ -33,7 +33,7 @@ Providing privacy and protecting data is critical for empowering people, protect
 
 ## Our visual brand is humanist.
 
-<a class="white-button" href="../src/assets/SecretNetwork_BrandBook_Version01.pdf" download>Download our Brandbook</a>
+<a class="white-button" href="/static/SecretNetwork_BrandBook_Version01.pdf" download>Download our Brandbook</a>
 
 </slim-column>
 

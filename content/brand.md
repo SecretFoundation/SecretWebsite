@@ -8,7 +8,7 @@ layout: ~/layouts/MainPageLayout
 
 </template>
 
-<twin-columns>
+<twin-columns class="statements">
 
 <template v-slot:left>
 
@@ -29,23 +29,39 @@ Providing privacy and protecting data is critical for empowering people, protect
 
 </twin-columns>
 
-<slim-column>
+<slim-column class="our-brand-is">
 
-## Our visual brand is humanist.
+<h2>Our visual brand is 
+
+<section class="animated-text">
+
+<div>humanist.</div>
+
+<div>organic.</div>
+
+<div>illustrated.</div>
+
+<div>flowing.</div>
+
+<div>striking.</div>
+
+</section>
+
+</h2>
 
 <a class="white-button" href="/SecretNetwork_BrandBook_Version01.pdf" download>Download our Brandbook</a>
 
 </slim-column>
 
-<slim-column>
+<slim-column class="logo-section">
 
 ## Logo
 
 ### Icon
 
-<grid columns="2" class="logo">
+<grid columns="2" class="icon-grid">
 
-<div class="icon">
+<div class="icon-grid__image">
 
 <themed-image>
 
@@ -57,7 +73,7 @@ Providing privacy and protecting data is critical for empowering people, protect
 
 </div>
 
-<div class="text">
+<div class="icon-grid__text">
 
 The Secret S evokes a flowing network and the duality of secrets: **privacy** and **transparency**.
 
@@ -70,27 +86,47 @@ The overall shape of the S is reminiscent of a yin-yang, again reflecting the du
 
 </grid>
 
-</slim-column>
-
-<!--slim-column>
-
 ### Primary Logo
 
-<grid columns="2">
+<grid columns="2" class="logos-grid">
+
+<div class="logos-grid__item">
 
 ![Primary logo - White](../src/assets/brandbook/primary-logo-white.png)
 
+<a class="download-link" href="/logo-primary-white.svg" download>SVG</a> | <a class="download-link" href="/logo-primary-white.png" download>PNG</a>
+
+</div>
+
+<div class="logos-grid__item">
+
 ![Primary logo - Black](../src/assets/brandbook/primary-logo-black.png)
+
+<a class="download-link" href="/logo-primary-black.svg" download>SVG</a> | <a class="download-link" href="/logo-primary-black.png" download>PNG</a>
+
+</div>
 
 </grid>
 
 ### Secondary Logo
 
-<grid columns="2">
+<grid columns="2" class="logos-grid">
+
+<div class="logos-grid__item">
 
 ![Secondary logo - White](../src/assets/brandbook/secondary-logo-white.png)
 
+<a class="download-link" href="/logo-secondary-white.svg" download>SVG</a> | <a class="download-link" href="/logo-secondary-white.png" download>PNG</a>
+
+</div>
+
+<div class="logos-grid__item">
+
 ![Secondary logo - Black](../src/assets/brandbook/secondary-logo-black.png)
+
+<a class="download-link" href="/logo-secondary-black.svg" download>SVG</a> | <a class="download-link" href="/logo-secondary-black.png" download>PNG</a>
+
+</div>
 
 </grid>
 
@@ -114,59 +150,47 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 <single-column>
 
-### Analog Colors
+## Paint Swirl
 
 </single-column>
 
-<twin-columns>
+<twin-columns class="paint-swirls">
 
 <template v-slot:left>
 
-![Analog colors - White background](../src/assets/brandbook/analog-white.png)
+### Analog Colors
+
+![Analog Colors](../src/assets/brandbook/analog.png)
+
+<a class="download-link" href="/analog.svg" download>SVG</a> | <a class="download-link" href="/analog.png" download>PNG</a>
 
 </template>
 
 <template v-slot:right>
-
-![Analog colors - Black Background](../src/assets/brandbook/analog-black.png)
-
-</template>
-
-</twin-columns>
-
-<single-column>
 
 ### High Key Colors
 
-</single-column>
+![High Key Colors](../src/assets/brandbook/high-key.png)
 
-<twin-columns>
-
-<template v-slot:left>
-
-![High Key colors - White Background](../src/assets/brandbook/high-key-white.png)
-
-</template>
-
-<template v-slot:right>
-
-![High Key colors - Black Background](../src/assets/brandbook/high-key-black.png)
+<a class="download-link" href="/high-key.svg" download>SVG</a> | <a class="download-link" href="/high-key.png" download>PNG</a>
 
 </template>
 
 </twin-columns>
 
-<single-column>
+<single-column class="topographical-map-title">
 
 ### Topographical Map
 
 </single-column>
 
-<twin-columns>
+<twin-columns class="paint-swirls">
 
 <template v-slot:left>
 
 ![Topographical Map - White background](../src/assets/brandbook/topographical-white.png)
+
+<a class="download-link" href="/topographical-white.svg" download>SVG</a> | <a class="download-link" href="/topographical-white.png" download>PNG</a>
 
 </template>
 
@@ -174,17 +198,19 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 ![Topographical Map - Black Background](../src/assets/brandbook/topographical-black.png)
 
+<a class="download-link" href="/topographical-black.svg" download>SVG</a> | <a class="download-link" href="/topographical-black.png" download>PNG</a>
+
 </template>
 
 </twin-columns>
 
-<single-column>
+<single-column class="color-palette">
 
 ## Analog Colors
 
 ### Primary
 
-<grid columns="6" class="color-palette-grid">
+<grid columns="6">
 
 <color-palette class="black" hex="#1B1B1B" rgb="rgb(27, 27, 27)"></color-palette>
 
@@ -192,13 +218,9 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 </grid>
 
-</single-column>
-
-<single-column>
-
 ### Secondary
 
-<grid columns="6" class="color-palette-grid">
+<grid columns="6">
 
 <color-palette hex="#5F5F6B" rgb="rgb(95, 95, 107)"></color-palette>
 
@@ -220,13 +242,9 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 </grid>
 
-</single-column>
-
-<single-column>
-
 ### Tertiary
 
-<grid columns="6" class="color-palette-grid">
+<grid columns="6">
 
 <color-palette hex="#BCBCCC" rgb="rgb(188, 188, 204)"></color-palette>
 
@@ -250,13 +268,13 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 </single-column>
 
-<single-column>
+<single-column class="color-palette">
 
 ## High Key Colors
 
 ### Primary
 
-<grid columns="6" class="color-palette-grid">
+<grid columns="6">
 
 <color-palette class="black" hex="#1B1B1B" rgb="rgb(27, 27, 27)"></color-palette>
 
@@ -264,13 +282,9 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 </grid>
 
-</single-column>
-
-<single-column>
-
 ### Secondary
 
-<grid columns="6" class="color-palette-grid">
+<grid columns="6">
 
 <color-palette hex="#5F5F6B" rgb="rgb(95, 95, 107)"></color-palette>
 
@@ -292,13 +306,9 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 </grid>
 
-</single-column>
-
-<single-column>
-
 ### Tertiary
 
-<grid columns="6" class="color-palette-grid">
+<grid columns="6">
 
 <color-palette hex="#BCBCCC" rgb="rgb(188, 188, 204)"></color-palette>
 
@@ -320,13 +330,70 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
 
 </grid>
 
-</single-column-->
+</single-column>
 
 <style lang="scss">
-.grid {
-    &.color-palette-grid {
-        grid-column-gap: $gutter;
+.statements {
+    @include respond-to("medium and down") {
+        grid-row-gap: rem(34px);
     }
+}
+.our-brand-is {
+    h2 {
+        .animated-text {
+            display: inline-block;
+            position: relative;
+            height: rem(34px);
+        }
+        .animated-text>div {
+            opacity: 0;
+            height: 0px;
+            position: absolute;
+        }
+        .animated-text>div:nth-child(1){
+            animation: animation 10s infinite;
+            color: $primary-orange-color;
+        }
+        .animated-text>div:nth-child(2){
+            animation: animation 10s infinite;
+            animation-delay: 2s;
+            color: $primary-cream-color;
+        }
+        .animated-text>div:nth-child(3){
+            animation: animation 10s infinite;
+            animation-delay: 4s;
+            color: $primary-red-color;
+        }
+        .animated-text>div:nth-child(4){
+            animation: animation 10s infinite;
+            animation-delay: 6s;
+            color: $primary-blue-color;
+        }
+        .animated-text>div:nth-child(5){
+            animation: animation 10s infinite;
+            animation-delay: 8s;
+            color: #EDC92B;
+        }
+        @keyframes animation {
+            0% {opacity: 0; height: auto;}
+            16% {opacity: 1;}
+            33% {opacity: 0; height: 0px;}
+            100% {opacity: 0; height: 0px;}
+        }
+    }
+    @include respond-to("medium") {
+        text-align: center;
+    }
+}
+.logo-section {
+    h2 {
+        margin-bottom: rem(50px);
+    }
+    h3 {
+        margin-bottom: rem(34px);
+    }
+}
+.grid {
     .color-palette {
         &.black, &.white {
             .color-palette__color {
@@ -334,28 +401,35 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
             }
         }
     }
-    &.logo {
+    &.icon-grid {
         grid-template-columns: 148px 1fr !important;
         grid-column-gap: 34px;
         height: auto;
+        margin-bottom: rem(66px);
         @include respond-to("medium and down") {
             grid-template-columns: 100% !important;
             grid-template-rows: auto !important;
-            .avatar {
-                &__picture {
-                    width: 100%;
+            grid-row-gap: rem(34px);
+            justify-items: left;
+        }
+    }
+    &.logos-grid {
+        .logos-grid__item {
+            text-align: center;
+            margin-bottom: rem(66px);
+            p {
+                margin: 0;
+                font-weight: bold;
+                img {
+                    border: 2px solid var(--theme-fg);
                 }
-            }
-            .bio {
-                .buttons {
-                    .back-button {
-                        display: block;
-                        width: 100%;
-                        text-align: center;
+                a {
+                    text-decoration: none;
+                    @include theme(dark dark-colored) {
+                        color: $secondary-turquoise-color;
                     }
-                    &__become {
-                        display: block;
-                        width: 100%;
+                    @include theme(light light-colored) {
+                        color: $primary-blue-color;
                     }
                 }
             }
@@ -381,10 +455,56 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
     h1, h3, h4, p {
         opacity: 0.6;
     }
+    h1 {
+        margin-top: 0;
+    }
     h2 {
         &:not(:first-child) {
             opacity: 0.6;
         }
+        &:first-child {
+            margin-bottom: rem(34px);
+        }
+    }
+}
+.topographical-map-title {
+    padding-bottom: rem(8px);
+}
+#paint-swirl, #topographical-map {
+    margin-bottom: 0;
+}
+.paint-swirls {
+    h3 {
+        margin-bottom: rem(34px);
+    }
+    p {
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        img {
+            border: 2px solid var(--theme-fg);
+        }
+        a {
+            text-decoration: none;
+            @include theme(dark dark-colored) {
+                color: $secondary-turquoise-color;
+            }
+            @include theme(light light-colored) {
+                color: $primary-blue-color;
+            }
+        }
+    }
+    @include respond-to("medium and down") {
+        grid-row-gap: rem(34px);
+    }
+}
+.color-palette {
+    h2, h3 {
+        margin-bottom: rem(34px);
+    }
+    .grid {
+        grid-column-gap: $gutter;
+        margin-bottom: rem(34px);
     }
 }
 </style>

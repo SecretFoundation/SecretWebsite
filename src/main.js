@@ -27,6 +27,7 @@ import CommunityCard from './components/CommunityCard'
 import Announcement from './components/Announcement'
 import SmallAnnouncement from './components/SmallAnnouncement'
 import BackButton from './components/BackButton'
+import ColorPalette from '@/components/ColorPalette'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -58,6 +59,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Announcement', Announcement)
   Vue.component('SmallAnnouncement', SmallAnnouncement)
   Vue.component('BackButton', BackButton)
+  Vue.component('ColorPalette', ColorPalette)
 
   if (isClient) {
   }

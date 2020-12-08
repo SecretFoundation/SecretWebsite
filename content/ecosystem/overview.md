@@ -84,11 +84,11 @@ A few key network contributors are featured below.
 
 #### Announcement
 
-### Secret Network<br>Ecosystem Update:<br>October 2020
+### Secret Network<br>Ecosystem Update:<br>November 2020
 
-Read a comprehensive update on what is happening across the Secret Network ecosystem, including product and technical updates, 5 episodes of Sharing Secrets, potential community-spend proposals, and new charters by leaders of the various committees!
+As we approach the December launch of our first Secret Bridge, bringing programmable privacy to Ethereum and ERC-20s, here's a look back at an eventful November for Secret Network!
 
-<next-button class="turquoise" tag="Read more" to="/blog/secret-network-ecosystem-update-october-2020/">
+<next-button class="turquoise" tag="Read more" to="/blog/secret-network-ecosystem-update-november-2020">
 
 </next-button>
 
@@ -110,7 +110,7 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 </slim-column>
 
-<card-holder columns="2">
+<card-holder columns="3">
 
 <card>
 
@@ -144,10 +144,6 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 
 </card>
 
-</card-holder>
-
-<card-holder columns="2">
-
 <card>
 
 <template v-slot:header>
@@ -159,6 +155,26 @@ Secret Network is secured by the SCRT coin (Secret), which is used for fees, sta
 <template v-slot:footer>
 
 [Visit website](https://wallet.cosmostation.io/)
+
+</template>
+
+</card>
+
+</card-holder>
+
+<card-holder columns="2">
+
+<card>
+
+<template v-slot:header>
+
+#### Citadel.One
+
+</template>
+
+<template v-slot:footer>
+
+[Visit website](https://citadel.one/)
 
 </template>
 
@@ -261,68 +277,6 @@ You can find information on staking rewards calculations at:
 <template v-slot:footer>
 
 [Visit website](https://www.stakingrewards.com/earn/secret-network)
-
-</template>
-
-</card>
-
-</card-holder>
-
-<slim-column>
-
-### Related Content
-
-</slim-column>
-
-<card-holder columns="2">
-
-<card>
-
-<template v-slot:header>
-
-#### Community Projects
-
-</template>
-
-<template v-slot:footer>
-
-[See projects]()
-
-</template>
-
-</card>
-
-<card>
-
-<template v-slot:header>
-
-#### SGX Compliance
-
-</template>
-
-<template v-slot:footer>
-
-[See documentation](https://learn.scrt.network/sgx.html)
-
-</template>
-
-</card>
-
-</card-holder>
-
-<card-holder columns="2">
-
-<card>
-
-<template v-slot:header>
-
-#### Secret Apps
-
-</template>
-
-<template v-slot:footer>
-
-[Visit website]()
 
 </template>
 

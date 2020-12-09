@@ -380,9 +380,38 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
             33% {opacity: 0; height: 0px;}
             100% {opacity: 0; height: 0px;}
         }
+        @include respond-to("medium and down") {
+            .animated-text {
+                display: block;
+                position: relative;
+                height: rem(34px);
+            }
+        }
     }
-    @include respond-to("medium") {
+    .white-button {
+        display: block;
+        width: rem(289px);
+        margin: 0 auto;
         text-align: center;
+        border-radius: 10px;
+        padding: 10px 0;
+        color: var(--theme-bg);
+        background-color: var(--theme-fg);
+        font-weight: bold;
+        text-decoration: none;
+        @include respond-to("small and down") {
+            width: 100%;
+        }
+        @include theme(dark dark-colored) {
+            &:hover {
+                color: $primary-red-color;
+            }
+        }
+        @include theme(light light-colored) {
+            &:hover {
+                color: $primary-blue-color;
+            }
+        }
     }
 }
 .logo-section {
@@ -436,27 +465,15 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
         }
     }
 }
-.white-button {
-    display: block;
-    width: rem(289px);
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px 0;
-    color: var(--theme-bg);
-    background-color: var(--theme-fg);
-    font-weight: bold;
-    text-decoration: none;
-    @include respond-to("small and down") {
-        width: 100%;
-    }
-}
 .opaque-headings {
     h1, h3, h4, p {
         opacity: 0.6;
     }
     h1 {
         margin-top: 0;
+        @include respond-to("medium and up") {
+            white-space: nowrap;
+        }
     }
     h2 {
         &:not(:first-child) {

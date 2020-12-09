@@ -471,6 +471,9 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
     }
     h1 {
         margin-top: 0;
+        @include respond-to("medium and up") {
+            white-space: nowrap;
+        }
     }
     h2 {
         &:not(:first-child) {
@@ -478,11 +481,6 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
         }
         &:first-child {
             margin-bottom: rem(34px);
-        }
-    }
-    @include respond-to("medium and up") {
-        h1 {
-            white-space: nowrap;
         }
     }
 }

@@ -188,6 +188,30 @@ Secret Agents are community members who work alongside each other towards Secret
 
 </grid-item>
 
+<grid-item name="Jangsa" tag="Japan" tagTwo="" to="" src="agents/Jangsa - Japan.png">
+
+</grid-item>
+
+<grid-item name="Taz" tag="Earth" tagTwo="" to="" src="agents/Taz - Earth.png">
+
+</grid-item>
+
+<grid-item name="Jan" tag="Belgium" tagTwo="" to="" src="agents/Jan - Belgium.png" >
+
+</grid-item>
+
+<grid-item name="Carter" tag="USA" tagTwo="" to="" src="agents/Carter - USA.png">
+
+</grid-item>
+
+<grid-item name="Xavier" tag="France" tagTwo="" to="" src="agents/Xavier - France.png">
+
+</grid-item>
+
+<grid-item name="Dan" tag="Cayman Islands" tagTwo="" to="" src="agents/Dan - Cayman Islands.png">
+
+</grid-item>
+
 </grid>
 
 </slim-column>

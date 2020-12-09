@@ -329,7 +329,7 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
       display: none;
     }
   }
-  .card__body--unwrapped {
+  .card__body {
     padding: 0 16px 16px 16px;
     .next-button {
       display: inline-block !important;

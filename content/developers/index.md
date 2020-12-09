@@ -66,7 +66,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 </card>
 
-<card>
+<!--card>
 
 <template v-slot:header>
 
@@ -80,7 +80,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 </template>
 
-</card>
+</card-->
 
 <card>
 

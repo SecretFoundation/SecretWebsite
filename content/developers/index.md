@@ -24,7 +24,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 </single-column>
 
-<card-holder class="how-to-get-started" columns="5">
+<card-holder class="how-to-get-started" columns="4">
 
 <card>
 

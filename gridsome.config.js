@@ -42,7 +42,7 @@ module.exports = {
       use: '@gridsome/source-ghost',
       options: {
         typeName: 'Ghost',
-        baseUrl: 'https://blog.scrt.network',
+        baseUrl: 'https://blog-admin.scrt.network',
         contentKey: '74d989aa8008b1d8e3c9464b65',
       }
     },

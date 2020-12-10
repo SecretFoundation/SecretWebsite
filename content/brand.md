@@ -521,7 +521,8 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
     }
     .grid {
         grid-column-gap: $gutter;
-        margin-bottom: rem(34px);
+        grid-row-gap: $gutter;
+        margin-bottom: $gutter-xlarge;
     }
 }
 </style>

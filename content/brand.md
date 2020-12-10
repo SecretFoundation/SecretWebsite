@@ -339,6 +339,7 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
     }
 }
 .our-brand-is {
+    grid-row-gap: $gutter-xxlarge;
     h2 {
         .animated-text {
             display: inline-block;
@@ -399,7 +400,7 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
         background-color: var(--theme-fg);
         font-weight: bold;
         text-decoration: none;
-        @include respond-to("small and down") {
+        @include respond-to("xsmall and down") {
             width: 100%;
         }
         @include theme(dark dark-colored) {

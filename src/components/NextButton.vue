@@ -33,6 +33,7 @@ export default {
 <style lang="scss">
 .next-button {
   display: inline-block;
+  width: auto;
   padding: 10px $gutter;
   font-weight: bold;
   font-size: 20px;

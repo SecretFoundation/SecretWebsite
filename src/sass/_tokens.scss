@@ -7,6 +7,7 @@ $primary-blue-color: #4195C4;
 $primary-yellow-color: #F4D22A;
 $primary-red-color: #D53A2C;
 $primary-green-color: #80c483;
+$primary-white-color: #FFFFFF;
 
 $primary-colors: (
   "black": $primary-black-color,
@@ -16,7 +17,8 @@ $primary-colors: (
   "blue": $primary-blue-color,
   "yellow": $primary-yellow-color,
   "red": $primary-red-color,
-  "green": $primary-green-color
+  "green": $primary-green-color,
+  "white": $primary-white-color
 );
 
 $secondary-purple-color: #A9A7D3;

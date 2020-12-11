@@ -184,6 +184,7 @@
             <g-link to="/about/about-secret-network">About</g-link>
             <g-link to="/about/faq">FAQ</g-link>
             <g-link to="/media">Media Articles</g-link>
+            <g-link to="/brand">Brand</g-link>
           </div>
         </div>
         <div class="custom-footer__copy">

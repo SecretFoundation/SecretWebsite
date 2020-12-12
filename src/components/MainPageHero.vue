@@ -82,6 +82,8 @@ $-logo-size-mobile: 68px;
 
     @include respond-to("large and up") {
       min-width: rem(600px);
+      top: $gutter-xxlarge;
+      transform: translate(-50%, 0);
     }
   }
 

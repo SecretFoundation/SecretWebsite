@@ -146,31 +146,18 @@ The Secret Network has the requirement of running a compliant SGX enclave in ord
 CPU Support
 
 You must use a Xeon Processor that supports SGX via SPS. Here is a list of working processors. Substitute at your own risk.
-
-1. E-2276G
-2. E-2278G
-3. E-2288G
-4. E-2176G
-5. E-2178G
-6. E-2188G
-
+E-2276G, E-2278G, E-2288G, E-2176G, E-2178G, E-2188G.
 
 Motherboard Support
 
 SuperMicro motherboards.
-1. X11SCZ-F
-2. X11SCM-F
-3. X11SCZ-F
-4. X11SSL-F
+X11SCZ-F, X11SCM-F, X11SCZ-F, X11SSL-F
 
 Cloud Support
 
 Note: Not all offerings from these providers will work with SGX. Be sure to pay attention to the instance you are purchasing and if you have any questions ask in [the infrastructure room](https://chat.scrt.network/channel/infrastructure).
 
-1. Microsoft Azure Confidential Computing
-2. Alibaba Cloud (Note: Requires passport information from participants.)
-3. Psychz
-4. [Packet.net c3.small](https://www.packet.com/cloud/servers/c3-small/)
+Microsoft Azure Confidential Computing, Alibaba Cloud (Note: Requires passport information from participants.), Psychz, [Packet.net c3.small](https://www.packet.com/cloud/servers/c3-small/)
 
 
 </faq>

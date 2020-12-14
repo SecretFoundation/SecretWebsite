@@ -10,7 +10,7 @@ layout: ~/layouts/MainPageLayout
 
 <slim-column>
 
-<grid columns="4" class="logos-grid">
+<grid columns="4" class="contributors-grid">
 
 <grid-item name="Secret Foundation" tag="" tagTwo="" to="https://learn.scrt.network/foundation.html" src="contributors/image1.png">
 
@@ -73,7 +73,7 @@ layout: ~/layouts/MainPageLayout
 </slim-column>
 
 <style lang="scss">
-.logos-grid {
+.contributors-grid {
     @include respond-to("medium and down") {
         grid-template-columns: repeat(3, 1fr) !important;
     }

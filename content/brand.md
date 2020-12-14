@@ -88,9 +88,9 @@ The overall shape of the S is reminiscent of a yin-yang, again reflecting the du
 
 ### Primary Logo
 
-<grid columns="2" class="logos-grid">
+<grid columns="2" class="secret-logos-grid">
 
-<div class="logos-grid__item">
+<div class="secret-logos-grid__item">
 
 ![Primary logo - White](../src/assets/brandbook/primary-logo-white.png)
 
@@ -98,7 +98,7 @@ The overall shape of the S is reminiscent of a yin-yang, again reflecting the du
 
 </div>
 
-<div class="logos-grid__item">
+<div class="secret-logos-grid__item">
 
 ![Primary logo - Black](../src/assets/brandbook/primary-logo-black.png)
 
@@ -110,9 +110,9 @@ The overall shape of the S is reminiscent of a yin-yang, again reflecting the du
 
 ### Secondary Logo
 
-<grid columns="2" class="logos-grid">
+<grid columns="2" class="secret-logos-grid">
 
-<div class="logos-grid__item">
+<div class="secret-logos-grid__item">
 
 ![Secondary logo - White](../src/assets/brandbook/secondary-logo-white.png)
 
@@ -120,7 +120,7 @@ The overall shape of the S is reminiscent of a yin-yang, again reflecting the du
 
 </div>
 
-<div class="logos-grid__item">
+<div class="secret-logos-grid__item">
 
 ![Secondary logo - Black](../src/assets/brandbook/secondary-logo-black.png)
 
@@ -443,8 +443,8 @@ Hind Regular (400) is used body copy, and **Hind Bold (700) is used for bold bod
             justify-items: left;
         }
     }
-    &.logos-grid {
-        .logos-grid__item {
+    &.secret-logos-grid {
+        .secret-logos-grid__item {
             text-align: center;
             margin-bottom: rem(66px);
             p {

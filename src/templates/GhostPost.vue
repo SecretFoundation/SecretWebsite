@@ -88,16 +88,6 @@ export default {
       width: 100%;
     }
     p {
-      a {
-        text-decoration: underline;
-        font-weight: bold;
-        @include theme(dark dark-colored) {
-          color: $secondary-turquoise-color;
-        }
-        @include theme(light light-colored) {
-          color: $primary-blue-color;
-        }
-      }
       code {
         line-height: 1em;
         padding: 3px 5px;
@@ -191,6 +181,13 @@ export default {
       font-family: $secondary-text-font;
       font-size: 22px;
       font-style: italic;
+      @include respond-to("small and down") {
+        word-break: break-word;
+        font-size: 20px;
+        margin: 0;
+      }
+    }
+    p, li, blockquote {
       a {
         text-decoration: underline;
         font-weight: bold;
@@ -200,11 +197,6 @@ export default {
         @include theme(light light-colored) {
           color: $primary-blue-color;
         }
-      }
-      @include respond-to("small and down") {
-        word-break: break-word;
-        font-size: 20px;
-        margin: 0;
       }
     }
   }

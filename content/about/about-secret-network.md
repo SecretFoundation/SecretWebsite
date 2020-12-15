@@ -122,9 +122,13 @@ The following process describes, step by step, how a contract is submitted and a
 
 <card>
 
+<template v-slot:header>
+
 <h4 class="orange">01</h4>
 
 #### Writing
+
+</template>
 
 A developer writes "secret" smart contracts and deploys them to the Secret Network.
 
@@ -132,9 +136,13 @@ A developer writes "secret" smart contracts and deploys them to the Secret Netwo
 
 <card>
 
+<template v-slot:header>
+
 <h4 class="blue">02</h4>
 
 #### Submission
+
+</template>
 
 Users submit encrypted data to Secret Network that can’t be read by anyone else — including the node doing the computation.
 
@@ -142,9 +150,13 @@ Users submit encrypted data to Secret Network that can’t be read by anyone els
 
 <card>
 
+<template v-slot:header>
+
 <h4 class="yellow">03</h4>
 
 #### Computation
+
+</template>
 
 A "secret node" in the network performs the computation, and returns the result.
 
@@ -152,9 +164,13 @@ A "secret node" in the network performs the computation, and returns the result.
 
 <card>
 
+<template v-slot:header>
+
 <h4 class="red">04</h4>
 
 #### Verification
+
+</template>
 
 The work is verified as correct, and payment is released to the secret node that performed the work.
 
@@ -383,12 +399,13 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
       border: 1px solid var(--theme-fg) !important;
       border-radius: 10px !important;
       position: relative;
+      grid-template-rows: rem(76px) auto;
+      grid-row-gap: $gutter;
       &__header {
-         display: none;
-      }
-      &__body{
-        padding: $gutter 0;
-        h4 {
+          .separator {
+            display: none;
+          }
+          h4 {
           &.orange {
             color: $primary-orange-color;
           }
@@ -401,10 +418,16 @@ _Interested in helping expand this guide? You can [contribute to this page!](htt
           &.red {
             color: $primary-red-color;
           }
+          &:nth-child(2) {
+            margin-bottom: 0;
+          }
         }
       }
+      &__body{
+        padding: 0 0 $gutter 0;
+      }
       &__footer {
-        padding: 0;
+        display: none;
       }
       &:after {
         position: absolute;

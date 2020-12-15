@@ -37,7 +37,8 @@ $-logo-size-mobile: 68px;
     min-height: rem($-hero-tablet-height);
   }
   @include respond-to("large and up") {
-    height: rem($-hero-desktop-height);
+      height: auto;
+      padding: $gutter-xxlarge 0 53.24px 0;
   }
 
   &__cover {
@@ -59,8 +60,9 @@ $-logo-size-mobile: 68px;
         min-height: rem($-hero-tablet-height);
       }
       @include respond-to("large and up") {
-        height: rem($-hero-desktop-height);
         object-position: 0% 0%;
+          margin-top: - $gutter-xxlarge;
+          z-index: -1;
       }
     }
   }
@@ -81,7 +83,10 @@ $-logo-size-mobile: 68px;
     color: var(--theme-fg);
 
     @include respond-to("large and up") {
-      min-width: rem(600px);
+        position: unset;
+        transform: unset;
+        width: rem(600px);
+        margin: 0 auto;
     }
   }
 

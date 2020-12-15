@@ -16,7 +16,7 @@ Secret Network is currently supported by over 30 active validators as well as a 
 
 A few key network contributors are featured below.
 
-<grid columns="4" class="logos-grid">
+<grid columns="4" class="contributors-grid">
 
 <grid-item tag="" tagTwo="" name="Secret Foundation" to="https://learn.scrt.network/foundation.html" src="contributors/image1.png">
 
@@ -285,7 +285,7 @@ You can find information on staking rewards calculations at:
 </card-holder>
 
 <style lang="scss">
-.logos-grid {
+.contributors-grid {
     @include respond-to("medium and down") {
         grid-template-columns: repeat(3, 1fr) !important;
     }

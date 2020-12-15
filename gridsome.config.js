@@ -58,7 +58,12 @@ module.exports = {
   },
   transformers: {
     remark: {
-      // global remark options
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        'gridsome-plugin-remark-prismjs-all',
+      ]
     },
   },
   chainWebpack(config) {

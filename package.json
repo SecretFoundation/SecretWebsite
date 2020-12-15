@@ -14,6 +14,7 @@
     "@gridsome/vue-remark": "^0.2.5",
     "@lkmx/flare-legacy": "0.28.19",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-remark-prismjs-all": "^0.3.5",
     "typeface-hind": "^1.1.13",
     "typeface-montserrat": "^1.1.13"
   },

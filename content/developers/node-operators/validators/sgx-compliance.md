@@ -35,7 +35,7 @@ Note: Not all offerings from these providers will work with SGX. Be sure to pay 
 3. Psychz
 4. [Packet.net c3.small](https://www.packet.com/cloud/servers/c3-small/)
 
-# Non-working Hardware
+**Non-working Hardware**
 
 This is a list of hardware that does not work even though they advertise SGX support.
 

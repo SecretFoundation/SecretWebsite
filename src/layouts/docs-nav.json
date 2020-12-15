@@ -65,6 +65,10 @@
         "text":"Validators"
       },
       {
+        "href":"/developers/node-operators/validators/sgx-compliance",
+        "text":"SGX Compliance"
+      },
+      {
         "href":"/developers/node-operators/validators/setup-sgx",
         "text":"Setup SGX"
       },

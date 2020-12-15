@@ -4,11 +4,6 @@ layout: ~/layouts/DocumentationLayout
 
 **Prepare your Hardware**
 
-TEST
-```vue
-test me
-```
-
 
 If you're running a local machine and not a cloud-based VM -
 
@@ -26,7 +21,7 @@ If you're running a local machine and not a cloud-based VM -
 
 Note: `sgx_linux_x64_driver_2.6.0_602374c.bin` is the latest driver as of July 13, 2020. Please check under https://download.01.org/intel-sgx/sgx-linux/ that this is still the case. If not, please send us a PR or notify us.
 
-```
+```vue
 #! /bin/bash
 
 UBUNTUVERSION$(lsb_release -r -s | cut -d '.' -f 1)
@@ -108,7 +103,7 @@ First, make sure you have Rust installed: https://www.rust-lang.org/tools/instal
 
 *   Once Rust is installed, install the `nightly` toolchain:
     
-    ```
+    ```vue
     rustup toolchain install nightly
     
     ```
@@ -118,7 +113,7 @@ Then you can use this script (or run the commands one-by-one), which was tested 
 
 **Install SGX SDK + Driver**
 
-```
+```vue
 #! /bin/bash
 
 UBUNTUVERSION$(lsb_release -r -s | cut -d '.' -f 1)
@@ -223,7 +218,7 @@ sudo apt install -y libsgx-enclave-common libsgx-enclave-common-dev libsgx-urts 
 
 Note that sometimes after a system reboot you'll need to reinstall the driver (usually after a kernel upgrade):
 
-```
+```vue
 sudo $HOME/.sgxsdk/sgx_linux_x64_driver_*.bin
 
 ```
@@ -247,12 +242,12 @@ First, make sure you have Rust installed: https://www.rust-lang.org/tools/instal
 
 *   Once Rust is installed, install the `nightly` toolchain:
 
-```
+```vue
 rustup toolchain install nightly
 
 ```
 
-```
+```vue
 sudo apt install -y libssl-dev protobuf-compiler
 cargo +nightly install fortanix-sgx-tools sgxs-tools
 
@@ -262,7 +257,7 @@ sgx-detect
 
 Should print at the end:
 
-```
+```vue
 ✔  Able to launch enclaves
    ✔  Debug mode
    ✔  Production mode (Intel whitelisted)
@@ -273,7 +268,7 @@ You're all set to start running SGX programs!
 
 **Compiling a `hello-rust` project:**
 
-```
+```vue
 git clone --depth 1 -b v1.1.2 git@github.com:apache/incubator-teaclave-sgx-sdk.git
 
 cd incubator-teaclave-sgx-sdk/samplecode/hello-rust
@@ -286,7 +281,7 @@ cd bin
 
 Should print somting similar to this:
 
-```
+```vue
 [+] Init Enclave Successful 2!
 This is a normal world string passed into Enclave!
 This is a in-Enclave Rust string!
@@ -303,21 +298,21 @@ supported sgx
 
 To uninstall the Intel(R) SGX Driver, run:
 
-```
+```vue
 sudo /opt/intel/sgxdriver/uninstall.sh
 
 ```
 
 The above command produces no output when it succeeds. If you want to verify that the driver has been uninstalled, you can run the following, which should print `SGX Driver NOT installed`:
 
-```
+```vue
 ls /dev/isgx &>/dev/null && echo "SGX Driver installed" || echo "SGX Driver NOT installed"
 
 ```
 
 To uninstall the SGX SDK, run:
 
-```
+```vue
 sudo "$HOME"/.sgxsdk/sgxsdk/uninstall.sh
 rm -rf "$HOME/.sgxsdk"
 
@@ -325,7 +320,7 @@ rm -rf "$HOME/.sgxsdk"
 
 To uninstall the rest of the dependencies, run:
 
-```
+```vue
 sudo apt purge -y libsgx-enclave-common libsgx-enclave-common-dev libsgx-urts sgx-aesm-service libsgx-uae-service libsgx-launch libsgx-aesm-launch-plugin libsgx-ae-le
 
 ```

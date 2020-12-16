@@ -122,6 +122,30 @@ Read, watch and absorb the secrets that we publish in<br/>our official blog.
 
 #### Announcement
 
+### The Secret Ethereum Bridge is LIVE on Mainnet!
+
+Users can now get programmable privacy for their ETH and select ERC-20s. Plus: up to 2 million SCRT are expected to be available to support bridge mining and the launch of Secret DeFi!
+
+<next-button class="turquoise" tag="Read more" to="/blog/upgrade-complete-secret-contracts-live-mainnet">
+
+</next-button>
+
+</template>
+
+<template v-slot:content-right>
+
+![](../src/assets/eth-bridge.jpg)
+
+</template>
+
+</announcement>
+
+<announcement>
+
+<template v-slot:content-left>
+
+#### Announcement
+
 ### Upgrade Complete:<br>Secret Contracts are<br>LIVE on Mainnet!
 
 The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.

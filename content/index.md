@@ -140,30 +140,6 @@ Users can now get programmable privacy for their ETH and select ERC-20s. Plus: u
 
 </announcement>
 
-<announcement>
-
-<template v-slot:content-left>
-
-#### Announcement
-
-### Upgrade Complete:<br>Secret Contracts are<br>LIVE on Mainnet!
-
-The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
-
-<next-button class="turquoise" tag="Read more" to="/blog/upgrade-complete-secret-contracts-live-mainnet">
-
-</next-button>
-
-</template>
-
-<template v-slot:content-right>
-
-![](../src/assets/announcement.png)
-
-</template>
-
-</announcement>
-
 <twin-columns class="latest-media-articles">
 
 <template v-slot:left>

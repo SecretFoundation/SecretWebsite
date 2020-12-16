@@ -126,7 +126,7 @@ Read, watch and absorb the secrets that we publish in<br/>our official blog.
 
 Users can now get programmable privacy for their ETH and select ERC-20s. Plus: up to 2 million SCRT are expected to be available to support bridge mining and the launch of Secret DeFi!
 
-<next-button class="turquoise" tag="Read more" to="/blog/upgrade-complete-secret-contracts-live-mainnet">
+<next-button class="turquoise" tag="Read more" to="/blog/secret-ethereum-bridge-is-live-on-mainnet">
 
 </next-button>
 

@@ -31,6 +31,7 @@ import ColorPalette from '@/components/ColorPalette'
 
 require('typeface-hind');
 require('typeface-montserrat');
+require("gridsome-plugin-remark-prismjs-all/themes/night-owl.css");
 
 export default function (Vue, { router, head, isClient }) {
   openGraph.forEach(item => head.meta.push(item))

@@ -72,23 +72,29 @@ Blockchains are public by default. That means that all the data used in smart co
 
 </single-column>
 
-<small-announcement>
+<announcement>
 
-<template v-slot:content>
+<template v-slot:content-left>
 
 #### Announcement
 
-### SCRT 2020: Our Secret Vision for<br>Universal Finance
+### The Secret Ethereum Bridge is LIVE on Mainnet!
 
-Learn about some of the critical applications being built on Secret Network - and how you can get involved. Help us drive adoption of decentralized finance with security, privacy, and fairness!
+Users can now get programmable privacy for their ETH and select ERC-20s. Plus: up to 2 million SCRT are expected to be available to support bridge mining and the launch of Secret DeFi!
 
-<next-button class="turquoise" tag="Read more" to="/blog/secret-2020-defi/">
+<next-button class="turquoise" tag="Read more" to="/blog/secret-ethereum-bridge-is-live-on-mainnet">
 
 </next-button>
 
 </template>
 
-</small-announcement>
+<template v-slot:content-right>
+
+![](../src/assets/eth-bridge.jpg)
+
+</template>
+
+</announcement>
 
 <twin-columns class="latest-posts">
 
@@ -116,29 +122,23 @@ Read, watch and absorb the secrets that we publish in<br/>our official blog.
 
 </single-column>
 
-<announcement>
+<small-announcement>
 
-<template v-slot:content-left>
+<template v-slot:content>
 
 #### Announcement
 
-### Upgrade Complete:<br>Secret Contracts are<br>LIVE on Mainnet!
+### SCRT 2020: Our Secret Vision for<br>Universal Finance
 
-The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.
+Learn about some of the critical applications being built on Secret Network - and how you can get involved. Help us drive adoption of decentralized finance with security, privacy, and fairness!
 
-<next-button class="turquoise" tag="Read more" to="/blog/upgrade-complete-secret-contracts-live-mainnet">
+<next-button class="turquoise" tag="Read more" to="/blog/secret-2020-defi/">
 
 </next-button>
 
 </template>
 
-<template v-slot:content-right>
-
-![](../src/assets/announcement.png)
-
-</template>
-
-</announcement>
+</small-announcement>
 
 <twin-columns class="latest-media-articles">
 

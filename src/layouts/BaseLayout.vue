@@ -168,13 +168,13 @@
           </div>
           <div class="custom-footer__links">
             <h4>Documentation</h4>
-            <g-link to="/developers/introduction/overview">Overview</g-link>
-            <g-link to="/developers/node-operators/validators/validators">For Validators</g-link>
-            <g-link to="/developers/secret-contract-devs/developing-secret-contracts">For Developers</g-link>
+            <g-link to="https://build.scrt.network/">Overview</g-link>
+            <g-link to="https://build.scrt.network/validators-and-full-nodes/secret-nodes.html">For Validators</g-link>
+            <g-link to="https://build.scrt.network/dev/developing-secret-contracts.html">For Developers</g-link>
           </div>
           <div class="custom-footer__links">
             <h4>Secret Community</h4>
-            <g-link to="https://blog.scrt.network/">Secret Blog</g-link>
+            <g-link to="https://scrt.network/blog">Secret Blog</g-link>
             <g-link to="https://discord.gg/7t7PqPZFJq">Secret Chat</g-link>
             <g-link to="https://forum.scrt.network/">Secret Forum</g-link>
             <g-link to="/committees/introduction">Committees</g-link>

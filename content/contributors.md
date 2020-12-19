@@ -12,7 +12,7 @@ layout: ~/layouts/MainPageLayout
 
 <grid columns="4" class="logos-grid">
 
-<grid-item name="Secret Foundation" tag="" tagTwo="" to="https://learn.scrt.network/foundation.html" src="contributors/image1.png">
+<grid-item name="Secret Foundation" tag="" tagTwo="" to="https://scrt.network/blog/introducing-secret-foundation/" src="contributors/image1.png">
 
 </grid-item>
 

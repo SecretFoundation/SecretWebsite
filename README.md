@@ -22,7 +22,7 @@ Run the project locally
 npm run develop
 ```
 
-Usually the website is brough up at [http://localhost:8080](http://localhost:8080)
+Usually the website is brought up at [http://localhost:8080](http://localhost:8080)
 
 ### Hosted Dev Link
 https://secret-website-development.onrender.com

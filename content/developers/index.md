@@ -78,29 +78,13 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 <template v-slot:footer>
 
-<next-button tag="SecretJS" to="https://github.com/enigmampc/SecretJS-Templates">
+<next-button tag="Get started" to="https://github.com/enigmampc/SecretJS-Templates">
 
 </next-button>
 
 </template>
 
 </card>
-
-<!--card>
-
-<template v-slot:header>
-
-![Library](../../src/assets/library.svg)
-
-</template>
-
-#### Secret Contract Library
-
-<template v-slot:footer>
-
-</template>
-
-</card-->
 
 <card>
 

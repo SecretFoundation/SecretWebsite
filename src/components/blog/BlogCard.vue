@@ -40,6 +40,7 @@ const colors = {
   "solutions": "green",
   "ecosystem": "red",
   "staking": "peach",
+  "collaboration": "turquoise",
   "": "blue",
   null: "blue",
   undefined: "blue"

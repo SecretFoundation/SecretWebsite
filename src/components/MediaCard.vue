@@ -30,10 +30,15 @@ const colors = {
   "privacy": "purple",
   "secret apps": "green",
   "solutions": "green",
+  "ecosystem": "red",
+  "staking": "peach",
+  "collaboration": "turquoise",
   "": "blue",
   "podcast": "red",
   "video": "turquoise",
-  "blog post": "yellow"
+  "blog post": "yellow",
+  null: "blue",
+  undefined: "blue"
 }
 
 export default {

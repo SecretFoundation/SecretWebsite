@@ -28,9 +28,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/forum-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/forum-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/forum-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/forum-white.svg"></g-image>
 
 </themed-image>
 
@@ -44,9 +44,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/discord-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/discord-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/discord-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/discord-white.svg"></g-image>
 
 </themed-image>
 
@@ -60,9 +60,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/telegram-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/telegram-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/telegram-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/telegram-white.svg"></g-image>
 
 </themed-image>
 
@@ -76,9 +76,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/twitter-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/twitter-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/twitter-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/twitter-white.svg"></g-image>
 
 </themed-image>
 
@@ -92,9 +92,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/youtube-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/youtube-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/youtube-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/youtube-white.svg"></g-image>
 
 </themed-image>
 
@@ -108,9 +108,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/github-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/github-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/github-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/github-white.svg"></g-image>
 
 </themed-image>
 
@@ -128,87 +128,87 @@ Secret Agents are community members who work alongside each other towards Secret
 
 <grid columns="5" class="agents-grid">
 
-<grid-item name="Mohammed" tag="Canada" tagTwo="" to="" src="agents/Mohammed - Canada.png">
+<grid-item name="Mohammed" tag="Canada" tagTwo="" to="" src="grid-item/agents/Mohammed - Canada.png">
 
 </grid-item>
 
-<grid-item name="Taariq" tag="South Africa" tagTwo="" to="" src="agents/Taariq - South Africa.png">
+<grid-item name="Taariq" tag="South Africa" tagTwo="" to="" src="grid-item/agents/Taariq - South Africa.png">
 
 </grid-item>
 
-<grid-item name="Brendan" tag="USA" tagTwo="" to="" src="agents/Brendan - USA.png" >
+<grid-item name="Brendan" tag="USA" tagTwo="" to="" src="grid-item/agents/Brendan - USA.png" >
 
 </grid-item>
 
-<grid-item name="Ian" tag="Delta Quadrant" tagTwo="" to="" src="agents/Ian - Delta Quadrant.png">
+<grid-item name="Ian" tag="Delta Quadrant" tagTwo="" to="" src="grid-item/agents/Ian - Delta Quadrant.png">
 
 </grid-item>
 
-<grid-item name="Laura" tag="USA" tagTwo="" to="" src="agents/Laura - USA.png">
+<grid-item name="Laura" tag="USA" tagTwo="" to="" src="grid-item/agents/Laura - USA.png">
 
 </grid-item>
 
-<grid-item name="Vlad" tag="Russia" tagTwo="" to="" src="agents/Vlad - Russia.png">
+<grid-item name="Vlad" tag="Russia" tagTwo="" to="" src="grid-item/agents/Vlad - Russia.png">
 
 </grid-item>
 
-<grid-item name="Rina" tag="Russia" tagTwo="" to="" src="agents/Rina - Russia.png">
+<grid-item name="Rina" tag="Russia" tagTwo="" to="" src="grid-item/agents/Rina - Russia.png">
 
 </grid-item>
 
-<grid-item name="Vladimir" tag="Planet Earth" tagTwo="" to="" src="agents/Vladimir - Planet Earth.png">
+<grid-item name="Vladimir" tag="Planet Earth" tagTwo="" to="" src="grid-item/agents/Vladimir - Planet Earth.png">
 
 </grid-item>
 
-<grid-item name="James" tag="USA" tagTwo="" to="" src="agents/James - USA.png">
+<grid-item name="James" tag="USA" tagTwo="" to="" src="grid-item/agents/James - USA.png">
 
 </grid-item>
 
-<grid-item name="Josh" tag="UK" tagTwo="" to="" src="agents/Josh - UK.png">
+<grid-item name="Josh" tag="UK" tagTwo="" to="" src="grid-item/agents/Josh - UK.png">
 
 </grid-item>
 
-<grid-item name="Robin" tag="Switzerland" tagTwo="" to="" src="agents/Robin - Switzerland.png">
+<grid-item name="Robin" tag="Switzerland" tagTwo="" to="" src="grid-item/agents/Robin - Switzerland.png">
 
 </grid-item>
 
-<grid-item name="Eckhard" tag="Norway" tagTwo="" to="" src="agents/Eckhard - Norway.png">
+<grid-item name="Eckhard" tag="Norway" tagTwo="" to="" src="grid-item/agents/Eckhard - Norway.png">
 
 </grid-item>
 
-<grid-item name="Marcel" tag="Germany" tagTwo="" to="" src="agents/Marcel - Germany.png" >
+<grid-item name="Marcel" tag="Germany" tagTwo="" to="" src="grid-item/agents/Marcel - Germany.png" >
 
 </grid-item>
 
-<grid-item name="Julian" tag="Switzerland" tagTwo="" to="" src="agents/Julian - Switzerland.png">
+<grid-item name="Julian" tag="Switzerland" tagTwo="" to="" src="grid-item/agents/Julian - Switzerland.png">
 
 </grid-item>
 
-<grid-item name="Zach" tag="USA" tagTwo="" to="" src="agents/Zach - USA.png">
+<grid-item name="Zach" tag="USA" tagTwo="" to="" src="grid-item/agents/Zach - USA.png">
 
 </grid-item>
 
-<grid-item name="Jangsa" tag="Japan" tagTwo="" to="" src="agents/Jangsa - Japan.png">
+<grid-item name="Jangsa" tag="Japan" tagTwo="" to="" src="grid-item/agents/Jangsa - Japan.png">
 
 </grid-item>
 
-<grid-item name="Taz" tag="Earth" tagTwo="" to="" src="agents/Taz - Earth.png">
+<grid-item name="Taz" tag="Earth" tagTwo="" to="" src="grid-item/agents/Taz - Earth.png">
 
 </grid-item>
 
-<grid-item name="Jan" tag="Belgium" tagTwo="" to="" src="agents/Jan - Belgium.png" >
+<grid-item name="Jan" tag="Belgium" tagTwo="" to="" src="grid-item/agents/Jan - Belgium.png" >
 
 </grid-item>
 
-<grid-item name="Carter" tag="USA" tagTwo="" to="" src="agents/Carter - USA.png">
+<grid-item name="Carter" tag="USA" tagTwo="" to="" src="grid-item/agents/Carter - USA.png">
 
 </grid-item>
 
-<grid-item name="Xavier" tag="France" tagTwo="" to="" src="agents/Xavier - France.png">
+<grid-item name="Xavier" tag="France" tagTwo="" to="" src="grid-item/agents/Xavier - France.png">
 
 </grid-item>
 
-<grid-item name="Dan" tag="Cayman Islands" tagTwo="" to="" src="agents/Dan - Cayman Islands.png">
+<grid-item name="Dan" tag="Cayman Islands" tagTwo="" to="" src="grid-item/agents/Dan - Cayman Islands.png">
 
 </grid-item>
 
@@ -262,11 +262,11 @@ Sharing Secrets - a new series from the Secret Foundation - explores the biggest
 
 <grid columns="3">
 
-<media-card tag="podcast" title="Ep 10 - Brittany Kaiser - Cambridge Analytica & Own Your Data" src="media/image9.png" to="https://soundcloud.com/sharing-secrets/ep-10-brittany-kaiser-cambridge-analytica-own-your-data" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Ep 10 - Brittany Kaiser - Cambridge Analytica & Own Your Data" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-10-brittany-kaiser-cambridge-analytica-own-your-data" cta="Listen Now"></media-card>
 
-<media-card tag="podcast" title="Ep 9 - Jamie Burke - Outlier Ventures" src="media/image9.png" to="https://soundcloud.com/sharing-secrets/ep-9-jamie-burke-outlier-ventures" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Ep 9 - Jamie Burke - Outlier Ventures" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-9-jamie-burke-outlier-ventures" cta="Listen Now"></media-card>
 
-<media-card tag="podcast" title="Ep 8 - RAC - Grammy Winning Musician" src="media/image9.png" to="https://soundcloud.com/sharing-secrets/ep-8-rac-grammy-winning-musician" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Ep 8 - RAC - Grammy Winning Musician" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-8-rac-grammy-winning-musician" cta="Listen Now"></media-card>
 
 </grid>
 

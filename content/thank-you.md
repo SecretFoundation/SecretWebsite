@@ -30,9 +30,9 @@ You've been added to our mailing list and will now be among the first to hear ab
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/forum-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/forum-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/forum-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/forum-white.svg"></g-image>
 
 </themed-image>
 
@@ -46,9 +46,9 @@ You've been added to our mailing list and will now be among the first to hear ab
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/discord-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/discord-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/discord-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/discord-white.svg"></g-image>
 
 </themed-image>
 
@@ -62,9 +62,9 @@ You've been added to our mailing list and will now be among the first to hear ab
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/telegram-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/telegram-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/telegram-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/telegram-white.svg"></g-image>
 
 </themed-image>
 
@@ -78,9 +78,9 @@ You've been added to our mailing list and will now be among the first to hear ab
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/twitter-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/twitter-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/twitter-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/twitter-white.svg"></g-image>
 
 </themed-image>
 
@@ -94,9 +94,9 @@ You've been added to our mailing list and will now be among the first to hear ab
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/youtube-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/youtube-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/youtube-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/youtube-white.svg"></g-image>
 
 </themed-image>
 
@@ -110,9 +110,9 @@ You've been added to our mailing list and will now be among the first to hear ab
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/community-icons/github-black.svg"></g-image>
+<g-image light light-colored src="./img/community-card/github-black.svg"></g-image>
 
-<g-image dark dark-colored src="../src/assets/community-icons/github-white.svg"></g-image>
+<g-image dark dark-colored src="./img/community-card/github-white.svg"></g-image>
 
 </themed-image>
 

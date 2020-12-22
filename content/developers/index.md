@@ -24,7 +24,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 </single-column>
 
-<card-holder class="how-to-get-started" columns="4">
+<card-holder class="how-to-get-started" columns="5">
 
 <card>
 
@@ -59,6 +59,26 @@ Use Secret Contracts to build decentralized applications with improved usability
 <template v-slot:footer>
 
 <next-button tag="Read guide" to="https://github.com/enigmampc/secret-contracts-guide">
+
+</next-button>
+
+</template>
+
+</card>
+
+<card>
+
+<template v-slot:header>
+
+![Library](../../src/assets/manual-guide.svg)
+
+</template>
+
+#### Secret App Quickstarts
+
+<template v-slot:footer>
+
+<next-button tag="SecretJS" to="https://github.com/enigmampc/SecretJS-Templates">
 
 </next-button>
 

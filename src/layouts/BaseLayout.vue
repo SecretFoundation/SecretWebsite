@@ -1,5 +1,6 @@
 <template>
   <simple-layout>
+    <alert-bar @clicked="closeAlertBar()" v-show="alertBarVisible"></alert-bar>
     <template #logo>
       <g-link to="/">
         <themed-image>
@@ -204,6 +205,7 @@ export default {
       theme: null,
       darkLightModeState: false, // false is dark
       coloredModeState: false, // false is not activated
+      alertBarVisible: true
     }
   },
   created() {
@@ -236,6 +238,9 @@ export default {
       const [body] = document.getElementsByTagName('body')
       if (!body) return
       body.setAttribute('theme', theme)
+    },
+    closeAlertBar() {
+      this.alertBarVisible = !this.alertBarVisible
     }
   }
 }

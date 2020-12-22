@@ -70,7 +70,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 <template v-slot:header>
 
-![Library](../../src/assets/manual-guide.svg)
+![Library](../../src/assets/library.svg)
 
 </template>
 

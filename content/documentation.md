@@ -387,10 +387,10 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
           display: inline-block;
         }
         .hot-pink {
-          color: #FF144E;
+          color: $high-key-pink-color;
         }
         .purple {
-          color: #7A5CD6;
+          color: $high-key-purple-color;
         }
       }
     }

@@ -30,17 +30,8 @@ $-logo-size-mobile: 68px;
   position: relative;
   max-width: 100%;
 
-  @include respond-to("small and down") {
-    min-height: rem($-hero-mobile-height);
-  }
-  @include respond-to("medium") {
-    min-height: rem($-hero-tablet-height);
-  }
-  @include respond-to("large and up") {
-      height: auto;
-      padding: $gutter-xxlarge 0 53.24px 0;
-  }
-
+  height: auto;
+  padding: $gutter-xxlarge 0 53.24px 0;
   &__cover {
     img {
       position: absolute;
@@ -50,20 +41,9 @@ $-logo-size-mobile: 68px;
       object-fit: cover;
       transform: rotate(180deg);
 
-      @include respond-to("small and down") {
-        object-position: left;
-        min-height: rem($-hero-mobile-height);
-                object-position: 0% 0%;
-
-      }
-      @include respond-to("medium") {
-        min-height: rem($-hero-tablet-height);
-      }
-      @include respond-to("large and up") {
-        object-position: 0% 0%;
-          margin-top: - $gutter-xxlarge;
-          z-index: -1;
-      }
+      object-position: 0% 0%;
+      margin-top: - $gutter-xxlarge;
+      z-index: -1;
     }
   }
 
@@ -72,21 +52,21 @@ $-logo-size-mobile: 68px;
   }
 
   &__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: 4px solid;
     border-radius: 16px;
 
     background-color: var(--theme-bg);
     color: var(--theme-fg);
 
+    margin: 0 auto;
     @include respond-to("large and up") {
-        position: unset;
-        transform: unset;
         width: rem(600px);
-        margin: 0 auto;
+    }
+    @include respond-to("medium") {
+        width: rem(375px);
+    }
+    @include respond-to("small and down") {
+        width: rem(310px);
     }
   }
 
@@ -117,11 +97,9 @@ $-logo-size-mobile: 68px;
 
         @include respond-to("small and down") {
           width: rem(303px);
+          margin: 0 auto;
           // TODO Maybe pass to a token
           font-size: rem(24px);
-        }
-        @include respond-to("medium") {
-
         }
         @include respond-to("large and up") {
           font-size: rem(32px);

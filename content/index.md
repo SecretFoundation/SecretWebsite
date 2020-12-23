@@ -22,7 +22,7 @@ Blockchains are public by default. That means that all the data used in smart co
 
 <separator small />
 
-![Community](./img/learn-about-secret-network.png)
+![Community](./img/home-card/learn-about-secret-network.png)
 
 </home-card>
 
@@ -36,7 +36,7 @@ Blockchains are public by default. That means that all the data used in smart co
 
 <separator small />
 
-![Secret App](./img/join-our-community.png)
+![Secret App](./img/home-card/join-our-community.png)
 
 </home-card>
 
@@ -50,7 +50,7 @@ Blockchains are public by default. That means that all the data used in smart co
 
 <separator small />
 
-![Node Operator](./img/build-your-own-secret-app.png)
+![Node Operator](./img/home-card/build-your-own-secret-app.png)
 
 </home-card>
 
@@ -66,7 +66,7 @@ Blockchains are public by default. That means that all the data used in smart co
 
 <separator small />
 
-![Node Operator](./img/explore-the-ecosystem.png)
+![Node Operator](./img/home-card/explore-the-ecosystem.png)
 
 </home-card>
 
@@ -90,7 +90,7 @@ Users can now get programmable privacy for their ETH and select ERC-20s. Plus: u
 
 <template v-slot:content-right>
 
-![](../src/assets/eth-bridge.jpg)
+![](./img/announcement/eth-bridge.jpg)
 
 </template>
 
@@ -164,11 +164,11 @@ Learn about some of the critical applications being built on Secret Network - an
 
 <grid columns="3">
 
-<media-card tag="podcast" title="Private Smart Contracts: Anthony Pompliano" src="media/image1.png" to="https://www.youtube.com/watch?v=Kx9hb3U7pfs" cta="Watch Now"></media-card>
+<media-card tag="podcast" title="Private Smart Contracts: Anthony Pompliano" src="media-card/image1.png" to="https://www.youtube.com/watch?v=Kx9hb3U7pfs" cta="Watch Now"></media-card>
 
-<media-card tag="podcast" title="Secret Network on The Defiant Podcast" src="media/image2.png" to="https://anchor.fm/thedefiant/episodes/Privacy-Might-be-the-Only-Thing-Left-That-Makes-Web-3-0-a-Viable-Alternative-Tor-Bair-of-Secret-Foundation-el9n52" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Secret Network on The Defiant Podcast" src="media-card/image2.png" to="https://anchor.fm/thedefiant/episodes/Privacy-Might-be-the-Only-Thing-Left-That-Makes-Web-3-0-a-Viable-Alternative-Tor-Bair-of-Secret-Foundation-el9n52" cta="Listen Now"></media-card>
 
-<media-card tag="video" title="zkp-privacy Summit: Secret Contracts" src="media/privacysummit.png" to="https://www.crowdcast.io/e/zkp-privacy-summit/5" cta="Watch Now"></media-card>
+<media-card tag="video" title="zkp-privacy Summit: Secret Contracts" src="media-card/privacysummit.png" to="https://www.crowdcast.io/e/zkp-privacy-summit/5" cta="Watch Now"></media-card>
 
 </grid>
 

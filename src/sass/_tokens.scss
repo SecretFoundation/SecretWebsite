@@ -43,6 +43,26 @@ $secondary-colors: (
   "blue": $secondary-blue-color
 );
 
+$high-key-purple-color: #7A5CD6;
+$high-key-pink-color: #FF144E;
+$high-key-orange-color: #FF6510;
+$high-key-peach-color: #FFCE99;
+$high-key-yellow-color: #FFEC00;
+$high-key-green-color: #25A02B;
+$high-key-turquoise-color: #00DDBE;
+$high-key-blue-color: #00B3EA;
+
+$high-key-colors: (
+  "purple": $high-key-purple-color,
+  "pink": $high-key-pink-color,
+  "orange": $high-key-orange-color,
+  "peach": $high-key-peach-color,
+  "yellow": $high-key-yellow-color,
+  "green": $high-key-green-color,
+  "turquoise": $high-key-turquoise-color,
+  "blue": $high-key-blue-color
+);
+
 // Texts
 $text-font: 'Hind', sans-serif;
 $text-color: var(--theme-fg);

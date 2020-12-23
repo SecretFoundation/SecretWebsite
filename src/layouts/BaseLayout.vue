@@ -1,5 +1,6 @@
 <template>
-  <simple-layout>
+  <simple-layout :class="{ 'alert-open': alertBarVisible }">
+    <alert-bar @clicked="closeAlertBar()" v-show="alertBarVisible"></alert-bar>
     <template #logo>
       <g-link to="/">
         <themed-image>
@@ -204,6 +205,7 @@ export default {
       theme: null,
       darkLightModeState: false, // false is dark
       coloredModeState: false, // false is not activated
+      alertBarVisible: true
     }
   },
   created() {
@@ -236,12 +238,33 @@ export default {
       const [body] = document.getElementsByTagName('body')
       if (!body) return
       body.setAttribute('theme', theme)
+    },
+    closeAlertBar() {
+      this.alertBarVisible = !this.alertBarVisible
     }
   }
 }
 </script>
 
 <style lang="scss">
+.simple-layout {
+  @include respond-to("small and down") {
+    &.alert-open {
+      margin-top: 80px;
+      .header {
+        margin-top: 80px;
+      }
+    }
+  }
+  @include respond-to("medium and up") {
+    &.alert-open {
+      margin-top: 30px;
+      .header {
+        margin-top: 30px;
+      }
+    }
+  }
+}
 .header {
   border-bottom: 1px solid var(--theme-fg);
   .no-column {

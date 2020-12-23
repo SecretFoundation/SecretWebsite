@@ -24,13 +24,13 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 </single-column>
 
-<card-holder class="how-to-get-started" columns="4">
+<card-holder class="how-to-get-started" columns="5">
 
 <card>
 
 <template v-slot:header>
 
-![Book](../../src/assets/book.svg)
+![Book](../img/card/book.svg)
 
 </template>
 
@@ -50,7 +50,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 <template v-slot:header>
 
-![Manual guide](../../src/assets/manual-guide.svg)
+![Manual guide](../img/card/manual-guide.svg)
 
 </template>
 
@@ -66,7 +66,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 </card>
 
-<!--card>
+<card>
 
 <template v-slot:header>
 
@@ -74,19 +74,23 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 </template>
 
-#### Secret Contract Library
+#### Secret App Quickstarts
 
 <template v-slot:footer>
 
+<next-button tag="Get started" to="https://github.com/enigmampc/SecretJS-Templates">
+
+</next-button>
+
 </template>
 
-</card-->
+</card>
 
 <card>
 
 <template v-slot:header>
 
-![Run](../../src/assets/run.svg)
+![Run](../img/card/run.svg)
 
 </template>
 
@@ -106,7 +110,7 @@ Use Secret Contracts to build decentralized applications with improved usability
 
 <template v-slot:header>
 
-![Source code](../../src/assets/source-code.svg)
+![Source code](../img/card/source-code.svg)
 
 </template>
 

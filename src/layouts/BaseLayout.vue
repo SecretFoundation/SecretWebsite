@@ -1,5 +1,6 @@
 <template>
-  <secret-layout>
+  <simple-layout>
+    <alert-bar @clicked="closeAlertBar()" v-show="alertBarVisible"></alert-bar>
     <template #logo>
       <g-link to="/">
         <themed-image>
@@ -193,19 +194,18 @@
         </div>
       </single-column>
     </template>
-  </secret-layout>
+  </simple-layout>
 </template>
 
 <script>
-import SecretLayout from './SecretLayout.vue'
 export default {
-  components: { SecretLayout },
   name: 'BaseLayout',
   data() {
     return {
       theme: null,
       darkLightModeState: false, // false is dark
       coloredModeState: false, // false is not activated
+      alertBarVisible: true
     }
   },
   created() {
@@ -239,12 +239,15 @@ export default {
       if (!body) return
       body.setAttribute('theme', theme)
     },
+    closeAlertBar() {
+      this.alertBarVisible = !this.alertBarVisible
+    }
   }
 }
 </script>
 
 <style lang="scss">
-.secret-header {
+.header {
   border-bottom: 1px solid var(--theme-fg);
   .no-column {
     padding: 0 $gutter;

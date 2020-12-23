@@ -3,7 +3,7 @@
       <p class="text">
         ALERT: The ENG to SCRT swap is scheduled to close on <span>Jan 1st 2021 11pm PST</span>. For more information on your options <g-link class=“alert-link” to="https://secretnodes.org/#/ss">click here</g-link>
       </p>
-      <div class="close" v-on:click="closeBar()">X</div>
+      <div class="close" v-on:click="closeBar()">&times;</div>
   </div>
 </template>
 
@@ -51,9 +51,10 @@ export default {
   }
 
   .close{
+    font-size: 24px;
     position: absolute;
     right: 0;
-    padding: 10px;
+    padding: 12px 10px 8px 10px;
     cursor: pointer;
   }
 </style>

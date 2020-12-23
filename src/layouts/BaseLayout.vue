@@ -260,7 +260,7 @@ export default {
     &.alert-open {
       margin-top: 50px;
       .header {
-        margin-top: 60px;
+        margin-top: 50px;
       }
     }
   }

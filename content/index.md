@@ -85,6 +85,9 @@ Users can now get programmable privacy for their ETH and select ERC-20s. Plus: u
 <next-button class="turquoise" tag="Read more" to="/blog/secret-ethereum-bridge-is-live-on-mainnet">
 
 </next-button>
+<next-button class="green" tag="Try It Out!" to="https://bridge.scrt.network">
+
+</next-button>
 
 </template>
 
@@ -206,6 +209,8 @@ Learn about some of the critical applications being built on Secret Network - an
     .next-button {
       margin: 0;
     }
+    
+    
   }
   @include respond-to("medium and down") {
     grid-template-columns: 100%;

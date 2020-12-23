@@ -30,6 +30,9 @@
           margin-left: 10px;
         }
       }
+      a:nth-of-type(2) {
+        margin-left: 20px;
+      }
     }
   }
 }

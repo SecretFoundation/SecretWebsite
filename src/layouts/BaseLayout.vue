@@ -1,5 +1,5 @@
 <template>
-  <simple-layout>
+  <simple-layout :class="{ 'alert-open': alertBarVisible }">
     <alert-bar @clicked="closeAlertBar()" v-show="alertBarVisible"></alert-bar>
     <template #logo>
       <g-link to="/">
@@ -247,6 +247,24 @@ export default {
 </script>
 
 <style lang="scss">
+.simple-layout {
+  @include respond-to("small and down") {
+    &.alert-open {
+      margin-top: 80px;
+      .header {
+        margin-top: 80px;
+      }
+    }
+  }
+  @include respond-to("medium and up") {
+    &.alert-open {
+      margin-top: 30px;
+      .header {
+        margin-top: 30px;
+      }
+    }
+  }
+}
 .header {
   border-bottom: 1px solid var(--theme-fg);
   .no-column {

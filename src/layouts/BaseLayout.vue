@@ -256,7 +256,15 @@ export default {
       }
     }
   }
-  @include respond-to("medium and up") {
+  @include respond-to("medium") {
+    &.alert-open {
+      margin-top: 50px;
+      .header {
+        margin-top: 60px;
+      }
+    }
+  }
+  @include respond-to("large and up") {
     &.alert-open {
       margin-top: 30px;
       .header {

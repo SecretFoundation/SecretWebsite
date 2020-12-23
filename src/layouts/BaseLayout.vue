@@ -266,9 +266,9 @@ export default {
   }
   @include respond-to("large and up") {
     &.alert-open {
-      margin-top: 30px;
+      margin-top: 40px;
       .header {
-        margin-top: 30px;
+        margin-top: 40px;
       }
     }
   }

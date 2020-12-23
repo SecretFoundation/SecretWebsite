@@ -33,7 +33,7 @@ export default {
       padding: 0 75px;
     }
     @include respond-to("large and up") {
-      height: 30px;
+      height: 40px;
     }
     color: #FFF;
     display: flex;
@@ -47,11 +47,11 @@ export default {
       font-weight: bold;
     }
     a:link {
-      color: var(--primary-blue-color);
+      color: #00B3EA;
       font-weight: bold;
     }
     a:visited {
-      color: var(--primary-blue-color);
+      color: #00B3EA;
       font-weight: bold;
     }
   }

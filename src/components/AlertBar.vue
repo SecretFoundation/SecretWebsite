@@ -28,7 +28,11 @@ export default {
       height: 80px;
       padding: 0 30px;
     }
-    @include respond-to("medium and up") {
+    @include respond-to("medium") {
+      height: 50px;
+      padding: 0 75px;
+    }
+    @include respond-to("large and up") {
       height: 30px;
     }
     color: #FFF;

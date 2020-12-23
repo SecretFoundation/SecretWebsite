@@ -1,27 +1,25 @@
 <template>
-  <div class="bar">
+  <div class="bar" v-show="showBar">
       <p class="text">The ENG to SCRT swap is scheduled to close on Jan 1st 2021 11pm PST.</p>
       <p class="text">For more information on your options <g-link to="https://secretnodes.org/#/ss">click here</g-link>.</p>
-      <div class="close" v-on:click="closeBar()">&#10005;</div>
+      <div class="close" @click="showBar=false">&#10005;</div>
   </div>
 </template>
 
 <script>
 export default {
-  methods: {
-    closeBar () {
-      this.$emit('clicked')
+  data () {
+    return {
+      showBar: true,
     }
-  }
+  },
 }
 </script>
 
 <style lang="scss">
   .bar {
     background-color: #816DA8;
-    position: fixed;
     top: 0;
-    z-index: 10005;
     width: 100vw;
     height: auto;
     color: white;

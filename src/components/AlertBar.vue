@@ -1,7 +1,7 @@
 <template>
   <div class="bar">
       <p class="text">
-        ALERT: The ENG to SCRT swap is scheduled to close on <span>Jan 1st 2021 11pm PST</span>. For more information on your options <g-link class=“alert-link” to="https://secretnodes.org/#/ss">click here</g-link>
+        ALERT: The ENG to SCRT swap is scheduled to close on <span>Jan 1st 2021 11pm PST</span>. For more information on your options <g-link class=“alert-link” to="https://secretnodes.org/#/ss">click here</g-link>.
       </p>
       <div class="close" v-on:click="closeBar()">&times;</div>
   </div>
@@ -48,9 +48,11 @@ export default {
     }
     a:link {
       color: var(--primary-blue-color);
+      font-weight: bold;
     }
     a:visited {
       color: var(--primary-blue-color);
+      font-weight: bold;
     }
   }
 

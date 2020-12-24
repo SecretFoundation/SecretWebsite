@@ -32,7 +32,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image dark dark-colored src="../src/assets/vertical_card_dark.png" class="width__455px"></g-image>
 
-</themed-image-->
+</themed-image>
 
 <themed-image>
 
@@ -40,7 +40,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image dark dark-colored src="../src/assets/horizontal_card_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Examples
 
@@ -82,13 +82,29 @@ Media Cards are used to share media content such as videos, podcast episodes and
 
 Cards are very versatile components, composed by a header, body and footer, and can be used to describe concepts, steps or just link to other pages.
 
-<!--themed-image>
+<themed-image>
 
-<g-image light light-colored src="../src/assets/cards_light.png" class="width__570px"></g-image>
+<g-image light light-colored src="../src/assets/cards_light_A.png" class="width__570px"></g-image>
 
-<g-image dark dark-colored src="../src/assets/cards_dark.png" class="width__570px"></g-image>
+<g-image dark dark-colored src="../src/assets/cards_dark_A.png" class="width__570px"></g-image>
 
-</themed-image-->
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/cards_light_B.png" class="width__570px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/cards_dark_B.png" class="width__570px"></g-image>
+
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/cards_light_C.png" class="width__570px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/cards_dark_C.png" class="width__570px"></g-image>
+
+</themed-image>
 
 #### Example
 

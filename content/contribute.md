@@ -26,7 +26,7 @@ This website has a variety of components such as cards, buttons, announcements, 
 
 Home Cards are the main Call to Action on the Homepage. They are used as links to other pages on the website.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/vertical_card_light.png" class="width__455px"></g-image>
 
@@ -40,7 +40,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image dark dark-colored src="../src/assets/horizontal_card_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Examples
 
@@ -62,13 +62,13 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 Media Cards are used to share media content such as videos, podcast episodes and blog articles, whether it's Secret Network original content or from an external source but relates to Secret Network.
 
-<!--themed-image>
+<themed-image>
 
 <g-image light light-colored src="../src/assets/media_card_light.png" class="width__490px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/media_card_dark.png" class="width__490px"></g-image>
 
-</themed-image-->
+</themed-image>
 
 #### Example
 
@@ -82,13 +82,13 @@ Media Cards are used to share media content such as videos, podcast episodes and
 
 Cards are very versatile components, composed by a header, body and footer, and can be used to describe concepts, steps or just link to other pages.
 
-<!--themed-image>
+<themed-image>
 
 <g-image light light-colored src="../src/assets/cards_light.png" class="width__570px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/cards_dark.png" class="width__570px"></g-image>
 
-</themed-image-->
+</themed-image>
 
 #### Example
 

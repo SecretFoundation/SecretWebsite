@@ -16,7 +16,7 @@ This website has a variety of components such as cards, buttons, announcements, 
 
 </slim-column>
 
-<!--slim-column>
+<slim-column>
 
 ## Cards
 
@@ -26,9 +26,23 @@ This website has a variety of components such as cards, buttons, announcements, 
 
 Home Cards are the main Call to Action on the Homepage. They are used as links to other pages on the website.
 
-#### Examples
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/vertical_card_light.png" class="width__455px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/vertical_card_dark.png" class="width__455px"></g-image>
+
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/horizontal_card_light.png"></g-image>
+
+<g-image dark dark-colored src="../src/assets/horizontal_card_dark.png"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">vertical</div>><div>### **Learn about**<<div class="br">br</div>>Secret Network</div><<div class="hot-pink">separator small</div> />
 <div>![Community](./img/home-card/learn-about-secret-network.png)</div>
 </<div class="hot-pink">home-card</div>></code>
@@ -38,7 +52,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 <code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">horizontal</div>><div>### **Explore the**<<div class="br">br</div>>Ecosystem</div><<div class="hot-pink">separator small</div> />
 <div>![Node Operator](./img/home-card/explore-the-ecosystem.png)</div>
 </<div class="hot-pink">home-card</div>></code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -46,11 +60,17 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 Media Cards are used to share media content such as videos, podcast episodes and blog articles, whether it's Secret Network original content or from an external source but relates to Secret Network.
 
-#### Example
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/media_card_light.png" class="width__490px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/media_card_dark.png" class="width__490px"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -58,9 +78,31 @@ Media Cards are used to share media content such as videos, podcast episodes and
 
 Cards are very versatile components, composed by a header, body and footer, and can be used to describe concepts, steps or just link to other pages.
 
-#### Example
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/cards_light_A.png" class="width__570px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/cards_dark_A.png" class="width__570px"></g-image>
+
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/cards_light_B.png" class="width__570px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/cards_dark_B.png" class="width__570px"></g-image>
+
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/cards_light_C.png" class="width__570px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/cards_dark_C.png" class="width__570px"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code><<div class="hot-pink">card</div>>
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:header></div>
 <div>![Run](../img/card/run.svg)</div>
@@ -73,7 +115,7 @@ Cards are very versatile components, composed by a header, body and footer, and 
 <div></<div class="hot-pink">template</div>></div>
 <div></<div class="hot-pink">card</div>></div>
 </code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -81,9 +123,15 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 Community cards are used to link Secret Network social media and platforms where the community gets together. (e. g. Telegram, Discord, etc.)
 
-#### Example
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/community_card_light.png" class="width__455px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/community_card_dark.png" class="width__455px"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code>
 <div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
 <div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
@@ -97,7 +145,7 @@ Community cards are used to link Secret Network social media and platforms where
 <div></<div class="hot-pink">template</div>></div>
 <div></<div class="hot-pink">community-card</div>></div>
 </code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -105,16 +153,22 @@ Community cards are used to link Secret Network social media and platforms where
 
 As its name suggests, this component is part of a grid of elements such as validators, contributors, members, etc. They are used as links and when hovering over them, the name and tags are displayed.
 
-#### Example
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/grid_item_light.png" class="width__530px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/grid_item_dark.png" class="width__530px"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"</div>
 <div><div class="purple">to</div>="https://secretnodes.org/#/"</div>
 <div><div class="purple">src</div>="grid-item/contributors/image2.png"></div>
 <div></<div class="hot-pink">grid-item</div>></div></code>
-</pre>
+</pre-->
 
-</slim-column-->
+</slim-column>
 
 <slim-column>
 
@@ -134,12 +188,10 @@ Composed by a "next" arrow and a tag, used mostly to link to other pages inside 
 
 </themed-image>
 
-#### Example
-
-<pre>
+<!--pre>
 <code><<div class="hot-pink">next-button</div> <div class="purple">tag</div>="See more" <div class="purple">to</div>="/podcast">
 <div></<div class="hot-pink">next-button</div>></div></code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -147,12 +199,18 @@ Composed by a "next" arrow and a tag, used mostly to link to other pages inside 
 
 Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 
-#### Example
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/back_button_light.png" class="width__250px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/back_button_dark.png" class="width__250px"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code><<div class="hot-pink">back-button</div> <div class="purple">tag</div>="Back to Ecosystem" <div class="purple">to</div>="/ecosystem/overview">
 <div></<div class="hot-pink">back-button</div>></div></code>
-</pre>
+</pre-->
 
 </slim-column>
 
@@ -166,9 +224,15 @@ Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 
 This announcement occupies 100% of the page width and it's part of the website's layout so it's visible on every page. It's composed by the announcement text and link on the left and an image on the right.
 
-#### Example
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/large_announcement_light.png"></g-image>
+
+<g-image dark dark-colored src="../src/assets/large_announcement_dark.png"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code><<div class="hot-pink">announcement</div>>
 
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content-left></div>
@@ -188,7 +252,7 @@ This announcement occupies 100% of the page width and it's part of the website's
 <div></<div class="hot-pink">template</div>></div>
 
 <div></<div class="hot-pink">announcement</div>></div></code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -196,9 +260,15 @@ This announcement occupies 100% of the page width and it's part of the website's
 
 This announcement occupies 2/3 of the page width and it's part of the website's layout so it's visible on every page. It's composed by the announcement text and link.
 
-#### Example
+<themed-image>
 
-<pre>
+<g-image light light-colored src="../src/assets/small_announcement_light.png" class="width__620px"></g-image>
+
+<g-image dark dark-colored src="../src/assets/small_announcement_dark.png" class="width__620px"></g-image>
+
+</themed-image>
+
+<!--pre>
 <code><<div class="hot-pink">small-announcement</div>>
 
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content></div>
@@ -217,7 +287,7 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
 <div></<div class="hot-pink">template</div>></div>
 
 <div></<div class="hot-pink">small-announcement</div>></div></code>
-</pre>
+</pre-->
 
 </slim-column>
 

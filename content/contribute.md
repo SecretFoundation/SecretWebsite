@@ -90,7 +90,7 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 </themed-image>
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/cards_light_B.png" class="width__570px"></g-image>
 
@@ -104,7 +104,7 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 <g-image dark dark-colored src="../src/assets/cards_dark_C.png" class="width__570px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 

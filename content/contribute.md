@@ -44,6 +44,22 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 #### Example
 
+<themed-image>
+
+<g-image light light-colored src="../src/assets/codeblocks/vertical_card_light.png"></g-image>
+
+<g-image dark dark-colored src="../src/assets/codeblocks/vertical_card_dark.png"></g-image>
+
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/codeblocks/horizontal_card_light.png"></g-image>
+
+<g-image dark dark-colored src="../src/assets/codeblocks/horizontal_card_dark.png"></g-image>
+
+</themed-image>
+
 <hr>
 
 ### Media Cards
@@ -59,14 +75,6 @@ Media Cards are used to share media content such as videos, podcast episodes and
 </themed-image>
 
 #### Example
-
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/media_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/media_card_dark.png"></g-image>
-
-</themed-image>
 
 <hr>
 
@@ -84,14 +92,6 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 #### Example
 
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/cards_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/cards_dark.png"></g-image>
-
-</themed-image>
-
 <hr>
 
 ### Community Cards
@@ -108,14 +108,6 @@ Community cards are used to link Secret Network social media and platforms where
 
 #### Example
 
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/community_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/community_card_dark.png"></g-image>
-
-</themed-image>
-
 <hr>
 
 ### Grid Item
@@ -131,14 +123,6 @@ As its name suggests, this component is part of a grid of elements such as valid
 </themed-image>
 
 #### Example
-
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/grid_item_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/grid_item_dark.png"></g-image>
-
-</themed-image>
 
 </slim-column>
 
@@ -162,13 +146,6 @@ Composed by a "next" arrow and a tag, used mostly to link to other pages inside 
 
 #### Example
 
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/next_button_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/next_button_dark.png"></g-image>
-
-</themed-image>
 <hr>
 
 ### "Back" Button
@@ -184,14 +161,6 @@ Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 </themed-image>
 
 #### Example
-
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/back_button_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/back_button_dark.png"></g-image>
-
-</themed-image>
 
 </slim-column>
 
@@ -215,14 +184,6 @@ This announcement occupies 100% of the page width and it's part of the website's
 
 #### Example
 
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/announcement_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/announcement_dark.png"></g-image>
-
-</themed-image>
-
 <hr>
 
 ### Small Announcement
@@ -238,14 +199,6 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
 </themed-image>
 
 #### Example
-
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/small_announcement_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/small_announcement_dark.png"></g-image>
-
-</themed-image>
 
 </slim-column>
 

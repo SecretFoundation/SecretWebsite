@@ -30,9 +30,13 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image light light-colored src="../src/assets/vertical_card_light.png" class="width__455px"></g-image>
 
-<g-image light light-colored src="../src/assets/horizontal_card_light.png"></g-image>
-
 <g-image dark dark-colored src="../src/assets/vertical_card_dark.png" class="width__455px"></g-image>
+
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/horizontal_card_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/horizontal_card_dark.png"></g-image>
 

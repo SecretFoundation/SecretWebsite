@@ -84,9 +84,9 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/cards_light.png" class="width__570px"></g-image>
+<g-image light light-colored src="../src/assets/cards_light.jpg" class="width__570px"></g-image>
 
-<g-image dark dark-colored src="../src/assets/cards_dark.png" class="width__570px"></g-image>
+<g-image dark dark-colored src="../src/assets/cards_dark.jpg" class="width__570px"></g-image>
 
 </themed-image>
 

@@ -44,22 +44,6 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 #### Example
 
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/vertical_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/vertical_card_dark.png"></g-image>
-
-</themed-image>
-
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/horizontal_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/horizontal_card_dark.png"></g-image>
-
-</themed-image>
-
 <hr>
 
 ### Media Cards

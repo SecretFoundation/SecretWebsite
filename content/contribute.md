@@ -62,13 +62,13 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 Media Cards are used to share media content such as videos, podcast episodes and blog articles, whether it's Secret Network original content or from an external source but relates to Secret Network.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/media_card_light.png" class="width__490px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/media_card_dark.png" class="width__490px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 

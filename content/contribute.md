@@ -208,7 +208,7 @@ Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 
 </slim-column>
 
-<!--slim-column>
+<slim-column>
 
 ## Announcements
 
@@ -287,7 +287,7 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
 <div></<div class="hot-pink">small-announcement</div>></div></code>
 </pre>
 
-</slim-column-->
+</slim-column>
 
 <style lang="scss">
 .description {

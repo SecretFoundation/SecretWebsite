@@ -42,6 +42,8 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 </themed-image>
 
+#### Example
+
 <!--pre>
 <code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">vertical</div>><div>### **Learn about**<<div class="br">br</div>>Secret Network</div><<div class="hot-pink">separator small</div> />
 <div>![Community](./img/home-card/learn-about-secret-network.png)</div>
@@ -68,6 +70,8 @@ Media Cards are used to share media content such as videos, podcast episodes and
 
 </themed-image>
 
+#### Example
+
 <!--pre>
 <code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
 </pre-->
@@ -80,27 +84,13 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 <themed-image>
 
-<g-image light light-colored src="../src/assets/cards_light_A.png" class="width__570px"></g-image>
+<g-image light light-colored src="../src/assets/cards_light.png" class="width__570px"></g-image>
 
-<g-image dark dark-colored src="../src/assets/cards_dark_A.png" class="width__570px"></g-image>
-
-</themed-image>
-
-<themed-image>
-
-<g-image light light-colored src="../src/assets/cards_light_B.png" class="width__570px"></g-image>
-
-<g-image dark dark-colored src="../src/assets/cards_dark_B.png" class="width__570px"></g-image>
+<g-image dark dark-colored src="../src/assets/cards_dark.png" class="width__570px"></g-image>
 
 </themed-image>
 
-<themed-image>
-
-<g-image light light-colored src="../src/assets/cards_light_C.png" class="width__570px"></g-image>
-
-<g-image dark dark-colored src="../src/assets/cards_dark_C.png" class="width__570px"></g-image>
-
-</themed-image>
+#### Example
 
 <!--pre>
 <code><<div class="hot-pink">card</div>>
@@ -130,6 +120,8 @@ Community cards are used to link Secret Network social media and platforms where
 <g-image dark dark-colored src="../src/assets/community_card_dark.png" class="width__455px"></g-image>
 
 </themed-image>
+
+#### Example
 
 <!--pre>
 <code>
@@ -161,6 +153,8 @@ As its name suggests, this component is part of a grid of elements such as valid
 
 </themed-image>
 
+#### Example
+
 <!--pre>
 <code><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"</div>
 <div><div class="purple">to</div>="https://secretnodes.org/#/"</div>
@@ -188,6 +182,8 @@ Composed by a "next" arrow and a tag, used mostly to link to other pages inside 
 
 </themed-image>
 
+#### Example
+
 <!--pre>
 <code><<div class="hot-pink">next-button</div> <div class="purple">tag</div>="See more" <div class="purple">to</div>="/podcast">
 <div></<div class="hot-pink">next-button</div>></div></code>
@@ -206,6 +202,8 @@ Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 <g-image dark dark-colored src="../src/assets/back_button_dark.png" class="width__250px"></g-image>
 
 </themed-image>
+
+#### Example
 
 <!--pre>
 <code><<div class="hot-pink">back-button</div> <div class="purple">tag</div>="Back to Ecosystem" <div class="purple">to</div>="/ecosystem/overview">
@@ -231,6 +229,8 @@ This announcement occupies 100% of the page width and it's part of the website's
 <g-image dark dark-colored src="../src/assets/large_announcement_dark.png"></g-image>
 
 </themed-image>
+
+#### Example
 
 <!--pre>
 <code><<div class="hot-pink">announcement</div>>
@@ -267,6 +267,8 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
 <g-image dark dark-colored src="../src/assets/small_announcement_dark.png" class="width__620px"></g-image>
 
 </themed-image>
+
+#### Example
 
 <!--pre>
 <code><<div class="hot-pink">small-announcement</div>>

@@ -16,11 +16,11 @@ This website has a variety of components such as cards, buttons, announcements, 
 
 </slim-column>
 
-<!--slim-column>
+<slim-column>
 
 ## Cards
 
-<hr>
+<!--hr>
 
 ### Home Cards
 
@@ -50,7 +50,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 <code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">horizontal</div>><div>### **Explore the**<<div class="br">br</div>>Ecosystem</div><<div class="hot-pink">separator small</div> />
 <div>![Node Operator](./img/home-card/explore-the-ecosystem.png)</div>
 </<div class="hot-pink">home-card</div>></code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -72,7 +72,7 @@ Media Cards are used to share media content such as videos, podcast episodes and
 <code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
 </pre>
 
-<hr>
+<!--hr>
 
 ### Cards
 
@@ -101,7 +101,7 @@ Cards are very versatile components, composed by a header, body and footer, and 
 <div></<div class="hot-pink">template</div>></div>
 <div></<div class="hot-pink">card</div>></div>
 </code>
-</pre>
+</pre-->
 
 <hr>
 
@@ -135,7 +135,7 @@ Community cards are used to link Secret Network social media and platforms where
 </code>
 </pre>
 
-<hr>
+<!--hr>
 
 ### Grid Item
 
@@ -156,9 +156,9 @@ As its name suggests, this component is part of a grid of elements such as valid
 <div><div class="purple">to</div>="https://secretnodes.org/#/"</div>
 <div><div class="purple">src</div>="grid-item/contributors/image2.png"></div>
 <div></<div class="hot-pink">grid-item</div>></div></code>
-</pre>
+</pre-->
 
-</slim-column-->
+</slim-column>
 
 <slim-column>
 

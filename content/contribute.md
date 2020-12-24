@@ -26,7 +26,7 @@ This website has a variety of components such as cards, buttons, announcements, 
 
 Home Cards are the main Call to Action on the Homepage. They are used as links to other pages on the website.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/vertical_card_light.png" class="width__455px"></g-image>
 
@@ -36,7 +36,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image dark dark-colored src="../src/assets/horizontal_card_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Examples
 
@@ -58,13 +58,13 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 Media Cards are used to share media content such as videos, podcast episodes and blog articles, whether it's Secret Network original content or from an external source but relates to Secret Network.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/media_card_light.png" class="width__490px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/media_card_dark.png" class="width__490px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 
@@ -78,13 +78,13 @@ Media Cards are used to share media content such as videos, podcast episodes and
 
 Cards are very versatile components, composed by a header, body and footer, and can be used to describe concepts, steps or just link to other pages.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/cards_light.png" class="width__570px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/cards_dark.png" class="width__570px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 
@@ -109,13 +109,13 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 Community cards are used to link Secret Network social media and platforms where the community gets together. (e. g. Telegram, Discord, etc.)
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/community_card_light.png" class="width__455px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/community_card_dark.png" class="width__455px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 
@@ -141,13 +141,13 @@ Community cards are used to link Secret Network social media and platforms where
 
 As its name suggests, this component is part of a grid of elements such as validators, contributors, members, etc. They are used as links and when hovering over them, the name and tags are displayed.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/grid_item_light.png" class="width__530px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/grid_item_dark.png" class="width__530px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 
@@ -170,13 +170,13 @@ As its name suggests, this component is part of a grid of elements such as valid
 
 Composed by a "next" arrow and a tag, used mostly to link to other pages inside or outside the website.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/next_button_light.png" class="width__250px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/next_button_dark.png" class="width__250px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 
@@ -191,13 +191,13 @@ Composed by a "next" arrow and a tag, used mostly to link to other pages inside 
 
 Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/back_button_light.png" class="width__250px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/back_button_dark.png" class="width__250px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 
@@ -218,13 +218,13 @@ Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 
 This announcement occupies 100% of the page width and it's part of the website's layout so it's visible on every page. It's composed by the announcement text and link on the left and an image on the right.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/large_announcement_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/large_announcement_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 
@@ -256,13 +256,13 @@ This announcement occupies 100% of the page width and it's part of the website's
 
 This announcement occupies 2/3 of the page width and it's part of the website's layout so it's visible on every page. It's composed by the announcement text and link.
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/small_announcement_light.png" class="width__620px"></g-image>
 
 <g-image dark dark-colored src="../src/assets/small_announcement_dark.png" class="width__620px"></g-image>
 
-</themed-image>
+</themed-image-->
 
 #### Example
 

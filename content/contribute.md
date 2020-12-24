@@ -26,7 +26,7 @@ This website has a variety of components such as cards, buttons, announcements, 
 
 Home Cards are the main Call to Action on the Homepage. They are used as links to other pages on the website.
 
-<!--themed-image>
+<themed-image>
 
 <g-image light light-colored src="../src/assets/vertical_card_light.png" class="width__455px"></g-image>
 
@@ -36,7 +36,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image dark dark-colored src="../src/assets/horizontal_card_dark.png"></g-image>
 
-</themed-image-->
+</themed-image>
 
 #### Examples
 

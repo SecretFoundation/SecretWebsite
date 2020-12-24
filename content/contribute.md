@@ -135,7 +135,7 @@ Community cards are used to link Secret Network social media and platforms where
 </code>
 </pre>
 
-<hr>
+<!--hr>
 
 ### Grid Item
 
@@ -156,7 +156,7 @@ As its name suggests, this component is part of a grid of elements such as valid
 <div><div class="purple">to</div>="https://secretnodes.org/#/"</div>
 <div><div class="purple">src</div>="grid-item/contributors/image2.png"></div>
 <div></<div class="hot-pink">grid-item</div>></div></code>
-</pre>
+</pre-->
 
 </slim-column>
 

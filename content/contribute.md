@@ -156,19 +156,32 @@ Community cards are used to link Secret Network social media and platforms where
 
 #### Example
 
-<pre>
+<!--pre>
 <code>
 <div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
-<div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
+<div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord" ></div>
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:icon></div>
-<div><<div class="hot-pink">themed-image</div>></div>
+<div><<div class="hot-pink">themed-image</div>></div-->
 <!--div><<div class="hot-pink">g-image</div><div class="purple"> light light-colored</div></div>
 <div><div class="purple">src</div>="./img/community-card/discord-black.svg"></<div class="hot-pink">g-image</div>></div-->
 <!--div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">dark dark-colored</div></div-->
 <!--div><div class="purple">src</div>    ="./img/community-card/discord-white.svg"></<div class="hot-pink">g-image</div>></div-->
 <!--div></<div class="hot-pink">themed-image</div>></div-->
-<div></<div class="hot-pink">template</div>></div>
+<!--div></<div class="hot-pink">template</div>></div>
 <div></<div class="hot-pink">community-card</div>></div>
+</code>
+</pre-->
+
+<pre>
+<code>
+<<div>community-card name="Discord Chat" to="https://discord.com/invite/SJK32GY" class="discord"></div>
+<<div>template v-slot:icon></div>
+<<div>themed-image></div>
+<<div>g-image light light-colored src="./img/community-card/discord-black.svg"></g-image></div>
+<<div>g-image dark dark-colored src="./img/community-card/discord-white.svg"></g-image></div>
+</<div>themed-image></div>
+</<div>template></div></div>
+</<div>community-card></div></div>
 </code>
 </pre>
 

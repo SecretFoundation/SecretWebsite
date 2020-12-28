@@ -233,13 +233,18 @@ Composed by a "next" arrow and a tag, used mostly to link to other pages inside 
 
 #### Example
 
-<themed-image>
+<pre>
+<code><<div class="hot-pink">next-button</div> <div class="purple">tag</div>="See more" <div class="purple">to</div>="/podcast">
+<div></<div class="hot-pink">next-button</div>></div></code>
+</pre>
+
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/next_button_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/next_button_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 <hr>
 
 ### "Back" Button
@@ -256,13 +261,18 @@ Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 
 #### Example
 
-<themed-image>
+<pre>
+<code><<div class="hot-pink">back-button</div> <div class="purple">tag</div>="Back to Ecosystem" <div class="purple">to</div>="/ecosystem/overview">
+<div></<div class="hot-pink">back-button</div>></div></code>
+</pre>
+
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/back_button_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/back_button_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 </slim-column>
 
@@ -285,6 +295,19 @@ This announcement occupies 100% of the page width and it's part of the website's
 </themed-image>
 
 #### Example
+
+<pre>
+<code><<div class="hot-pink">announcement</div>>
+<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content-left></div>
+<div>#### Announcement</div>
+<div>### Upgrade Complete:<<div class="br">br</div>>Secret Contracts are<<div class="br">br</div>>LIVE on Mainnet!</div>
+<div>The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.</div>
+<div></<div class="hot-pink">template</div>></div>
+<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content-right></div>
+<div>![](./img/announcement/announcement.png)</div>
+<div></<div class="hot-pink">template</div>></div>
+<div></<div class="hot-pink">announcement</div>></div></code>
+</pre>
 
 <themed-image>
 

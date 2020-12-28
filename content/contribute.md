@@ -158,10 +158,10 @@ Community cards are used to link Secret Network social media and platforms where
 
 <pre>
 <code>
-<div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
+<!--div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
 <div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:icon></div>
-<!--div><<div class="hot-pink">themed-image</div>></div>
+<div><<div class="hot-pink">themed-image</div>></div>
 <div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">light light-colored</div></div>
 <div><div class="purple">src</div>    ="./img/community-card/discord-black.svg"></<div class="hot-pink">g-image</div>></div>
 <div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">dark dark-colored</div></div>

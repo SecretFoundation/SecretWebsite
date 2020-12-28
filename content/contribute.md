@@ -156,13 +156,29 @@ Community cards are used to link Secret Network social media and platforms where
 
 #### Example
 
-<themed-image>
+<pre>
+<code>
+<div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
+<div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
+<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:icon></div>
+<div><<div class="hot-pink">themed-image</div>></div>
+<div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">light light-colored</div></div>
+<div><div class="purple">src</div>    ="./img/community-card/discord-black.svg"></<div class="hot-pink">g-image</div>></div>
+<div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">dark dark-colored</div></div>
+<div><div class="purple">src</div>    ="./img/community-card/discord-white.svg"></<div class="hot-pink">g-image</div>></div>
+<div></<div class="hot-pink">themed-image</div>></div>
+<div></<div class="hot-pink">template</div>></div>
+<div></<div class="hot-pink">community-card</div>></div>
+</code>
+</pre>
+
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/community_card_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/community_card_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 <hr>
 
@@ -180,13 +196,20 @@ As its name suggests, this component is part of a grid of elements such as valid
 
 #### Example
 
-<themed-image>
+<pre>
+<code><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"</div>
+<div><div class="purple">to</div>="https://secretnodes.org/#/"</div>
+<div><div class="purple">src</div>    ="grid-item/contributors/image2.png"></div>
+<div></<div class="hot-pink">grid-item</div>></div></code>
+</pre>
+
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/grid_item_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/grid_item_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 </slim-column>
 

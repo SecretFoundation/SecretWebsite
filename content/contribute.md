@@ -309,13 +309,13 @@ This announcement occupies 100% of the page width and it's part of the website's
 <div></<div class="hot-pink">announcement</div>></div></code>
 </pre>
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/announcement_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/announcement_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 <hr>
 
@@ -333,13 +333,26 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
 
 #### Example
 
-<themed-image>
+<pre>
+<code><<div class="hot-pink">small-announcement</div>>
+<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content></div>
+<div>#### Announcement</div>
+<div>### Secret Network Gets a Secret API!</div>
+<div>Chain of Secrets just launched the Secret API for Secret Network as part of our developer community on-boarding efforts. We hope to connect and collaborate with all kinds of secret app builders!</div>
+<div><<div class="hot-pink">next-button</div> <div class="purple">class</div>="turquoise" <div class="purple">tag</div>="Read more"</div> 
+<div><div class="purple">to</div>="/blog/secret-api/"></div>
+<div></<div class="hot-pink">next-button</div>></div>
+<div></<div class="hot-pink">template</div>></div>
+<div></<div class="hot-pink">small-announcement</div>></div></code>
+</pre>
+
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/small_announcement_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/small_announcement_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 </slim-column>
 

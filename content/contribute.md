@@ -92,14 +92,13 @@ Media Cards are used to share media content such as videos, podcast episodes and
 <code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="   https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
 </pre>
 
-
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/media_card_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/media_card_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 <hr>
 

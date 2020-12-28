@@ -46,7 +46,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <pre>
 <code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">vertical</div>><div>### **Learn about**<<div class="br">br</div>>Secret Network</div><<div class="hot-pink">separator small</div> />
-<div>![Community](./img/home-card/learn-about-secret-network.png)</div>
+<div>   ![Community](./img/home-card/learn-about-secret-network.png)</div>
 </<div class="hot-pink">home-card</div>></code>
 </pre>
 
@@ -56,7 +56,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 </<div class="hot-pink">home-card</div>></code>
 </pre>
 
-<themed-image>
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/vertical_card_light.png"></g-image>
 
@@ -70,7 +70,7 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image dark dark-colored src="../src/assets/codeblocks/horizontal_card_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 <hr>
 
@@ -87,6 +87,11 @@ Media Cards are used to share media content such as videos, podcast episodes and
 </themed-image>
 
 #### Example
+
+<pre>
+<code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="   https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
+</pre>
+
 
 <themed-image>
 

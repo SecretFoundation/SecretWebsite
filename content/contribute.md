@@ -180,20 +180,20 @@ As its name suggests, this component is part of a grid of elements such as valid
 
 #### Example
 
-<pre>
+<!--pre>
 <code><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"</div>
 <div><div class="purple">to</div>="https://secretnodes.org/#/"</div>
 <div><div class="purple">src</div>="grid-item/contributors/image2.png"></div>
 <div></<div class="hot-pink">grid-item</div>></div></code>
-</pre>
+</pre-->
 
-<!--themed-image>
+<themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/grid_item_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/grid_item_dark.png"></g-image>
 
-</themed-image-->
+</themed-image>
 
 </slim-column>
 

@@ -177,8 +177,6 @@ Community cards are used to link Secret Network social media and platforms where
 <<div>community-card name="Discord Chat" to="https://discord.com/invite/SJK32GY" class="discord"></div>
 <<div>template v-slot:icon></div>
 <<div>themed-image></div>
-<<div>g-image light light-colored src="./img/community-card/discord-black.svg"></g-image></div>
-<<div>g-image dark dark-colored src="./img/community-card/discord-white.svg"></g-image></div>
 </<div>themed-image></div>
 </<div>template></div></div>
 </<div>community-card></div></div>

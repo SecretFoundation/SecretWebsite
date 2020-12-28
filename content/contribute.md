@@ -89,7 +89,7 @@ Media Cards are used to share media content such as videos, podcast episodes and
 #### Example
 
 <pre>
-<code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="   https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
+<code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
 </pre>
 
 <!--themed-image>
@@ -116,13 +116,29 @@ Cards are very versatile components, composed by a header, body and footer, and 
 
 #### Example
 
-<themed-image>
+<pre>
+<code><<div class="hot-pink">card</div>>
+<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:header></div>
+<div>    ![Run](../img/card/run.svg)</div>
+<div></<div class="hot-pink">template</div>></div>
+<div>#### Node Runner Guide</div>
+<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:footer></div>
+<div><<div class="hot-pink">next-button</div> <div class="purple">tag</div>="Read guide"</div>
+<div><div class="purple">to</div>="https://build.scrt.network/validators-and-full-nodes/join-validator-mainnet.html"></div>
+<div></<div class="hot-pink">next-button</div>></div>
+<div></<div class="hot-pink">template</div>></div>
+<div></<div class="hot-pink">card</div>></div>
+</code>
+</pre>
+
+
+<!--themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/card_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/codeblocks/card_dark.png"></g-image>
 
-</themed-image>
+</themed-image-->
 
 <hr>
 

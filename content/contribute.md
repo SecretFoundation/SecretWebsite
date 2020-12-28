@@ -44,6 +44,22 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 #### Example
 
+<pre>
+<code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">vertical</div>><div>### **Learn about**<<div class="br">br</div>>Secret Network</div><<div class="hot-pink">separator small</div> />
+<div>    ![Community](`./img/home-card/learn-about-secret-network.png`)</div>
+</<div class="hot-pink">home-card</div>></code>
+</pre>
+
+`![Community](./img/home-card/learn-about-secret-network.png)`
+
+`![Community](`./img/home-card/learn-about-secret-network.png`)`
+
+<pre>
+<code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">horizontal</div>><div>### **Explore the**<<div class="br">br</div>>Ecosystem</div><<div class="hot-pink">separator small</div> />
+<div>   ![Node Operator](`./img/home-card/explore-the-ecosystem.png`)</div>
+</<div class="hot-pink">home-card</div>></code>
+</pre>
+
 <themed-image>
 
 <g-image light light-colored src="../src/assets/codeblocks/vertical_card_light.png"></g-image>

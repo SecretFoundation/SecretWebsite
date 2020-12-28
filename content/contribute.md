@@ -178,8 +178,8 @@ Community cards are used to link Secret Network social media and platforms where
 <<div>template v-slot:icon></div>
 <<div>themed-image></div>
 </<div>themed-image></div>
-</<div>template></div></div>
-</<div>community-card></div></div>
+</<div>template></div>
+</<div>community-card></div>
 </code>
 </pre>
 

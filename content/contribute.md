@@ -158,9 +158,6 @@ Community cards are used to link Secret Network social media and platforms where
 
 <pre>
 <code><<div class="hot-pink">community-card</div>>
-<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:header></div>
-<div></<div class="hot-pink">template</div>></div>
-<div></<div class="hot-pink">community-card</div>></div>
 </code>
 </pre>
 

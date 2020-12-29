@@ -138,14 +138,6 @@ Community cards are used to link Secret Network social media and platforms where
 </code>
 </pre>
 
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/community_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/community_card_dark.png"></g-image>
-
-</themed-image>
-
 <hr>
 
 ### Grid Item

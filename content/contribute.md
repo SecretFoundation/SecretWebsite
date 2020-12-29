@@ -56,22 +56,6 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 </<div class="hot-pink">home-card</div>></code>
 </pre>
 
-<!--themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/vertical_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/vertical_card_dark.png"></g-image>
-
-</themed-image>
-
-<themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/horizontal_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/horizontal_card_dark.png"></g-image>
-
-</themed-image-->
-
 <hr>
 
 ### Media Cards
@@ -91,14 +75,6 @@ Media Cards are used to share media content such as videos, podcast episodes and
 <pre>
 <code><<div class="hot-pink">media-card</div>&nbsp;<div class="purple">tag</div>="podcast" <div class="purple">title</div>="Tor Bair on Nugget's News Podcast" <div class="purple">src</div>="media-card/image2.png" <div class="purple">to</div>="https://www.youtube.com/watch?v=2kttQDQOT3Y" <div class="purple">cta</div>="Listen Now"></<div class="hot-pink">media-card</div>></code>
 </pre>
-
-<!--themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/media_card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/media_card_dark.png"></g-image>
-
-</themed-image-->
 
 <hr>
 
@@ -131,14 +107,6 @@ Cards are very versatile components, composed by a header, body and footer, and 
 </code>
 </pre>
 
-<!--themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/card_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/card_dark.png"></g-image>
-
-</themed-image-->
-
 <hr>
 
 ### Community Cards
@@ -155,14 +123,6 @@ Community cards are used to link Secret Network social media and platforms where
 
 #### Example
 
-<!--pre>
-<code>
-<div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
-<div class="purple">to</div><div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
-<div></<div class="hot-pink">community-card</div>></div>
-</code>
-</pre-->
-
 <pre>
 <code>
 <div><<div class="hot-pink">community-grid</div> <div class="purple">name</div>="Discord Chat"<br><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
@@ -177,23 +137,6 @@ Community cards are used to link Secret Network social media and platforms where
 <div></<div class="hot-pink">community-grid</div>></div>
 </code>
 </pre>
-
-<!--pre>
-<code>
-<div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
-<div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
-<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:icon></div>
-<div><<div class="hot-pink">themed-image</div>></div>
-<div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">light light-colored</div></div>
-<div><div class="purple">src</div>="./img/community-card/discord-black.svg"></<div class="hot-pink">g-image</div>></div>
-<div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">dark dark-colored</div></div>
-<div><div class="purple">src</div>="./img/community-card/discord-white.svg"></<div class="hot-pink">g-image</div>></div>
-<div></<div class="hot-pink">themed-image</div>></div>
-<div></<div class="hot-pink">template</div>></div>
-<div></<div class="hot-pink">community-card</div>></div>
-</code>
-</pre-->
-
 
 <themed-image>
 
@@ -253,13 +196,6 @@ Composed by a "next" arrow and a tag, used mostly to link to other pages inside 
 <div></<div class="hot-pink">next-button</div>></div></code>
 </pre>
 
-<!--themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/next_button_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/next_button_dark.png"></g-image>
-
-</themed-image-->
 <hr>
 
 ### "Back" Button
@@ -280,14 +216,6 @@ Composed by a "back" arrow and a tag, used mostly to link to the previous page.
 <code><<div class="hot-pink">back-button</div> <div class="purple">tag</div>="Back to Ecosystem" <div class="purple">to</div>="/ecosystem/overview">
 <div></<div class="hot-pink">back-button</div>></div></code>
 </pre>
-
-<!--themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/back_button_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/back_button_dark.png"></g-image>
-
-</themed-image-->
 
 </slim-column>
 
@@ -324,14 +252,6 @@ This announcement occupies 100% of the page width and it's part of the website's
 <div></<div class="hot-pink">announcement</div>></div></code>
 </pre>
 
-<!--themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/announcement_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/announcement_dark.png"></g-image>
-
-</themed-image-->
-
 <hr>
 
 ### Small Announcement
@@ -360,14 +280,6 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
 <div></<div class="hot-pink">template</div>></div>
 <div></<div class="hot-pink">small-announcement</div>></div></code>
 </pre>
-
-<!--themed-image>
-
-<g-image light light-colored src="../src/assets/codeblocks/small_announcement_light.png"></g-image>
-
-<g-image dark dark-colored src="../src/assets/codeblocks/small_announcement_dark.png"></g-image>
-
-</themed-image-->
 
 </slim-column>
 

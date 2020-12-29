@@ -188,9 +188,11 @@ As its name suggests, this component is part of a grid of elements such as valid
 #### Example
 
 <pre>
-<code><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"></div>
+<code>
+<div><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"></div>
 <div class="purple">to</div><div>="https://secretnodes.org/"</div>
-<div></<div class="hot-pink">grid-item</div>></div></code>
+<div></<div class="hot-pink">grid-item</div>></div>
+</code>
 </pre>
 
 <themed-image>

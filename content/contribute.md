@@ -159,7 +159,6 @@ Community cards are used to link Secret Network social media and platforms where
 <code>
 <div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
 <div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
-<div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:icon></div>
 <div></<div class="hot-pink">template</div>></div>
 <div></<div class="hot-pink">community-card</div>></div>
 </code>
@@ -191,7 +190,6 @@ As its name suggests, this component is part of a grid of elements such as valid
 
 <pre>
 <code><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"></div>
-<div><div class="purple">to</div>="https://secretnodes.org/#/"> </div>
 <div></<div class="hot-pink">grid-item</div>></div></code>
 </pre>
 

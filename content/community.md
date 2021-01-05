@@ -124,7 +124,7 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 ### Secret Agents
 
-Secret Agents are community members who work alongside each other towards Secret's mission of global adoption for open-source, privacy-centric technologies. They are the core of our community and the true secret to our success. Meet a few of them below - then, if you choose to accept the call <next-button class="turquoise" tag="Become One" to="https://airtable.com/shr6FPA7SW6p2gDTY"></next-button>
+Secret Agents are community members who work alongside each other towards Secret's mission of global adoption for open-source, privacy-centric technologies. They are the core of our community and the true secret to our success. Meet a few of them below - then... <next-button class="turquoise" tag="if you choose to accept the call, become one yourself!" to="https://airtable.com/shr6FPA7SW6p2gDTY"></next-button>
 
 
   

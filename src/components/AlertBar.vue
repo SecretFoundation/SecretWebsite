@@ -1,7 +1,7 @@
 <template>
   <div class="bar">
       <p class="text">
-        ALERT: The ENG to SCRT swap is scheduled to close on <span>Jan 4th, 2021 at 10pm UTC</span>. For more information on your options <g-link class=“alert-link” to="https://secretnodes.org/#/ss">click here</g-link>.
+        ALERT: Earn up to 500,000 SCRT for participating in Secret Bridge Mining! Rewards go live on <span>January 12th</span> - <g-link class=“alert-link” to="/blog/secret-ethereum-bridge-mining">click here</g-link> to learn more.
       </p>
       <div class="close" v-on:click="closeBar()">&times;</div>
   </div>

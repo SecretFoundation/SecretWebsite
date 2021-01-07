@@ -1,7 +1,7 @@
 <template>
   <div class="bar">
       <p class="text">
-        ALERT: Earn up to 500,000 SCRT for participating in Secret Bridge Mining! Rewards go live on <span>January 12th</span> - <g-link class=“alert-link” to="/blog/secret-ethereum-bridge-mining">click here</g-link> to learn more.
+        Earn up to 500,000 SCRT for participating in Secret Bridge Mining! Rewards go live on <span>January 12th</span> - <g-link class=“alert-link” to="/blog/secret-ethereum-bridge-mining">CLICK HERE</g-link> to learn more.
       </p>
       <div class="close" v-on:click="closeBar()">&times;</div>
   </div>

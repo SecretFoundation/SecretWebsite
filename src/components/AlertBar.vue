@@ -39,7 +39,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    p {
+    p.text {
        font-family: Hind,sans-serif;
     }
   }

@@ -19,6 +19,7 @@ export default {
 
 <style lang="scss"> 
   .bar {
+    font-family: Hind,sans-serif;
     background-color: var(--primary-purple-color);
     position: fixed;
     top: 0;

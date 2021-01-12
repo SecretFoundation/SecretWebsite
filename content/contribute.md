@@ -30,25 +30,29 @@ Home Cards are the main Call to Action on the Homepage. They are used as links t
 
 <g-image light light-colored src="../src/assets/vertical_card_light.png" class="width__455px"></g-image>
 
-<g-image light light-colored src="../src/assets/horizontal_card_light.png"></g-image>
-
 <g-image dark dark-colored src="../src/assets/vertical_card_dark.png" class="width__455px"></g-image>
+
+</themed-image>
+
+<themed-image>
+
+<g-image light light-colored src="../src/assets/horizontal_card_light.png"></g-image>
 
 <g-image dark dark-colored src="../src/assets/horizontal_card_dark.png"></g-image>
 
 </themed-image>
 
-#### Examples
+#### Example
 
 <pre>
 <code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">vertical</div>><div>### **Learn about**<<div class="br">br</div>>Secret Network</div><<div class="hot-pink">separator small</div> />
-<div>![Community](./img/home-card/learn-about-secret-network.png)</div>
+<div>   ![Community](./img/home-card/learn-about-secret-network.png)</div>
 </<div class="hot-pink">home-card</div>></code>
 </pre>
 
 <pre>
 <code><<div class="hot-pink">home-card</div> <div class="purple">to</div>="/about/about-secret-network" <div class="purple">horizontal</div>><div>### **Explore the**<<div class="br">br</div>>Ecosystem</div><<div class="hot-pink">separator small</div> />
-<div>![Node Operator](./img/home-card/explore-the-ecosystem.png)</div>
+<div>   ![Node Operator](./img/home-card/explore-the-ecosystem.png)</div>
 </<div class="hot-pink">home-card</div>></code>
 </pre>
 
@@ -91,7 +95,7 @@ Cards are very versatile components, composed by a header, body and footer, and 
 <pre>
 <code><<div class="hot-pink">card</div>>
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:header></div>
-<div>![Run](../img/card/run.svg)</div>
+<div>    ![Run](../img/card/run.svg)</div>
 <div></<div class="hot-pink">template</div>></div>
 <div>#### Node Runner Guide</div>
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:footer></div>
@@ -121,17 +125,16 @@ Community cards are used to link Secret Network social media and platforms where
 
 <pre>
 <code>
-<div><<div class="hot-pink">community-card</div> <div class="purple">name</div>="Discord Chat"</div>
-<div><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
+<div><<div class="hot-pink">community-grid</div> <div class="purple">name</div>="Discord Chat"<br><div class="purple">to</div>="https://discord.com/invite/SJK32GY" <div class="purple">class</div>="discord"></div>
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:icon></div>
 <div><<div class="hot-pink">themed-image</div>></div>
-<div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">light light-colored</div></div>
+<div><<div class="hot-pink">g-image</div> <div class="purple">light light-colored</div></div>
 <div><div class="purple">src</div>="./img/community-card/discord-black.svg"></<div class="hot-pink">g-image</div>></div>
-<div><<div class="hot-pink">g-image</div>&nbsp;<div class="purple">dark dark-colored</div></div>
+<div><<div class="hot-pink">g-image</div> <div class="purple">light light-colored</div></div>
 <div><div class="purple">src</div>="./img/community-card/discord-white.svg"></<div class="hot-pink">g-image</div>></div>
 <div></<div class="hot-pink">themed-image</div>></div>
 <div></<div class="hot-pink">template</div>></div>
-<div></<div class="hot-pink">community-card</div>></div>
+<div></<div class="hot-pink">community-grid</div>></div>
 </code>
 </pre>
 
@@ -152,10 +155,10 @@ As its name suggests, this component is part of a grid of elements such as valid
 #### Example
 
 <pre>
-<code><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"</div>
-<div><div class="purple">to</div>="https://secretnodes.org/#/"</div>
-<div><div class="purple">src</div>="grid-item/contributors/image2.png"></div>
-<div></<div class="hot-pink">grid-item</div>></div></code>
+<code>
+<div><<div class="hot-pink">grid-item</div> <div class="purple">name</div>="Secret Nodes" <div class="purple">tag</div>="validator" <div class="purple">tagTwo</div>="developer"<br><div class="purple">to</div>="https://secretnodes.org"<br><div class="purple">src</div>="grid-item/contributors/image2.png"></div>
+<div></<div class="hot-pink">grid-item</div>></div>
+</code>
 </pre>
 
 </slim-column>
@@ -230,23 +233,14 @@ This announcement occupies 100% of the page width and it's part of the website's
 
 <pre>
 <code><<div class="hot-pink">announcement</div>>
-
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content-left></div>
-
 <div>#### Announcement</div>
-
 <div>### Upgrade Complete:<<div class="br">br</div>>Secret Contracts are<<div class="br">br</div>>LIVE on Mainnet!</div>
-
 <div>The secret is out! Privacy-preserving smart contracts are now LIVE on Secret Network. Learn about this launch, our exciting initial apps, our new strategic partnership with Hashed, and what comes next as "programmable privacy" comes to public blockchains.</div>
-
 <div></<div class="hot-pink">template</div>></div>
-
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content-right></div>
-
 <div>![](./img/announcement/announcement.png)</div>
-
 <div></<div class="hot-pink">template</div>></div>
-
 <div></<div class="hot-pink">announcement</div>></div></code>
 </pre>
 
@@ -268,22 +262,14 @@ This announcement occupies 2/3 of the page width and it's part of the website's 
 
 <pre>
 <code><<div class="hot-pink">small-announcement</div>>
-
 <div><<div class="hot-pink">template</div> <div class="purple">v-slot</div>:content></div>
-
 <div>#### Announcement</div>
-
 <div>### Secret Network Gets a Secret API!</div>
-
 <div>Chain of Secrets just launched the Secret API for Secret Network as part of our developer community on-boarding efforts. We hope to connect and collaborate with all kinds of secret app builders!</div>
-
 <div><<div class="hot-pink">next-button</div> <div class="purple">class</div>="turquoise" <div class="purple">tag</div>="Read more"</div> 
 <div><div class="purple">to</div>="/blog/secret-api/"></div>
-
 <div></<div class="hot-pink">next-button</div>></div>
-
 <div></<div class="hot-pink">template</div>></div>
-
 <div></<div class="hot-pink">small-announcement</div>></div></code>
 </pre>
 

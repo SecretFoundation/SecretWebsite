@@ -110,5 +110,43 @@ export default {
       }
     }
   }
+  &.green {
+    color: $secondary-green-color !important;
+    border: 1px solid $secondary-green-color !important;
+    @include theme(light light-colored) {
+      .themed-image {
+        svg {
+          path {
+            stroke: #A6DDA9;
+          }
+        }
+      }
+    }
+    @include theme(dark dark-colored) {
+      .themed-image {
+        svg {
+          path {
+            stroke: #A6DDA9;
+          }
+        }
+      }
+    }
+    &:hover {
+      @include theme(light light-colored) {
+        background-color: $secondary-green-color;
+        color: $primary-black-color !important;
+        .themed-image {
+          svg {
+            path {
+              stroke: var(--theme-fg);
+            }
+          }
+        }
+      }
+      @include theme(dark dark-colored) {
+        color: $primary-black-color !important;
+      }
+    }
+  }
 }
 </style>

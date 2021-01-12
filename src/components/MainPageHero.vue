@@ -74,17 +74,14 @@ $-logo-size-mobile: 68px;
     position: relative;
     width: 100%;
     height: 100%;
-
     @include respond-to("small and down") {
-      padding-top: rem(24px);
-      padding-bottom: rem(24px);
+      padding: rem(24px) $gutter;
     }
     @include respond-to("medium") {
       padding: $gutter-large;
     }
     @include respond-to("large and up") {
-      padding-top: rem(55px);
-      padding-bottom: rem(34px);
+      padding: rem(55px) $gutter rem(34px) $gutter;
     }
 
     &__container {
@@ -94,9 +91,7 @@ $-logo-size-mobile: 68px;
       h2 {
         margin: 0;
         text-align: center;
-
         @include respond-to("small and down") {
-          width: rem(303px);
           margin: 0 auto;
           // TODO Maybe pass to a token
           font-size: rem(24px);

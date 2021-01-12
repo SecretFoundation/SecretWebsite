@@ -28,7 +28,7 @@ If you'd like to contribute to any of the below committees - or start your own -
 
 Meetings
 
-Mondays, 4pm UTC
+Mondays, 5pm UTC
 
 [Join](https://airtable.com/shr6FPA7SW6p2gDTY)
 
@@ -103,7 +103,7 @@ Secret Foundation Wiki.
 
 Meetings
 
-Mondays, 5pm UTC
+Mondays, 4pm UTC
 
 [Join](https://airtable.com/shr6FPA7SW6p2gDTY)
 
@@ -117,7 +117,7 @@ Amplifying our network and our materials in order to drive adoption and communit
 
 ##### Goals
 
-- Increasing brand awareness.
+- Increasing Secret awareness.
 - Identifying important channels and communities.
 - Connecting with high-leverage individuals and organizations.
 

@@ -1,7 +1,7 @@
 <template>
   <div class="bar">
       <p class="text">
-       💎⛏ Earn your share of 500,000 SCRT by mining the Secret Ethereum Bridge! <g-link class=“alert-link” to="/blog/secret-bridge-mining-is-live">CLICK HERE</g-link> to learn more. 💎⛏
+        💎⛏ Earn your share of <span>500,000 SCRT</span> by mining the <span>Secret Ethereum Bridge!</span>&nbsp;<g-link class=“alert-link” to="/blog/secret-bridge-mining-is-live">CLICK HERE</g-link> to learn more. 💎⛏
       </p>
       <div class="close" v-on:click="closeBar()">&times;</div>
   </div>
@@ -39,6 +39,9 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    p.text {
+       font-family: Hind,sans-serif;
+    }
   }
 
   .text {

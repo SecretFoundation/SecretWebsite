@@ -2,7 +2,7 @@
 
 # directory that contains the markdowns, downloaded from a git repo
 CONTENT_DIR=${DIR:-content}
-REPO="git@github.com:SecretFoundation/SecretWebsiteContent.git"
+REPO="https://github.com/SecretFoundation/SecretWebsiteContent.git"
 
 echo "Content directory: $CONTENT_DIR"
 echo "Getting markdowns from repo $REPO"

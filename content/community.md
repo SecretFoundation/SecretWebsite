@@ -124,9 +124,9 @@ Whether you’re a developer, an artist, a writer, an entrepreneur, or a dreamer
 
 ### Secret Agents
 
-Secret Agents are community members who work alongside each other towards Secret's mission of global adoption for open-source, privacy-centric technologies. They are the core of our community and the true secret to our success. Meet a few of them below - and then...
+Secret Agents are community members who work alongside each other towards Secret's mission of global adoption for open-source, privacy-centric technologies. They are the core of our community and the true secret to our success. Secret Agents are also eligible for project funding and compensated leadership positions. Meet a few of them below - and then...
 
-<next-button class="turquoise" tag="if you choose to accept the call, become one yourself!" to="https://airtable.com/shr6FPA7SW6p2gDTY"></next-button>
+<next-button class="turquoise" tag="If you accept the call, become one yourself!" to="https://airtable.com/shr6FPA7SW6p2gDTY"></next-button>
   
 <grid columns="5" class="agents-grid">
 
@@ -224,7 +224,7 @@ Secret Agents are community members who work alongside each other towards Secret
 
 #### Committees
 
-There is no more consequential way to get involved with Secret Network than to [become a Secret Agent](https://airtable.com/shr6FPA7SW6p2gDTY) and join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem by executing Secret Missions!
+There is no more consequential way to get involved with Secret Network than to [become a Secret Agent](https://airtable.com/shr6FPA7SW6p2gDTY) and join a community committee. Committees are made up of experts and enthusiasts working together to build our network and ecosystem by executing Secret Missions! From Awareness, to Development, to Education, to Design, there's a committee to fit every community member!
 
 <next-button class="turquoise" tag="Join Us Now" to="/committees">
 
@@ -264,11 +264,11 @@ Sharing Secrets - a new series from the Secret Foundation - explores the biggest
 
 <grid columns="3">
 
-<media-card tag="podcast" title="Ep 10 - Brittany Kaiser - Cambridge Analytica & Own Your Data" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-10-brittany-kaiser-cambridge-analytica-own-your-data" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Ep 14 - Dan Held - Kraken" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-14-dan-held-kraken" cta="Listen Now"></media-card>
 
-<media-card tag="podcast" title="Ep 9 - Jamie Burke - Outlier Ventures" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-9-jamie-burke-outlier-ventures" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Ep 13 - Charlie Lee - Litecoin" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-13-charlie-lee-litecoin" cta="Listen Now"></media-card>
 
-<media-card tag="podcast" title="Ep 8 - RAC - Grammy Winning Musician" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-8-rac-grammy-winning-musician" cta="Listen Now"></media-card>
+<media-card tag="podcast" title="Ep 12 - Bruce Pon - Ocean Protocol" src="media-card/image9.png" to="https://soundcloud.com/sharing-secrets/ep-12-bruce-pon-ocean-protocol" cta="Listen Now"></media-card>
 
 </grid>
 

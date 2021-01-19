@@ -178,7 +178,7 @@
             <g-link to="/blog">Secret Blog</g-link>
             <g-link to="https://discord.gg/7t7PqPZFJq">Secret Chat</g-link>
             <g-link to="https://forum.scrt.network/">Secret Forum</g-link>
-            <g-link to="/committees/introduction">Committees</g-link>
+            <g-link to="/committees/">Committees</g-link>
           </div>
           <div class="custom-footer__links">
             <h4>Secret Network</h4>
@@ -189,7 +189,7 @@
           </div>
         </div>
         <div class="custom-footer__copy">
-          <span>© Secret Network. All Rights Reserved.</span>
+          <span>© Secret Network - info@secret.foundation</span>
           <span><g-link>Terms of Service</g-link> | <g-link>Privacy Policy</g-link></span>
         </div>
       </single-column>

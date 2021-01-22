@@ -1,6 +1,6 @@
 # SCRT Website
 
-## For content create, update, delete go to:
+## For Content Management go to:
 https://github.com/SecretFoundation/SecretWebsiteContent
 
 ## Pre-requisites

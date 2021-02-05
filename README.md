@@ -1,5 +1,8 @@
 # SCRT Website
 
+## For Content Management go to:
+https://github.com/SecretFoundation/SecretWebsiteContent
+
 ## Pre-requisites
 
 Install nodejs using [nvm](https://github.com/nvm-sh/nvm#install--update-script) package manager

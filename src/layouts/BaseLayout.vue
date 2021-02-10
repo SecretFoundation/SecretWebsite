@@ -4,8 +4,13 @@
     <template #logo>
       <g-link to="/">
         <themed-image>
+<<<<<<< HEAD
           <g-image light light-colored class="logo" src="../assets/secret-logo--black.svg" :immediate="true"></g-image>
           <g-image dark dark-colored class="logo" src="../assets/secret-logo--white.svg" :immediate="true"></g-image>
+=======
+          <g-image light light-colored class="logo" src="../assets/secretnetwork-logo-primary-black.svg" immediate="true"></g-image>
+          <g-image dark dark-colored class="logo" src="../assets/secretnetwork-logo-primary-white.svg" immediate="true"></g-image>
+>>>>>>> upstream/master
         </themed-image>
       </g-link>
     </template>
@@ -126,8 +131,8 @@
         <div class="custom-footer__content">
           <div>
             <themed-image>
-              <g-image light light-colored src="@/assets/secret-logo-footer--black.svg" class="custom-footer__logo"></g-image>
-              <g-image dark dark-colored src="@/assets/secret-logo-footer--white.svg" class="custom-footer__logo"></g-image>
+              <g-image light light-colored src="@/assets/secretnetwork-logo-primary-black.svg" class="custom-footer__logo"></g-image>
+              <g-image dark dark-colored src="@/assets/secretnetwork-logo-primary-white.svg" class="custom-footer__logo"></g-image>
             </themed-image>
             <p>This website has a secret. It’s 100% opensource!</p>
             <p>
@@ -404,7 +409,7 @@ export default {
 }
 .logo {
   width: auto;
-  height: rem(58px);
+  height: rem(45px);
 }
 .footer {
   margin-top: $header-height;
@@ -453,7 +458,7 @@ export default {
     line-height: rem(25px) !important;
   }
   &__logo {
-    width: rem(110px);
+    width: rem(100px);
     margin-bottom: rem(20px);
     @include respond-to("medium and down") {
       margin: 0 auto rem(20px) auto;

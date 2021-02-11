@@ -1,5 +1,6 @@
 <template>
     <div class="calendar">
+        <ClientOnly>
         <calendar-view
 			:show-date="showDate"
             :items="items"
@@ -11,6 +12,7 @@
 				:header-props="t.headerProps"
 				@input="setShowDate" />
 		</calendar-view>
+        </ClientOnly>
     <!-- <button type="button" class="btn btn-primary" @click="refreshGApi">Refresh</button>
     <button type="button" class="btn btn-primary" v-if="!authorized" @click="handleAuthClick">Login</button>
     <button type="button" class="btn btn-primary" v-if="authorized" @click="handleSignOutClick">Sign Out</button>
@@ -20,7 +22,6 @@
 
 <script>
 import { CalendarView, CalendarViewHeader } from "vue-simple-calendar"
-import moment from "moment"
 
 // const CLIENT_ID = "932323359337-e5p4fh2dsutc9lte24gffchuhrdjfftl.apps.googleusercontent.com";
 // const API_KEY = "AIzaSyBKHAaOQqtd7_7upr_hAx1nCVJibhQI3vc";

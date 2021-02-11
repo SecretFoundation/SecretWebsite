@@ -4,13 +4,8 @@
     <template #logo>
       <g-link to="/">
         <themed-image>
-<<<<<<< HEAD
-          <g-image light light-colored class="logo" src="../assets/secret-logo--black.svg" :immediate="true"></g-image>
-          <g-image dark dark-colored class="logo" src="../assets/secret-logo--white.svg" :immediate="true"></g-image>
-=======
-          <g-image light light-colored class="logo" src="../assets/secretnetwork-logo-primary-black.svg" immediate="true"></g-image>
-          <g-image dark dark-colored class="logo" src="../assets/secretnetwork-logo-primary-white.svg" immediate="true"></g-image>
->>>>>>> upstream/master
+          <g-image light light-colored class="logo" src="../assets/secretnetwork-logo-primary-black.svg" :immediate="true"></g-image>
+          <g-image dark dark-colored class="logo" src="../assets/secretnetwork-logo-primary-white.svg" :immediate="true"></g-image>
         </themed-image>
       </g-link>
     </template>

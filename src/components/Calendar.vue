@@ -11,10 +11,10 @@
 				:header-props="t.headerProps"
 				@input="setShowDate" />
 		</calendar-view>
-    <button type="button" class="btn btn-primary" @click="refreshGApi">Refresh</button>
+    <!-- <button type="button" class="btn btn-primary" @click="refreshGApi">Refresh</button>
     <button type="button" class="btn btn-primary" v-if="!authorized" @click="handleAuthClick">Login</button>
     <button type="button" class="btn btn-primary" v-if="authorized" @click="handleSignOutClick">Sign Out</button>
-    <button type="button" class="btn btn-primary" v-if="authorized" @click="getEvents">Get Events</button>
+    <button type="button" class="btn btn-primary" v-if="authorized" @click="getEvents">Get Events</button> -->
     </div>
 </template>
 
@@ -22,10 +22,10 @@
 import { CalendarView, CalendarViewHeader } from "vue-simple-calendar"
 import moment from "moment"
 
-const CLIENT_ID = "932323359337-e5p4fh2dsutc9lte24gffchuhrdjfftl.apps.googleusercontent.com";
-const API_KEY = "AIzaSyBKHAaOQqtd7_7upr_hAx1nCVJibhQI3vc";
-const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'];
-const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
+// const CLIENT_ID = "932323359337-e5p4fh2dsutc9lte24gffchuhrdjfftl.apps.googleusercontent.com";
+// const API_KEY = "AIzaSyBKHAaOQqtd7_7upr_hAx1nCVJibhQI3vc";
+// const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'];
+// const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
 
 export default {
     components: {
@@ -36,73 +36,37 @@ export default {
         return {
             showDate: new Date(),
             items: [],
-            authorized: false,
-            gItems: [],
+            // authorized: false,
+            // gItems: [],
         }
     },
-    created() {
-        
+    mounted() {
+       this.$static.events.edges.forEach(event => {
+           this.items.push(event.node);
+       });
     },
     methods: {
         setShowDate(d) {
             this.showDate = d;
         },
-        refreshGApi() {
-            this.api = gapi;
-            this.handleClientLoad();
-        },
-        handleClientLoad() {
-            this.api.load('client:auth2', this.initClient);
-        },
-        initClient() {
-            let vm = this;
-            vm.api.client.init({
-                apiKey: API_KEY,
-                clientId: CLIENT_ID,
-                discoveryDocs: DISCOVERY_DOCS,
-                scope: SCOPES
-            }).then(_ => {
-                vm.api.auth2.getAuthInstance().isSignedIn.listen(vm.authorized);
-            });
-        },
-
-        handleAuthClick(event) {
-            Promise.resolve(this.api.auth2.getAuthInstance().signIn())
-            .then(_ => {
-                this.authorized = true;
-            });
-        },
-        handleSignOutClick(event) {
-            Promise.resolve(this.api.auth2.getAuthInstance().signOut())
-                .then(_ => {
-                    this.authorized = false;
-                });
-        },
-        getEvents() {
-            let vm = this;
-            vm.api.client.calendar.events.list({
-                'calendarId': 'primary',
-                'timeMin': moment().subtract(1, 'days').format(),
-                'showDeleted': false,
-                'singleEvents': true,
-                'maxResults': 10,
-                'orderBy': 'startTime'
-            }).then(response => {
-                this.gItems = response.result.items;
-                this.items = [];
-                for(let i=0; i < this.gItems.length; i++) {
-                    this.items.push({
-                        id: this.gItems[i].id,
-                        title: this.gItems[i].summary,
-                        startDate: this.gItems[i].start.dateTime,
-                        endDate: this.gItems[i].end.dateTime
-                    })
-                }
-            });
-        },
     }
 }
 </script>
+
+<static-query>
+    query {
+        events: allEvents {
+            edges {
+                node {
+                    id
+                    name
+                    startDate
+                    endDate
+                }
+            }
+        }
+    }
+</static-query>
 
 <style lang="scss">
     .calendar {

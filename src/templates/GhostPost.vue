@@ -330,7 +330,7 @@ export default {
       border-radius: 0 3px 3px 0;
       -o-object-fit: cover;
       object-fit: cover;
-      vertical-align: middle;
+      //vertical-align: middle;
     }
     @include respond-to("medium and down") {
       order: 1;

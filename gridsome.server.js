@@ -28,9 +28,39 @@ module.exports = function (api) {
 
     eventCollection.addNode({
       id: 1,
-      name: "Test",
+      title: "Test",
       startDate: moment().subtract(1, 'days').format(),
       endDate: moment().subtract(1, 'days').format()
+    });
+    eventCollection.addNode({
+      id: 2,
+      title: "Test2",
+      startDate: moment().subtract(2, 'days').add(1, 'hours').format(),
+      endDate: moment().subtract(2, 'days').add(1, 'hours').format()
+    });
+    eventCollection.addNode({
+      id: 3,
+      title: "Test3",
+      startDate: moment().subtract(1, 'days').add(2, 'hours').format(),
+      endDate: moment().subtract(1, 'days').add(2, 'hours').format()
+    });
+    eventCollection.addNode({
+      id: 4,
+      title: "Test4",
+      startDate: moment().add(3, 'days').add(3, 'hours').format(),
+      endDate: moment().add(4, 'days').add(3, 'hours').format()
+    });
+    eventCollection.addNode({
+      id: 5,
+      title: "Test5",
+      startDate: moment().add(20, 'days').add(3, 'hours').format(),
+      endDate: moment().add(20, 'days').add(3, 'hours').format()
+    });
+    eventCollection.addNode({
+      id: 6,
+      title: "Test6",
+      startDate: moment().add(26, 'days').add(3, 'hours').format(),
+      endDate: moment().add(29, 'days').add(3, 'hours').format()
     });
 
   });

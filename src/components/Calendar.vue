@@ -4,6 +4,7 @@
             <calendar-view
                 :show-date="showDate"
                 :items="items"
+                :showTimes="true"
                 class="theme-default holiday-us-traditional holiday-us-official">
 
                 <calendar-view-header
@@ -67,7 +68,7 @@ export default {
             edges {
                 node {
                     id
-                    name
+                    title
                     startDate
                     endDate
                 }

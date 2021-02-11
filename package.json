@@ -16,8 +16,10 @@
     "@lkmx/flare-legacy": "0.28.19",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-prismjs-all": "^0.3.5",
+    "moment": "^2.29.1",
     "typeface-hind": "^1.1.13",
-    "typeface-montserrat": "^1.1.13"
+    "typeface-montserrat": "^1.1.13",
+    "vue-simple-calendar": "^5.0.0"
   },
   "devDependencies": {
     "eslint": "^7.11.0",

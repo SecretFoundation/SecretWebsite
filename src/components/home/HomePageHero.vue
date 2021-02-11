@@ -10,7 +10,7 @@
     <div class="hero__content">
       <div class="hero__title">
         <div class="hero__title__container">
-          <g-image class="hero__logo" src="@/assets/logo-seal.svg" immediate="true"></g-image>
+          <g-image class="hero__logo" src="@/assets/logo-seal.svg" :immediate="true"></g-image>
           <div v-if="stage == 'intro--arriving'">
             <h2 class="hero__message">Welcome to Secret Network</h2>
             <div class="intro-nav">

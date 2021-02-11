@@ -32,7 +32,7 @@ module.exports = function (api) {
       startDate: moment().subtract(1, 'days').format(),
       endDate: moment().subtract(1, 'days').format()
     });
-f
+
   });
 
   api.createPages(({ createPage }) => {

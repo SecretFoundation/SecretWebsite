@@ -2,7 +2,7 @@
     <div class="calendar">
         <calendar-view
 			:show-date="showDate"
-            :items="$page.posts.edges"
+            :items="items"
 			class="theme-default holiday-us-traditional holiday-us-official">
 
 			<calendar-view-header
@@ -35,89 +35,38 @@ export default {
     data() {
         return {
             showDate: new Date(),
-            //items: $page.events.edges,
+            items: [],
             // authorized: false,
             // gItems: [],
         }
     },
-    created() {
-        
+    mounted() {
+       this.$static.events.edges.forEach(event => {
+           this.items.push(event.node);
+       });
     },
     methods: {
         setShowDate(d) {
             this.showDate = d;
         },
-        // refreshGApi() {
-        //     this.api = gapi;
-        //     this.handleClientLoad();
-        // },
-        // handleClientLoad() {
-        //     this.api.load('client:auth2', this.initClient);
-        // },
-        // initClient() {
-        //     let vm = this;
-        //     vm.api.client.init({
-        //         apiKey: API_KEY,
-        //         clientId: CLIENT_ID,
-        //         discoveryDocs: DISCOVERY_DOCS,
-        //         scope: SCOPES
-        //     }).then(_ => {
-        //         vm.api.auth2.getAuthInstance().isSignedIn.listen(vm.authorized);
-        //     });
-        // },
-
-        // handleAuthClick(event) {
-        //     Promise.resolve(this.api.auth2.getAuthInstance().signIn())
-        //     .then(_ => {
-        //         this.authorized = true;
-        //     });
-        // },
-        // handleSignOutClick(event) {
-        //     Promise.resolve(this.api.auth2.getAuthInstance().signOut())
-        //         .then(_ => {
-        //             this.authorized = false;
-        //         });
-        // },
-        // getEvents() {
-        //     let vm = this;
-        //     vm.api.client.calendar.events.list({
-        //         'calendarId': 'primary',
-        //         'timeMin': moment().subtract(1, 'days').format(),
-        //         'showDeleted': false,
-        //         'singleEvents': true,
-        //         'maxResults': 10,
-        //         'orderBy': 'startTime'
-        //     }).then(response => {
-        //         this.gItems = response.result.items;
-        //         this.items = [];
-        //         for(let i=0; i < this.gItems.length; i++) {
-        //             this.items.push({
-        //                 id: this.gItems[i].id,
-        //                 title: this.gItems[i].summary,
-        //                 startDate: this.gItems[i].start.dateTime,
-        //                 endDate: this.gItems[i].end.dateTime
-        //             })
-        //         }
-        //     });
-        // },
     }
 }
 </script>
 
-<page-query>
-{
-  events: allEvents {
-    edges {
-      node {
-        id
-        name
-        startDate
-        endDate
-      }
+<static-query>
+    query {
+        events: allEvents {
+            edges {
+                node {
+                    id
+                    name
+                    startDate
+                    endDate
+                }
+            }
+        }
     }
-  }
-}
-</page-query>
+</static-query>
 
 <style lang="scss">
     .calendar {

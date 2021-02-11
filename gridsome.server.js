@@ -71,15 +71,15 @@ module.exports = function (api) {
     eventCollection.addNode({
       id: 8,
       title: "Test8",
-      startDate: moment().subtract(4, 'days').add(2, 'hours').format(),
-      endDate: moment().subtract(4, 'days').add(2, 'hours').format()
+      startDate: moment().subtract(1, 'days').add(2, 'hours').format(),
+      endDate: moment().subtract(1, 'days').add(2, 'hours').format()
     });
     ;
     eventCollection.addNode({
       id: 9,
       title: "Test9",
-      startDate: moment().subtract(5, 'days').add(2, 'hours').format(),
-      endDate: moment().subtract(5, 'days').add(2, 'hours').format()
+      startDate: moment().subtract(2, 'days').add(2, 'hours').format(),
+      endDate: moment().subtract(2, 'days').add(2, 'hours').format()
     });
   });
 

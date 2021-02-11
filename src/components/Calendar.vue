@@ -1,17 +1,17 @@
 <template>
     <div class="calendar">
         <ClientOnly>
-        <calendar-view
-			:show-date="showDate"
-            :items="items"
-			class="theme-default holiday-us-traditional holiday-us-official">
+            <calendar-view
+                :show-date="showDate"
+                :items="items"
+                class="theme-default holiday-us-traditional holiday-us-official">
 
-			<calendar-view-header
-				slot="header"
-				slot-scope="t"
-				:header-props="t.headerProps"
-				@input="setShowDate" />
-		</calendar-view>
+                <calendar-view-header
+                    slot="header"
+                    slot-scope="t"
+                    :header-props="t.headerProps"
+                    @input="setShowDate" />
+            </calendar-view>
         </ClientOnly>
     <!-- <button type="button" class="btn btn-primary" @click="refreshGApi">Refresh</button>
     <button type="button" class="btn btn-primary" v-if="!authorized" @click="handleAuthClick">Login</button>
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { CalendarView, CalendarViewHeader } from "vue-simple-calendar"
+//import { CalendarView, CalendarViewHeader } from "vue-simple-calendar"
 
 // const CLIENT_ID = "932323359337-e5p4fh2dsutc9lte24gffchuhrdjfftl.apps.googleusercontent.com";
 // const API_KEY = "AIzaSyBKHAaOQqtd7_7upr_hAx1nCVJibhQI3vc";
@@ -30,8 +30,15 @@ import { CalendarView, CalendarViewHeader } from "vue-simple-calendar"
 
 export default {
     components: {
-        CalendarView,
-		CalendarViewHeader
+
+        CalendarView: () =>
+            import ("vue-simple-calendar")
+        .then(m => m.CalendarView)
+        .catch(),
+		CalendarViewHeader: () =>
+            import ("vue-simple-calendar")
+        .then(m => m.CalendarViewHeader)
+        .catch()
     },
     data() {
         return {

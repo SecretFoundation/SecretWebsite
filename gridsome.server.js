@@ -62,7 +62,25 @@ module.exports = function (api) {
       startDate: moment().add(26, 'days').add(3, 'hours').format(),
       endDate: moment().add(29, 'days').add(3, 'hours').format()
     });
-
+    eventCollection.addNode({
+      id: 7,
+      title: "Test7",
+      startDate: moment().subtract(3, 'days').add(2, 'hours').format(),
+      endDate: moment().subtract(3, 'days').add(2, 'hours').format()
+    });
+    eventCollection.addNode({
+      id: 8,
+      title: "Test8",
+      startDate: moment().subtract(4, 'days').add(2, 'hours').format(),
+      endDate: moment().subtract(4, 'days').add(2, 'hours').format()
+    });
+    ;
+    eventCollection.addNode({
+      id: 9,
+      title: "Test9",
+      startDate: moment().subtract(5, 'days').add(2, 'hours').format(),
+      endDate: moment().subtract(5, 'days').add(2, 'hours').format()
+    });
   });
 
   api.createPages(({ createPage }) => {

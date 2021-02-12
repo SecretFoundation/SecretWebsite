@@ -2,6 +2,8 @@
     <div class="calendar">
         <ClientOnly>
             <calendar-view
+                displayPeriodUom="month"
+                :displayPeriodCount="1"
                 :show-date="showDate"
                 :items="items"
                 :showTimes="true"
@@ -14,21 +16,10 @@
                     @input="setShowDate" />
             </calendar-view>
         </ClientOnly>
-    <!-- <button type="button" class="btn btn-primary" @click="refreshGApi">Refresh</button>
-    <button type="button" class="btn btn-primary" v-if="!authorized" @click="handleAuthClick">Login</button>
-    <button type="button" class="btn btn-primary" v-if="authorized" @click="handleSignOutClick">Sign Out</button>
-    <button type="button" class="btn btn-primary" v-if="authorized" @click="getEvents">Get Events</button> -->
     </div>
 </template>
 
 <script>
-//import { CalendarView, CalendarViewHeader } from "vue-simple-calendar"
-
-// const CLIENT_ID = "932323359337-e5p4fh2dsutc9lte24gffchuhrdjfftl.apps.googleusercontent.com";
-// const API_KEY = "AIzaSyBKHAaOQqtd7_7upr_hAx1nCVJibhQI3vc";
-// const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'];
-// const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
-
 export default {
     components: {
 
@@ -45,8 +36,6 @@ export default {
         return {
             showDate: new Date(),
             items: [],
-            // authorized: false,
-            // gItems: [],
         }
     },
     mounted() {

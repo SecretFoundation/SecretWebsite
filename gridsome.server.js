@@ -10,22 +10,31 @@ const { google } = require('googleapis')
 google.auth.keyFilename = './static/cal-key.json';
 google.auth.scopes = ['https://www.googleapis.com/auth/calendar'];
 
-const scopes = ['https://www.googleapis.com/auth/calendar']
 const client = google.auth;
-const calendar = google.calendar({ version: 'v3', auth: client })
 
 module.exports = function (api) {
   api.loadSource(async actions => {
 
     async function getEvents(client) {
       let eventCollection;
-      const calendar = google.calendar({ version: 'v3', auth: client });
+      const calendar = google.calendar({ version: 'v3', auth: client});
+      
+      /*calendar.events.watch({
+        calendarId: 'sandy@stakeordie.com',
+        id: "123632432456",
+        type: "web_hook",
+        address: "https://secret-website-development.onrender.com/rebuild"
+      },(err, res) => {
+        console.log(err);
+        //console.log(res);
+      });*/
+
       return new Promise((resolve, reject) => {
         calendar.events.list(
           {
             calendarId: 'sandy@stakeordie.com',
             timeMin: moment().subtract(1,'weeks').format(),
-            timeMax: moment().add(1,'weeks').format(), // Let's get events for one week
+            timeMax: moment().add(51,'weeks').format(), // EVENTS FOR 1 Year WEEKS
             singleEvents: true,
             orderBy: 'startTime',
           },
@@ -48,7 +57,6 @@ module.exports = function (api) {
         },
       );
     }
-    
     eventCollection = await getEvents(client)
 
   });

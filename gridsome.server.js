@@ -4,83 +4,53 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-const axios = require('axios');
 const moment = require('moment');
+const { google } = require('googleapis')
+
+google.auth.keyFilename = './static/cal-key.json';
+google.auth.scopes = ['https://www.googleapis.com/auth/calendar'];
+
+const scopes = ['https://www.googleapis.com/auth/calendar']
+const client = google.auth;
+const calendar = google.calendar({ version: 'v3', auth: client })
 
 module.exports = function (api) {
   api.loadSource(async actions => {
-    // // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-    // const eventCollection = actions.addCollection('Events');
-    // const url = "https://content.googleapis.com/calendar/v3/calendars/primary/events?maxResults=10&orderBy=startTime&showDeleted=false&singleEvents=true&key=AIzaSyBKHAaOQqtd7_7upr_hAx1nCVJibhQI3vc"
-    // await axios.get(url).then(response => {
-    //   let events = response.result.items
-    //   events.forEach(event => {
-    //     eventCollection.addNode({
-    //       id: event.id,
-    //       name: event.summary,
-    //       startDate: event.start.dateTime,
-    //       endDate: event.end.dateTime
-    //     });
-    //   });
-    // });
 
-    const eventCollection = actions.addCollection('Events');
+    async function getEvents(client) {
+      let eventCollection;
+      const calendar = google.calendar({ version: 'v3', auth: client });
+      return new Promise((resolve, reject) => {
+        calendar.events.list(
+          {
+            calendarId: 'sandy@stakeordie.com',
+            timeMin: moment().subtract(1,'weeks').format(),
+            timeMax: moment().add(1,'weeks').format(), // Let's get events for one week
+            singleEvents: true,
+            orderBy: 'startTime',
+          },
+          (err, res) => {
+            if (err) {
+              console.log(`The API returned an error: ${err}`)
+            }
+            const eventCollection = actions.addCollection('Events');
+            
+            res.data.items.forEach(item => {
+              eventCollection.addNode({
+                id: item.id,
+                title: item.summary,
+                startDate: item.start.dateTime,
+                endDate: item.end.dateTime
+              });
+            });
+            resolve(eventCollection);
+          });
+        },
+      );
+    }
+    
+    eventCollection = await getEvents(client)
 
-    eventCollection.addNode({
-      id: 1,
-      title: "Test",
-      startDate: moment().subtract(1, 'days').format(),
-      endDate: moment().subtract(1, 'days').format()
-    });
-    eventCollection.addNode({
-      id: 2,
-      title: "Test2",
-      startDate: moment().subtract(2, 'days').add(1, 'hours').format(),
-      endDate: moment().subtract(2, 'days').add(1, 'hours').format()
-    });
-    eventCollection.addNode({
-      id: 3,
-      title: "Test3",
-      startDate: moment().subtract(1, 'days').add(2, 'hours').format(),
-      endDate: moment().subtract(1, 'days').add(2, 'hours').format()
-    });
-    eventCollection.addNode({
-      id: 4,
-      title: "Test4",
-      startDate: moment().add(3, 'days').add(3, 'hours').format(),
-      endDate: moment().add(4, 'days').add(3, 'hours').format()
-    });
-    eventCollection.addNode({
-      id: 5,
-      title: "Test5",
-      startDate: moment().add(20, 'days').add(3, 'hours').format(),
-      endDate: moment().add(20, 'days').add(3, 'hours').format()
-    });
-    eventCollection.addNode({
-      id: 6,
-      title: "Test6",
-      startDate: moment().add(26, 'days').add(3, 'hours').format(),
-      endDate: moment().add(29, 'days').add(3, 'hours').format()
-    });
-    eventCollection.addNode({
-      id: 7,
-      title: "Test7",
-      startDate: moment().subtract(3, 'days').add(2, 'hours').format(),
-      endDate: moment().subtract(3, 'days').add(2, 'hours').format()
-    });
-    eventCollection.addNode({
-      id: 8,
-      title: "Test8",
-      startDate: moment().subtract(1, 'days').add(2, 'hours').format(),
-      endDate: moment().subtract(1, 'days').add(2, 'hours').format()
-    });
-    ;
-    eventCollection.addNode({
-      id: 9,
-      title: "Test9",
-      startDate: moment().subtract(2, 'days').add(2, 'hours').format(),
-      endDate: moment().subtract(2, 'days').add(2, 'hours').format()
-    });
   });
 
   api.createPages(({ createPage }) => {

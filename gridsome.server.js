@@ -16,15 +16,6 @@ module.exports = function (api) {
   api.loadSource(async actions => {
 
     async function getEvents(client) {
-      function uuidv4() {
-        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-          var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-          return v.toString(16);
-        });
-      }
-
-      const UUID = uuidv4();
-
 
       const calendar = google.calendar({ version: 'v3', auth: client});
 
@@ -32,9 +23,12 @@ module.exports = function (api) {
         {
           auth: client,
           resource: {
-            id: UUID,
+            id: "5x5y5z",
             type: "web_hook",
-            address: "https://secret-website-development.onrender.com/rebuild"
+            address: "https://secret-website-development.onrender.com/rebuild/",
+            params:  {
+              "ttl": 604800
+            }
           },
           calendarId: 'sandy@stakeordie.com'
         },(error, response) => {

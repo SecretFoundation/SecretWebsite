@@ -15,7 +15,7 @@
   .single-column {
         display: grid;
         grid-auto-flow: column;
-        grid-template-columns: repeat(auto-fit, rem($header-nav-items-width));
+        grid-template-columns: repeat(4, rem($header-nav-items-width));
         grid-column-gap: rem($header-nav-spacing);
         justify-content: $header-nav-justify-content;
         justify-items: $header-nav-justify-items;
@@ -23,7 +23,7 @@
         padding-bottom: 0;
         a {
             text-decoration: none;
-            width: calc(100% + 0px);
+            width: calc(100% + 2px);
             height: 100%;
             display: inline-grid;
             place-content: center center;
@@ -84,7 +84,7 @@
         }
     }  
   }
-  @include respond-to("medium and down") {
+  @include respond-to("small and down") {
         padding-left: 0 !important;
         padding-right: 0 !important;
         .single-column {
@@ -93,7 +93,6 @@
             padding-left: 0;
             padding-right: 0;
             width: 100%;
-            display: inline-block;
             a {
                 width: $header-nav-items-width;
             }

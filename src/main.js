@@ -30,6 +30,7 @@ import BackButton from './components/BackButton'
 import ColorPalette from '@/components/ColorPalette'
 import AlertBar from './components/AlertBar'
 import Calendar from './components/Calendar'
+import Submenu from './components/Submenu'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -70,6 +71,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('ColorPalette', ColorPalette)
   Vue.component('AlertBar', AlertBar)
   Vue.component('Calendar', Calendar)
+  Vue.component('Submenu', Submenu)
 
   if (isClient) {
   }

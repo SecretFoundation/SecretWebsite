@@ -11,7 +11,11 @@ Install nodejs using [nvm](https://github.com/nvm-sh/nvm#install--update-script)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
 ```
 
-# Local environment
+# Local dev environment
+Install the SecretWesbite content
+```bash
+git clone https://github.com/SecretFoundation/SecretWebsiteContent.git ./content
+```
 
 Install the dependencies
 

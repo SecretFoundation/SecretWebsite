@@ -16,6 +16,7 @@ import CardHolder from './components/CardHolder'
 import CommitteeCard from './components/CommitteeCard'
 import ThemedImage from '@/components/ThemedImage'
 import LatestPosts from '@/components/blog/LatestPosts'
+import LatestPostsTwelve from '@/components/blog/LatestPostsTwelve'
 import FeaturedPosts from '@/components/blog/FeaturedPosts'
 import SimpleSection from '@/components/SimpleSection'
 import BlogCardFeatured from '@/components/blog/BlogCardFeatured'
@@ -31,6 +32,7 @@ import ColorPalette from '@/components/ColorPalette'
 import AlertBar from './components/AlertBar'
 import Calendar from './components/Calendar'
 import Submenu from './components/Submenu'
+import VideoCard from './components/VideoCard'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -57,6 +59,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('CommitteeCard', CommitteeCard)
   Vue.component('ThemedImage', ThemedImage)
   Vue.component('LatestPosts', LatestPosts)
+  Vue.component('LatestPostsTwelve', LatestPostsTwelve)
   Vue.component('FeaturedPosts', FeaturedPosts)
   Vue.component('SimpleSection', SimpleSection)
   Vue.component('BlogCardFeatured', BlogCardFeatured)
@@ -72,6 +75,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('AlertBar', AlertBar)
   Vue.component('Calendar', Calendar)
   Vue.component('Submenu', Submenu)
+  Vue.component('VideoCard', VideoCard)
 
   if (isClient) {
   }

@@ -11,7 +11,7 @@
     </template>
     <template #navigation>
       <g-link cream to="/about/about-secret-network">About</g-link>
-      <g-link red to="/blog">Blog</g-link>
+      <g-link red to="/media">Media</g-link>
       <g-link purple to="/community">Community</g-link>
       <g-link yellow to="/developers">Developers</g-link>
       <g-link orange to="/ecosystem/overview">Ecosystem</g-link>

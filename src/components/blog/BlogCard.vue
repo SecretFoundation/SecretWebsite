@@ -74,7 +74,7 @@ export default {
 <style lang="scss" scoped>
 $-heading-height: 85px;
 $-badge-height: 59px;
-$-card-min-height: 487px;
+$-card-min-height: 200px;
 
 .blog-card {
   $root: &;

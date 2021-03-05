@@ -1,12 +1,21 @@
 <template>
+  <div>
     <no-column class="submenu">
         <single-column>
             <slot name="content-center"></slot>
         </single-column>
     </no-column>
+    <div class="sub-content">
+      <slot name="sub-content"></slot>
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
+
+.sub-content {
+  background: #1b2129;
+}
 .submenu {
   background-color: $primary-purple-color;
   padding-top: 0;

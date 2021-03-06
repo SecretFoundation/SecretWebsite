@@ -1,7 +1,7 @@
 <template>
   <div class="bar">
       <p class="text">
-        💎⛏ Earn your share of <span>500,000 SCRT</span> by mining the <span>Secret Ethereum Bridge!</span>&nbsp;<g-link class=“alert-link” to="/blog/secret-bridge-mining-is-live">CLICK HERE</g-link> to learn more. 💎⛏
+        <span>SecretSwap</span> - the first <span>front-running resistant</span>, <span>cross-chain</span> DEX - is now <span>LIVE</span> on mainnet. <g-link class=“alert-link” to="/blog/secretswap-is-live-on-mainnet">CLICK HERE</g-link> to learn more.
       </p>
       <div class="close" v-on:click="closeBar()">&times;</div>
   </div>
@@ -41,7 +41,12 @@ export default {
     align-items: center;
     p.text {
        font-family: Hind,sans-serif;
+           img {
+              height: 20px;
+              width: 100px;
+            }
     }
+
   }
 
   .text {

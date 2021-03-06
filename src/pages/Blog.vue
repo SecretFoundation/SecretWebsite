@@ -52,6 +52,16 @@ export default {
       }
     }
   }
+
+  tags: allGhostTag {
+    edges {
+      node {
+        name
+        id
+        ghostId
+      }
+    }
+  }
 }
 </page-query>
 

@@ -28,7 +28,7 @@ module.exports = function (api) {
 
       const calendar = google.calendar({ version: 'v3', auth: client});
 
-      calendar.events.watch(
+      /*calendar.events.watch(
         {
           auth: client,
           resource: {
@@ -42,9 +42,9 @@ module.exports = function (api) {
               console.log(error);
               return;
           }
-          console.log(response);
+          //console.log(response);
         }
-      );
+      );*/
       
       let eventCollection;
 

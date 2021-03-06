@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predevelop": "chmod +x ./content.sh && ./content.sh",
     "prebuild": "chmod +x ./content.sh && ./content.sh",
     "build": "gridsome build",
     "develop": "gridsome develop",

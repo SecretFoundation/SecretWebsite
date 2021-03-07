@@ -129,7 +129,7 @@
               <g-image light light-colored src="@/assets/secretnetwork-logo-primary-black.svg" class="custom-footer__logo"></g-image>
               <g-image dark dark-colored src="@/assets/secretnetwork-logo-primary-white.svg" class="custom-footer__logo"></g-image>
             </themed-image>
-            <p>This website has a secret. It’s 100% opensource!</p>
+            <p>This website is 100% open-source.</p>
             <p>
               Contribute at
               <g-link to="https://github.com/SecretFoundation/SecretWebsite">

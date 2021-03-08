@@ -30,7 +30,7 @@ import SmallAnnouncement from './components/SmallAnnouncement'
 import BackButton from './components/BackButton'
 import ColorPalette from '@/components/ColorPalette'
 import AlertBar from './components/AlertBar'
-import Calendar from './components/Calendar'
+//import Calendar from './components/Calendar'
 import Submenu from './components/Submenu'
 //import VideoCard from './components/VideoCard'
 
@@ -73,7 +73,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('BackButton', BackButton)
   Vue.component('ColorPalette', ColorPalette)
   Vue.component('AlertBar', AlertBar)
-  Vue.component('Calendar', Calendar)
+  //Vue.component('Calendar', Calendar)
   Vue.component('Submenu', Submenu)
   //Vue.component('VideoCard', VideoCard)
 

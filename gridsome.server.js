@@ -36,7 +36,7 @@ module.exports = function (api) {
     //         type: "web_hook",
     //         address: "https://secret-website-development.onrender.com/rebuild"
     //       },
-    //       calendarId: 'sandy@stakeordie.com'
+    //       calendarId: ''
     //     },(error, response) => {
     //       if (error) {
     //           console.log(error);

@@ -16,6 +16,7 @@ import CardHolder from './components/CardHolder'
 import CommitteeCard from './components/CommitteeCard'
 import ThemedImage from '@/components/ThemedImage'
 import LatestPosts from '@/components/blog/LatestPosts'
+//import LatestPostsTwelve from '@/components/blog/LatestPostsTwelve'
 import FeaturedPosts from '@/components/blog/FeaturedPosts'
 import SimpleSection from '@/components/SimpleSection'
 import BlogCardFeatured from '@/components/blog/BlogCardFeatured'
@@ -29,6 +30,9 @@ import SmallAnnouncement from './components/SmallAnnouncement'
 import BackButton from './components/BackButton'
 import ColorPalette from '@/components/ColorPalette'
 import AlertBar from './components/AlertBar'
+//import Calendar from './components/Calendar'
+import Submenu from './components/Submenu'
+//import VideoCard from './components/VideoCard'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -36,6 +40,11 @@ require("gridsome-plugin-remark-prismjs-all/themes/night-owl.css");
 
 export default function (Vue, { router, head, isClient }) {
   openGraph.forEach(item => head.meta.push(item))
+
+  head.script.push({
+    src: 'https://apis.google.com/js/api.js',
+    body: true
+  })
 
   Vue.config.productionTip = false
   Vue.use(Flare)
@@ -50,6 +59,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('CommitteeCard', CommitteeCard)
   Vue.component('ThemedImage', ThemedImage)
   Vue.component('LatestPosts', LatestPosts)
+  //Vue.component('LatestPostsTwelve', LatestPostsTwelve)
   Vue.component('FeaturedPosts', FeaturedPosts)
   Vue.component('SimpleSection', SimpleSection)
   Vue.component('BlogCardFeatured', BlogCardFeatured)
@@ -63,9 +73,10 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('BackButton', BackButton)
   Vue.component('ColorPalette', ColorPalette)
   Vue.component('AlertBar', AlertBar)
+  //Vue.component('Calendar', Calendar)
+  Vue.component('Submenu', Submenu)
+  //Vue.component('VideoCard', VideoCard)
 
   if (isClient) {
   }
 }
-
-

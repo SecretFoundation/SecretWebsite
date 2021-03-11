@@ -32,6 +32,7 @@ export default {
 
 <style lang="scss">
 .next-button {
+  
   display: inline-block;
   width: auto;
   padding: 10px $gutter;
@@ -149,4 +150,12 @@ export default {
     }
   }
 }
+.move-left{
+  margin-right:auto;
+}
+
+.move-right{
+  margin-left:auto;
+}
+
 </style>

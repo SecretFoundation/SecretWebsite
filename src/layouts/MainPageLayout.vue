@@ -11,6 +11,13 @@
 import MainPageHero from '../components/MainPageHero'
 
 export default {
-  components: { MainPageHero }
+  components: { MainPageHero },
+  props: {
+    navselected: {
+      type: String,
+      required: false,
+      default: null
+    }
+  }
 }
 </script>

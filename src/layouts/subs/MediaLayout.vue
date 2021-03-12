@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import MainPageLayout from './MainPageLayout.vue'
+import MainPageLayout from '../MainPageLayout.vue'
 
     export default {
         name: 'MediaLayout',

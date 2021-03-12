@@ -11,17 +11,29 @@
   </div>
 </template>
 
+<script>
+  export default {
+    props: {
+      location: {
+        type: String,
+        required: true
+      }
+    }
+  }
+</script>
+
 <style lang="scss">
 
 .sub-content {
   background: #1b2129;
+  padding: $gutter-xlarge 0 $gutter-small;
 }
 .submenu {
   background-color: $primary-purple-color;
   padding-top: 0;
   padding-bottom: 0;
   z-index: -1;
-  margin: $gutter-xlarge 0;
+  margin: $gutter-xlarge 0 0 0;
   .single-column {
     display: grid;
     grid-auto-flow: column;

@@ -32,9 +32,9 @@
       }
     }
   }
-}
-// properly space NextButton components when used within the Announcmement component
+  // properly space NextButton components when used within the Announcmement component
   .next-button {
-        margin-right: 20px;
-      }
+    margin-right: 20px;
+    }
+}
 </style>

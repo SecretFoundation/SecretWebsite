@@ -3,7 +3,7 @@
     <div class="card__header">
       <slot name="header"></slot>
     </div>
-    <div class="card__icon" ref="icon" v-bind:class="{invertIconColor: isLightMode}">
+    <div class="card__icon" :class="isDark">
       <slot name="icon"></slot>
     </div>
     <div class="card__description">
@@ -14,11 +14,19 @@
 <script>
 export default {
   data() {
-    return{
-    //TODO
-    //I'm thinking that isLightMode needs to be set as a prop with a value passed in from
-    //data object darkLightModeStat from BaseLayout.vue but I'm really not sure...  -Austin
-    isLightMode: false
+    return {
+      isDark: "", // false is dark
+    }
+  },
+  mounted() {
+    const theme = document.getElementsByTagName('body')[0].attributes.theme.nodeValue;
+    this.isDark = theme.includes('dark') ? "" : "invertColor";
+    document.querySelector('.toggles').addEventListener('click', this.btnClicked);
+  },
+  methods: {
+    btnClicked() {
+      const theme = document.getElementsByTagName('body')[0].attributes.theme.nodeValue;
+      this.isDark = theme.includes('dark') ? "" : "invertColor";
     }
   }
 }

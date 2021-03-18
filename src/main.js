@@ -16,7 +16,7 @@ import CardHolder from './components/CardHolder'
 import CommitteeCard from './components/CommitteeCard'
 import ThemedImage from '@/components/ThemedImage'
 import LatestPosts from '@/components/blog/LatestPosts'
-//import LatestPostsTwelve from '@/components/blog/LatestPostsTwelve'
+import LatestPostsTwelve from '@/components/blog/LatestPostsTwelve'
 import FeaturedPosts from '@/components/blog/FeaturedPosts'
 import SimpleSection from '@/components/SimpleSection'
 import BlogCardFeatured from '@/components/blog/BlogCardFeatured'
@@ -59,7 +59,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('CommitteeCard', CommitteeCard)
   Vue.component('ThemedImage', ThemedImage)
   Vue.component('LatestPosts', LatestPosts)
-  //Vue.component('LatestPostsTwelve', LatestPostsTwelve)
+  Vue.component('LatestPostsTwelve', LatestPostsTwelve)
   Vue.component('FeaturedPosts', FeaturedPosts)
   Vue.component('SimpleSection', SimpleSection)
   Vue.component('BlogCardFeatured', BlogCardFeatured)

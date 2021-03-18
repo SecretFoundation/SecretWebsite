@@ -12,7 +12,7 @@
     <template #navigation>
       <g-link cream to="/about/about-secret-network">About</g-link>
       <!-- <g-link red to="/blog">Blog</g-link> -->
-      <g-link red :class="nav == 'media' ? 'active' : ''" to="/media">Media</g-link>
+      <g-link red :class="nav == 'media' ? 'active' : ''" to="/media/blog">Media</g-link>
       <g-link purple :class="nav == 'community' ? 'active' : ''" to="/community">Community</g-link>
       <g-link yellow :class="nav == 'developers' ? 'active' : ''" to="/developers">Developers</g-link>
       <g-link orange :class="nav == 'ecosystem' ? 'active' : ''" to="/ecosystem/overview">Ecosystem</g-link>

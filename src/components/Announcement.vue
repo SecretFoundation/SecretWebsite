@@ -30,10 +30,11 @@
           margin-left: 10px;
         }
       }
-      a:nth-of-type(2) {
-        margin-left: 20px;
-      }
     }
   }
+  // properly space NextButton components when used within the Announcmement component
+  .next-button {
+    margin-right: 20px;
+    }
 }
 </style>

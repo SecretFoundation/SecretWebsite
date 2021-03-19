@@ -14,6 +14,7 @@ import Separator from './components/Separator'
 import Card from './components/Card'
 import CardHolder from './components/CardHolder'
 import CommitteeCard from './components/CommitteeCard'
+import DeveloperCard from './components/DeveloperCard'
 import ThemedImage from '@/components/ThemedImage'
 import LatestPosts from '@/components/blog/LatestPosts'
 import LatestPostsTwelve from '@/components/blog/LatestPostsTwelve'
@@ -56,6 +57,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Separator', Separator)
   Vue.component('Card', Card)
   Vue.component('CardHolder', CardHolder)
+  Vue.component('DeveloperCard', DeveloperCard)
   Vue.component('CommitteeCard', CommitteeCard)
   Vue.component('ThemedImage', ThemedImage)
   Vue.component('LatestPosts', LatestPosts)

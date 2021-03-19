@@ -6,8 +6,8 @@
     <submenu class="subnav" id="nav" location="left">
         <template v-slot:content-center>
             <g-link orange to="/media/features" :class="isActive('/media/features')">Features</g-link>
-            <g-link orange to="/media/blog" :class="isActive('/media/blog')">Blog</g-link>
-            <g-link blue to="/media/video" :class="isActive('/media/video')">Videos</g-link>
+            <g-link blue to="/media/blog" :class="isActive('/media/blog')">Blog</g-link>
+            <g-link green to="/media/video" :class="isActive('/media/video')">Videos</g-link>
             <g-link yellow to="/media/podcast" :class="isActive('/media/podcast')">Podcast</g-link>
             <g-link red to="/media/brand" :class="isActive('/media/brand')">Brand</g-link>
             <!-- <g-link green to="/media/community-content">Community Content</g-link> -->

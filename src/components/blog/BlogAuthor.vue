@@ -6,13 +6,13 @@
 
 <style lang="scss" scoped>
 $-picture-size: 44px;
-
+$-social-icons: 75px;
 .blog-author {
   display: grid;
   align-items: center;
   align-self: end;
   grid-column-gap: $gutter;
-  grid-template-columns: $-picture-size 1fr;
+  grid-template-columns: $-picture-size 1fr $-social-icons;
 
   img[picture] {
     width: rem($-picture-size);

@@ -13,6 +13,18 @@
           <div>{{ $page.post.primary_author.name }}</div>
           <div>{{ $page.post.date }} &#8226; {{ $page.post.reading_time }} min read</div>
         </div>
+        <div class="social-networks">
+          <themed-image class="twitter-share">
+            <g-image dark dark-colored src="@/assets/twitter-white.svg" :immediate="true"></g-image>
+            <g-image light light-colored src="@/assets/twitter-black.svg" :immediate="true"></g-image>
+          </themed-image>
+          <g-link to="https://t.me/SCRTcommunity">
+            <themed-image>
+              <g-image dark dark-colored src="@/assets/telegram-white.svg" :immediate="true"></g-image>
+              <g-image light light-colored src="@/assets/telegram-black.svg" :immediate="true"></g-image>
+            </themed-image>
+          </g-link>
+        </div>
       </blog-author>
       <hr>
       <g-image class="cover-image" picture :src="$page.post.coverImage"></g-image>

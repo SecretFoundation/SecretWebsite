@@ -27,6 +27,10 @@ export default {
     @include respond-to("small and down") {
       height: 80px;
       padding: 0 30px;
+      p.text {
+        font-size: 85%;
+        line-height: 1.5;
+      }
     }
     @include respond-to("medium") {
       height: 50px;

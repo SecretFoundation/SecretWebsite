@@ -31,7 +31,7 @@ export default {
       default: () => []
     },
     columns: {
-      type: Number,
+      type: String,
       required: false,
       default: 3
     }

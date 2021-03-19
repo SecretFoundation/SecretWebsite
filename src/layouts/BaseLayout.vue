@@ -223,9 +223,6 @@ export default {
       this.darkLightModeState = !theme.includes('dark')
       this.coloredModeState = theme.includes('colored')
     }
-    if(this.nav) { 
-      console.log(this.nav);
-    }
   },
   // computed: {
   //   navOverride: function() {

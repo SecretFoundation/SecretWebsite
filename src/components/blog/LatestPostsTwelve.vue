@@ -1,12 +1,17 @@
 <template>
-  <posts :posts="$static.posts.edges" columns="4"></posts>
+  <posts :posts="$static.posts.edges" columns="3"></posts>
 </template>
 
 <script>
 import Posts from '@/components/blog/Posts'
 
 export default {
-  components: { Posts }
+  components: { Posts },
+  data () {
+    return {
+      columns: "3"
+    }
+  }
 }
 </script>
 

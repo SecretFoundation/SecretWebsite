@@ -32,7 +32,7 @@ import ColorPalette from '@/components/ColorPalette'
 import AlertBar from './components/AlertBar'
 //import Calendar from './components/Calendar'
 import Submenu from './components/Submenu'
-//import VideoCard from './components/VideoCard'
+import VideoCard from './components/VideoCard'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -75,7 +75,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('AlertBar', AlertBar)
   //Vue.component('Calendar', Calendar)
   Vue.component('Submenu', Submenu)
-  //Vue.component('VideoCard', VideoCard)
+  Vue.component('VideoCard', VideoCard)
 
   if (isClient) {
   }

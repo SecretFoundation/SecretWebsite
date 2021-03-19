@@ -12,3 +12,5 @@ dist
 
 content
 content/*
+
+yarn.lock

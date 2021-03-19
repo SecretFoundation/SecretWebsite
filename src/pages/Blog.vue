@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <base-layout class="blog">
     <main-page-layout>
       <template #title>
@@ -34,6 +34,28 @@
           {{ category.content }}
           <featured-posts :posts="$page.posts.edges"></featured-posts>
         </div>
+      </single-column>
+    </main-page-layout>
+  </base-layout>
+</template> -->
+
+<template>
+  <base-layout class="blog">
+    <main-page-layout>
+      <template #title>
+        <h2>Secret Network Blog</h2>
+      </template>
+      <single-column>
+        <div class="inline">
+          <h2>Featured</h2>
+          <hr>
+        </div>
+        <featured-posts :posts="$page.posts.edges"></featured-posts>
+        <hr>
+      </single-column>
+      <single-column>
+        <h2>All</h2>
+        <posts :posts="$page.posts.edges"></posts>
       </single-column>
     </main-page-layout>
   </base-layout>

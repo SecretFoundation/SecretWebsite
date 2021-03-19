@@ -34,6 +34,7 @@ import AlertBar from './components/AlertBar'
 //import Calendar from './components/Calendar'
 import Submenu from './components/Submenu'
 import VideoCard from './components/VideoCard'
+import VueSocialSharing from 'vue-social-sharing'
 
 require('typeface-hind');
 require('typeface-montserrat');
@@ -47,8 +48,14 @@ export default function (Vue, { router, head, isClient }) {
     body: true
   })
 
+  head.link.push({
+    rel: "stylesheet",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  })
+
   Vue.config.productionTip = false
   Vue.use(Flare)
+  Vue.use(VueSocialSharing);
 
   Vue.component('Faq', Faq)
   Vue.component('Newsletter', Newsletter)

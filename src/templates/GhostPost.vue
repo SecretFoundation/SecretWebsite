@@ -7,23 +7,24 @@
     </template>
     <slim-column>
       <blog-author>
-        <g-image picture v-if="$page.post.primary_author.profile_image" :src="$page.post.primary_author.profile_image"></g-image>
-        <g-image picture v-else src="@/assets/scrt-logo.png"></g-image>
+        <g-image picture :src="coverImage"></g-image>
         <div info>
           <div>{{ $page.post.primary_author.name }}</div>
           <div>{{ $page.post.date }} &#8226; {{ $page.post.reading_time }} min read</div>
         </div>
-        <div class="social-networks">
-          <themed-image class="twitter-share">
-            <g-image dark dark-colored src="@/assets/twitter-white.svg" :immediate="true"></g-image>
-            <g-image light light-colored src="@/assets/twitter-black.svg" :immediate="true"></g-image>
-          </themed-image>
-          <g-link to="https://t.me/SCRTcommunity">
-            <themed-image>
-              <g-image dark dark-colored src="@/assets/telegram-white.svg" :immediate="true"></g-image>
-              <g-image light light-colored src="@/assets/telegram-black.svg" :immediate="true"></g-image>
-            </themed-image>
-          </g-link>
+        <div class="share-icons">
+          <ShareNetwork
+            v-for="network in networks"
+            :network="network.network"
+            :key="network.network"
+            :style="{backgroundColor: network.color}"
+            :url="url"
+            :title="$page.post.title"
+            :description="$page.post.description"
+          >
+            <i :class="network.icon"></i>
+            <span>{{ network.name }}</span>
+          </ShareNetwork>
         </div>
       </blog-author>
       <hr>
@@ -53,6 +54,20 @@ export default {
         { key: 'og:image', property: 'og:image', content: this.$page.post.coverImage },
         { key: 'twitter:image', property: 'twitter:image', content: this.$page.post.coverImage }
       ],
+    }
+  },
+  data() {
+    return {
+      url: 'https://scrt.network' + this.$route.fullPath,
+      networks: [
+        { network: 'twitter', name: 'Twitter', icon: 'fab fah fa-lg fa-twitter', color: '#1da1f2' },
+        { network: 'linkedin', name: 'LinkedIn', icon: 'fab fah fa-lg fa-linkedin', color: '#007bb5' }
+      ]
+    }
+  },
+  computed: {
+    coverImage: function() {
+      return this.$page.post.primary_author.profile_image ? this.$page.post.primary_author.profile_image : '@/assets/scrt-logo.png';
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <base-layout>
+  <base-layout :nav="$page.content.nav">
     <VueRemarkContent class="content" />
   </base-layout>
 </template>
@@ -9,7 +9,7 @@ import BaseLayout from "../layouts/BaseLayout";
 
 export default {
   name: "Content",
-  components: { BaseLayout },
+  components: { BaseLayout }
 };
 </script>
 
@@ -18,6 +18,7 @@ query ($id: ID!) {
   content(id: $id) {
     title
     content
+    nav
   }
 }
 </page-query>

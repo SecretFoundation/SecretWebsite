@@ -1,10 +1,10 @@
 <template>
-  <div class="media-card" :color="color">
+  <div class="media-card" :color="color" :class="isSquiggle">
     <div class="media-card__tag" :style="{ color: `var(--${color}-color)` }">
       <slot>{{ tag }}</slot>
     </div>
     <h4>{{ title }}</h4>
-    <separator small space-small></separator>
+    <separator small space-small ></separator>
     <div class="media-card__image">
       <g-image :src="require(`!!assets-loader!@images/${src}`)"></g-image>
     </div>
@@ -18,25 +18,25 @@
 import BlogAuthor from '@/components/blog/BlogAuthor'
 
 const colors = {
-  "dev": "purple",
+  "announcement": "purple",
+  "blockchain": "yellow",
+  "collaboration": "green",
+  "community": "peach",
+  "cosmos": "turquoise",
+  "design": "pink",
+  "dev": "red",
+  "ecosystem": "orange",
+  "governance": "blue",
+  "introduction": "purple",
   "nodes": "yellow",
-  "announcement": "green",
-  "blockchain": "peach",
-  "community": "turquoise",
-  "cosmos": "pink",
-  "design": "red",
-  "governance": "orange",
-  "introduction": "blue",
-  "privacy": "purple",
-  "secret apps": "green",
-  "solutions": "green",
-  "ecosystem": "red",
-  "staking": "peach",
-  "collaboration": "turquoise",
-  "": "blue",
+  "privacy": "green",
+  "secret apps": "peach",
+  "solutions": "turquoise",
+  "staking": "pink",
   "podcast": "red",
   "video": "turquoise",
   "blog post": "yellow",
+  "": "blue",
   null: "blue",
   undefined: "blue"
 }
@@ -64,7 +64,17 @@ export default {
     cta: {
       type: String,
       required: false,
-      default: 'Open the Secret'
+      default: 'Continue'
+    },
+    size: {
+      type: String,
+      required: false,
+      default: 'standard'
+    },
+    squiggle: {
+      type: Boolean,
+      required: false,
+      default: true
     }
   },
   data() {
@@ -79,6 +89,11 @@ export default {
     getColor() {
       return colors[this.tag.toLowerCase()]
     }
+  },
+  computed: {
+    isSquiggle() {
+      return "";
+    }
   }
 }
 </script>
@@ -86,18 +101,20 @@ export default {
 <style lang="scss" scoped>
 $-heading-height: 85px;
 $-badge-height: 59px;
+$-card-height: 100%;
 $-card-min-height: 415px;
+
 
 .media-card {
   $root: &;
   display: grid;
   grid-template-rows: 26px 1fr 22px 185px 62px;
   position: relative;
+  height: $-card-height;
+  min-height: rem($-card-min-height);
   border: 3px solid;
   border-color: var(--theme-fg);
   border-radius: $gutter;
-  height: 100%;
-  min-height: rem($-card-min-height);
   padding: $gutter;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
@@ -106,8 +123,13 @@ $-card-min-height: 415px;
       color: var(--#{$name}-color);
     }
   }
+
   a {
     text-decoration: none;
+  }
+
+  &.size {
+    height: auto;
   }
 
   &__tag {
@@ -145,22 +167,43 @@ $-card-min-height: 415px;
       font-size: $secondary-font-size;
     }
   }
+
   &:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
   }
-  @media (min-width: 768px) and (max-width: 1007px) {
-    //min-height: rem(360px);
-    grid-template-rows: 26px 96px 22px 1fr 62px;
-    &__header {
-      //margin-bottom: $gutter;
-      min-height: rem(104px);
-    }
-  } 
-  @media (min-width: 1008px) and (max-width: 1199px) {
-    min-height: rem(360px);
-    grid-template-rows: 26px 1fr 22px 149px 62px;
-  } 
+
+  .standard {
+    @media (min-width: 768px) and (max-width: 1007px) {
+      //min-height: rem(360px);
+      grid-template-rows: 26px 96px 22px 1fr 62px;
+      &__header {
+        //margin-bottom: $gutter;
+        min-height: rem(104px);
+      }
+    } 
+    @media (min-width: 1008px) and (max-width: 1199px) {
+      min-height: rem(360px);
+      grid-template-rows: 26px 1fr 22px 149px 62px;
+    } 
+  }
+
+  .short {
+    @media (min-width: 768px) and (max-width: 1007px) {
+      //min-height: rem(360px);
+      grid-template-rows: 26px 96px 22px 1fr 62px;
+      height: 
+      &__header {
+        //margin-bottom: $gutter;
+        min-height: rem(104px);
+      }
+    } 
+    @media (min-width: 1008px) and (max-width: 1199px) {
+      min-height: rem(360px);
+      grid-template-rows: 26px 1fr 22px 149px 62px;
+    } 
+  }
+
   @include respond-to("small and down") {
     width: 100%;
     grid-template-rows: auto;
@@ -171,5 +214,6 @@ $-card-min-height: 415px;
       }
     }
   }
+
 }
 </style>

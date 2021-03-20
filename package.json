@@ -15,13 +15,14 @@
     "@gridsome/vue-remark": "^0.2.5",
     "@lkmx/flare-legacy": "0.28.19",
     "axios": "^0.21.1",
-    "googleapis": "^39.2.0",
+    "googleapis": "^68.0.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-prismjs-all": "^0.3.5",
     "moment": "^2.29.1",
     "typeface-hind": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
-    "vue-simple-calendar": "^5.0.0"
+    "vue-simple-calendar": "^5.0.0",
+    "vue-social-sharing": "^3.0.7"
   },
   "devDependencies": {
     "eslint": "^7.11.0",

@@ -1,6 +1,6 @@
 // Colors
-//$primary-black-color: #151A20;
-$primary-black-color: #1B1B1B;
+$primary-black-color: #151A20;
+//$primary-black-color: #1B1B1B;
 $primary-purple-color: #5f5f6B;
 $primary-orange-color:  #EA7534;
 $primary-cream-color: #E5C7A3;
@@ -62,6 +62,27 @@ $high-key-colors: (
   "green": $high-key-green-color,
   "turquoise": $high-key-turquoise-color,
   "blue": $high-key-blue-color
+);
+
+$submenu-colors: (
+  "black": $primary-black-color,
+  "purple": $primary-purple-color,
+  "orange": $primary-orange-color,
+  "cream": $primary-cream-color,
+  "blue": $primary-blue-color,
+  "yellow": $primary-yellow-color,
+  "red": $primary-red-color,
+  "green": $primary-green-color,
+  "white": $primary-white-color,
+  "secondary-purple": $secondary-purple-color,
+  "secondary-yellow": $secondary-yellow-color,
+  "secondary-green": $secondary-green-color,
+  "secondary-peach": $secondary-peach-color,
+  "secondary-turquoise": $secondary-turquoise-color,
+  "secondary-pink": $secondary-pink-color,
+  "secondary-red": $secondary-red-color,
+  "secondary-orange": $secondary-orange-color,
+  "secondary-blue": $secondary-blue-color
 );
 
 // Texts

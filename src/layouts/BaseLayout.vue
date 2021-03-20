@@ -11,12 +11,12 @@
     </template>
     <template #navigation>
       <g-link cream to="/about/about-secret-network">About</g-link>
-      <g-link red to="/blog">Blog</g-link>
-      <!-- <g-link red to="/media">Media</g-link> -->
-      <g-link purple to="/community">Community</g-link>
-      <g-link yellow to="/developers">Developers</g-link>
-      <g-link orange to="/ecosystem/overview">Ecosystem</g-link>
-      <g-link blue to="https://forum.scrt.network">Forum</g-link>
+      <!-- <g-link red to="/blog">Blog</g-link> -->
+      <g-link red :class="nav == 'media' ? 'active' : ''" to="/media/features">Media</g-link>
+      <g-link purple :class="nav == 'community' ? 'active' : ''" to="/community">Community</g-link>
+      <g-link yellow :class="nav == 'developers' ? 'active' : ''" to="/developers">Developers</g-link>
+      <g-link orange :class="nav == 'ecosystem' ? 'active' : ''" to="/ecosystem/overview">Ecosystem</g-link>
+      <g-link blue :class="nav == 'forum' ? 'active' : ''" to="https://forum.scrt.network">Forum</g-link>
       <div class="social-networks__mobile">
         <g-link to="https://github.com/SecretFoundation/SecretWebsite">
           <themed-image>
@@ -201,6 +201,13 @@
 <script>
 export default {
   name: 'BaseLayout',
+  props: {
+    nav: {
+      type: String,
+      required: false,
+      default: ""
+    }  
+  },
   data() {
     return {
       theme: null,
@@ -217,6 +224,11 @@ export default {
       this.coloredModeState = theme.includes('colored')
     }
   },
+  // computed: {
+  //   navOverride: function() {
+  //     return this.nav;
+  //   }
+  // },
   methods: {
     toggleDarkLightMode() {
       this.darkLightModeState = !this.darkLightModeState

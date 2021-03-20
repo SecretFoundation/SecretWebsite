@@ -1,5 +1,5 @@
 <template>
-  <posts :posts="$static.posts.edges" columns="3"></posts>
+  <posts :posts="$static.posts.edges" :columns="columns"></posts>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
   components: { Posts },
   data () {
     return {
-      columns: "3"
+      columns: 3
     }
   }
 }
@@ -17,7 +17,7 @@ export default {
 
 <static-query>
 {
-  posts: allGhostPost(sortBy: "published_at", order: DESC, limit: 12) {
+  posts: allGhostPost(sortBy: "published_at", order: DESC, limit: 9) {
     edges {
       node {
         title

@@ -6,7 +6,7 @@
       <p>{{ $page.post.description }}</p>
     </template>
     <slim-column>
-      <blog-author>
+      <blog-author :includeShareButtons="true">
         <g-image picture :src="coverImage"></g-image>
         <div info>
           <div>{{ $page.post.primary_author.name }}</div>

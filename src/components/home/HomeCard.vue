@@ -70,7 +70,10 @@ $-strong-font-size: 24px;
 
     width: 100%;
     height: 100%;
-    min-height: rem(516px);
+    min-height: rem(500px);
+      @media (min-width: 1008px) and (max-width: 1199px) {
+        min-height: rem(445px);
+      } 
 
     p {
       position: absolute;

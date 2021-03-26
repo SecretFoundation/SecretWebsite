@@ -28,6 +28,12 @@ $-strong-font-size: 24px;
   h3 > strong {
     font-size: $-strong-font-size;
   }
+  h3{
+    padding:$gutter $gutter 0 $gutter;
+  }
+  .separator{
+    padding:0 $gutter 0 $gutter;
+  }
 
   a {
     text-decoration: none;
@@ -35,13 +41,10 @@ $-strong-font-size: 24px;
 
   &[horizontal] {
     position: relative;
-
     width: 100%;
     height: 100%;
     min-height: 258px;
     overflow: hidden;
-
-    padding: $gutter;
 
     @include respond-to("medium and down") {
       min-height: 528px;
@@ -66,11 +69,12 @@ $-strong-font-size: 24px;
 
   &[vertical] {
     position: relative;
-    padding: $gutter;
-
     width: 100%;
     height: 100%;
-    min-height: rem(516px);
+    min-height: rem(500px);
+      @media (min-width: 1008px) and (max-width: 1199px) {
+        min-height: rem(445px);
+      } 
 
     p {
       position: absolute;
